@@ -1,0 +1,80 @@
+{
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "revision": "495f39366efef23836d0cfae4fbe635880d2be31",
+  "gpu": "A100-80GB:2",
+  "layers": [
+    40,
+    48,
+    56,
+    60,
+    61,
+    64,
+    68,
+    72
+  ],
+  "cells": [
+    "disc_P_fit",
+    "disc_P_transfer",
+    "disc_G_fit"
+  ],
+  "position": "answer(last col, left pad)",
+  "d_model": 8192,
+  "act_dtype": "float16",
+  "objects": [
+    "attn_out(self_attn output)",
+    "mlp_out(mlp output)"
+  ],
+  "frozen_hash": "84f2e54d85d6e8aa4c1474b608bef5ab69babe54353ef0ef2702d9f6ed38baef",
+  "config_F_sha": "03058547538572e49bfb6952e2090187e4697a3a948717bcc550233ae05e50d7",
+  "session_seconds": 661.2,
+  "files": {
+    "disc_P_fit_attn": {
+      "sha256": "deb165390785320750ce33d705ee9d5e2271036d9e70f1faecda9eb757fb84bb",
+      "shape": [
+        1800,
+        8,
+        8192
+      ]
+    },
+    "disc_P_fit_mlp": {
+      "sha256": "59df6c81bf7872050e337685f6472ec61b10f06dff50995ab8406256f5b8f3dd",
+      "shape": [
+        1800,
+        8,
+        8192
+      ]
+    },
+    "disc_P_transfer_attn": {
+      "sha256": "28a4216fc145cbe826c210b3d4215c370f9d72326acf2010f5067cf22551a695",
+      "shape": [
+        1800,
+        8,
+        8192
+      ]
+    },
+    "disc_P_transfer_mlp": {
+      "sha256": "bb4f12533c5855edff91636ab12b19e8ad45f1162366e7a8bcc5f5dc6ec0006b",
+      "shape": [
+        1800,
+        8,
+        8192
+      ]
+    },
+    "disc_G_fit_attn": {
+      "sha256": "c5ca9a7094d3c291a725b2c367985e3dc5889c28c9bc6c13302b146ca93ec335",
+      "shape": [
+        1800,
+        8,
+        8192
+      ]
+    },
+    "disc_G_fit_mlp": {
+      "sha256": "0a5dcfd62c2a9762fe082e6ea48f170a31ec198f5ea5d92c44857dcf57886741",
+      "shape": [
+        1800,
+        8,
+        8192
+      ]
+    }
+  }
+}

@@ -1,0 +1,81 @@
+========================================================================================
+PHASE 4b PRE-ITEM-3 DIAGNOSTIC — ATTENTION ON ITEM 2 STATIC-POOL FINALS (L4)
+training-distribution episodes (each run's own fixed pool); chance = 1/3
+edge-present rule (stated in advance): mean mass >= 0.25 AND >= 5.0x uniform baseline, query-arg -> matching occurrence
+========================================================================================
+
+--- seed0 (final step 50000) ---
+
+  [property->symbol] train acc on these episodes: 1.000  (uniform baseline ~0.038)
+  attention FROM query-arg position TO matching HAS-property token:
+    layer 0: h0=0.019  h1=0.024  h2=0.027  h3=0.014
+    layer 1: h0=0.046  h1=0.050  h2=0.010  h3=0.041
+    layer 2: h0=0.074  h1=0.040  h2=0.103  h3=0.112
+    layer 3: h0=0.037  h1=0.053  h2=0.081  h3=0.019
+    MAX mean mass: layer 2 head 3 = 0.112 (2.9x baseline) -> edge ABSENT
+  from QMARK -> match, per-layer max: L0=0.015  L1=0.085  L2=0.104  L3=0.058  (overall max 0.104)
+  from QMARK -> answer-symbol token (HAS target): max layer 0 head 0 = 0.178
+
+  [composed_P] train acc on these episodes: 1.000  (uniform baseline ~0.038)
+  attention FROM query-arg position TO matching HAS-property token:
+    layer 0: h0=0.019  h1=0.021  h2=0.027  h3=0.014
+    layer 1: h0=0.033  h1=0.029  h2=0.008  h3=0.036
+    layer 2: h0=0.077  h1=0.039  h2=0.063  h3=0.117
+    layer 3: h0=0.036  h1=0.054  h2=0.092  h3=0.022
+    MAX mean mass: layer 2 head 3 = 0.117 (3.1x baseline) -> edge ABSENT
+  from QMARK -> match, per-layer max: L0=0.012  L1=0.037  L2=0.040  L3=0.019  (overall max 0.040)
+  from QMARK -> answer-symbol token (HAS target): max layer 2 head 1 = 0.082
+
+--- seed1 (final step 50000) ---
+
+  [property->symbol] train acc on these episodes: 1.000  (uniform baseline ~0.038)
+  attention FROM query-arg position TO matching HAS-property token:
+    layer 0: h0=0.026  h1=0.023  h2=0.019  h3=0.050
+    layer 1: h0=0.004  h1=0.030  h2=0.004  h3=0.078
+    layer 2: h0=0.057  h1=0.052  h2=0.042  h3=0.065
+    layer 3: h0=0.104  h1=0.087  h2=0.023  h3=0.057
+    MAX mean mass: layer 3 head 0 = 0.104 (2.7x baseline) -> edge ABSENT
+  from QMARK -> match, per-layer max: L0=0.029  L1=0.038  L2=0.049  L3=0.066  (overall max 0.066)
+  from QMARK -> answer-symbol token (HAS target): max layer 0 head 2 = 0.136
+
+  [composed_P] train acc on these episodes: 1.000  (uniform baseline ~0.038)
+  attention FROM query-arg position TO matching HAS-property token:
+    layer 0: h0=0.026  h1=0.021  h2=0.019  h3=0.058
+    layer 1: h0=0.006  h1=0.033  h2=0.004  h3=0.092
+    layer 2: h0=0.046  h1=0.061  h2=0.028  h3=0.048
+    layer 3: h0=0.077  h1=0.083  h2=0.029  h3=0.083
+    MAX mean mass: layer 1 head 3 = 0.092 (2.4x baseline) -> edge ABSENT
+  from QMARK -> match, per-layer max: L0=0.021  L1=0.015  L2=0.021  L3=0.015  (overall max 0.021)
+  from QMARK -> answer-symbol token (HAS target): max layer 0 head 2 = 0.048
+
+--- seed2 (final step 50000) ---
+
+  [property->symbol] train acc on these episodes: 1.000  (uniform baseline ~0.038)
+  attention FROM query-arg position TO matching HAS-property token:
+    layer 0: h0=0.008  h1=0.100  h2=0.033  h3=0.006
+    layer 1: h0=0.066  h1=0.014  h2=0.044  h3=0.007
+    layer 2: h0=0.026  h1=0.072  h2=0.080  h3=0.036
+    layer 3: h0=0.057  h1=0.040  h2=0.032  h3=0.038
+    MAX mean mass: layer 0 head 1 = 0.100 (2.6x baseline) -> edge ABSENT
+  from QMARK -> match, per-layer max: L0=0.019  L1=0.099  L2=0.128  L3=0.051  (overall max 0.128)
+  from QMARK -> answer-symbol token (HAS target): max layer 0 head 3 = 0.110
+
+  [composed_P] train acc on these episodes: 1.000  (uniform baseline ~0.038)
+  attention FROM query-arg position TO matching HAS-property token:
+    layer 0: h0=0.009  h1=0.102  h2=0.036  h3=0.007
+    layer 1: h0=0.053  h1=0.014  h2=0.037  h3=0.006
+    layer 2: h0=0.033  h1=0.076  h2=0.115  h3=0.041
+    layer 3: h0=0.058  h1=0.031  h2=0.045  h3=0.034
+    MAX mean mass: layer 2 head 2 = 0.115 (3.0x baseline) -> edge ABSENT
+  from QMARK -> match, per-layer max: L0=0.019  L1=0.147  L2=0.129  L3=0.078  (overall max 0.147)
+  from QMARK -> answer-symbol token (HAS target): max layer 0 head 3 = 0.107
+
+========================================================================================
+SUMMARY (query-arg -> matching occurrence, max over layers/heads):
+  seed0 composed_P         max 0.117 (3.1x baseline) ABSENT
+  seed0 property->symbol   max 0.112 (2.9x baseline) ABSENT
+  seed1 composed_P         max 0.092 (2.4x baseline) ABSENT
+  seed1 property->symbol   max 0.104 (2.7x baseline) ABSENT
+  seed2 composed_P         max 0.115 (3.0x baseline) ABSENT
+  seed2 property->symbol   max 0.100 (2.6x baseline) ABSENT
+VERDICT: EDGE ABSENT in all runs at train accuracy ~1.000 — the models solve the training pool by a non-attentional (non-matching) route; , the single most mechanistically informative result in Stage 2

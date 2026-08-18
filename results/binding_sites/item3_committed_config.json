@@ -1,0 +1,93 @@
+{
+  "verification": "stored generators + per-item predictions written during fits",
+  "baselines": {
+    "R_lex": "rank-2 unembedding-difference swap operator (phase8c_res_rlex.py, name_vectors.npz) evaluated at every position class x layer under C1/C3/C7",
+    "identity": "identity operator under the full battery (8C robustness lesson: fitted-R passes that identity also clears carry no positive evidence)"
+  },
+  "condition2_status": "unavailable, not waived",
+  "conditions": {
+    "C1": "disjoint-vocabulary transfer (fit-vocab R evaluated on transfer-vocab episodes), mandatory",
+    "C2": "unavailable, not waived \u2014 G-path failed the joint behavioural gate; cross-path transfer untestable within Item 3 scope",
+    "C3": "group laws: involution defects R12^2, R23^2; braid R12R23R12 = R23R12R23; 3-cycle closure \u2014 activation-weighted, as 8C",
+    "C4": "nontriviality + support tests: registered name-embedding-difference-span lt test AND as-run readout-span variant, both reported",
+    "C5": "causal patch-and-continue at the SINGLE best position-class x layer selected on CALIBRATION only; one GPU session; procedure and seeds frozen here: patch resid_post at the selected position with R-transported source vector, continue generation, transport_agree vs 10 shuffled-fit nulls + identity-fit null, tau = 0.95 quantile of null agreement; seeds 20260807",
+    "C6": "episode-local content/role probes, availability floor 0.9, availability-gated (as 8C)",
+    "C7": "joint-permutation transport (MANDATORY for H_role-at-binding): R fit on in-place P orbits must transport correctly on joint-permutation P episodes at the same position class x layer; thresholds from the same matched null machinery"
+  },
+  "layers": [
+    0,
+    4,
+    8,
+    12,
+    16,
+    20,
+    24,
+    28,
+    32,
+    36,
+    40,
+    44,
+    48,
+    52,
+    56,
+    60,
+    61,
+    64,
+    68,
+    72,
+    76,
+    79
+  ],
+  "maximal_achievable_claim": "P-path binding-site role code; task-generality untested.",
+  "phase": "9B (Item 3, P-only)",
+  "position_class_note": "entity_mention_carry: 3 per episode (per-slot); fact_final: per-clause finals; query_arg: 1; answer: 1 (continuity with 8C). Fits are per position-class x layer; for multi-token classes the class instance aligned to the permuted slot is used (slot s for R acting on slot pairs), defined by manifest order.",
+  "position_classes": [
+    "entity_mention_carry",
+    "fact_final",
+    "query_arg",
+    "answer"
+  ],
+  "power_note": "Holm at m=88: smallest-p cell must clear alpha/m=5.68e-04. With 10 shuffled nulls + quantile thresholds per cell, per-cell null exceedance is calibrated at the 5% quantile rule as in 8C; the grid-level correction is applied to the descriptive table. The VERDICT rule is not multiplicity-dependent: H_role-at-binding requires joint satisfaction of ALL mandatory conditions (C1, C3, C4, C7) at the SAME position-class x layer cell, which is a conjunction, not a sweep.",
+  "reporting_grid": {
+    "cells": 88,
+    "layers": 22,
+    "multiple_comparison": "Holm across the full 4x22=88 grid, alpha=0.05",
+    "position_classes": 4
+  },
+  "ridge_protocol": {
+    "form": "phase8c_lib dual-form R = Y^T (XX^T + lam I)^{-1} X on raw activations (no centering)",
+    "lambda_grid": [
+      1e-05,
+      0.0001,
+      0.001,
+      0.01,
+      0.1,
+      1.0
+    ],
+    "lambda_selection": "calibration split only, transfer-err criterion as 8C",
+    "nulls": "matched-regime shuffled-pair fits x10 (frozen seeds 0..9) + identity null, identical sample count and lambda grid per position-class x layer",
+    "thresholds": "calibration null quantiles per position-class, frozen before test reads; same quantile rules as results/phase8c/committed_config.json"
+  },
+  "scope": {
+    "path": "P only",
+    "sets": {
+      "in_place": "frozen 84f2e54d... P cells (disc for fits, gate for probes/sanity)",
+      "joint": "422b8fb9... joint_P_{fit,transfer} (condition 7 evaluation only)"
+    },
+    "vocabularies": [
+      "fit",
+      "transfer"
+    ]
+  },
+  "splits": {
+    "rule": "by base problem, orbit-complete, same as 8C: disc P bases split 50/50 calibration/test after strict-orbit filter; joint set split by the same base ids (joint bases are new; split 75/75 per vocab by sorted base_id parity)",
+    "single_evaluation": true
+  },
+  "verdict_space": {
+    "H_retrieval_everywhere": "no probed position carries a transportable operator distinguishable from identity/R_lex",
+    "H_role_at_binding": "C1+C3+C4+C7 all pass at >=1 non-answer position-class x layer cell, with R_lex and identity both failing where fitted R passes",
+    "inconclusive": "named blocking condition"
+  },
+  "written_before_any_phase9_activation_exists": true,
+  "written_utc": "2026-08-08T15:05:00Z"
+}

@@ -1,0 +1,37 @@
+{
+  "A_PS": {
+    "accuracy": 0.9861111111111112,
+    "strict_orbit": 0.9791666666666666,
+    "orbit_consistency": 0.9895833333333334
+  },
+  "A_SN": {
+    "accuracy": 0.9861111111111112,
+    "strict_orbit": 0.96875,
+    "orbit_consistency": 0.96875
+  },
+  "A_NS": {
+    "accuracy": 0.3732638888888889,
+    "strict_orbit": 0.3541666666666667,
+    "orbit_consistency": 0.9375
+  },
+  "A_SG": {
+    "accuracy": 0.9982638888888888,
+    "strict_orbit": 0.9895833333333334,
+    "orbit_consistency": 0.9895833333333334
+  },
+  "Q_P": {
+    "accuracy": 0.7222222222222222,
+    "strict_orbit": 0.3854166666666667,
+    "orbit_consistency": 0.3958333333333333
+  },
+  "Q_G": {
+    "accuracy": 0.71875,
+    "strict_orbit": 0.28125,
+    "orbit_consistency": 0.3020833333333333
+  },
+  "Q_3H": {
+    "accuracy": 0.3506944444444444,
+    "strict_orbit": 0.020833333333333332,
+    "orbit_consistency": 0.03125
+  }
+}

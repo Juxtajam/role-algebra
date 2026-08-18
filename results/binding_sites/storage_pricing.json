@@ -1,0 +1,52 @@
+{
+  "phase": "9-stage1-prep",
+  "inputs": {
+    "position_manifest": "results/phase9/position_manifest.json",
+    "layer_set": "results/phase9/layer_set.json"
+  },
+  "d_model": 8192,
+  "act_dtype": "float16",
+  "bytes_per_value": 2,
+  "n_layers_cached": 22,
+  "formula": "positions x layers x 8192 x 2 bytes",
+  "sets": {
+    "frozen": {
+      "episodes": 9600,
+      "positions": 110400,
+      "bytes": 39793459200,
+      "gb": 39.793,
+      "gib": 37.061
+    },
+    "joint": {
+      "episodes": 3600,
+      "positions": 41400,
+      "bytes": 14922547200,
+      "gb": 14.923,
+      "gib": 13.898
+    }
+  },
+  "total_bytes": 54716006400,
+  "total_gb": 54.716,
+  "total_gib": 50.958,
+  "usd_per_gb_month": 0.09,
+  "storage_usd_per_month": 4.92,
+  "comparison_8c": {
+    "note": "8A-final answer-position cache: 9600 eps x 80 layers x 8192 x 2 = 12.6 GB; this cache trades all-80-layers for the 22-layer pre-registered set across 10-14x the positions",
+    "bytes_8a_final": 12582912000
+  },
+  "session_estimate": {
+    "gpu": "A100-80GB:2",
+    "usd_per_hour": 5.0,
+    "anchors": "results/phase8a_final/session_meta.json (load 906 s), results/phase8a_final/gate_results.json (~45 s/600-ep gate cell), 8A-final caching ~17 min/9600 eps",
+    "components_s": {
+      "model_load": 906,
+      "joint_gate": 270,
+      "caching_both_sets": 1402,
+      "overhead": 900
+    },
+    "est_hours": 0.97,
+    "est_usd": 4.83,
+    "est_hours_buffered_1_5x": 1.45,
+    "est_usd_buffered_1_5x": 7.25
+  }
+}

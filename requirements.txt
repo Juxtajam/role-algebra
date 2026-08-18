@@ -1,0 +1,18 @@
+# Local analysis and reproduction environment. Python 3.11.
+# These packages run the CPU analysis and verification scripts and submit
+# remote jobs. Versions are pinned to what the analysis was run against.
+numpy==2.4.6
+scipy==1.17.1
+matplotlib==3.11.1
+requests==2.34.2
+modal==1.5.3
+
+# GPU capture and training run on Modal. Those scripts pin their own container
+# image versions in-file (torch==2.4.1, transformers==4.51.3); that in-script
+# pin is the reproducible record for the GPU sessions. You do not need a local
+# GPU or these packages to reproduce the analysis from cached artifacts.
+# torch==2.4.1
+# transformers==4.51.3
+# accelerate
+# safetensors
+# sentencepiece

@@ -1,0 +1,279 @@
+{
+ "config_sha256": "be8349c3468acbb82d14b67633a8452327eaf97f7c605846330de049c3731067",
+ "thresholds_sha256": "7e5fdac0c4e6976a2b5e83a6f2ddbe0b4ccdb9a11591f7540d54b870d430d0b7",
+ "results": {
+  "8/C": {
+   "answer": {
+    "spectrum": null,
+    "lam": 0.1,
+    "layer": 7,
+    "metrics": {
+     "content_transfer_err": null,
+     "crosspath_err": 1.0532562436438428,
+     "law_inv_defect": 0.18815689660516766,
+     "law_braid_defect": 0.00535812871508176,
+     "nontriv": 0.16053854000987955,
+     "noncommute": 0.006499865807820925,
+     "support_mass_lex": 0.013514346542562682,
+     "eff_rank": 83.19835652586147,
+     "transport_agree": 0.44589552238805974,
+     "probe_content_acc": 0.13059701492537312,
+     "probe_role_acc": 0.35323383084577115,
+     "probes_available": false,
+     "probe_content_keep": null,
+     "probe_role_perm": null
+    },
+    "ci_content_transfer": null,
+    "ci_crosspath": [
+     1.0328513672590751,
+     1.0753405714456001
+    ],
+    "joint_transport_err_descriptive": 0.6088090866118372,
+    "conditions": {
+     "C1_content_transfer": "unavailable",
+     "C2_crosspath": "pass",
+     "C3_group_laws": "fail",
+     "C4_nontriviality": "pass",
+     "C5_causal_transport": "pass",
+     "C6_content_preserve": "unavailable"
+    },
+    "verdict": "H_retrieval",
+    "score": 3.8110312602914376,
+    "n_test_bases": {
+     "P_fit": 134,
+     "P_transfer": 4,
+     "G_fit": 924
+    },
+    "eval_source": "P_fit_FALLBACK_in_sample"
+   },
+   "entity_mention_carry": {
+    "spectrum": null,
+    "lam": 0.1,
+    "layer": 0,
+    "metrics": {
+     "content_transfer_err": null,
+     "crosspath_err": 0.7295348830256267,
+     "law_inv_defect": 0.21842912300076,
+     "law_braid_defect": 0.0019248096279347662,
+     "nontriv": 0.16136843460896444,
+     "noncommute": 0.002519609319110451,
+     "support_mass_lex": 0.016063490764014813,
+     "eff_rank": 103.27140602891218,
+     "transport_agree": 0.6529850746268657,
+     "probe_content_acc": 0.07006633499170813,
+     "probe_role_acc": 0.3283582089552239,
+     "probes_available": false,
+     "probe_content_keep": null,
+     "probe_role_perm": null
+    },
+    "ci_content_transfer": null,
+    "ci_crosspath": [
+     0.7249777896131292,
+     0.7340123009034802
+    ],
+    "joint_transport_err_descriptive": 0.6305141549230446,
+    "conditions": {
+     "C1_content_transfer": "unavailable",
+     "C2_crosspath": "pass",
+     "C3_group_laws": "pass",
+     "C4_nontriviality": "fail",
+     "C5_causal_transport": "fail",
+     "C6_content_preserve": "unavailable"
+    },
+    "verdict": "H_retrieval",
+    "score": 2.780789306122241,
+    "n_test_bases": {
+     "P_fit": 134,
+     "P_transfer": 4,
+     "G_fit": 924
+    },
+    "eval_source": "P_fit_FALLBACK_in_sample"
+   },
+   "combined_verdict": "H_retrieval"
+  },
+  "9/C": {
+   "answer": {
+    "spectrum": null,
+    "lam": 0.1,
+    "layer": 7,
+    "metrics": {
+     "content_transfer_err": null,
+     "crosspath_err": 1.1793675740633947,
+     "law_inv_defect": 0.11762669635522935,
+     "law_braid_defect": 0.00292159473840565,
+     "nontriv": 0.0798995212017331,
+     "noncommute": 0.00227684987212312,
+     "support_mass_lex": 0.011239164032418689,
+     "eff_rank": 87.823685089431,
+     "transport_agree": 0.34375,
+     "probe_content_acc": 0.08143939393939394,
+     "probe_role_acc": 0.3390151515151515,
+     "probes_available": false,
+     "probe_content_keep": null,
+     "probe_role_perm": null
+    },
+    "ci_content_transfer": null,
+    "ci_crosspath": [
+     1.052361203277951,
+     1.354388998052331
+    ],
+    "joint_transport_err_descriptive": 0.6734216560839583,
+    "conditions": {
+     "C1_content_transfer": "unavailable",
+     "C2_crosspath": "pass",
+     "C3_group_laws": "fail",
+     "C4_nontriviality": "pass",
+     "C5_causal_transport": "fail",
+     "C6_content_preserve": "unavailable"
+    },
+    "verdict": "H_retrieval",
+    "score": 2.881490930341126,
+    "n_test_bases": {
+     "P_fit": 88,
+     "P_transfer": 2,
+     "G_fit": 39
+    },
+    "eval_source": "P_fit_FALLBACK_in_sample"
+   },
+   "entity_mention_carry": {
+    "spectrum": null,
+    "lam": 0.1,
+    "layer": 0,
+    "metrics": {
+     "content_transfer_err": null,
+     "crosspath_err": 0.765549200377612,
+     "law_inv_defect": 0.2590359908569737,
+     "law_braid_defect": 0.004571796959098784,
+     "nontriv": 0.20446078074728702,
+     "noncommute": 0.0054230091577659855,
+     "support_mass_lex": 0.016023374688912427,
+     "eff_rank": 100.49184774620835,
+     "transport_agree": 0.5738636363636364,
+     "probe_content_acc": 0.05618686868686869,
+     "probe_role_acc": 0.31691919191919193,
+     "probes_available": false,
+     "probe_content_keep": null,
+     "probe_role_perm": null
+    },
+    "ci_content_transfer": null,
+    "ci_crosspath": [
+     0.7472842412819557,
+     0.7845665834744228
+    ],
+    "joint_transport_err_descriptive": 0.6149705236054002,
+    "conditions": {
+     "C1_content_transfer": "unavailable",
+     "C2_crosspath": "pass",
+     "C3_group_laws": "fail",
+     "C4_nontriviality": "fail",
+     "C5_causal_transport": "fail",
+     "C6_content_preserve": "unavailable"
+    },
+    "verdict": "H_retrieval",
+    "score": 1.7402230451338832,
+    "n_test_bases": {
+     "P_fit": 88,
+     "P_transfer": 2,
+     "G_fit": 39
+    },
+    "eval_source": "P_fit_FALLBACK_in_sample"
+   },
+   "combined_verdict": "H_retrieval"
+  },
+  "9/R": {
+   "answer": {
+    "spectrum": null,
+    "lam": 0.01,
+    "layer": 4,
+    "metrics": {
+     "content_transfer_err": 2.0731916674305473,
+     "crosspath_err": 4.205824590135066,
+     "law_inv_defect": 0.03674614381349611,
+     "law_braid_defect": 0.0021787873292869533,
+     "nontriv": 0.03281102506854511,
+     "noncommute": 0.004479014075259795,
+     "support_mass_lex": 0.014007348637765576,
+     "eff_rank": 53.759006602403375,
+     "transport_agree": 0.3223684210526316,
+     "probe_content_acc": 0.08552631578947369,
+     "probe_role_acc": 0.3442982456140351,
+     "probes_available": false,
+     "probe_content_keep": null,
+     "probe_role_perm": null
+    },
+    "ci_content_transfer": [
+     1.9307376731016175,
+     2.2445022770149547
+    ],
+    "ci_crosspath": [
+     3.6874754162908445,
+     4.880123666696194
+    ],
+    "joint_transport_err_descriptive": 1.269314770798516,
+    "conditions": {
+     "C1_content_transfer": "pass",
+     "C2_crosspath": "pass",
+     "C3_group_laws": "fail",
+     "C4_nontriviality": "pass",
+     "C5_causal_transport": "fail",
+     "C6_content_preserve": "unavailable"
+    },
+    "verdict": "H_retrieval",
+    "score": 3.9622906023303175,
+    "n_test_bases": {
+     "P_fit": 93,
+     "P_transfer": 76,
+     "G_fit": 42
+    },
+    "eval_source": "P_transfer"
+   },
+   "entity_mention_carry": {
+    "spectrum": null,
+    "lam": 0.1,
+    "layer": 7,
+    "metrics": {
+     "content_transfer_err": 1.8680725314301454,
+     "crosspath_err": 0.7868540766870282,
+     "law_inv_defect": 0.046381366873180556,
+     "law_braid_defect": 0.0003128701113080404,
+     "nontriv": 0.03346787563152515,
+     "noncommute": 0.00034682752209787347,
+     "support_mass_lex": 0.0156479261888051,
+     "eff_rank": 118.3903756710582,
+     "transport_agree": 1.0,
+     "probe_content_acc": 0.041666666666666664,
+     "probe_role_acc": 0.3603801169590643,
+     "probes_available": false,
+     "probe_content_keep": null,
+     "probe_role_perm": null
+    },
+    "ci_content_transfer": [
+     1.7046538883487565,
+     2.0645682610142275
+    ],
+    "ci_crosspath": [
+     0.7520713898923598,
+     0.8262186486284999
+    ],
+    "joint_transport_err_descriptive": 0.7261510028101017,
+    "conditions": {
+     "C1_content_transfer": "pass",
+     "C2_crosspath": "pass",
+     "C3_group_laws": "pass",
+     "C4_nontriviality": "pass",
+     "C5_causal_transport": "fail",
+     "C6_content_preserve": "unavailable"
+    },
+    "verdict": "H_retrieval",
+    "score": 4.952665014493693,
+    "n_test_bases": {
+     "P_fit": 93,
+     "P_transfer": 76,
+     "G_fit": 42
+    },
+    "eval_source": "P_transfer"
+   },
+   "combined_verdict": "H_retrieval"
+  }
+ }
+}

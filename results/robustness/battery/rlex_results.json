@@ -1,0 +1,615 @@
+{
+  "construction": "R_lex = I + (D_after - D_before) @ pinv(D_before); fit bases = P/fit TEST (the fitted-R fit bases); u = lm_head readout rows (name_vectors.npz['readout'])",
+  "construction_residual": {
+    "R12": 0.9586249225786979,
+    "R23": 0.9687721576882276
+  },
+  "frob2_R_lex_minus_I": {
+    "R12": 11.645304210622891,
+    "R23": 11.524377431886725
+  },
+  "thresholds_frozen": {
+    "content_transfer_err": {
+      "dir": "lt",
+      "null_n": 120,
+      "tau": 1.3695955205796717
+    },
+    "crosspath_err": {
+      "dir": "lt",
+      "null_n": 120,
+      "tau": 1.6592365431636085
+    },
+    "law_inv_defect": {
+      "dir": "lt",
+      "null_n": 120,
+      "tau": 0.002131937550662754
+    },
+    "law_braid_defect": {
+      "dir": "lt",
+      "null_n": 120,
+      "tau": 0.000508120904867769
+    },
+    "nontriv": {
+      "dir": "gt",
+      "null_n": 12,
+      "tau": 0.11494681474007247
+    },
+    "noncommute": {
+      "dir": "gt",
+      "null_n": 12,
+      "tau": 0.0
+    },
+    "support_mass_lex": {
+      "dir": "lt",
+      "null_n": 132,
+      "tau": 0.0002445311819029563
+    }
+  },
+  "fitted_R_source": "results/phase8c/test_metrics.json (stored run)",
+  "layers": [
+    0,
+    8,
+    16,
+    24,
+    32,
+    40,
+    48,
+    56,
+    61,
+    64,
+    72,
+    79
+  ],
+  "verdict_layer": 61,
+  "per_layer": {
+    "0": {
+      "R_lex": {
+        "content_transfer_err": 2.0733904599376496,
+        "crosspath_err": 1.4814320572474862,
+        "crosspath_transfer_err_desc": 1.6435516309722094,
+        "law_inv_defect": 0.00048532112530617465,
+        "law_braid_defect": 5.375541934913318e-08,
+        "nontriv": 0.0005079455197866961,
+        "noncommute": 2.6269662332851376e-07,
+        "support_mass_lex": 0.0004892654888646348
+      },
+      "identity": {
+        "content_transfer_err": 1.0,
+        "crosspath_err": 1.0,
+        "crosspath_transfer_err_desc": 1.0,
+        "law_inv_defect": 0.0,
+        "law_braid_defect": 0.0,
+        "nontriv": 0.0,
+        "noncommute": 0.0,
+        "support_mass_lex": 0.0
+      },
+      "fitted_R_stored": {
+        "content_transfer_err": 5.601980884894817,
+        "content_transfer_ci": [
+          4.403871517479823,
+          7.480668709702944
+        ],
+        "crosspath_err": 6.893059500782745,
+        "crosspath_ci": [
+          5.400053784812958,
+          9.343228178580489
+        ],
+        "crosspath_transfer_err_desc": 9.147581063407795,
+        "law_inv_defect": 0.0036193209640762833,
+        "law_braid_defect": 4.8349136705052426e-08,
+        "nontriv": 0.0026224289652534835,
+        "noncommute": 9.881329459694384e-08,
+        "support_mass_lex": 0.00024427499428238993
+      }
+    },
+    "8": {
+      "R_lex": {
+        "content_transfer_err": 1.7504960704494859,
+        "crosspath_err": 1.9393480052336431,
+        "crosspath_transfer_err_desc": 1.8170759788713662,
+        "law_inv_defect": 0.0005141832310051651,
+        "law_braid_defect": 5.057902604390262e-08,
+        "nontriv": 0.0005357354858529077,
+        "noncommute": 3.9189518102570655e-07,
+        "support_mass_lex": 0.0004892654888646348
+      },
+      "identity": {
+        "content_transfer_err": 1.0,
+        "crosspath_err": 1.0,
+        "crosspath_transfer_err_desc": 1.0,
+        "law_inv_defect": 0.0,
+        "law_braid_defect": 0.0,
+        "nontriv": 0.0,
+        "noncommute": 0.0,
+        "support_mass_lex": 0.0
+      },
+      "fitted_R_stored": {
+        "content_transfer_err": 2.983941906763512,
+        "content_transfer_ci": [
+          2.762027687379597,
+          3.258155459383338
+        ],
+        "crosspath_err": 13.269033987186141,
+        "crosspath_ci": [
+          11.661850489147735,
+          15.26259172035331
+        ],
+        "crosspath_transfer_err_desc": 12.156100071316374,
+        "law_inv_defect": 0.002687118208450748,
+        "law_braid_defect": 1.4200934008181026e-08,
+        "nontriv": 0.002044154027732432,
+        "noncommute": 4.317987785128256e-08,
+        "support_mass_lex": 0.00024418232432636634
+      }
+    },
+    "16": {
+      "R_lex": {
+        "content_transfer_err": 2.365066864942265,
+        "crosspath_err": 2.7754912565706427,
+        "crosspath_transfer_err_desc": 2.521199924107266,
+        "law_inv_defect": 0.0008663284027342452,
+        "law_braid_defect": 2.53306998525691e-07,
+        "nontriv": 0.0008941357984559558,
+        "noncommute": 9.813674945793903e-07,
+        "support_mass_lex": 0.0004892654888646348
+      },
+      "identity": {
+        "content_transfer_err": 1.0,
+        "crosspath_err": 1.0,
+        "crosspath_transfer_err_desc": 1.0,
+        "law_inv_defect": 0.0,
+        "law_braid_defect": 0.0,
+        "nontriv": 0.0,
+        "noncommute": 0.0,
+        "support_mass_lex": 0.0
+      },
+      "fitted_R_stored": {
+        "content_transfer_err": 2.596836332213411,
+        "content_transfer_ci": [
+          2.4058655978112986,
+          2.82804269510433
+        ],
+        "crosspath_err": 18.43262653663468,
+        "crosspath_ci": [
+          16.5491605069535,
+          20.73703239175456
+        ],
+        "crosspath_transfer_err_desc": 16.494082145888683,
+        "law_inv_defect": 0.0020937198337858233,
+        "law_braid_defect": 1.740327363357623e-08,
+        "nontriv": 0.0016310922816394503,
+        "noncommute": 3.6963727307849315e-08,
+        "support_mass_lex": 0.00024419890921337836
+      }
+    },
+    "24": {
+      "R_lex": {
+        "content_transfer_err": 2.359980963410835,
+        "crosspath_err": 2.7587315189422554,
+        "crosspath_transfer_err_desc": 2.6607253809949767,
+        "law_inv_defect": 0.0005791062756424147,
+        "law_braid_defect": 1.9248190077517218e-07,
+        "nontriv": 0.0006268758013356951,
+        "noncommute": 1.3870252387934637e-06,
+        "support_mass_lex": 0.0004892654888646348
+      },
+      "identity": {
+        "content_transfer_err": 1.0,
+        "crosspath_err": 1.0,
+        "crosspath_transfer_err_desc": 1.0,
+        "law_inv_defect": 0.0,
+        "law_braid_defect": 0.0,
+        "nontriv": 0.0,
+        "noncommute": 0.0,
+        "support_mass_lex": 0.0
+      },
+      "fitted_R_stored": {
+        "content_transfer_err": 2.4228874156674944,
+        "content_transfer_ci": [
+          2.252915792439375,
+          2.6275407376566253
+        ],
+        "crosspath_err": 15.081879748495147,
+        "crosspath_ci": [
+          13.636446662983026,
+          16.81867164090778
+        ],
+        "crosspath_transfer_err_desc": 14.682966059031493,
+        "law_inv_defect": 0.0013256202511885999,
+        "law_braid_defect": 5.308651093512309e-09,
+        "nontriv": 0.0010779309535583724,
+        "noncommute": 9.460594001828282e-09,
+        "support_mass_lex": 0.00024414258248913856
+      }
+    },
+    "32": {
+      "R_lex": {
+        "content_transfer_err": 2.4026365926808433,
+        "crosspath_err": 2.5458813578871995,
+        "crosspath_transfer_err_desc": 2.5496481360389103,
+        "law_inv_defect": 0.0008690282395742357,
+        "law_braid_defect": 3.7350059691710014e-07,
+        "nontriv": 0.0010393757591780149,
+        "noncommute": 9.835639331758262e-07,
+        "support_mass_lex": 0.0004892654888646348
+      },
+      "identity": {
+        "content_transfer_err": 1.0,
+        "crosspath_err": 1.0,
+        "crosspath_transfer_err_desc": 1.0,
+        "law_inv_defect": 0.0,
+        "law_braid_defect": 0.0,
+        "nontriv": 0.0,
+        "noncommute": 0.0,
+        "support_mass_lex": 0.0
+      },
+      "fitted_R_stored": {
+        "content_transfer_err": 2.568684705040571,
+        "content_transfer_ci": [
+          2.430833976492903,
+          2.724188679439467
+        ],
+        "crosspath_err": 13.641074858080515,
+        "crosspath_ci": [
+          12.735093494175912,
+          14.636536141634148
+        ],
+        "crosspath_transfer_err_desc": 14.33721179800429,
+        "law_inv_defect": 0.002280380170200101,
+        "law_braid_defect": 1.4334570180301729e-08,
+        "nontriv": 0.0018332651238253048,
+        "noncommute": 2.9053438456476295e-08,
+        "support_mass_lex": 0.00024412334339053677
+      }
+    },
+    "40": {
+      "R_lex": {
+        "content_transfer_err": 2.0568910331348347,
+        "crosspath_err": 2.148346202168461,
+        "crosspath_transfer_err_desc": 2.151374165217373,
+        "law_inv_defect": 0.0005433775361768786,
+        "law_braid_defect": 1.87898836683974e-07,
+        "nontriv": 0.0006609414771412392,
+        "noncommute": 8.296770671726767e-07,
+        "support_mass_lex": 0.0004892654888646348
+      },
+      "identity": {
+        "content_transfer_err": 1.0,
+        "crosspath_err": 1.0,
+        "crosspath_transfer_err_desc": 1.0,
+        "law_inv_defect": 0.0,
+        "law_braid_defect": 0.0,
+        "nontriv": 0.0,
+        "noncommute": 0.0,
+        "support_mass_lex": 0.0
+      },
+      "fitted_R_stored": {
+        "content_transfer_err": 2.5927673771824007,
+        "content_transfer_ci": [
+          2.4599875360104875,
+          2.7405855824234338
+        ],
+        "crosspath_err": 16.069655362135187,
+        "crosspath_ci": [
+          15.133101381366767,
+          17.073771835348992
+        ],
+        "crosspath_transfer_err_desc": 17.028628314976977,
+        "law_inv_defect": 0.001955711353424555,
+        "law_braid_defect": 1.1006141180794575e-08,
+        "nontriv": 0.0015499068879013176,
+        "noncommute": 2.5256673216276192e-08,
+        "support_mass_lex": 0.000244127276223899
+      }
+    },
+    "48": {
+      "R_lex": {
+        "content_transfer_err": 1.7036684910298239,
+        "crosspath_err": 1.8205194858858522,
+        "crosspath_transfer_err_desc": 1.805679153667237,
+        "law_inv_defect": 0.000596213895413013,
+        "law_braid_defect": 3.7638657573176374e-07,
+        "nontriv": 0.0007254522036632084,
+        "noncommute": 1.516893260516773e-06,
+        "support_mass_lex": 0.0004892654888646348
+      },
+      "identity": {
+        "content_transfer_err": 1.0,
+        "crosspath_err": 1.0,
+        "crosspath_transfer_err_desc": 1.0,
+        "law_inv_defect": 0.0,
+        "law_braid_defect": 0.0,
+        "nontriv": 0.0,
+        "noncommute": 0.0,
+        "support_mass_lex": 0.0
+      },
+      "fitted_R_stored": {
+        "content_transfer_err": 2.4374311078184574,
+        "content_transfer_ci": [
+          2.3413482834540384,
+          2.543477585802369
+        ],
+        "crosspath_err": 21.251255943859345,
+        "crosspath_ci": [
+          20.359646340363255,
+          22.222670452017276
+        ],
+        "crosspath_transfer_err_desc": 21.45233648553257,
+        "law_inv_defect": 0.0030787219960741502,
+        "law_braid_defect": 4.250905181445643e-08,
+        "nontriv": 0.002401162858658587,
+        "noncommute": 7.651578680797242e-08,
+        "support_mass_lex": 0.00024409843301079486
+      }
+    },
+    "56": {
+      "R_lex": {
+        "content_transfer_err": 1.2077334239077553,
+        "crosspath_err": 1.2374943543972163,
+        "crosspath_transfer_err_desc": 1.248060914740295,
+        "law_inv_defect": 0.0015852233653714859,
+        "law_braid_defect": 9.680409827237944e-07,
+        "nontriv": 0.0018022634814723775,
+        "noncommute": 6.2680970054406064e-06,
+        "support_mass_lex": 0.0004892654888646348
+      },
+      "identity": {
+        "content_transfer_err": 1.0,
+        "crosspath_err": 1.0,
+        "crosspath_transfer_err_desc": 1.0,
+        "law_inv_defect": 0.0,
+        "law_braid_defect": 0.0,
+        "nontriv": 0.0,
+        "noncommute": 0.0,
+        "support_mass_lex": 0.0
+      },
+      "fitted_R_stored": {
+        "content_transfer_err": 1.7682900772060033,
+        "content_transfer_ci": [
+          1.648807150367019,
+          1.9050196663324934
+        ],
+        "crosspath_err": 10.793101052276475,
+        "crosspath_ci": [
+          10.102190855218591,
+          11.549051384138915
+        ],
+        "crosspath_transfer_err_desc": 11.266205295620416,
+        "law_inv_defect": 0.015237375602361884,
+        "law_braid_defect": 2.2702641595229355e-05,
+        "nontriv": 0.012310670207769207,
+        "noncommute": 2.095699678650808e-05,
+        "support_mass_lex": 0.00024400082104437934
+      }
+    },
+    "61": {
+      "R_lex": {
+        "content_transfer_err": 1.0487406821026855,
+        "content_transfer_ci": [
+          1.043815033217711,
+          1.05419228168815
+        ],
+        "crosspath_err": 1.0265090186381598,
+        "crosspath_ci": [
+          1.0241032236388086,
+          1.0292448630482307
+        ],
+        "crosspath_transfer_err_desc": 1.0277632153547216,
+        "law_inv_defect": 0.0010831223037826886,
+        "law_braid_defect": 5.269561875939958e-07,
+        "nontriv": 0.0012270620163115744,
+        "noncommute": 3.871967529180314e-06,
+        "law_inv_ci": [
+          0.0010655834135462011,
+          0.0011011770599079378
+        ],
+        "law_braid_ci": [
+          5.133995953297254e-07,
+          5.406767216495413e-07
+        ],
+        "nontriv_ci": [
+          0.0012067614207024189,
+          0.001247772405749643
+        ],
+        "support_mass_lex": 0.0004892654888646348
+      },
+      "identity": {
+        "content_transfer_err": 1.0,
+        "content_transfer_ci": [
+          1.0,
+          1.0
+        ],
+        "crosspath_err": 1.0,
+        "crosspath_ci": [
+          1.0,
+          1.0
+        ],
+        "crosspath_transfer_err_desc": 1.0,
+        "law_inv_defect": 0.0,
+        "law_braid_defect": 0.0,
+        "nontriv": 0.0,
+        "noncommute": 0.0,
+        "law_inv_ci": [
+          0.0,
+          0.0
+        ],
+        "law_braid_ci": [
+          0.0,
+          0.0
+        ],
+        "nontriv_ci": [
+          0.0,
+          0.0
+        ],
+        "support_mass_lex": 0.0
+      },
+      "fitted_R_stored": {
+        "content_transfer_err": 1.1858577458621062,
+        "content_transfer_ci": [
+          1.1301899730251965,
+          1.2466392768203765
+        ],
+        "crosspath_err": 3.4073253805277615,
+        "crosspath_ci": [
+          3.139847352019162,
+          3.716054750486127
+        ],
+        "crosspath_transfer_err_desc": 3.4125432947145313,
+        "law_inv_defect": 0.02648532832136252,
+        "law_braid_defect": 7.191315214029369e-05,
+        "nontriv": 0.02350092617548702,
+        "noncommute": 0.00010175482565950442,
+        "support_mass_lex": 0.0002442527143675167
+      }
+    },
+    "64": {
+      "R_lex": {
+        "content_transfer_err": 1.0205861499046605,
+        "crosspath_err": 1.0135035667622616,
+        "crosspath_transfer_err_desc": 1.0140756799922293,
+        "law_inv_defect": 0.000976568297498878,
+        "law_braid_defect": 7.276696688263028e-07,
+        "nontriv": 0.0011606601502881946,
+        "noncommute": 3.580577640760877e-06,
+        "support_mass_lex": 0.0004892654888646348
+      },
+      "identity": {
+        "content_transfer_err": 1.0,
+        "crosspath_err": 1.0,
+        "crosspath_transfer_err_desc": 1.0,
+        "law_inv_defect": 0.0,
+        "law_braid_defect": 0.0,
+        "nontriv": 0.0,
+        "noncommute": 0.0,
+        "support_mass_lex": 0.0
+      },
+      "fitted_R_stored": {
+        "content_transfer_err": 0.9406501845229578,
+        "content_transfer_ci": [
+          0.9214230197203515,
+          0.961147698729757
+        ],
+        "crosspath_err": 1.8287331044253798,
+        "crosspath_ci": [
+          1.7373279930966257,
+          1.9326443621156257
+        ],
+        "crosspath_transfer_err_desc": 1.9225618077396165,
+        "law_inv_defect": 0.04560848261104792,
+        "law_braid_defect": 0.00010410203473683271,
+        "nontriv": 0.044055079117497155,
+        "noncommute": 0.00021758288218310306,
+        "support_mass_lex": 0.00024419621964554493
+      }
+    },
+    "72": {
+      "R_lex": {
+        "content_transfer_err": 1.0153981991303924,
+        "crosspath_err": 1.0257388704104289,
+        "crosspath_transfer_err_desc": 1.0154773260352408,
+        "law_inv_defect": 0.0011950484732285147,
+        "law_braid_defect": 6.511851566566735e-07,
+        "nontriv": 0.0014429655637679208,
+        "noncommute": 4.269333858187859e-06,
+        "support_mass_lex": 0.0004892654888646348
+      },
+      "identity": {
+        "content_transfer_err": 1.0,
+        "crosspath_err": 1.0,
+        "crosspath_transfer_err_desc": 1.0,
+        "law_inv_defect": 0.0,
+        "law_braid_defect": 0.0,
+        "nontriv": 0.0,
+        "noncommute": 0.0,
+        "support_mass_lex": 0.0
+      },
+      "fitted_R_stored": {
+        "content_transfer_err": 1.1647469276177034,
+        "content_transfer_ci": [
+          1.1425902378358872,
+          1.187703819381971
+        ],
+        "crosspath_err": 0.9872987849348488,
+        "crosspath_ci": [
+          0.9598224063276132,
+          1.0168678502655522
+        ],
+        "crosspath_transfer_err_desc": 1.6064963891428283,
+        "law_inv_defect": 0.09529959873202729,
+        "law_braid_defect": 0.00017297549670338777,
+        "nontriv": 0.09848256421850621,
+        "noncommute": 0.00046354951692156176,
+        "support_mass_lex": 0.00024422245441201956
+      }
+    },
+    "79": {
+      "R_lex": {
+        "content_transfer_err": 1.0033484204118517,
+        "crosspath_err": 1.0821160060767796,
+        "crosspath_transfer_err_desc": 1.0072347533373225,
+        "law_inv_defect": 0.0010809925406414515,
+        "law_braid_defect": 2.2568103414806312e-07,
+        "nontriv": 0.0011983020695623503,
+        "noncommute": 3.2771808201576756e-06,
+        "support_mass_lex": 0.0004892654888646348
+      },
+      "identity": {
+        "content_transfer_err": 1.0,
+        "crosspath_err": 1.0,
+        "crosspath_transfer_err_desc": 1.0,
+        "law_inv_defect": 0.0,
+        "law_braid_defect": 0.0,
+        "nontriv": 0.0,
+        "noncommute": 0.0,
+        "support_mass_lex": 0.0
+      },
+      "fitted_R_stored": {
+        "content_transfer_err": 1.6663988653660757,
+        "content_transfer_ci": [
+          1.6206743886977988,
+          1.7170522311765497
+        ],
+        "crosspath_err": 0.8809055695566904,
+        "crosspath_ci": [
+          0.8414092156508356,
+          0.9246183255387986
+        ],
+        "crosspath_transfer_err_desc": 2.438738789283166,
+        "law_inv_defect": 0.24063339349657098,
+        "law_braid_defect": 0.0023965961909303956,
+        "nontriv": 0.2700939182903226,
+        "noncommute": 0.004647394285855318,
+        "support_mass_lex": 0.00024386986940551798
+      }
+    }
+  },
+  "verdict_layer_threshold_comparison": {
+    "R_lex": {
+      "content_transfer_err_lt_tau": true,
+      "crosspath_err_lt_tau": true,
+      "law_inv_defect_lt_tau": true,
+      "law_braid_defect_lt_tau": true,
+      "nontriv_gt_tau": false,
+      "noncommute_gt_tau": true,
+      "support_mass_lex_lt_tau": false
+    },
+    "identity": {
+      "content_transfer_err_lt_tau": true,
+      "crosspath_err_lt_tau": true,
+      "law_inv_defect_lt_tau": true,
+      "law_braid_defect_lt_tau": true,
+      "nontriv_gt_tau": false,
+      "noncommute_gt_tau": false,
+      "support_mass_lex_lt_tau": true
+    },
+    "fitted_R_stored": {
+      "content_transfer_err_lt_tau": true,
+      "crosspath_err_lt_tau": false,
+      "law_inv_defect_lt_tau": false,
+      "law_braid_defect_lt_tau": true,
+      "nontriv_gt_tau": false,
+      "noncommute_gt_tau": true,
+      "support_mass_lex_lt_tau": true
+    }
+  }
+}

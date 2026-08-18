@@ -1,0 +1,733 @@
+{
+  "config_sha256": "d9e0def3cb03b204aa2545344b5d595282fe1657df335cd3e98881fce9a8d2cb",
+  "layer": 61,
+  "lambda": 1.0,
+  "verdict_layer_metrics": {
+    "conditioning": {
+      "R12": {
+        "n_pairs": 900,
+        "d": 8192,
+        "lam": 1.0,
+        "lam_eff": 9013.974333417491,
+        "gram_eig_max": 68331280.50562327,
+        "gram_eig_min": 9.070432052277871,
+        "cond_regularised": 7573.972672892825,
+        "cond_unregularised_gram": 7533409.666903698
+      },
+      "R23": {
+        "n_pairs": 900,
+        "d": 8192,
+        "lam": 1.0,
+        "lam_eff": 9013.974333417491,
+        "gram_eig_max": 68331280.50562327,
+        "gram_eig_min": 9.070432052277871,
+        "cond_regularised": 7573.972672892825,
+        "cond_unregularised_gram": 7533409.666903698
+      }
+    },
+    "content_transfer_err": 1.1858577458621062,
+    "content_transfer_ci": [
+      1.1301899730251965,
+      1.2466392768203765
+    ],
+    "crosspath_err": 3.4073253805277615,
+    "crosspath_ci": [
+      3.139847352019162,
+      3.716054750486127
+    ],
+    "crosspath_transfer_err_desc": 3.4125432947145313,
+    "crosspath_transfer_ci_desc": [
+      3.1797380724580386,
+      3.6861043825869033
+    ],
+    "law_inv_defect": 0.02648532832136252,
+    "law_braid_defect": 7.191315214029369e-05,
+    "nontriv": 0.02350092617548702,
+    "noncommute": 0.00010175482565950442,
+    "law_inv_ci": [
+      0.02514861949506901,
+      0.027838862461077477
+    ],
+    "law_braid_ci": [
+      6.578909914523063e-05,
+      7.83267692752669e-05
+    ],
+    "nontriv_ci": [
+      0.022287903755690952,
+      0.024753926749465905
+    ],
+    "noncommute_ci": [
+      9.305898505086015e-05,
+      0.00011096656270810767
+    ],
+    "support_mass_lex": 0.0002442527143675167,
+    "support_mass_ci": [
+      0.0002441984500002239,
+      0.0002443036365443694
+    ],
+    "probe_content_acc": 0.29777777777777775,
+    "probe_role_acc": 0.8977777777777778,
+    "probes_available": false,
+    "probe_content_keep": null,
+    "probe_role_perm": null,
+    "eff_rank_R_minus_I_diag": 8131.9592699466275
+  },
+  "spectrum_diagnostic": {
+    "raw": {
+      "sing_vals_u": [
+        476.4298823886869,
+        2.9745686942640344,
+        2.051648698236431
+      ],
+      "span_dim": 1,
+      "sv_ratios": [
+        1.0,
+        0.006243455341949531,
+        0.004306297262359017
+      ],
+      "spectrum_R12": {
+        "real": [
+          0.999950034485303
+        ],
+        "imag": [
+          0.0
+        ]
+      },
+      "spectrum_R23": {
+        "real": [
+          0.9999931339490897
+        ],
+        "imag": [
+          0.0
+        ]
+      },
+      "stacked_min_sv": 5.043506036521949e-05,
+      "stacked_svs": [
+        5.043506036521949e-05
+      ],
+      "top_sv_A": 0.9999715842171963
+    },
+    "centered": {
+      "sing_vals_u": [
+        2.980837505758453,
+        2.052731167334298,
+        3.675180962475365e-14
+      ],
+      "span_dim": 2,
+      "sv_ratios": [
+        1.0,
+        0.6886424246101248,
+        1.2329356952116855e-14
+      ],
+      "spectrum_R12": {
+        "real": [
+          0.2747005124420035,
+          0.07779393037037954
+        ],
+        "imag": [
+          0.0,
+          0.0
+        ]
+      },
+      "spectrum_R23": {
+        "real": [
+          0.3682554666262735,
+          0.15411194607319462
+        ],
+        "imag": [
+          0.0,
+          0.0
+        ]
+      },
+      "stacked_min_sv": 0.9575533638005789,
+      "stacked_svs": [
+        1.259690380479715,
+        0.9575533638005789
+      ],
+      "top_sv_A": 0.3327992554569703
+    },
+    "tau_inv": {
+      "raw": 0.00025236183170117954,
+      "centered": 1.3261986575970286,
+      "null_min_svs_raw": [
+        0.0002594777792252406,
+        0.0002595294893534322,
+        0.00025466393826657384,
+        0.0002535031040478346,
+        0.00025675791244567916,
+        0.0002563848154531525,
+        0.00025142806341755267,
+        0.0002617123539309389,
+        0.00025977636862291136,
+        0.00025993007245419066
+      ],
+      "null_min_svs_cen": [
+        1.3752304838280631,
+        1.3656205016845266,
+        1.3441788986200396,
+        1.3114875513054742,
+        1.3844126189622186,
+        1.401890317126397,
+        1.3780627775272012,
+        1.3521013091381953,
+        1.4192946790659908,
+        1.3687554371858388
+      ],
+      "rule": "0.05 quantile of stacked-min-sv over the shuffled-null fits at the verdict layer (recalibrated per 8B section 2.5)"
+    }
+  },
+  "per_layer": {
+    "0": {
+      "content_transfer_err": 5.601980884894817,
+      "content_transfer_ci": [
+        4.403871517479823,
+        7.480668709702944
+      ],
+      "crosspath_err": 6.893059500782745,
+      "crosspath_ci": [
+        5.400053784812958,
+        9.343228178580489
+      ],
+      "crosspath_transfer_err_desc": 9.147581063407795,
+      "law_inv_defect": 0.0036193209640762833,
+      "law_braid_defect": 4.8349136705052426e-08,
+      "nontriv": 0.0026224289652534835,
+      "noncommute": 9.881329459694384e-08,
+      "support_mass_lex": 0.00024427499428238993,
+      "probe_content_acc": 0.6688888888888889,
+      "probe_role_acc": 0.34444444444444444,
+      "probes_available": false,
+      "probe_content_keep": null,
+      "probe_role_perm": null,
+      "eff_rank_R_minus_I_diag": 8177.013787594511,
+      "conditioning": {
+        "R12": {
+          "n_pairs": 900,
+          "d": 8192,
+          "lam": 1.0,
+          "lam_eff": 0.6055981811457635,
+          "gram_eig_max": 4926.321866444663,
+          "gram_eig_min": 4.490187793997267e-06,
+          "cond_regularised": 8135.577496341865,
+          "cond_unregularised_gram": 1097130474.8167648
+        },
+        "R23": {
+          "n_pairs": 900,
+          "d": 8192,
+          "lam": 1.0,
+          "lam_eff": 0.6055981811457635,
+          "gram_eig_max": 4926.321866444663,
+          "gram_eig_min": 4.490187793997267e-06,
+          "cond_regularised": 8135.577496341865,
+          "cond_unregularised_gram": 1097130474.8167648
+        }
+      }
+    },
+    "8": {
+      "content_transfer_err": 2.983941906763512,
+      "content_transfer_ci": [
+        2.762027687379597,
+        3.258155459383338
+      ],
+      "crosspath_err": 13.269033987186141,
+      "crosspath_ci": [
+        11.661850489147735,
+        15.26259172035331
+      ],
+      "crosspath_transfer_err_desc": 12.156100071316374,
+      "law_inv_defect": 0.002687118208450748,
+      "law_braid_defect": 1.4200934008181026e-08,
+      "nontriv": 0.002044154027732432,
+      "noncommute": 4.317987785128256e-08,
+      "support_mass_lex": 0.00024418232432636634,
+      "probe_content_acc": 0.7133333333333334,
+      "probe_role_acc": 0.33555555555555555,
+      "probes_available": false,
+      "probe_content_keep": null,
+      "probe_role_perm": null,
+      "eff_rank_R_minus_I_diag": 8183.306963346524,
+      "conditioning": {
+        "R12": {
+          "n_pairs": 900,
+          "d": 8192,
+          "lam": 1.0,
+          "lam_eff": 11.645330907485576,
+          "gram_eig_max": 94872.11562742257,
+          "gram_eig_min": 0.0007780958426286021,
+          "cond_regularised": 8147.249946846138,
+          "cond_unregularised_gram": 121928572.8438297
+        },
+        "R23": {
+          "n_pairs": 900,
+          "d": 8192,
+          "lam": 1.0,
+          "lam_eff": 11.645330907485576,
+          "gram_eig_max": 94872.11562742257,
+          "gram_eig_min": 0.0007780958426286021,
+          "cond_regularised": 8147.249946846138,
+          "cond_unregularised_gram": 121928572.8438297
+        }
+      }
+    },
+    "16": {
+      "content_transfer_err": 2.596836332213411,
+      "content_transfer_ci": [
+        2.4058655978112986,
+        2.82804269510433
+      ],
+      "crosspath_err": 18.43262653663468,
+      "crosspath_ci": [
+        16.5491605069535,
+        20.73703239175456
+      ],
+      "crosspath_transfer_err_desc": 16.494082145888683,
+      "law_inv_defect": 0.0020937198337858233,
+      "law_braid_defect": 1.740327363357623e-08,
+      "nontriv": 0.0016310922816394503,
+      "noncommute": 3.6963727307849315e-08,
+      "support_mass_lex": 0.00024419890921337836,
+      "probe_content_acc": 0.74,
+      "probe_role_acc": 0.34,
+      "probes_available": false,
+      "probe_content_keep": null,
+      "probe_role_perm": null,
+      "eff_rank_R_minus_I_diag": 8185.254522844967,
+      "conditioning": {
+        "R12": {
+          "n_pairs": 900,
+          "d": 8192,
+          "lam": 1.0,
+          "lam_eff": 50.432597446772185,
+          "gram_eig_max": 411558.5092786309,
+          "gram_eig_min": 0.005737480281457862,
+          "cond_regularised": 8160.636993099919,
+          "cond_unregularised_gram": 71731577.11908618
+        },
+        "R23": {
+          "n_pairs": 900,
+          "d": 8192,
+          "lam": 1.0,
+          "lam_eff": 50.432597446772185,
+          "gram_eig_max": 411558.5092786309,
+          "gram_eig_min": 0.005737480281457862,
+          "cond_regularised": 8160.636993099919,
+          "cond_unregularised_gram": 71731577.11908618
+        }
+      }
+    },
+    "24": {
+      "content_transfer_err": 2.4228874156674944,
+      "content_transfer_ci": [
+        2.252915792439375,
+        2.6275407376566253
+      ],
+      "crosspath_err": 15.081879748495147,
+      "crosspath_ci": [
+        13.636446662983026,
+        16.81867164090778
+      ],
+      "crosspath_transfer_err_desc": 14.682966059031493,
+      "law_inv_defect": 0.0013256202511885999,
+      "law_braid_defect": 5.308651093512309e-09,
+      "nontriv": 0.0010779309535583724,
+      "noncommute": 9.460594001828282e-09,
+      "support_mass_lex": 0.00024414258248913856,
+      "probe_content_acc": 0.6622222222222223,
+      "probe_role_acc": 0.3511111111111111,
+      "probes_available": false,
+      "probe_content_keep": null,
+      "probe_role_perm": null,
+      "eff_rank_R_minus_I_diag": 8187.834668015262,
+      "conditioning": {
+        "R12": {
+          "n_pairs": 900,
+          "d": 8192,
+          "lam": 1.0,
+          "lam_eff": 301.77236799034404,
+          "gram_eig_max": 2466940.573190607,
+          "gram_eig_min": 0.02704287699410005,
+          "cond_regularised": 8175.106566537079,
+          "cond_unregularised_gram": 91223303.41290314
+        },
+        "R23": {
+          "n_pairs": 900,
+          "d": 8192,
+          "lam": 1.0,
+          "lam_eff": 301.77236799034404,
+          "gram_eig_max": 2466940.573190607,
+          "gram_eig_min": 0.02704287699410005,
+          "cond_regularised": 8175.106566537079,
+          "cond_unregularised_gram": 91223303.41290314
+        }
+      }
+    },
+    "32": {
+      "content_transfer_err": 2.568684705040571,
+      "content_transfer_ci": [
+        2.430833976492903,
+        2.724188679439467
+      ],
+      "crosspath_err": 13.641074858080515,
+      "crosspath_ci": [
+        12.735093494175912,
+        14.636536141634148
+      ],
+      "crosspath_transfer_err_desc": 14.33721179800429,
+      "law_inv_defect": 0.002280380170200101,
+      "law_braid_defect": 1.4334570180301729e-08,
+      "nontriv": 0.0018332651238253048,
+      "noncommute": 2.9053438456476295e-08,
+      "support_mass_lex": 0.00024412334339053677,
+      "probe_content_acc": 0.5688888888888889,
+      "probe_role_acc": 0.34444444444444444,
+      "probes_available": false,
+      "probe_content_keep": null,
+      "probe_role_perm": null,
+      "eff_rank_R_minus_I_diag": 8185.202323412657,
+      "conditioning": {
+        "R12": {
+          "n_pairs": 900,
+          "d": 8192,
+          "lam": 1.0,
+          "lam_eff": 567.0799603254345,
+          "gram_eig_max": 4630273.7000064375,
+          "gram_eig_min": 0.09338456670192487,
+          "cond_regularised": 8164.771531792356,
+          "cond_unregularised_gram": 49582857.891131565
+        },
+        "R23": {
+          "n_pairs": 900,
+          "d": 8192,
+          "lam": 1.0,
+          "lam_eff": 567.0799603254345,
+          "gram_eig_max": 4630273.7000064375,
+          "gram_eig_min": 0.09338456670192487,
+          "cond_regularised": 8164.771531792356,
+          "cond_unregularised_gram": 49582857.891131565
+        }
+      }
+    },
+    "40": {
+      "content_transfer_err": 2.5927673771824007,
+      "content_transfer_ci": [
+        2.4599875360104875,
+        2.7405855824234338
+      ],
+      "crosspath_err": 16.069655362135187,
+      "crosspath_ci": [
+        15.133101381366767,
+        17.073771835348992
+      ],
+      "crosspath_transfer_err_desc": 17.028628314976977,
+      "law_inv_defect": 0.001955711353424555,
+      "law_braid_defect": 1.1006141180794575e-08,
+      "nontriv": 0.0015499068879013176,
+      "noncommute": 2.5256673216276192e-08,
+      "support_mass_lex": 0.000244127276223899,
+      "probe_content_acc": 0.5555555555555556,
+      "probe_role_acc": 0.3511111111111111,
+      "probes_available": false,
+      "probe_content_keep": null,
+      "probe_role_perm": null,
+      "eff_rank_R_minus_I_diag": 8185.895128969065,
+      "conditioning": {
+        "R12": {
+          "n_pairs": 900,
+          "d": 8192,
+          "lam": 1.0,
+          "lam_eff": 1036.5613411485638,
+          "gram_eig_max": 8467575.023245465,
+          "gram_eig_min": 0.18075144671782445,
+          "cond_regularised": 8168.4843753060095,
+          "cond_unregularised_gram": 46846513.13726084
+        },
+        "R23": {
+          "n_pairs": 900,
+          "d": 8192,
+          "lam": 1.0,
+          "lam_eff": 1036.5613411485638,
+          "gram_eig_max": 8467575.023245465,
+          "gram_eig_min": 0.18075144671782445,
+          "cond_regularised": 8168.4843753060095,
+          "cond_unregularised_gram": 46846513.13726084
+        }
+      }
+    },
+    "48": {
+      "content_transfer_err": 2.4374311078184574,
+      "content_transfer_ci": [
+        2.3413482834540384,
+        2.543477585802369
+      ],
+      "crosspath_err": 21.251255943859345,
+      "crosspath_ci": [
+        20.359646340363255,
+        22.222670452017276
+      ],
+      "crosspath_transfer_err_desc": 21.45233648553257,
+      "law_inv_defect": 0.0030787219960741502,
+      "law_braid_defect": 4.250905181445643e-08,
+      "nontriv": 0.002401162858658587,
+      "noncommute": 7.651578680797242e-08,
+      "support_mass_lex": 0.00024409843301079486,
+      "probe_content_acc": 0.5666666666666667,
+      "probe_role_acc": 0.35333333333333333,
+      "probes_available": false,
+      "probe_content_keep": null,
+      "probe_role_perm": null,
+      "eff_rank_R_minus_I_diag": 8182.183915601409,
+      "conditioning": {
+        "R12": {
+          "n_pairs": 900,
+          "d": 8192,
+          "lam": 1.0,
+          "lam_eff": 1973.531473331568,
+          "gram_eig_max": 16091530.858983265,
+          "gram_eig_min": 0.3857900801248223,
+          "cond_regularised": 8153.079507821312,
+          "cond_unregularised_gram": 41710587.41006729
+        },
+        "R23": {
+          "n_pairs": 900,
+          "d": 8192,
+          "lam": 1.0,
+          "lam_eff": 1973.531473331568,
+          "gram_eig_max": 16091530.858983265,
+          "gram_eig_min": 0.3857900801248223,
+          "cond_regularised": 8153.079507821312,
+          "cond_unregularised_gram": 41710587.41006729
+        }
+      }
+    },
+    "56": {
+      "content_transfer_err": 1.7682900772060033,
+      "content_transfer_ci": [
+        1.648807150367019,
+        1.9050196663324934
+      ],
+      "crosspath_err": 10.793101052276475,
+      "crosspath_ci": [
+        10.102190855218591,
+        11.549051384138915
+      ],
+      "crosspath_transfer_err_desc": 11.266205295620416,
+      "law_inv_defect": 0.015237375602361884,
+      "law_braid_defect": 2.2702641595229355e-05,
+      "nontriv": 0.012310670207769207,
+      "noncommute": 2.095699678650808e-05,
+      "support_mass_lex": 0.00024400082104437934,
+      "probe_content_acc": 0.4177777777777778,
+      "probe_role_acc": 0.6177777777777778,
+      "probes_available": false,
+      "probe_content_keep": null,
+      "probe_role_perm": null,
+      "eff_rank_R_minus_I_diag": 8147.655162307341,
+      "conditioning": {
+        "R12": {
+          "n_pairs": 900,
+          "d": 8192,
+          "lam": 1.0,
+          "lam_eff": 4565.84034187879,
+          "gram_eig_max": 35491973.253786996,
+          "gram_eig_min": 2.9561552875141683,
+          "cond_regularised": 7769.3412512780615,
+          "cond_unregularised_gram": 12006126.134067945
+        },
+        "R23": {
+          "n_pairs": 900,
+          "d": 8192,
+          "lam": 1.0,
+          "lam_eff": 4565.84034187879,
+          "gram_eig_max": 35491973.253786996,
+          "gram_eig_min": 2.9561552875141683,
+          "cond_regularised": 7769.3412512780615,
+          "cond_unregularised_gram": 12006126.134067945
+        }
+      }
+    },
+    "61": {
+      "content_transfer_err": 1.1858577458621062,
+      "content_transfer_ci": [
+        1.1301899730251965,
+        1.2466392768203765
+      ],
+      "crosspath_err": 3.4073253805277615,
+      "crosspath_ci": [
+        3.139847352019162,
+        3.716054750486127
+      ],
+      "crosspath_transfer_err_desc": 3.4125432947145313,
+      "law_inv_defect": 0.02648532832136252,
+      "law_braid_defect": 7.191315214029369e-05,
+      "nontriv": 0.02350092617548702,
+      "noncommute": 0.00010175482565950442,
+      "support_mass_lex": 0.0002442527143675167,
+      "probe_content_acc": 0.29777777777777775,
+      "probe_role_acc": 0.8977777777777778,
+      "probes_available": false,
+      "probe_content_keep": null,
+      "probe_role_perm": null,
+      "eff_rank_R_minus_I_diag": 8131.9592699466275,
+      "conditioning": {
+        "R12": {
+          "n_pairs": 900,
+          "d": 8192,
+          "lam": 1.0,
+          "lam_eff": 9013.974333417491,
+          "gram_eig_max": 68331280.50562327,
+          "gram_eig_min": 9.070432052277871,
+          "cond_regularised": 7573.972672892825,
+          "cond_unregularised_gram": 7533409.666903698
+        },
+        "R23": {
+          "n_pairs": 900,
+          "d": 8192,
+          "lam": 1.0,
+          "lam_eff": 9013.974333417491,
+          "gram_eig_max": 68331280.50562327,
+          "gram_eig_min": 9.070432052277871,
+          "cond_regularised": 7573.972672892825,
+          "cond_unregularised_gram": 7533409.666903698
+        }
+      }
+    },
+    "64": {
+      "content_transfer_err": 0.9406501845229578,
+      "content_transfer_ci": [
+        0.9214230197203515,
+        0.961147698729757
+      ],
+      "crosspath_err": 1.8287331044253798,
+      "crosspath_ci": [
+        1.7373279930966257,
+        1.9326443621156257
+      ],
+      "crosspath_transfer_err_desc": 1.9225618077396165,
+      "law_inv_defect": 0.04560848261104792,
+      "law_braid_defect": 0.00010410203473683271,
+      "nontriv": 0.044055079117497155,
+      "noncommute": 0.00021758288218310306,
+      "support_mass_lex": 0.00024419621964554493,
+      "probe_content_acc": 0.32,
+      "probe_role_acc": 1.0,
+      "probes_available": false,
+      "probe_content_keep": null,
+      "probe_role_perm": null,
+      "eff_rank_R_minus_I_diag": 8124.733304708889,
+      "conditioning": {
+        "R12": {
+          "n_pairs": 900,
+          "d": 8192,
+          "lam": 1.0,
+          "lam_eff": 13237.380565296946,
+          "gram_eig_max": 99885879.56476028,
+          "gram_eig_min": 12.423311640106899,
+          "cond_regularised": 7539.667596077595,
+          "cond_unregularised_gram": 8040197.53012497
+        },
+        "R23": {
+          "n_pairs": 900,
+          "d": 8192,
+          "lam": 1.0,
+          "lam_eff": 13237.380565296946,
+          "gram_eig_max": 99885879.56476028,
+          "gram_eig_min": 12.423311640106899,
+          "cond_regularised": 7539.667596077595,
+          "cond_unregularised_gram": 8040197.53012497
+        }
+      }
+    },
+    "72": {
+      "content_transfer_err": 1.1647469276177034,
+      "content_transfer_ci": [
+        1.1425902378358872,
+        1.187703819381971
+      ],
+      "crosspath_err": 0.9872987849348488,
+      "crosspath_ci": [
+        0.9598224063276132,
+        1.0168678502655522
+      ],
+      "crosspath_transfer_err_desc": 1.6064963891428283,
+      "law_inv_defect": 0.09529959873202729,
+      "law_braid_defect": 0.00017297549670338777,
+      "nontriv": 0.09848256421850621,
+      "noncommute": 0.00046354951692156176,
+      "support_mass_lex": 0.00024422245441201956,
+      "probe_content_acc": 0.46,
+      "probe_role_acc": 1.0,
+      "probes_available": false,
+      "probe_content_keep": null,
+      "probe_role_perm": null,
+      "eff_rank_R_minus_I_diag": 8104.387225243276,
+      "conditioning": {
+        "R12": {
+          "n_pairs": 900,
+          "d": 8192,
+          "lam": 1.0,
+          "lam_eff": 36067.52404854672,
+          "gram_eig_max": 268216203.31060934,
+          "gram_eig_min": 37.32125369677667,
+          "cond_regularised": 7429.813605045113,
+          "cond_unregularised_gram": 7186687.925592767
+        },
+        "R23": {
+          "n_pairs": 900,
+          "d": 8192,
+          "lam": 1.0,
+          "lam_eff": 36067.52404854672,
+          "gram_eig_max": 268216203.31060934,
+          "gram_eig_min": 37.32125369677667,
+          "cond_regularised": 7429.813605045113,
+          "cond_unregularised_gram": 7186687.925592767
+        }
+      }
+    },
+    "79": {
+      "content_transfer_err": 1.6663988653660757,
+      "content_transfer_ci": [
+        1.6206743886977988,
+        1.7170522311765497
+      ],
+      "crosspath_err": 0.8809055695566904,
+      "crosspath_ci": [
+        0.8414092156508356,
+        0.9246183255387986
+      ],
+      "crosspath_transfer_err_desc": 2.438738789283166,
+      "law_inv_defect": 0.24063339349657098,
+      "law_braid_defect": 0.0023965961909303956,
+      "nontriv": 0.2700939182903226,
+      "noncommute": 0.004647394285855318,
+      "support_mass_lex": 0.00024386986940551798,
+      "probe_content_acc": 0.3422222222222222,
+      "probe_role_acc": 1.0,
+      "probes_available": false,
+      "probe_content_keep": null,
+      "probe_role_perm": null,
+      "eff_rank_R_minus_I_diag": 7995.73488874708,
+      "conditioning": {
+        "R12": {
+          "n_pairs": 900,
+          "d": 8192,
+          "lam": 1.0,
+          "lam_eff": 10378.80469618735,
+          "gram_eig_max": 64948240.06717625,
+          "gram_eig_min": 11.555690112532371,
+          "cond_regularised": 6251.815765459209,
+          "cond_unregularised_gram": 5620455.328473945
+        },
+        "R23": {
+          "n_pairs": 900,
+          "d": 8192,
+          "lam": 1.0,
+          "lam_eff": 10378.80469618735,
+          "gram_eig_max": 64948240.06717625,
+          "gram_eig_min": 11.555690112532371,
+          "cond_regularised": 6251.815765459209,
+          "cond_unregularised_gram": 5620455.328473945
+        }
+      }
+    }
+  }
+}

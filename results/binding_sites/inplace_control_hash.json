@@ -1,0 +1,24 @@
+{
+  "phase": "9-item2-prep",
+  "set": "inplace-base-draw-control",
+  "hash_definition": "sha256 over concatenation of 'relpath:sha256(file)\\n' lines, sorted by relpath (8A-final freeze definition, phase8a_final_freeze.py)",
+  "files": {
+    "tasks_inplace_control/inplace_G_fit.jsonl": "9263dd3ea3fb1902bf26aa1b3bdf21880b04371f43b23132b4d897092a484eee",
+    "tasks_inplace_control/inplace_G_transfer.jsonl": "46f99539f2a6ac580ca286521719aca9dc0d7c19bf9268ec3d5d88ab940006bc",
+    "tasks_inplace_control/manifest.json": "5ae8a5f0be08f7247fdcdc72f25afa99fc0da9bcc0288b9ff59d3c0dcb9ad990",
+    "tasks_inplace_control/README.md": "5aece3470cc61729277a191b42c8ae85dab7f51f73c12a4b6ed8e05514db347a",
+    "code/phase9_generate_inplace_control.py": "b59a7d47ab23eac4e14149867faf23c29ecd827d06b112740d42e5c904f1b2ed",
+    "phase8a_generate_tasks.py": "d7b52a1d6482d9286ef2e9f9ab4c86256cb3b664a84e10b89e85cff7b3389bca"
+  },
+  "content_hash": "6b97e81095ecf5784b015d296cfb9cc0021d73c9318c0020af5503bf8523b532",
+  "episode_counts": {
+    "tasks_inplace_control/inplace_G_fit.jsonl": 900,
+    "tasks_inplace_control/inplace_G_transfer.jsonl": 900
+  },
+  "n_bases_per_cell": 150,
+  "k": 3,
+  "perms_per_base": 6,
+  "base_source": "same G base problems as the joint set (master seed 20260808, same rng stream; equality asserted per base_id at generation, see tasks_inplace_control/manifest.json base_identity_check)",
+  "joint_set_hash": "422b8fb97a255092cb5e3934a69e0ad7746bf891052a1edd125c3f1057933db2",
+  "frozen_set_hash": "84f2e54d85d6e8aa4c1474b608bef5ab69babe54353ef0ef2702d9f6ed38baef"
+}

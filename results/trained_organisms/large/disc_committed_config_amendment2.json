@@ -1,0 +1,13 @@
+{
+ "amends": "disc_committed_config.json (sha256 be8349c3...) after amendment 1 (a0b4a5e4...)",
+ "date": "2026-08-15",
+ "declared_before": "any generator fit, threshold, or test metric exists. Only cache-stage strict-orbit COUNTS observed: seed9/R P_transfer 153/1800, G 85/6000; seed8/C P_transfer 9/1800, G 1849/6000; seed9/C P_transfer 4/1800, G 79/6000.",
+ "finding_recorded": "Arm C (24-name retrieval-sufficient training) has near-zero transfer-vocabulary strict-orbit competence (4-9 bases of 1800): retrieval training does not learn to emit never-trained names through the tied readout, so the disjoint-vocabulary condition C1 is structurally near-unposable on Arm C organisms. Arm R (800-name role-rewarding) retains a usable transfer universe. This asymmetry is reported as a training-outcome result in its own right.",
+ "rules": {
+  "min_universe_floor": "C1 and C2 are computed only if the post-split TEST universe of their eval cell has >= 20 bases; otherwise the condition is recorded UNAVAILABLE (not pass, not fail). Frozen verdict logic then applies (mandatory-condition unavailability -> inconclusive).",
+  "calibration_fallback": "In cells where the calibration transfer universe < 20 bases, lambda/layer selection uses the calibration CROSSPATH (disc_G_fit) error curve in place of the transfer curve, and transfer-based null metrics are skipped for that cell's thresholds. All other rules unchanged.",
+  "probe_eval_fallback": "Where the transfer test universe < 20 bases, C6 probes evaluate on the disc_P_fit test split instead (probes train on cal, disjoint bases), recorded as such.",
+  "heldout_state_fallback": "Where the transfer test universe < 20 bases, every battery component that consumes P/transfer TEST data (group-law H states, support_mass_lex episodes, C5 transport eval pairs, C6 probe eval) uses the disc_P_fit TEST split instead (disjoint from fit bases only via the even/odd cal/test split within P_fit: the generator fit itself uses P_fit test bases, so in fallback cells C3/C4/C5 are evaluated on the SAME bases the generators were fitted on - recorded as a scope loss for those cells: their group-law and transport numbers are in-sample and weaker evidence than Arm R's held-out equivalents). C1 remains UNAVAILABLE in such cells regardless."
+ },
+ "rationale": "Computing a mandatory condition on 2-4 bases would manufacture a pass/fail from noise; the floor converts it to an honest UNAVAILABLE. The fallbacks keep the remaining battery evaluable. No metric value existed when this was declared."
+}

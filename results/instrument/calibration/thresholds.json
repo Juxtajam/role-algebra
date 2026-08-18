@@ -1,0 +1,181 @@
+{
+  "stage1": {
+    "lambda": 0.01,
+    "fpr_target": 0.05,
+    "thresholds": {
+      "content_transfer_err": {
+        "dir": "lt",
+        "tau": 0.5861397489772031,
+        "null_n": 216
+      },
+      "crosspath_err": {
+        "dir": "lt",
+        "tau": 0.5908406279911717,
+        "null_n": 216
+      },
+      "law_inv_defect": {
+        "dir": "lt",
+        "tau": 0.4992170096550311,
+        "null_n": 216
+      },
+      "law_braid_defect": {
+        "dir": "lt",
+        "tau": 0.8231025207174953,
+        "null_n": 216
+      },
+      "nontriv": {
+        "dir": "gt",
+        "tau": 0.2892955209414535,
+        "null_n": 144
+      },
+      "noncommute": {
+        "dir": "gt",
+        "tau": 0.06634482815501298,
+        "null_n": 144
+      },
+      "support_mass": {
+        "dir": "gt",
+        "tau": 0.04001363677113465,
+        "null_n": 216
+      },
+      "transport_agree": {
+        "dir": "gt",
+        "tau": 0.38300781250000004,
+        "null_n": 360
+      },
+      "probe_content_keep": {
+        "dir": "gt",
+        "tau": 0.18151041666666662,
+        "null_n": 144
+      },
+      "probe_role_perm": {
+        "dir": "gt",
+        "tau": 0.3926432291666666,
+        "null_n": 144
+      }
+    },
+    "runs": {
+      "S-role@10": {
+        "layer": 0,
+        "first_decodable": 0,
+        "cal_transfer_err_by_layer": [
+          0.007859257454546983,
+          0.007832075990082121,
+          0.007862295327768236,
+          0.007932142394327504
+        ]
+      },
+      "S-role@3": {
+        "layer": 0,
+        "first_decodable": 0,
+        "cal_transfer_err_by_layer": [
+          0.08178697214804226,
+          0.0829578933334234,
+          0.0826332871861779,
+          0.083356499645977
+        ]
+      },
+      "S-role@1": {
+        "layer": 0,
+        "first_decodable": 0,
+        "cal_transfer_err_by_layer": [
+          0.40706796097491627,
+          0.4069732222418193,
+          0.399663620135727,
+          0.4057271121802013
+        ]
+      },
+      "S-shared@10": {
+        "layer": 0,
+        "first_decodable": 0,
+        "cal_transfer_err_by_layer": [
+          0.014515576074681796,
+          0.014433414130137708,
+          0.014474101425082014,
+          0.01455655623074906
+        ]
+      },
+      "S-shared@3": {
+        "layer": 0,
+        "first_decodable": 0,
+        "cal_transfer_err_by_layer": [
+          0.14049272752645042,
+          0.14203645338181098,
+          0.14242355530201545,
+          0.1428179111972918
+        ]
+      },
+      "S-shared@1": {
+        "layer": 0,
+        "first_decodable": 0,
+        "cal_transfer_err_by_layer": [
+          0.5133658015628468,
+          0.5132250485382911,
+          0.5094749807513471,
+          0.5129397325663505
+        ]
+      },
+      "S-retrieval@10": {
+        "layer": 0,
+        "first_decodable": 3,
+        "cal_transfer_err_by_layer": [
+          0.5861397489772031,
+          0.5867317564938118,
+          0.587960327038614,
+          0.5870476977271861
+        ]
+      },
+      "S-retrieval@3": {
+        "layer": 2,
+        "first_decodable": 3,
+        "cal_transfer_err_by_layer": [
+          0.6272224822439911,
+          0.6286668184837843,
+          0.6241895514636615,
+          0.6253978404413221
+        ]
+      },
+      "S-retrieval@1": {
+        "layer": 2,
+        "first_decodable": 3,
+        "cal_transfer_err_by_layer": [
+          0.6917861266747529,
+          0.6922495396786708,
+          0.6910766625856121,
+          0.6922627610072749
+        ]
+      },
+      "S-position@10": {
+        "layer": 0,
+        "first_decodable": 3,
+        "cal_transfer_err_by_layer": [
+          0.8085220317543582,
+          0.8126194416282645,
+          0.8093299169004994,
+          0.8097134434573623
+        ]
+      },
+      "S-position@3": {
+        "layer": 2,
+        "first_decodable": 3,
+        "cal_transfer_err_by_layer": [
+          0.8326390800802929,
+          0.8316933945284791,
+          0.8289381924005943,
+          0.8372581784063453
+        ]
+      },
+      "S-position@1": {
+        "layer": 1,
+        "first_decodable": 3,
+        "cal_transfer_err_by_layer": [
+          0.8073887940143973,
+          0.7945900757316102,
+          0.8083740860176356,
+          0.8082203647472934
+        ]
+      }
+    },
+    "frozen_at": "2026-08-06 19:54:21"
+  }
+}

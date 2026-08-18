@@ -1,0 +1,402 @@
+[
+  {
+    "step": 1000,
+    "loss": 1.3475157022476196,
+    "train_acc": 0.2708333333333333,
+    "train_strict": 0.0,
+    "heldperm_acc": 0.18055555555555555,
+    "heldperm_strict": 0.0,
+    "transfer_acc": 0.27662037037037035,
+    "frozen_ok": true
+  },
+  {
+    "step": 2000,
+    "loss": 0.5352160930633545,
+    "train_acc": 0.27199074074074076,
+    "train_strict": 0.0,
+    "heldperm_acc": 0.19791666666666666,
+    "heldperm_strict": 0.0,
+    "transfer_acc": 0.2662037037037037,
+    "frozen_ok": true
+  },
+  {
+    "step": 3000,
+    "loss": 2.0418927669525146,
+    "train_acc": 0.2673611111111111,
+    "train_strict": 0.0,
+    "heldperm_acc": 0.21354166666666666,
+    "heldperm_strict": 0.0,
+    "transfer_acc": 0.2638888888888889,
+    "frozen_ok": true
+  },
+  {
+    "step": 4000,
+    "loss": 0.5519673824310303,
+    "train_acc": 0.27372685185185186,
+    "train_strict": 0.0,
+    "heldperm_acc": 0.2222222222222222,
+    "heldperm_strict": 0.0,
+    "transfer_acc": 0.25578703703703703,
+    "frozen_ok": true
+  },
+  {
+    "step": 5000,
+    "loss": 3.8349363803863525,
+    "train_acc": 0.26967592592592593,
+    "train_strict": 0.0,
+    "heldperm_acc": 0.22569444444444445,
+    "heldperm_strict": 0.0,
+    "transfer_acc": 0.26273148148148145,
+    "frozen_ok": true
+  },
+  {
+    "step": 6000,
+    "loss": 1.5478267669677734,
+    "train_acc": 0.2644675925925926,
+    "train_strict": 0.0,
+    "heldperm_acc": 0.22743055555555555,
+    "heldperm_strict": 0.0,
+    "transfer_acc": 0.2621527777777778,
+    "frozen_ok": true
+  },
+  {
+    "step": 7000,
+    "loss": 0.5127933621406555,
+    "train_acc": 0.2604166666666667,
+    "train_strict": 0.0,
+    "heldperm_acc": 0.2065972222222222,
+    "heldperm_strict": 0.0,
+    "transfer_acc": 0.2604166666666667,
+    "frozen_ok": true
+  },
+  {
+    "step": 8000,
+    "loss": 2.0243303775787354,
+    "train_acc": 0.2638888888888889,
+    "train_strict": 0.0,
+    "heldperm_acc": 0.21180555555555555,
+    "heldperm_strict": 0.0,
+    "transfer_acc": 0.26157407407407407,
+    "frozen_ok": true
+  },
+  {
+    "step": 9000,
+    "loss": 0.6015031337738037,
+    "train_acc": 0.25925925925925924,
+    "train_strict": 0.0,
+    "heldperm_acc": 0.2048611111111111,
+    "heldperm_strict": 0.0,
+    "transfer_acc": 0.2569444444444444,
+    "frozen_ok": true
+  },
+  {
+    "step": 10000,
+    "loss": 4.218118190765381,
+    "train_acc": 0.2638888888888889,
+    "train_strict": 0.0,
+    "heldperm_acc": 0.2309027777777778,
+    "heldperm_strict": 0.0,
+    "transfer_acc": 0.2569444444444444,
+    "frozen_ok": true
+  },
+  {
+    "step": 11000,
+    "loss": 1.3703559637069702,
+    "train_acc": 0.27141203703703703,
+    "train_strict": 0.0,
+    "heldperm_acc": 0.2048611111111111,
+    "heldperm_strict": 0.0,
+    "transfer_acc": 0.25810185185185186,
+    "frozen_ok": true
+  },
+  {
+    "step": 12000,
+    "loss": 0.4913942217826843,
+    "train_acc": 0.2650462962962963,
+    "train_strict": 0.0,
+    "heldperm_acc": 0.2065972222222222,
+    "heldperm_strict": 0.0,
+    "transfer_acc": 0.2569444444444444,
+    "frozen_ok": true
+  },
+  {
+    "step": 13000,
+    "loss": 2.010230779647827,
+    "train_acc": 0.27199074074074076,
+    "train_strict": 0.0,
+    "heldperm_acc": 0.17708333333333334,
+    "heldperm_strict": 0.0,
+    "transfer_acc": 0.25462962962962965,
+    "frozen_ok": true
+  },
+  {
+    "step": 14000,
+    "loss": 0.8261319398880005,
+    "train_acc": 0.27314814814814814,
+    "train_strict": 0.0,
+    "heldperm_acc": 0.21006944444444445,
+    "heldperm_strict": 0.0,
+    "transfer_acc": 0.2569444444444444,
+    "frozen_ok": true
+  },
+  {
+    "step": 15000,
+    "loss": 4.587070465087891,
+    "train_acc": 0.26099537037037035,
+    "train_strict": 0.0,
+    "heldperm_acc": 0.2204861111111111,
+    "heldperm_strict": 0.0,
+    "transfer_acc": 0.2586805555555556,
+    "frozen_ok": true
+  },
+  {
+    "step": 16000,
+    "loss": 1.936136245727539,
+    "train_acc": 0.2667824074074074,
+    "train_strict": 0.0,
+    "heldperm_acc": 0.2013888888888889,
+    "heldperm_strict": 0.0,
+    "transfer_acc": 0.25636574074074076,
+    "frozen_ok": true
+  },
+  {
+    "step": 17000,
+    "loss": 0.7271862030029297,
+    "train_acc": 0.2679398148148148,
+    "train_strict": 0.0,
+    "heldperm_acc": 0.1840277777777778,
+    "heldperm_strict": 0.0,
+    "transfer_acc": 0.25289351851851855,
+    "frozen_ok": true
+  },
+  {
+    "step": 18000,
+    "loss": 2.0240895748138428,
+    "train_acc": 0.2743055555555556,
+    "train_strict": 0.0,
+    "heldperm_acc": 0.19444444444444445,
+    "heldperm_strict": 0.0,
+    "transfer_acc": 0.25752314814814814,
+    "frozen_ok": true
+  },
+  {
+    "step": 19000,
+    "loss": 1.8873960971832275,
+    "train_acc": 0.27025462962962965,
+    "train_strict": 0.0,
+    "heldperm_acc": 0.19270833333333334,
+    "heldperm_strict": 0.0,
+    "transfer_acc": 0.2586805555555556,
+    "frozen_ok": true
+  },
+  {
+    "step": 20000,
+    "loss": 4.068687915802002,
+    "train_acc": 0.26967592592592593,
+    "train_strict": 0.0,
+    "heldperm_acc": 0.18229166666666666,
+    "heldperm_strict": 0.0,
+    "transfer_acc": 0.25578703703703703,
+    "frozen_ok": true
+  },
+  {
+    "step": 21000,
+    "loss": 1.9593064785003662,
+    "train_acc": 0.28414351851851855,
+    "train_strict": 0.0,
+    "heldperm_acc": 0.17708333333333334,
+    "heldperm_strict": 0.0,
+    "transfer_acc": 0.2586805555555556,
+    "frozen_ok": true
+  },
+  {
+    "step": 22000,
+    "loss": 1.6561537981033325,
+    "train_acc": 0.2760416666666667,
+    "train_strict": 0.0,
+    "heldperm_acc": 0.1857638888888889,
+    "heldperm_strict": 0.0,
+    "transfer_acc": 0.26099537037037035,
+    "frozen_ok": true
+  },
+  {
+    "step": 23000,
+    "loss": 2.011702060699463,
+    "train_acc": 0.27546296296296297,
+    "train_strict": 0.0,
+    "heldperm_acc": 0.18055555555555555,
+    "heldperm_strict": 0.0,
+    "transfer_acc": 0.25405092592592593,
+    "frozen_ok": true
+  },
+  {
+    "step": 24000,
+    "loss": 1.9368512630462646,
+    "train_acc": 0.27546296296296297,
+    "train_strict": 0.0,
+    "heldperm_acc": 0.17708333333333334,
+    "heldperm_strict": 0.0,
+    "transfer_acc": 0.25752314814814814,
+    "frozen_ok": true
+  },
+  {
+    "step": 25000,
+    "loss": 3.177849769592285,
+    "train_acc": 0.27488425925925924,
+    "train_strict": 0.0,
+    "heldperm_acc": 0.1892361111111111,
+    "heldperm_strict": 0.0,
+    "transfer_acc": 0.2604166666666667,
+    "frozen_ok": true
+  },
+  {
+    "step": 26000,
+    "loss": 1.9678490161895752,
+    "train_acc": 0.27372685185185186,
+    "train_strict": 0.0,
+    "heldperm_acc": 0.1857638888888889,
+    "heldperm_strict": 0.0,
+    "transfer_acc": 0.26157407407407407,
+    "frozen_ok": true
+  },
+  {
+    "step": 27000,
+    "loss": 1.846383810043335,
+    "train_acc": 0.2679398148148148,
+    "train_strict": 0.0,
+    "heldperm_acc": 0.2048611111111111,
+    "heldperm_strict": 0.0,
+    "transfer_acc": 0.2604166666666667,
+    "frozen_ok": true
+  },
+  {
+    "step": 28000,
+    "loss": 2.013277292251587,
+    "train_acc": 0.2818287037037037,
+    "train_strict": 0.0,
+    "heldperm_acc": 0.1875,
+    "heldperm_strict": 0.0,
+    "transfer_acc": 0.26099537037037035,
+    "frozen_ok": true
+  },
+  {
+    "step": 29000,
+    "loss": 1.890834093093872,
+    "train_acc": 0.2795138888888889,
+    "train_strict": 0.0,
+    "heldperm_acc": 0.1753472222222222,
+    "heldperm_strict": 0.0,
+    "transfer_acc": 0.2633101851851852,
+    "frozen_ok": true
+  },
+  {
+    "step": 30000,
+    "loss": 2.8076179027557373,
+    "train_acc": 0.2789351851851852,
+    "train_strict": 0.0,
+    "heldperm_acc": 0.18055555555555555,
+    "heldperm_strict": 0.0,
+    "transfer_acc": 0.2644675925925926,
+    "frozen_ok": true
+  },
+  {
+    "step": 31000,
+    "loss": 2.0029561519622803,
+    "train_acc": 0.27662037037037035,
+    "train_strict": 0.0,
+    "heldperm_acc": 0.19444444444444445,
+    "heldperm_strict": 0.0,
+    "transfer_acc": 0.26157407407407407,
+    "frozen_ok": true
+  },
+  {
+    "step": 32000,
+    "loss": 1.947597861289978,
+    "train_acc": 0.27372685185185186,
+    "train_strict": 0.0,
+    "heldperm_acc": 0.1909722222222222,
+    "heldperm_strict": 0.0,
+    "transfer_acc": 0.25925925925925924,
+    "frozen_ok": true
+  },
+  {
+    "step": 33000,
+    "loss": 2.0067505836486816,
+    "train_acc": 0.2800925925925926,
+    "train_strict": 0.0,
+    "heldperm_acc": 0.171875,
+    "heldperm_strict": 0.0,
+    "transfer_acc": 0.2650462962962963,
+    "frozen_ok": true
+  },
+  {
+    "step": 34000,
+    "loss": 1.891216516494751,
+    "train_acc": 0.2847222222222222,
+    "train_strict": 0.0,
+    "heldperm_acc": 0.17881944444444445,
+    "heldperm_strict": 0.0,
+    "transfer_acc": 0.2644675925925926,
+    "frozen_ok": true
+  },
+  {
+    "step": 35000,
+    "loss": 2.5297441482543945,
+    "train_acc": 0.27662037037037035,
+    "train_strict": 0.0,
+    "heldperm_acc": 0.1701388888888889,
+    "heldperm_strict": 0.0,
+    "transfer_acc": 0.2586805555555556,
+    "frozen_ok": true
+  },
+  {
+    "step": 36000,
+    "loss": 2.015312910079956,
+    "train_acc": 0.2800925925925926,
+    "train_strict": 0.0,
+    "heldperm_acc": 0.17708333333333334,
+    "heldperm_strict": 0.0,
+    "transfer_acc": 0.25983796296296297,
+    "frozen_ok": true
+  },
+  {
+    "step": 37000,
+    "loss": 1.9878907203674316,
+    "train_acc": 0.28125,
+    "train_strict": 0.0,
+    "heldperm_acc": 0.18229166666666666,
+    "heldperm_strict": 0.0,
+    "transfer_acc": 0.26157407407407407,
+    "frozen_ok": true
+  },
+  {
+    "step": 38000,
+    "loss": 2.0168371200561523,
+    "train_acc": 0.2743055555555556,
+    "train_strict": 0.0,
+    "heldperm_acc": 0.17708333333333334,
+    "heldperm_strict": 0.0,
+    "transfer_acc": 0.2650462962962963,
+    "frozen_ok": true
+  },
+  {
+    "step": 39000,
+    "loss": 1.974625587463379,
+    "train_acc": 0.28125,
+    "train_strict": 0.0,
+    "heldperm_acc": 0.171875,
+    "heldperm_strict": 0.0,
+    "transfer_acc": 0.2633101851851852,
+    "frozen_ok": true
+  },
+  {
+    "step": 40000,
+    "loss": 2.2342822551727295,
+    "train_acc": 0.2789351851851852,
+    "train_strict": 0.0,
+    "heldperm_acc": 0.17708333333333334,
+    "heldperm_strict": 0.0,
+    "transfer_acc": 0.25983796296296297,
+    "frozen_ok": true
+  }
+]

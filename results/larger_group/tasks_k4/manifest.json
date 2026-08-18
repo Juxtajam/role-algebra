@@ -1,0 +1,65 @@
+{
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "master_seed": 20260807,
+  "k": 4,
+  "n_perms": 24,
+  "n_gate_bases": 100,
+  "n_disc_bases": 150,
+  "cells": {
+    "gate/P/fit": {
+      "episodes": 2400,
+      "bases": 100
+    },
+    "gate/P/transfer": {
+      "episodes": 2400,
+      "bases": 100
+    },
+    "gate/G/fit": {
+      "episodes": 2400,
+      "bases": 100
+    },
+    "gate/G/transfer": {
+      "episodes": 2400,
+      "bases": 100
+    },
+    "disc/P/fit": {
+      "episodes": 3600,
+      "bases": 150
+    },
+    "disc/P/transfer": {
+      "episodes": 3600,
+      "bases": 150
+    },
+    "disc/G/fit": {
+      "episodes": 3600,
+      "bases": 150
+    },
+    "disc/G/transfer": {
+      "episodes": 3600,
+      "bases": 150
+    }
+  },
+  "file_sha256": {
+    "gate_P_fit.jsonl": "61082503f7d8ab857bac0c2270170f854fd642e3f90e4ec5dd182a20400751ce",
+    "gate_P_transfer.jsonl": "15831848298b835d58f541026f9d9c68c50ff0fb16a626aae094a7f48527c45f",
+    "gate_G_fit.jsonl": "8bc53a3567ff8ec52e7c45a307eb12d85a591cf9bc6909db0832a38667253c5f",
+    "gate_G_transfer.jsonl": "f329d2dc9719259710283a3f596a04ff0b5f933a1ca84963136fa24588102153",
+    "disc_P_fit.jsonl": "8c39b3986a50a4992fb251b74598e81b79ce84ea979897b9d060279fde3196ea",
+    "disc_P_transfer.jsonl": "c965767b185fbbe4ceeb6b40129d750b9d747d07dd0bd40d18ff7ec25f4b685b",
+    "disc_G_fit.jsonl": "3b4b1c135d9fd08c010393e066d9cfe5da9c1aafa131d58d8ea5e5eadb4af27c",
+    "disc_G_transfer.jsonl": "75e945501e96c806961ec41119693960c1a78a2178a0ebd8d10ac7517a8f95a2",
+    "name_pools.json": "4d34484d211222cd2da1e219712433ba3fc826ccb4dd81f4b3cefa8d1086f7f5",
+    "generate_k4.py": "c1a7a490ad34285677c360f7ad42c0d6ae27cc48215bd590428046db25ec0024"
+  },
+  "content_hash": "d803215509ec1d0b17f85f71c4c7dde8b8d98fa0137523ce1d041ae7f06e9a33",
+  "templates": {
+    "bears": "The {sym} sigil bears the {mark} mark.",
+    "holds": "{name} holds the {sym} sigil.",
+    "guards": "The {a} sigil guards the {b} sigil.",
+    "shelters": "The {b} sigil relies on the {a} sigil.",
+    "stage_p": "One sigil bears the {mark} mark.",
+    "query_p": "Which person holds the sigil that bears the {mark} mark?",
+    "stage_g": "One sigil guards the {sym} sigil.",
+    "query_g": "Which person holds the sigil that guards the {sym} sigil?"
+  }
+}

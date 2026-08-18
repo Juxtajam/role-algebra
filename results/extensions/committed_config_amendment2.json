@@ -1,0 +1,9 @@
+{
+  "amends": "phase10/nonlinear/committed_config.json (0c81725e...) as further amended by amendment1 (015a6195...)",
+  "date": "2026-08-15",
+  "declared_before": "any REAL-cache test read. Only the H6 synthetic control has run; amendment 1's standardized post-hoc phi STILL did not break linear transport (S-role-nonlinear lin_c1=0.020-0.089, linear recovers).",
+  "structural_finding": "A post-hoc elementwise nonlinearity on the full state CANNOT force linear transport to fail for a k=3 role code: per generator the transport is a 3-point mapping (3 source role vectors -> 3 targets), which a linear map fits for any generic points; and when the role signal is a small SNR-scaled perturbation, transport is linear to first order (linear-response) regardless of global nonlinearity. Linear transport fails ONLY when the transport is CONTENT-DEPENDENT and that dependence is nonlinear.",
+  "change": "Replace the post-hoc phi with a content-entangled nonlinear role code (still 'the role code passed through a fixed smooth nonlinearity', now entangled with content so transport is genuinely nonlinear): role_block(x) = tanh(2 * (A @ content(x) + vertex(slot(x)))), A a FIXED random (ROLE_DIM x CONT_DIM) matrix. content is g-invariant, so transport slot j->g(j) requires, per content c, mapping tanh(2(Ac+v_j)) -> tanh(2(Ac+v_g(j))): nonlinear and content-dependent (128 contents x noise -> many distinct pairs), so no single linear map transports, while an MLP can (approx atanh, permute vertex, re-tanh). Role info preserved (tanh invertible on range; slot recoverable given content).",
+  "unchanged": "map classes, capacity tiers, conditions, nulls, decision rule, real-cache targets, and the H6 pass criterion. Control-validity fix only; B outcome not read.",
+  "supersedes": "amendment1's standardized-phi construction is superseded for H6; the standardization idea is moot since the nonlinearity now lives in the role code."
+}

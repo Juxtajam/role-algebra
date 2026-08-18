@@ -1,0 +1,33 @@
+{
+  "what": "R4-c6: reproduce stored content-probe accuracy at verdict layer 61 from stored bytes (deterministic refit per phase8c_test_eval.py lines 124-141, content part)",
+  "config_sha256": "d9e0def3cb03b204aa2545344b5d595282fe1657df335cd3e98881fce9a8d2cb",
+  "layer": 61,
+  "stored": {
+    "committed_config_content_acc": 0.29777777777777775,
+    "committed_config_path": "results/phase8c/committed_config.json .probes.availability_by_layer.61.content_acc",
+    "test_metrics_content_acc": 0.29777777777777775,
+    "test_metrics_path": "results/phase8c/test_metrics.json .verdict_layer_metrics.probe_content_acc",
+    "test_metrics_role_acc": 0.8977777777777778,
+    "availability_rule": "both probes >= 0.9 held-out at the verdict layer, else C6 unavailable"
+  },
+  "refit": {
+    "content_acc": 0.29777777777777775,
+    "n_correct": 134,
+    "n_total": 450,
+    "train": "P/fit CAL bases (150) x 6 perms = 900 episodes, layer 61",
+    "eval": "second half of P/transfer CAL bases (75) x 6 perms = 450 episodes, layer 61",
+    "probe": "lib.fit_probe (frozen _fit_probe verbatim; deterministic)",
+    "acts_files": {
+      "disc_P_fit": "results/phase8a_final/acts/disc_P_fit.npy",
+      "disc_P_transfer": "results/phase8a_final/acts/disc_P_transfer.npy",
+      "checksums": "results/phase8a_final/acts/checksums.json"
+    }
+  },
+  "match": {
+    "refit_eq_committed": true,
+    "refit_eq_test_metrics": true,
+    "abs_diff_committed": 0.0,
+    "abs_diff_test_metrics": 0.0
+  },
+  "wall_s": 3.5
+}

@@ -1,0 +1,347 @@
+{
+  "bareword_vs_insitu_note": "bareword encode(name) returns multi-token for ALL names; in-situ encode(' '+name) returns single-token. Names appear after spaces in episodes.",
+  "family": "llama33",
+  "fit_pool": {
+    "Bav": {
+      "bareword_count": 2,
+      "bareword_ids": [
+        33,
+        402
+      ],
+      "in_situ_single": true,
+      "spaced_count": 1,
+      "spaced_id_in_ctx_a": true,
+      "spaced_id_in_ctx_b": true,
+      "spaced_ids": [
+        78080
+      ]
+    },
+    "Bek": {
+      "bareword_count": 2,
+      "bareword_ids": [
+        33,
+        1247
+      ],
+      "in_situ_single": true,
+      "spaced_count": 1,
+      "spaced_id_in_ctx_a": true,
+      "spaced_id_in_ctx_b": true,
+      "spaced_ids": [
+        71319
+      ]
+    },
+    "Dek": {
+      "bareword_count": 2,
+      "bareword_ids": [
+        35,
+        1247
+      ],
+      "in_situ_single": true,
+      "spaced_count": 1,
+      "spaced_id_in_ctx_a": true,
+      "spaced_id_in_ctx_b": true,
+      "spaced_ids": [
+        75563
+      ]
+    },
+    "Fot": {
+      "bareword_count": 2,
+      "bareword_ids": [
+        37,
+        354
+      ],
+      "in_situ_single": true,
+      "spaced_count": 1,
+      "spaced_id_in_ctx_a": true,
+      "spaced_id_in_ctx_b": true,
+      "spaced_ids": [
+        74311
+      ]
+    },
+    "Gat": {
+      "bareword_count": 2,
+      "bareword_ids": [
+        38,
+        266
+      ],
+      "in_situ_single": true,
+      "spaced_count": 1,
+      "spaced_id_in_ctx_a": true,
+      "spaced_id_in_ctx_b": true,
+      "spaced_ids": [
+        73213
+      ]
+    },
+    "Jub": {
+      "bareword_count": 2,
+      "bareword_ids": [
+        41,
+        392
+      ],
+      "in_situ_single": true,
+      "spaced_count": 1,
+      "spaced_id_in_ctx_a": true,
+      "spaced_id_in_ctx_b": true,
+      "spaced_ids": [
+        80380
+      ]
+    },
+    "Kag": {
+      "bareword_count": 2,
+      "bareword_ids": [
+        42,
+        351
+      ],
+      "in_situ_single": true,
+      "spaced_count": 1,
+      "spaced_id_in_ctx_a": true,
+      "spaced_id_in_ctx_b": true,
+      "spaced_ids": [
+        77091
+      ]
+    },
+    "Lup": {
+      "bareword_count": 2,
+      "bareword_ids": [
+        43,
+        455
+      ],
+      "in_situ_single": true,
+      "spaced_count": 1,
+      "spaced_id_in_ctx_a": true,
+      "spaced_id_in_ctx_b": true,
+      "spaced_ids": [
+        79803
+      ]
+    },
+    "Miz": {
+      "bareword_count": 2,
+      "bareword_ids": [
+        44,
+        450
+      ],
+      "in_situ_single": true,
+      "spaced_count": 1,
+      "spaced_id_in_ctx_a": true,
+      "spaced_id_in_ctx_b": true,
+      "spaced_ids": [
+        72695
+      ]
+    },
+    "Nir": {
+      "bareword_count": 2,
+      "bareword_ids": [
+        45,
+        404
+      ],
+      "in_situ_single": true,
+      "spaced_count": 1,
+      "spaced_id_in_ctx_a": true,
+      "spaced_id_in_ctx_b": true,
+      "spaced_ids": [
+        78843
+      ]
+    },
+    "Suk": {
+      "bareword_count": 2,
+      "bareword_ids": [
+        50,
+        3178
+      ],
+      "in_situ_single": true,
+      "spaced_count": 1,
+      "spaced_id_in_ctx_a": true,
+      "spaced_id_in_ctx_b": true,
+      "spaced_ids": [
+        74874
+      ]
+    },
+    "Tus": {
+      "bareword_count": 2,
+      "bareword_ids": [
+        51,
+        355
+      ],
+      "in_situ_single": true,
+      "spaced_count": 1,
+      "spaced_id_in_ctx_a": true,
+      "spaced_id_in_ctx_b": true,
+      "spaced_ids": [
+        72004
+      ]
+    }
+  },
+  "method": "verify_single_token from phase8a_generate_tasks.py (space-prefix + in-situ context)",
+  "model": "Llama-3.3-70B",
+  "tokenizer_path": "phase10/trackA2/tokenizer_files",
+  "transfer_pool": {
+    "Bij": {
+      "bareword_count": 2,
+      "bareword_ids": [
+        33,
+        3251
+      ],
+      "in_situ_single": true,
+      "spaced_count": 1,
+      "spaced_id_in_ctx_a": true,
+      "spaced_id_in_ctx_b": true,
+      "spaced_ids": [
+        80666
+      ]
+    },
+    "Bik": {
+      "bareword_count": 2,
+      "bareword_ids": [
+        33,
+        1609
+      ],
+      "in_situ_single": true,
+      "spaced_count": 1,
+      "spaced_id_in_ctx_a": true,
+      "spaced_id_in_ctx_b": true,
+      "spaced_ids": [
+        76478
+      ]
+    },
+    "Fon": {
+      "bareword_count": 2,
+      "bareword_ids": [
+        37,
+        263
+      ],
+      "in_situ_single": true,
+      "spaced_count": 1,
+      "spaced_id_in_ctx_a": true,
+      "spaced_id_in_ctx_b": true,
+      "spaced_ids": [
+        71593
+      ]
+    },
+    "Jad": {
+      "bareword_count": 2,
+      "bareword_ids": [
+        41,
+        329
+      ],
+      "in_situ_single": true,
+      "spaced_count": 1,
+      "spaced_id_in_ctx_a": true,
+      "spaced_id_in_ctx_b": true,
+      "spaced_ids": [
+        73824
+      ]
+    },
+    "Jal": {
+      "bareword_count": 2,
+      "bareword_ids": [
+        41,
+        278
+      ],
+      "in_situ_single": true,
+      "spaced_count": 1,
+      "spaced_id_in_ctx_a": true,
+      "spaced_id_in_ctx_b": true,
+      "spaced_ids": [
+        72995
+      ]
+    },
+    "Kad": {
+      "bareword_count": 2,
+      "bareword_ids": [
+        42,
+        329
+      ],
+      "in_situ_single": true,
+      "spaced_count": 1,
+      "spaced_id_in_ctx_a": true,
+      "spaced_id_in_ctx_b": true,
+      "spaced_ids": [
+        74776
+      ]
+    },
+    "Poz": {
+      "bareword_count": 2,
+      "bareword_ids": [
+        47,
+        9700
+      ],
+      "in_situ_single": true,
+      "spaced_count": 1,
+      "spaced_id_in_ctx_a": true,
+      "spaced_id_in_ctx_b": true,
+      "spaced_ids": [
+        80085
+      ]
+    },
+    "Raz": {
+      "bareword_count": 2,
+      "bareword_ids": [
+        49,
+        1394
+      ],
+      "in_situ_single": true,
+      "spaced_count": 1,
+      "spaced_id_in_ctx_a": true,
+      "spaced_id_in_ctx_b": true,
+      "spaced_ids": [
+        77919
+      ]
+    },
+    "Sik": {
+      "bareword_count": 2,
+      "bareword_ids": [
+        50,
+        1609
+      ],
+      "in_situ_single": true,
+      "spaced_count": 1,
+      "spaced_id_in_ctx_a": true,
+      "spaced_id_in_ctx_b": true,
+      "spaced_ids": [
+        78449
+      ]
+    },
+    "Vij": {
+      "bareword_count": 2,
+      "bareword_ids": [
+        53,
+        3251
+      ],
+      "in_situ_single": true,
+      "spaced_count": 1,
+      "spaced_id_in_ctx_a": true,
+      "spaced_id_in_ctx_b": true,
+      "spaced_ids": [
+        79127
+      ]
+    },
+    "Zam": {
+      "bareword_count": 2,
+      "bareword_ids": [
+        57,
+        309
+      ],
+      "in_situ_single": true,
+      "spaced_count": 1,
+      "spaced_id_in_ctx_a": true,
+      "spaced_id_in_ctx_b": true,
+      "spaced_ids": [
+        74989
+      ]
+    },
+    "Zum": {
+      "bareword_count": 2,
+      "bareword_ids": [
+        57,
+        372
+      ],
+      "in_situ_single": true,
+      "spaced_count": 1,
+      "spaced_id_in_ctx_a": true,
+      "spaced_id_in_ctx_b": true,
+      "spaced_ids": [
+        72574
+      ]
+    }
+  }
+}

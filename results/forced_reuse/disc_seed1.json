@@ -1,0 +1,6 @@
+{
+  "seed": 1,
+  "formed": false,
+  "train_acc": 0.26851851851851855,
+  "verdict": "not-formed (discriminator not run; gate-first)"
+}

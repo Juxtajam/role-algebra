@@ -1,0 +1,108 @@
+{
+  "phase": "10B — paired-arm fine-tune",
+  "written_utc": "2026-08-09T13:35:00Z",
+  "written_before_any_trackB_fine_tune_activation_exists": true,
+  "parent_artifacts": {
+    "induction_pretrain": "dv3-results:phase10/trackB/induction/pretrain/",
+    "verified_checkpoints": 12,
+    "formation_rate": 0.857,
+    "design_docs": [
+      "phase10/trackB/armR_design.py",
+      "phase10/trackB/armC_design.py",
+      "phase10/trackB/discriminator_design.md",
+      "phase10/trackB/induction_pretrain_design.md"
+    ]
+  },
+
+  "1.1_paired_outcome_variables": {
+    "primary": {
+      "name": "FORMED",
+      "definition": "composed-query held-out accuracy >= 0.5 sustained over 5 consecutive evals (eval every 500 steps)",
+      "type": "binary per (checkpoint, arm)"
+    },
+    "secondary": {
+      "FORMED_STRICT": {
+        "definition": "composed-query held-out accuracy >= 0.95 sustained over 5 consecutive evals",
+        "note": "reported alongside FORMED, never substituted"
+      },
+      "aux_generalisation": {
+        "definition": "min across forward-hop single-hop aux types held-out accuracy >= 0.95, sustained-over-5 rule"
+      },
+      "length_3_composition": {
+        "definition": "test-only depth-3 composition held-out accuracy >= 0.5, sustained-over-5 rule"
+      },
+      "unseen_permutation": {
+        "definition": "unseen-permutation-product held-out accuracy >= 0.5, sustained-over-5 rule"
+      }
+    },
+    "sustained_over_5_rule": "threshold must be met or exceeded at 5 consecutive eval points (every 500 steps); first eval to meet threshold begins the count; if met at step N, N+500, N+1000, N+1500, N+2000 -> FORMED at step N"
+  },
+
+  "1.2_directional_prediction": {
+    "hypothesis": "discordant pairs favour Arm R (R-forms/C-doesn't > C-forms/R-doesn't)",
+    "test": "McNemar exact binomial on discordant pairs, one-sided",
+    "n_pairs": 12,
+    "caveat": "if total discordant pairs <= 5, report the raw 2x2 table with no significance test — the table IS the result"
+  },
+
+  "1.3_awkward_cell_adjudications": {
+    "a": "Arm R converges less often than Arm C on ANY outcome -> reported as 'role pressure raises task difficulty'; informative; not a failed experiment; no hyperparameter search in response",
+    "b": "BOTH arms show role-operator structure under discriminator -> training-distribution hypothesis is wrong; structure is default at this scale/pipeline; reported as primary finding",
+    "c": "NEITHER arm reaches FORMED on composed queries in >=3 checkpoints -> stop before any discriminator run; report; depth/scaffold questions reopen only by a separate decision; discriminator NEVER runs on a (checkpoint, arm) that did not reach FORMED",
+    "d": "checkpoint fails FORMED in BOTH arms -> concordant-negative pair; stays in McNemar table; not replaced or rerun"
+  },
+
+  "1.4_discriminator_thresholds": {
+    "status": "TO BE CALIBRATED — freeze before first fine-tune completes (at or before step 500 eval)",
+    "calibration_source": "existing Phase 7/9 organism activations OR freshly generated synthetic calibration data at d=128 — NOT any Track B activation",
+    "positions": ["answer", "entity_mention_carry"],
+    "conditions": {
+      "k3": "port Phase 8C/9 battery with matched-regime shuffled-pair nulls at d=128",
+      "k4": {
+        "status": "UNAVAILABLE",
+        "reason": "S4 synthetic-organism validation (design amendment 3) has not been run. Gate on that validation passing before any k=4 discriminator. Until then: recorded UNAVAILABLE — not improvised, not run uncalibrated.",
+        "s4_validation_due": "before any discriminator fit"
+      }
+    },
+    "frozen_rule": "thresholds frozen to this config BEFORE first fine-tune reaches first eval (step 500). Thresholds computed from calibration data only. Once frozen, no post-hoc adjustment."
+  },
+
+  "1.5_analysis_lock": {
+    "primary": "McNemar exact binomial on discordant pairs, FORMED, 12 pairs, one-sided",
+    "exclusions": "only episodes lost to verified infrastructure failure (declared, with logs)",
+    "no_reruns": "no per-arm reruns of unlucky seeds; the 12 checkpoints are final",
+    "pair_definition": "each verified pretrained checkpoint runs BOTH Arm R and Arm C training; the (R,C) outcome pair IS the matched pair"
+  },
+
+  "paired_arm_design": {
+    "n_checkpoints": 12,
+    "n_runs_total": 24,
+    "per_checkpoint": "same pretrained weights fine-tuned under Arm R and Arm C independently",
+    "comparison": "McNemar matched pairs — each checkpoint is its own control, initialisation variance cancels within pair",
+    "training": {
+      "steps": 50000,
+      "floor": 25000,
+      "eval_every": 500,
+      "architecture": "8 layers, d_model=128, 4 heads, d_ff=512",
+      "induction_pretraining": "v2 corpus (Phase 5), full verification battery passed",
+      "trainable_fit_embeddings": true,
+      "frozen_transfer_wd_zero": true,
+      "key_before_target": true,
+      "full_sequence_lm_loss": true,
+      "single_hop_aux_mixture": true,
+      "episode_local_candidate_masking": true,
+      "induction_reverification": "per-eval, head-survival trajectory logged (Phase 5 protocol)"
+    },
+    "arms": {
+      "armR": "role-rewarding — large pools, k mixed {3,4}, compositions at test longer than training, unseen permutation products",
+      "armC": "retrieval-sufficient — shared large-pool vocabulary base with retrieval-sufficient task structure; arms differ only in whether abstraction pays"
+    }
+  },
+
+  "budget": "no cap",
+
+  "verification": {
+    "freeze_note": "config + sha256 frozen before any GPU work",
+    "stored_predictions_during_fits": true
+  }
+}

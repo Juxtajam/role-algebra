@@ -1,0 +1,3143 @@
+{
+  "seed2": {
+    "property->symbol": {
+      "table": [
+        [
+          0.0006498027942143381,
+          0.001217041863128543,
+          0.009649915620684624,
+          0.011049044318497181
+        ],
+        [
+          0.0006934173288755119,
+          0.00023464827972929925,
+          0.0004914971068501472,
+          0.002453015185892582
+        ],
+        [
+          0.007217803969979286,
+          0.007261187303811312,
+          0.0070805177092552185,
+          0.0017566527239978313
+        ],
+        [
+          0.016956472769379616,
+          0.0008770847925916314,
+          0.004042161162942648,
+          0.06056375429034233
+        ],
+        [
+          0.0007283909944817424,
+          0.010948093608021736,
+          0.0030677071772515774,
+          0.0002424103149678558
+        ],
+        [
+          0.02959464304149151,
+          0.015475485473871231,
+          0.0045407540164887905,
+          0.004705060739070177
+        ],
+        [
+          0.0014296394074335694,
+          0.0016087079420685768,
+          0.0019236677326261997,
+          0.004587587434798479
+        ],
+        [
+          0.0004791831015609205,
+          0.000346507498761639,
+          0.03810147941112518,
+          1.892022510219249e-06
+        ]
+      ],
+      "per_head_uniform": 0.037037037037037035,
+      "aggregate": 0.2499752271367015,
+      "aggregate_baseline": 1.1851851851851851,
+      "aggregate_x_baseline": 0.2109165978965919,
+      "max_single": 0.06056375429034233,
+      "max_single_head": [
+        3,
+        3
+      ],
+      "max_single_x_baseline": 1.635221365839243,
+      "localised_edge_present": false,
+      "contributing_heads": [],
+      "n_contributing": 0,
+      "contributing_layer_hist": {
+        "0": 0,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0
+      },
+      "composed_baseline": 0.03970764200776849,
+      "composed_pairs": [
+        {
+          "layers": [
+            0,
+            1
+          ],
+          "composed_headmean": 0.16734370589256287,
+          "composed_headmean_no_self": 0.166982501745224,
+          "composed_x_baseline": 4.21439545213547,
+          "headpair_max": 0.7849798202514648,
+          "headpair_argmax": [
+            1,
+            0
+          ],
+          "headpair_x_baseline": 19.768986032912498,
+          "top_intermediate_hist": {
+            "answer token (match+1)": 256
+          }
+        },
+        {
+          "layers": [
+            1,
+            2
+          ],
+          "composed_headmean": 0.01798609271645546,
+          "composed_headmean_no_self": 0.017896411940455437,
+          "composed_x_baseline": 0.4529630017550934,
+          "headpair_max": 0.050561755895614624,
+          "headpair_argmax": [
+            0,
+            3
+          ],
+          "headpair_x_baseline": 1.2733507541375189,
+          "top_intermediate_hist": {
+            "other": 228,
+            "SEP": 16,
+            "answer token (match+1)": 10,
+            "other symbol": 2
+          }
+        },
+        {
+          "layers": [
+            2,
+            3
+          ],
+          "composed_headmean": 0.009631535969674587,
+          "composed_headmean_no_self": 0.009518283419311047,
+          "composed_x_baseline": 0.24256126736989955,
+          "headpair_max": 0.02715141884982586,
+          "headpair_argmax": [
+            2,
+            0
+          ],
+          "headpair_x_baseline": 0.6837832083938375,
+          "top_intermediate_hist": {
+            "query-arg": 102,
+            "SEP": 96,
+            "answer token (match+1)": 46,
+            "other symbol": 7,
+            "name": 2,
+            "relation token": 2,
+            "match itself": 1
+          }
+        },
+        {
+          "layers": [
+            3,
+            4
+          ],
+          "composed_headmean": 0.018706656992435455,
+          "composed_headmean_no_self": 0.01826849952340126,
+          "composed_x_baseline": 0.47110974227015656,
+          "headpair_max": 0.059632670134305954,
+          "headpair_argmax": [
+            3,
+            3
+          ],
+          "headpair_x_baseline": 1.5017932850970928,
+          "top_intermediate_hist": {
+            "query-arg": 243,
+            "SEP": 5,
+            "answer token (match+1)": 4,
+            "other symbol": 3,
+            "name": 1
+          }
+        },
+        {
+          "layers": [
+            4,
+            5
+          ],
+          "composed_headmean": 0.023593049496412277,
+          "composed_headmean_no_self": 0.01372099295258522,
+          "composed_x_baseline": 0.5941689887250541,
+          "headpair_max": 0.0676005631685257,
+          "headpair_argmax": [
+            0,
+            1
+          ],
+          "headpair_x_baseline": 1.7024572538278695,
+          "top_intermediate_hist": {
+            "match itself": 127,
+            "relation token": 120,
+            "SEP": 3,
+            "answer token (match+1)": 3,
+            "other property": 2,
+            "other symbol": 1
+          }
+        },
+        {
+          "layers": [
+            5,
+            6
+          ],
+          "composed_headmean": 0.0027026880998164415,
+          "composed_headmean_no_self": 0.002700201468542218,
+          "composed_x_baseline": 0.06806468385324119,
+          "headpair_max": 0.009578900411725044,
+          "headpair_argmax": [
+            2,
+            1
+          ],
+          "headpair_x_baseline": 0.24123568984154253,
+          "top_intermediate_hist": {
+            "query-arg": 95,
+            "name": 73,
+            "SEP": 41,
+            "answer token (match+1)": 32,
+            "other symbol": 15
+          }
+        },
+        {
+          "layers": [
+            6,
+            7
+          ],
+          "composed_headmean": 0.0424196757376194,
+          "composed_headmean_no_self": 0.04241962358355522,
+          "composed_x_baseline": 1.0683000448457838,
+          "headpair_max": 0.11174368858337402,
+          "headpair_argmax": [
+            0,
+            1
+          ],
+          "headpair_x_baseline": 2.8141607744300767,
+          "top_intermediate_hist": {
+            "SEP": 184,
+            "answer token (match+1)": 37,
+            "query-arg": 22,
+            "other symbol": 7,
+            "other": 3,
+            "name": 3
+          }
+        }
+      ],
+      "retrieval_acc": 0.9921875,
+      "arg_to_match_succ": {
+        "aggregate": 3.0909929927875055,
+        "aggregate_x_baseline": 2.6080253376644578,
+        "max_single": 0.9116003513336182,
+        "max_single_head": [
+          1,
+          1
+        ],
+        "max_single_x_baseline": 24.61320948600769,
+        "localised_edge_present": true,
+        "n_contributing": 4,
+        "contributing_layer_hist": {
+          "0": 0,
+          "1": 4,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0
+        },
+        "table": [
+          [
+            0.00016562078963033855,
+            0.0006169332191348076,
+            0.0018505621701478958,
+            0.006886687129735947
+          ],
+          [
+            0.6942040324211121,
+            0.9116003513336182,
+            0.8180734515190125,
+            0.18308968842029572
+          ],
+          [
+            0.020773056894540787,
+            0.03819809481501579,
+            0.049759067595005035,
+            0.005129015073180199
+          ],
+          [
+            0.05209096521139145,
+            0.015869421884417534,
+            0.0119931036606431,
+            0.023464471101760864
+          ],
+          [
+            0.015810970216989517,
+            0.02354966290295124,
+            0.0045099095441401005,
+            0.0024387522134929895
+          ],
+          [
+            0.01930181309580803,
+            0.016069943085312843,
+            0.015184877440333366,
+            0.06815741956233978
+          ],
+          [
+            0.011371326632797718,
+            0.02431762032210827,
+            0.010083461180329323,
+            0.016846204176545143
+          ],
+          [
+            0.0014550724299624562,
+            0.0061250110156834126,
+            0.021855000406503677,
+            0.00015142532356549054
+          ]
+        ]
+      },
+      "qmark": {
+        "table": [
+          [
+            0.0029821344651281834,
+            0.006209393963217735,
+            0.008532272651791573,
+            0.0023502404801547527
+          ],
+          [
+            0.009391479194164276,
+            0.0020596343092620373,
+            0.02530580200254917,
+            0.014284602366387844
+          ],
+          [
+            0.0026988082099705935,
+            0.0013585005654022098,
+            0.0008493725908920169,
+            0.0006218001362867653
+          ],
+          [
+            0.010425618849694729,
+            0.0010839554015547037,
+            0.01638379879295826,
+            0.005271033849567175
+          ],
+          [
+            6.435468822019175e-05,
+            0.00028681234107352793,
+            6.846967153251171e-05,
+            0.0008548389305360615
+          ],
+          [
+            0.008996468037366867,
+            0.020240280777215958,
+            0.0008600364089943469,
+            0.0003955863940063864
+          ],
+          [
+            0.040806978940963745,
+            2.361149017815478e-05,
+            0.0006261322996579111,
+            3.9677624954492785e-06
+          ],
+          [
+            0.000556672690436244,
+            0.0018247911939397454,
+            0.005183630622923374,
+            8.018381777219474e-05
+          ]
+        ],
+        "per_head_uniform": 0.035714285714285705,
+        "aggregate": 0.1906812638962947,
+        "aggregate_baseline": 1.1428571428571426,
+        "aggregate_x_baseline": 0.1668461059092579,
+        "max_single": 0.040806978940963745,
+        "max_single_head": [
+          6,
+          0
+        ],
+        "max_single_x_baseline": 1.142595410346985,
+        "localised_edge_present": false,
+        "contributing_heads": [],
+        "n_contributing": 0,
+        "contributing_layer_hist": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0
+        },
+        "composed_baseline": 0.03956502214014411,
+        "composed_pairs": [
+          {
+            "layers": [
+              0,
+              1
+            ],
+            "composed_headmean": 0.016608212143182755,
+            "composed_headmean_no_self": 0.01356544904410839,
+            "composed_x_baseline": 0.4197700707547806,
+            "headpair_max": 0.035938914865255356,
+            "headpair_argmax": [
+              2,
+              3
+            ],
+            "headpair_x_baseline": 0.908350682528506,
+            "top_intermediate_hist": {
+              "answer token (match+1)": 86,
+              "match itself": 60,
+              "relation token": 32,
+              "other property": 28,
+              "name": 28,
+              "query-arg": 22
+            }
+          },
+          {
+            "layers": [
+              1,
+              2
+            ],
+            "composed_headmean": 0.004301826935261488,
+            "composed_headmean_no_self": 0.004273083992302418,
+            "composed_x_baseline": 0.10872803053221845,
+            "headpair_max": 0.012927141971886158,
+            "headpair_argmax": [
+              2,
+              1
+            ],
+            "headpair_x_baseline": 0.32673157432078903,
+            "top_intermediate_hist": {
+              "other": 131,
+              "SEP": 98,
+              "answer token (match+1)": 18,
+              "other symbol": 9
+            }
+          },
+          {
+            "layers": [
+              2,
+              3
+            ],
+            "composed_headmean": 0.0060145556926727295,
+            "composed_headmean_no_self": 0.005937367677688599,
+            "composed_x_baseline": 0.15201699297345123,
+            "headpair_max": 0.011531515046954155,
+            "headpair_argmax": [
+              2,
+              1
+            ],
+            "headpair_x_baseline": 0.29145731313148593,
+            "top_intermediate_hist": {
+              "query-arg": 231,
+              "SEP": 14,
+              "answer token (match+1)": 8,
+              "other symbol": 2,
+              "relation token": 1
+            }
+          },
+          {
+            "layers": [
+              3,
+              4
+            ],
+            "composed_headmean": 0.020597539842128754,
+            "composed_headmean_no_self": 0.020558081567287445,
+            "composed_x_baseline": 0.5205997299627375,
+            "headpair_max": 0.06050713360309601,
+            "headpair_argmax": [
+              0,
+              3
+            ],
+            "headpair_x_baseline": 1.5293087259947031,
+            "top_intermediate_hist": {
+              "query-arg": 256
+            }
+          },
+          {
+            "layers": [
+              4,
+              5
+            ],
+            "composed_headmean": 0.027479493990540504,
+            "composed_headmean_no_self": 0.02287500724196434,
+            "composed_x_baseline": 0.6945400887987577,
+            "headpair_max": 0.1313675045967102,
+            "headpair_argmax": [
+              1,
+              3
+            ],
+            "headpair_x_baseline": 3.3202939740913213,
+            "top_intermediate_hist": {
+              "relation token": 167,
+              "match itself": 88,
+              "query-arg": 1
+            }
+          },
+          {
+            "layers": [
+              5,
+              6
+            ],
+            "composed_headmean": 0.0007860423647798598,
+            "composed_headmean_no_self": 0.0007784120971336961,
+            "composed_x_baseline": 0.019867102866658392,
+            "headpair_max": 0.00359688070602715,
+            "headpair_argmax": [
+              0,
+              1
+            ],
+            "headpair_x_baseline": 0.09091062032738316,
+            "top_intermediate_hist": {
+              "query-arg": 127,
+              "name": 57,
+              "SEP": 40,
+              "answer token (match+1)": 10,
+              "other symbol": 8,
+              "relation token": 6,
+              "QMARK": 4,
+              "other property": 3,
+              "match itself": 1
+            }
+          },
+          {
+            "layers": [
+              6,
+              7
+            ],
+            "composed_headmean": 0.034708477556705475,
+            "composed_headmean_no_self": 0.03470846265554428,
+            "composed_x_baseline": 0.8772515641154915,
+            "headpair_max": 0.09024808555841446,
+            "headpair_argmax": [
+              0,
+              1
+            ],
+            "headpair_x_baseline": 2.2810068256437415,
+            "top_intermediate_hist": {
+              "SEP": 170,
+              "QMARK": 33,
+              "answer token (match+1)": 26,
+              "query-arg": 16,
+              "other symbol": 5,
+              "name": 4,
+              "other": 2
+            }
+          }
+        ]
+      },
+      "qmark_to_match_succ": {
+        "aggregate": 0.3460896881070994,
+        "aggregate_x_baseline": 0.302828477093712,
+        "max_single": 0.06961066275835037,
+        "max_single_head": [
+          0,
+          2
+        ],
+        "max_single_x_baseline": 1.9490985572338109,
+        "localised_edge_present": false,
+        "n_contributing": 0,
+        "contributing_layer_hist": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0
+        }
+      }
+    },
+    "symbol->person": {
+      "table": [
+        [
+          0.0002038053353317082,
+          0.0031615281477570534,
+          0.0402415506541729,
+          0.019752953201532364
+        ],
+        [
+          0.00018406582239549607,
+          0.00021643994841724634,
+          0.00016315757238771766,
+          0.0010733162052929401
+        ],
+        [
+          0.016161354258656502,
+          0.0021884790621697903,
+          0.007837171666324139,
+          0.0006583126960322261
+        ],
+        [
+          0.0006269041332416236,
+          0.00044208296458236873,
+          0.03495672717690468,
+          0.009539768099784851
+        ],
+        [
+          3.7948232147755334e-06,
+          1.2119082839490147e-06,
+          0.00040573248406872153,
+          6.135832109066541e-07
+        ],
+        [
+          0.0707303062081337,
+          0.03177715837955475,
+          0.03391161188483238,
+          0.024272603914141655
+        ],
+        [
+          0.029120782390236855,
+          0.026839975267648697,
+          0.014775527641177177,
+          1.654026891628746e-05
+        ],
+        [
+          0.0003452230303082615,
+          3.333648055559024e-05,
+          0.05926643684506416,
+          5.901639724470442e-06
+        ]
+      ],
+      "per_head_uniform": 0.037037037037037035,
+      "aggregate": 0.42891437369405594,
+      "aggregate_baseline": 1.1851851851851851,
+      "aggregate_x_baseline": 0.3618965028043597,
+      "max_single": 0.0707303062081337,
+      "max_single_head": [
+        5,
+        0
+      ],
+      "max_single_x_baseline": 1.9097182676196098,
+      "localised_edge_present": false,
+      "contributing_heads": [],
+      "n_contributing": 0,
+      "contributing_layer_hist": {
+        "0": 0,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0
+      },
+      "composed_baseline": 0.038136114855662,
+      "composed_pairs": [
+        {
+          "layers": [
+            0,
+            1
+          ],
+          "composed_headmean": 0.14296479523181915,
+          "composed_headmean_no_self": 0.14281991124153137,
+          "composed_x_baseline": 3.7488033527514255,
+          "headpair_max": 0.624443769454956,
+          "headpair_argmax": [
+            1,
+            0
+          ],
+          "headpair_x_baseline": 16.37407931611172,
+          "top_intermediate_hist": {
+            "answer token (match+1)": 256
+          }
+        },
+        {
+          "layers": [
+            1,
+            2
+          ],
+          "composed_headmean": 0.008705447427928448,
+          "composed_headmean_no_self": 0.008628007024526596,
+          "composed_x_baseline": 0.22827305458033478,
+          "headpair_max": 0.019524045288562775,
+          "headpair_argmax": [
+            0,
+            0
+          ],
+          "headpair_x_baseline": 0.5119568514637006,
+          "top_intermediate_hist": {
+            "other": 93,
+            "SEP": 92,
+            "other property": 50,
+            "relation token": 10,
+            "other symbol": 10,
+            "name": 1
+          }
+        },
+        {
+          "layers": [
+            2,
+            3
+          ],
+          "composed_headmean": 0.009083559736609459,
+          "composed_headmean_no_self": 0.009003138169646263,
+          "composed_x_baseline": 0.23818786394442693,
+          "headpair_max": 0.020353354513645172,
+          "headpair_argmax": [
+            3,
+            0
+          ],
+          "headpair_x_baseline": 0.5337028848029953,
+          "top_intermediate_hist": {
+            "query-arg": 149,
+            "SEP": 60,
+            "answer token (match+1)": 22,
+            "other symbol": 14,
+            "relation token": 10,
+            "name": 1
+          }
+        },
+        {
+          "layers": [
+            3,
+            4
+          ],
+          "composed_headmean": 0.011674105189740658,
+          "composed_headmean_no_self": 0.01165472436696291,
+          "composed_x_baseline": 0.3061167933315951,
+          "headpair_max": 0.034894075244665146,
+          "headpair_argmax": [
+            2,
+            2
+          ],
+          "headpair_x_baseline": 0.9149876797028916,
+          "top_intermediate_hist": {
+            "query-arg": 252,
+            "other symbol": 4
+          }
+        },
+        {
+          "layers": [
+            4,
+            5
+          ],
+          "composed_headmean": 0.019084636121988297,
+          "composed_headmean_no_self": 0.017947260290384293,
+          "composed_x_baseline": 0.5004347242559984,
+          "headpair_max": 0.038528259843587875,
+          "headpair_argmax": [
+            1,
+            2
+          ],
+          "headpair_x_baseline": 1.0102827723644654,
+          "top_intermediate_hist": {
+            "relation token": 144,
+            "answer token (match+1)": 100,
+            "other symbol": 12
+          }
+        },
+        {
+          "layers": [
+            5,
+            6
+          ],
+          "composed_headmean": 0.022622600197792053,
+          "composed_headmean_no_self": 0.019337208941578865,
+          "composed_x_baseline": 0.5932067354898193,
+          "headpair_max": 0.06330756098031998,
+          "headpair_argmax": [
+            0,
+            3
+          ],
+          "headpair_x_baseline": 1.6600422255892389,
+          "top_intermediate_hist": {
+            "query-arg": 139,
+            "other symbol": 68,
+            "match itself": 20,
+            "answer token (match+1)": 13,
+            "name": 9,
+            "SEP": 7
+          }
+        },
+        {
+          "layers": [
+            6,
+            7
+          ],
+          "composed_headmean": 0.0404074490070343,
+          "composed_headmean_no_self": 0.03748369216918945,
+          "composed_x_baseline": 1.0595586141894338,
+          "headpair_max": 0.11156357079744339,
+          "headpair_argmax": [
+            2,
+            3
+          ],
+          "headpair_x_baseline": 2.9254047303898276,
+          "top_intermediate_hist": {
+            "match itself": 103,
+            "SEP": 89,
+            "other symbol": 43,
+            "query-arg": 20,
+            "answer token (match+1)": 1
+          }
+        }
+      ],
+      "retrieval_acc": 1.0,
+      "arg_to_match_succ": {
+        "aggregate": 3.527219929555031,
+        "aggregate_x_baseline": 2.9760918155620573,
+        "max_single": 0.8479938507080078,
+        "max_single_head": [
+          1,
+          1
+        ],
+        "max_single_x_baseline": 22.89583396911621,
+        "localised_edge_present": true,
+        "n_contributing": 6,
+        "contributing_layer_hist": {
+          "0": 0,
+          "1": 4,
+          "2": 1,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 1,
+          "7": 0
+        },
+        "table": [
+          [
+            9.03791151358746e-05,
+            2.0070116079295985e-05,
+            7.966894372657407e-06,
+            0.00020736503938678652
+          ],
+          [
+            0.8192890286445618,
+            0.8479938507080078,
+            0.7672545313835144,
+            0.591974675655365
+          ],
+          [
+            0.04009796679019928,
+            0.0069143990986049175,
+            0.07415220886468887,
+            0.0019564537797123194
+          ],
+          [
+            0.013565023429691792,
+            0.006102088373154402,
+            0.06726821511983871,
+            0.028716089203953743
+          ],
+          [
+            0.0006092129042372108,
+            0.004012945108115673,
+            7.718836059211753e-06,
+            0.003895447589457035
+          ],
+          [
+            0.02045869454741478,
+            0.02016790397465229,
+            0.02893489971756935,
+            0.046074580401182175
+          ],
+          [
+            0.008032156154513359,
+            0.022974688559770584,
+            0.07673536986112595,
+            0.0003776497032959014
+          ],
+          [
+            0.00013899212353862822,
+            0.00037815640098415315,
+            0.02876169979572296,
+            4.950166112394072e-05
+          ]
+        ]
+      },
+      "qmark": {
+        "table": [
+          [
+            0.0026666312478482723,
+            0.006828399375081062,
+            0.004401798360049725,
+            0.0070646065287292
+          ],
+          [
+            0.006620274391025305,
+            0.01778429187834263,
+            0.01940348744392395,
+            0.004457315430045128
+          ],
+          [
+            0.007265327498316765,
+            0.0017493288032710552,
+            0.0056008026003837585,
+            0.0003122369816992432
+          ],
+          [
+            0.0002082223363686353,
+            7.242915307870135e-05,
+            0.04843919724225998,
+            0.000973684131167829
+          ],
+          [
+            8.784352758084424e-06,
+            1.6591548135380663e-09,
+            1.629992766538635e-05,
+            3.330115987409954e-07
+          ],
+          [
+            0.01878531649708748,
+            0.0261884443461895,
+            0.014948171563446522,
+            0.017101068049669266
+          ],
+          [
+            0.008281133137643337,
+            0.012164819054305553,
+            0.02404698170721531,
+            1.5712962522229645e-06
+          ],
+          [
+            0.0035363617353141308,
+            0.0002166263002436608,
+            0.055352065712213516,
+            0.0002137119445251301
+          ]
+        ],
+        "per_head_uniform": 0.035714285714285705,
+        "aggregate": 0.3147097236968739,
+        "aggregate_baseline": 1.1428571428571426,
+        "aggregate_x_baseline": 0.27537100823476474,
+        "max_single": 0.055352065712213516,
+        "max_single_head": [
+          7,
+          2
+        ],
+        "max_single_x_baseline": 1.549857839941979,
+        "localised_edge_present": false,
+        "contributing_heads": [],
+        "n_contributing": 0,
+        "contributing_layer_hist": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0
+        },
+        "composed_baseline": 0.0380496209577557,
+        "composed_pairs": [
+          {
+            "layers": [
+              0,
+              1
+            ],
+            "composed_headmean": 0.055849336087703705,
+            "composed_headmean_no_self": 0.052661996334791183,
+            "composed_x_baseline": 1.4678026924291836,
+            "headpair_max": 0.21781040728092194,
+            "headpair_argmax": [
+              1,
+              0
+            ],
+            "headpair_x_baseline": 5.724377846568939,
+            "top_intermediate_hist": {
+              "answer token (match+1)": 252,
+              "match itself": 2,
+              "other symbol": 1,
+              "name": 1
+            }
+          },
+          {
+            "layers": [
+              1,
+              2
+            ],
+            "composed_headmean": 0.006812200881540775,
+            "composed_headmean_no_self": 0.006770773325115442,
+            "composed_x_baseline": 0.17903465816660746,
+            "headpair_max": 0.01642487943172455,
+            "headpair_argmax": [
+              0,
+              0
+            ],
+            "headpair_x_baseline": 0.4316699882492954,
+            "top_intermediate_hist": {
+              "SEP": 135,
+              "other": 76,
+              "other property": 23,
+              "other symbol": 9,
+              "relation token": 8,
+              "QMARK": 3,
+              "name": 1,
+              "answer token (match+1)": 1
+            }
+          },
+          {
+            "layers": [
+              2,
+              3
+            ],
+            "composed_headmean": 0.007356227375566959,
+            "composed_headmean_no_self": 0.0072679826989769936,
+            "composed_x_baseline": 0.19333247455300945,
+            "headpair_max": 0.016023900359869003,
+            "headpair_argmax": [
+              3,
+              0
+            ],
+            "headpair_x_baseline": 0.4211316685035947,
+            "top_intermediate_hist": {
+              "query-arg": 207,
+              "SEP": 25,
+              "answer token (match+1)": 11,
+              "other symbol": 9,
+              "relation token": 4
+            }
+          },
+          {
+            "layers": [
+              3,
+              4
+            ],
+            "composed_headmean": 0.011432817205786705,
+            "composed_headmean_no_self": 0.01143171451985836,
+            "composed_x_baseline": 0.30047125090890925,
+            "headpair_max": 0.03491685912013054,
+            "headpair_argmax": [
+              2,
+              2
+            ],
+            "headpair_x_baseline": 0.9176664114183086,
+            "top_intermediate_hist": {
+              "query-arg": 256
+            }
+          },
+          {
+            "layers": [
+              4,
+              5
+            ],
+            "composed_headmean": 0.020485427230596542,
+            "composed_headmean_no_self": 0.01969769038259983,
+            "composed_x_baseline": 0.538387156427664,
+            "headpair_max": 0.037302616983652115,
+            "headpair_argmax": [
+              2,
+              0
+            ],
+            "headpair_x_baseline": 0.9803676369093679,
+            "top_intermediate_hist": {
+              "answer token (match+1)": 127,
+              "relation token": 124,
+              "other symbol": 3,
+              "name": 2
+            }
+          },
+          {
+            "layers": [
+              5,
+              6
+            ],
+            "composed_headmean": 0.015179053880274296,
+            "composed_headmean_no_self": 0.013009382411837578,
+            "composed_x_baseline": 0.3989278604674334,
+            "headpair_max": 0.033599503338336945,
+            "headpair_argmax": [
+              1,
+              3
+            ],
+            "headpair_x_baseline": 0.883044363980407,
+            "top_intermediate_hist": {
+              "QMARK": 132,
+              "query-arg": 56,
+              "match itself": 22,
+              "other symbol": 20,
+              "SEP": 12,
+              "answer token (match+1)": 8,
+              "name": 6
+            }
+          },
+          {
+            "layers": [
+              6,
+              7
+            ],
+            "composed_headmean": 0.03138035908341408,
+            "composed_headmean_no_self": 0.027709268033504486,
+            "composed_x_baseline": 0.8247219891691925,
+            "headpair_max": 0.11367091536521912,
+            "headpair_argmax": [
+              0,
+              3
+            ],
+            "headpair_x_baseline": 2.9874388365503397,
+            "top_intermediate_hist": {
+              "match itself": 86,
+              "QMARK": 72,
+              "SEP": 70,
+              "other symbol": 28
+            }
+          }
+        ]
+      },
+      "qmark_to_match_succ": {
+        "aggregate": 1.5022896992536516,
+        "aggregate_x_baseline": 1.3145034868469454,
+        "max_single": 0.3071836531162262,
+        "max_single_head": [
+          1,
+          1
+        ],
+        "max_single_x_baseline": 8.601142287254335,
+        "localised_edge_present": true,
+        "n_contributing": 5,
+        "contributing_layer_hist": {
+          "0": 0,
+          "1": 4,
+          "2": 1,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0
+        }
+      },
+      "secondary_has_target": {
+        "aggregate": 1.1500234930445004,
+        "aggregate_x_baseline": 0.9703323222562972,
+        "max_single": 0.18195411562919617,
+        "max_single_head": [
+          6,
+          0
+        ],
+        "max_single_x_baseline": 4.9127611219882965,
+        "localised_edge_present": false,
+        "n_contributing": 3,
+        "contributing_layer_hist": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 2,
+          "6": 1,
+          "7": 0
+        }
+      }
+    },
+    "composed_Q_P": {
+      "retrieval_acc": 0.98046875,
+      "hop1_match": {
+        "table": [
+          [
+            0.0005306250532157719,
+            0.0011636369163170457,
+            0.009304806590080261,
+            0.009083157405257225
+          ],
+          [
+            0.0007729807985015213,
+            0.0010124838445335627,
+            0.00084891845472157,
+            0.0001447128743166104
+          ],
+          [
+            0.022717708721756935,
+            0.0018724884139373899,
+            0.004448747728019953,
+            0.0016990890726447105
+          ],
+          [
+            0.02417139895260334,
+            0.008269540965557098,
+            0.010326404124498367,
+            0.0011684919008985162
+          ],
+          [
+            8.649274241179228e-05,
+            0.00019343271560501307,
+            0.03900599479675293,
+            0.00011687783990055323
+          ],
+          [
+            0.012322988361120224,
+            0.004591828212141991,
+            0.006957939825952053,
+            0.0003587652463465929
+          ],
+          [
+            0.012556535191833973,
+            0.0021394125651568174,
+            0.0035870217252522707,
+            0.022008484229445457
+          ],
+          [
+            0.0013338554417714477,
+            7.824326894478872e-05,
+            0.01996699720621109,
+            9.378260301673436e-08
+          ]
+        ],
+        "per_head_uniform": 0.037037037037037035,
+        "aggregate": 0.2228401549683099,
+        "aggregate_baseline": 1.1851851851851851,
+        "aggregate_x_baseline": 0.18802138075451147,
+        "max_single": 0.03900599479675293,
+        "max_single_head": [
+          4,
+          2
+        ],
+        "max_single_x_baseline": 1.053161859512329,
+        "localised_edge_present": false,
+        "contributing_heads": [],
+        "n_contributing": 0,
+        "contributing_layer_hist": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0
+        },
+        "composed_baseline": 0.03782410646537878,
+        "composed_pairs": [
+          {
+            "layers": [
+              0,
+              1
+            ],
+            "composed_headmean": 0.15395383536815643,
+            "composed_headmean_no_self": 0.15377065539360046,
+            "composed_x_baseline": 4.070257033277803,
+            "headpair_max": 0.7706291675567627,
+            "headpair_argmax": [
+              1,
+              0
+            ],
+            "headpair_x_baseline": 20.37402174357076,
+            "top_intermediate_hist": {
+              "answer token (match+1)": 256
+            }
+          },
+          {
+            "layers": [
+              1,
+              2
+            ],
+            "composed_headmean": 0.010562250390648842,
+            "composed_headmean_no_self": 0.010497837327420712,
+            "composed_x_baseline": 0.2792465276163681,
+            "headpair_max": 0.025665612891316414,
+            "headpair_argmax": [
+              2,
+              1
+            ],
+            "headpair_x_baseline": 0.678551730357694,
+            "top_intermediate_hist": {
+              "other": 168,
+              "SEP": 67,
+              "answer token (match+1)": 16,
+              "query-arg": 3,
+              "other symbol": 1,
+              "match itself": 1
+            }
+          },
+          {
+            "layers": [
+              2,
+              3
+            ],
+            "composed_headmean": 0.008115366101264954,
+            "composed_headmean_no_self": 0.00803204532712698,
+            "composed_x_baseline": 0.21455539494880396,
+            "headpair_max": 0.018095115199685097,
+            "headpair_argmax": [
+              1,
+              0
+            ],
+            "headpair_x_baseline": 0.47840165679123037,
+            "top_intermediate_hist": {
+              "query-arg": 112,
+              "name": 48,
+              "answer token (match+1)": 42,
+              "other symbol": 29,
+              "SEP": 15,
+              "relation token": 10
+            }
+          },
+          {
+            "layers": [
+              3,
+              4
+            ],
+            "composed_headmean": 0.007588066626340151,
+            "composed_headmean_no_self": 0.0063555059023201466,
+            "composed_x_baseline": 0.20061456397616878,
+            "headpair_max": 0.025047549977898598,
+            "headpair_argmax": [
+              2,
+              0
+            ],
+            "headpair_x_baseline": 0.6622112805447278,
+            "top_intermediate_hist": {
+              "other symbol": 65,
+              "name": 59,
+              "query-arg": 52,
+              "answer token (match+1)": 31,
+              "match itself": 23,
+              "SEP": 22,
+              "other property": 2,
+              "relation token": 2
+            }
+          },
+          {
+            "layers": [
+              4,
+              5
+            ],
+            "composed_headmean": 0.009870456531643867,
+            "composed_headmean_no_self": 0.0055656470358371735,
+            "composed_x_baseline": 0.26095676683541774,
+            "headpair_max": 0.021083157509565353,
+            "headpair_argmax": [
+              2,
+              2
+            ],
+            "headpair_x_baseline": 0.5574000149577418,
+            "top_intermediate_hist": {
+              "match itself": 152,
+              "query-arg": 46,
+              "relation token": 25,
+              "SEP": 13,
+              "answer token (match+1)": 12,
+              "other property": 4,
+              "other symbol": 4
+            }
+          },
+          {
+            "layers": [
+              5,
+              6
+            ],
+            "composed_headmean": 0.004575896542519331,
+            "composed_headmean_no_self": 0.004568098578602076,
+            "composed_x_baseline": 0.12097831172053589,
+            "headpair_max": 0.020600855350494385,
+            "headpair_argmax": [
+              0,
+              1
+            ],
+            "headpair_x_baseline": 0.5446488304846221,
+            "top_intermediate_hist": {
+              "answer token (match+1)": 99,
+              "other symbol": 65,
+              "query-arg": 50,
+              "name": 30,
+              "SEP": 12
+            }
+          },
+          {
+            "layers": [
+              6,
+              7
+            ],
+            "composed_headmean": 0.04106074571609497,
+            "composed_headmean_no_self": 0.041060738265514374,
+            "composed_x_baseline": 1.0855708053190565,
+            "headpair_max": 0.09992322325706482,
+            "headpair_argmax": [
+              1,
+              1
+            ],
+            "headpair_x_baseline": 2.64178674910739,
+            "top_intermediate_hist": {
+              "SEP": 180,
+              "query-arg": 36,
+              "answer token (match+1)": 31,
+              "other symbol": 6,
+              "other": 3
+            }
+          }
+        ]
+      },
+      "hop1_succ": {
+        "table": [
+          [
+            0.000139471550937742,
+            0.0006203221273608506,
+            0.0016731317155063152,
+            0.00602737907320261
+          ],
+          [
+            0.7284746170043945,
+            0.9062283635139465,
+            0.8095531463623047,
+            0.000127866689581424
+          ],
+          [
+            0.017137514427304268,
+            0.0066550918854773045,
+            0.03293532505631447,
+            0.004141509532928467
+          ],
+          [
+            0.057307153940200806,
+            0.020108729600906372,
+            0.01894724927842617,
+            0.03165893256664276
+          ],
+          [
+            0.05736923962831497,
+            0.020670484751462936,
+            0.02601895108819008,
+            0.02777823433279991
+          ],
+          [
+            0.0301979947835207,
+            0.06297983974218369,
+            0.07828822731971741,
+            0.06631150841712952
+          ],
+          [
+            0.1829051971435547,
+            0.04208330437541008,
+            0.03582489490509033,
+            0.0621289387345314
+          ],
+          [
+            0.002062540501356125,
+            0.001090546022169292,
+            0.04034004360437393,
+            3.703220500028692e-05
+          ]
+        ],
+        "per_head_uniform": 0.037037037037037035,
+        "aggregate": 3.3778227818802407,
+        "aggregate_baseline": 1.1851851851851851,
+        "aggregate_x_baseline": 2.850037972211453,
+        "max_single": 0.9062283635139465,
+        "max_single_head": [
+          1,
+          1
+        ],
+        "max_single_x_baseline": 24.468165814876556,
+        "localised_edge_present": true,
+        "contributing_heads": [
+          [
+            1,
+            0,
+            0.7284746170043945
+          ],
+          [
+            1,
+            1,
+            0.9062283635139465
+          ],
+          [
+            1,
+            2,
+            0.8095531463623047
+          ],
+          [
+            5,
+            2,
+            0.07828822731971741
+          ],
+          [
+            6,
+            0,
+            0.1829051971435547
+          ]
+        ],
+        "n_contributing": 5,
+        "contributing_layer_hist": {
+          "0": 0,
+          "1": 3,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 1,
+          "6": 1,
+          "7": 0
+        },
+        "composed_baseline": 0.0332463891612122,
+        "composed_pairs": [
+          {
+            "layers": [
+              0,
+              1
+            ],
+            "composed_headmean": 0.25455835461616516,
+            "composed_headmean_no_self": 0.005453562829643488,
+            "composed_x_baseline": 7.656721858780158,
+            "headpair_max": 0.6859045028686523,
+            "headpair_argmax": [
+              1,
+              1
+            ],
+            "headpair_x_baseline": 20.63094730506498,
+            "top_intermediate_hist": {
+              "answer token (match+1)": 256
+            }
+          },
+          {
+            "layers": [
+              1,
+              2
+            ],
+            "composed_headmean": 0.09205114096403122,
+            "composed_headmean_no_self": 0.09193998575210571,
+            "composed_x_baseline": 2.768756044985035,
+            "headpair_max": 0.315672367811203,
+            "headpair_argmax": [
+              3,
+              1
+            ],
+            "headpair_x_baseline": 9.494936917224404,
+            "top_intermediate_hist": {
+              "query-arg": 256
+            }
+          },
+          {
+            "layers": [
+              2,
+              3
+            ],
+            "composed_headmean": 0.01704099029302597,
+            "composed_headmean_no_self": 0.015213740058243275,
+            "composed_x_baseline": 0.5125666492801361,
+            "headpair_max": 0.028777549043297768,
+            "headpair_argmax": [
+              1,
+              0
+            ],
+            "headpair_x_baseline": 0.8655841963394892,
+            "top_intermediate_hist": {
+              "query-arg": 121,
+              "relation token": 45,
+              "other symbol": 41,
+              "name": 29,
+              "answer token (match+1)": 17,
+              "SEP": 3
+            }
+          },
+          {
+            "layers": [
+              3,
+              4
+            ],
+            "composed_headmean": 0.017877964302897453,
+            "composed_headmean_no_self": 0.013144820928573608,
+            "composed_x_baseline": 0.537741533861225,
+            "headpair_max": 0.03825030103325844,
+            "headpair_argmax": [
+              2,
+              3
+            ],
+            "headpair_x_baseline": 1.1505099350122565,
+            "top_intermediate_hist": {
+              "name": 71,
+              "other property": 52,
+              "query-arg": 49,
+              "answer token (match+1)": 41,
+              "other symbol": 41,
+              "SEP": 2
+            }
+          },
+          {
+            "layers": [
+              4,
+              5
+            ],
+            "composed_headmean": 0.07849296182394028,
+            "composed_headmean_no_self": 0.03694699704647064,
+            "composed_x_baseline": 2.360946972115583,
+            "headpair_max": 0.12135982513427734,
+            "headpair_argmax": [
+              1,
+              2
+            ],
+            "headpair_x_baseline": 3.6503159650150843,
+            "top_intermediate_hist": {
+              "answer token (match+1)": 135,
+              "name": 81,
+              "query-arg": 18,
+              "other symbol": 13,
+              "SEP": 9
+            }
+          },
+          {
+            "layers": [
+              5,
+              6
+            ],
+            "composed_headmean": 0.041294366121292114,
+            "composed_headmean_no_self": 0.023278919979929924,
+            "composed_x_baseline": 1.2420707079212472,
+            "headpair_max": 0.140764057636261,
+            "headpair_argmax": [
+              0,
+              2
+            ],
+            "headpair_x_baseline": 4.233965287288617,
+            "top_intermediate_hist": {
+              "answer token (match+1)": 104,
+              "query-arg": 60,
+              "other symbol": 43,
+              "name": 41,
+              "SEP": 8
+            }
+          },
+          {
+            "layers": [
+              6,
+              7
+            ],
+            "composed_headmean": 0.0152346882969141,
+            "composed_headmean_no_self": 0.013753368519246578,
+            "composed_x_baseline": 0.45823587707648156,
+            "headpair_max": 0.032803963869810104,
+            "headpair_argmax": [
+              2,
+              0
+            ],
+            "headpair_x_baseline": 0.9866925310518154,
+            "top_intermediate_hist": {
+              "SEP": 91,
+              "query-arg": 68,
+              "answer token (match+1)": 55,
+              "other symbol": 38,
+              "name": 4
+            }
+          }
+        ]
+      },
+      "hop2_match": {
+        "table": [
+          [
+            0.00017925267457030714,
+            0.0014237085124477744,
+            0.2506311535835266,
+            0.0010365351336076856
+          ],
+          [
+            0.0030102345626801252,
+            0.0006510447710752487,
+            0.004578967113047838,
+            0.3542577922344208
+          ],
+          [
+            0.03209250047802925,
+            0.0007643525023013353,
+            0.002132130553945899,
+            0.002492402447387576
+          ],
+          [
+            0.0017708772793412209,
+            0.016445256769657135,
+            0.02814526855945587,
+            0.0009441371657885611
+          ],
+          [
+            0.00032298866426572204,
+            0.00021226204989943653,
+            0.001141553046181798,
+            9.50927787926048e-05
+          ],
+          [
+            0.06691183894872665,
+            0.03116608038544655,
+            0.022404421120882034,
+            0.09682640433311462
+          ],
+          [
+            0.06951143592596054,
+            0.052950937300920486,
+            0.07645689696073532,
+            0.11910468339920044
+          ],
+          [
+            0.002872489159926772,
+            0.0009178630425594747,
+            0.06669656187295914,
+            6.12602022442843e-08
+          ]
+        ],
+        "per_head_uniform": 0.037037037037037035,
+        "aggregate": 1.308147184591057,
+        "aggregate_baseline": 1.1851851851851851,
+        "aggregate_x_baseline": 1.1037491869987044,
+        "max_single": 0.3542577922344208,
+        "max_single_head": [
+          1,
+          3
+        ],
+        "max_single_x_baseline": 9.564960390329361,
+        "localised_edge_present": true,
+        "contributing_heads": [
+          [
+            0,
+            2,
+            0.2506311535835266
+          ],
+          [
+            1,
+            3,
+            0.3542577922344208
+          ],
+          [
+            5,
+            3,
+            0.09682640433311462
+          ],
+          [
+            6,
+            2,
+            0.07645689696073532
+          ],
+          [
+            6,
+            3,
+            0.11910468339920044
+          ]
+        ],
+        "n_contributing": 5,
+        "contributing_layer_hist": {
+          "0": 1,
+          "1": 1,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 1,
+          "6": 2,
+          "7": 0
+        },
+        "composed_baseline": 0.038347539277505234,
+        "composed_pairs": [
+          {
+            "layers": [
+              0,
+              1
+            ],
+            "composed_headmean": 0.04994013160467148,
+            "composed_headmean_no_self": 0.0099825793877244,
+            "composed_x_baseline": 1.3023034214340445,
+            "headpair_max": 0.2946542501449585,
+            "headpair_argmax": [
+              3,
+              2
+            ],
+            "headpair_x_baseline": 7.6837850797327025,
+            "top_intermediate_hist": {
+              "match itself": 132,
+              "other symbol": 54,
+              "query-arg": 24,
+              "relation token": 18,
+              "answer token (match+1)": 18,
+              "SEP": 10
+            }
+          },
+          {
+            "layers": [
+              1,
+              2
+            ],
+            "composed_headmean": 0.013484425842761993,
+            "composed_headmean_no_self": 0.013356702402234077,
+            "composed_x_baseline": 0.3516373174607319,
+            "headpair_max": 0.03131438046693802,
+            "headpair_argmax": [
+              2,
+              3
+            ],
+            "headpair_x_baseline": 0.8165942602034733,
+            "top_intermediate_hist": {
+              "query-arg": 134,
+              "other property": 68,
+              "SEP": 47,
+              "match itself": 4,
+              "other symbol": 3
+            }
+          },
+          {
+            "layers": [
+              2,
+              3
+            ],
+            "composed_headmean": 0.012151883915066719,
+            "composed_headmean_no_self": 0.012078087776899338,
+            "composed_x_baseline": 0.31688823178792713,
+            "headpair_max": 0.02732693776488304,
+            "headpair_argmax": [
+              1,
+              0
+            ],
+            "headpair_x_baseline": 0.7126125503680778,
+            "top_intermediate_hist": {
+              "query-arg": 102,
+              "answer token (match+1)": 75,
+              "relation token": 42,
+              "other symbol": 15,
+              "name": 11,
+              "SEP": 11
+            }
+          },
+          {
+            "layers": [
+              3,
+              4
+            ],
+            "composed_headmean": 0.012374920770525932,
+            "composed_headmean_no_self": 0.012297259643673897,
+            "composed_x_baseline": 0.3227044291153538,
+            "headpair_max": 0.023031409829854965,
+            "headpair_argmax": [
+              3,
+              2
+            ],
+            "headpair_x_baseline": 0.6005968117846155,
+            "top_intermediate_hist": {
+              "answer token (match+1)": 92,
+              "other symbol": 86,
+              "name": 64,
+              "relation token": 7,
+              "query-arg": 6,
+              "SEP": 1
+            }
+          },
+          {
+            "layers": [
+              4,
+              5
+            ],
+            "composed_headmean": 0.014975523576140404,
+            "composed_headmean_no_self": 0.012514065951108932,
+            "composed_x_baseline": 0.3905211092625462,
+            "headpair_max": 0.047047048807144165,
+            "headpair_argmax": [
+              1,
+              0
+            ],
+            "headpair_x_baseline": 1.2268596549750999,
+            "top_intermediate_hist": {
+              "answer token (match+1)": 132,
+              "relation token": 66,
+              "match itself": 36,
+              "name": 11,
+              "other symbol": 7,
+              "SEP": 4
+            }
+          },
+          {
+            "layers": [
+              5,
+              6
+            ],
+            "composed_headmean": 0.03317689523100853,
+            "composed_headmean_no_self": 0.017673633992671967,
+            "composed_x_baseline": 0.8651636025696747,
+            "headpair_max": 0.13596922159194946,
+            "headpair_argmax": [
+              2,
+              3
+            ],
+            "headpair_x_baseline": 3.5457091681423574,
+            "top_intermediate_hist": {
+              "match itself": 146,
+              "query-arg": 67,
+              "other symbol": 35,
+              "SEP": 7,
+              "answer token (match+1)": 1
+            }
+          },
+          {
+            "layers": [
+              6,
+              7
+            ],
+            "composed_headmean": 0.04847022518515587,
+            "composed_headmean_no_self": 0.04371647536754608,
+            "composed_x_baseline": 1.263972241723177,
+            "headpair_max": 0.15454350411891937,
+            "headpair_argmax": [
+              2,
+              3
+            ],
+            "headpair_x_baseline": 4.030076167353324,
+            "top_intermediate_hist": {
+              "SEP": 103,
+              "query-arg": 86,
+              "match itself": 59,
+              "other symbol": 8
+            }
+          }
+        ]
+      },
+      "hop2_succ": {
+        "table": [
+          [
+            0.00010814468987518921,
+            7.085555989760906e-05,
+            5.485750443767756e-05,
+            2.3029258954920806e-05
+          ],
+          [
+            0.008613616228103638,
+            0.0018602637574076653,
+            0.004477543290704489,
+            6.467996627179673e-06
+          ],
+          [
+            0.03390739485621452,
+            0.0019359656143933535,
+            0.0019268429605290294,
+            0.0030363474506884813
+          ],
+          [
+            0.006421673111617565,
+            0.0008655792335048318,
+            0.06917886435985565,
+            0.22361236810684204
+          ],
+          [
+            0.30569544434547424,
+            0.33362507820129395,
+            0.284604012966156,
+            0.3553771376609802
+          ],
+          [
+            0.01586035080254078,
+            0.0995129719376564,
+            0.007675278000533581,
+            0.01606309786438942
+          ],
+          [
+            0.0010723754530772567,
+            0.050057701766490936,
+            0.032895009964704514,
+            0.0014844706747680902
+          ],
+          [
+            0.00042222579941153526,
+            0.0015896562254056334,
+            0.012254096567630768,
+            6.492135753433104e-07
+          ]
+        ],
+        "per_head_uniform": 0.037037037037037035,
+        "aggregate": 1.8742893714237425,
+        "aggregate_baseline": 1.1851851851851851,
+        "aggregate_x_baseline": 1.5814316571387828,
+        "max_single": 0.3553771376609802,
+        "max_single_head": [
+          4,
+          3
+        ],
+        "max_single_x_baseline": 9.595182716846466,
+        "localised_edge_present": true,
+        "contributing_heads": [
+          [
+            3,
+            3,
+            0.22361236810684204
+          ],
+          [
+            4,
+            0,
+            0.30569544434547424
+          ],
+          [
+            4,
+            1,
+            0.33362507820129395
+          ],
+          [
+            4,
+            2,
+            0.284604012966156
+          ],
+          [
+            4,
+            3,
+            0.3553771376609802
+          ],
+          [
+            5,
+            1,
+            0.0995129719376564
+          ]
+        ],
+        "n_contributing": 6,
+        "contributing_layer_hist": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 1,
+          "4": 4,
+          "5": 1,
+          "6": 0,
+          "7": 0
+        },
+        "composed_baseline": 0.03358984464566872,
+        "composed_pairs": [
+          {
+            "layers": [
+              0,
+              1
+            ],
+            "composed_headmean": 0.009161398746073246,
+            "composed_headmean_no_self": 0.006797164212912321,
+            "composed_x_baseline": 0.27274311157775993,
+            "headpair_max": 0.023585934191942215,
+            "headpair_argmax": [
+              0,
+              3
+            ],
+            "headpair_x_baseline": 0.7021745542661666,
+            "top_intermediate_hist": {
+              "other symbol": 129,
+              "answer token (match+1)": 120,
+              "name": 4,
+              "SEP": 3
+            }
+          },
+          {
+            "layers": [
+              1,
+              2
+            ],
+            "composed_headmean": 0.009847897104918957,
+            "composed_headmean_no_self": 0.009846891276538372,
+            "composed_x_baseline": 0.2931807874910432,
+            "headpair_max": 0.029828548431396484,
+            "headpair_argmax": [
+              2,
+              0
+            ],
+            "headpair_x_baseline": 0.888022816004383,
+            "top_intermediate_hist": {
+              "other symbol": 143,
+              "query-arg": 78,
+              "SEP": 35
+            }
+          },
+          {
+            "layers": [
+              2,
+              3
+            ],
+            "composed_headmean": 0.011317616328597069,
+            "composed_headmean_no_self": 0.009446931071579456,
+            "composed_x_baseline": 0.3369356556418736,
+            "headpair_max": 0.02808619849383831,
+            "headpair_argmax": [
+              1,
+              0
+            ],
+            "headpair_x_baseline": 0.8361514853704426,
+            "top_intermediate_hist": {
+              "query-arg": 122,
+              "other symbol": 84,
+              "answer token (match+1)": 44,
+              "relation token": 3,
+              "name": 3
+            }
+          },
+          {
+            "layers": [
+              3,
+              4
+            ],
+            "composed_headmean": 0.06450480967760086,
+            "composed_headmean_no_self": 0.03739499673247337,
+            "composed_x_baseline": 1.9203664190188061,
+            "headpair_max": 0.1430528610944748,
+            "headpair_argmax": [
+              3,
+              1
+            ],
+            "headpair_x_baseline": 4.258812822848852,
+            "top_intermediate_hist": {
+              "name": 105,
+              "answer token (match+1)": 90,
+              "other symbol": 55,
+              "query-arg": 6
+            }
+          },
+          {
+            "layers": [
+              4,
+              5
+            ],
+            "composed_headmean": 0.15419045090675354,
+            "composed_headmean_no_self": 0.15167497098445892,
+            "composed_x_baseline": 4.590388926572062,
+            "headpair_max": 0.27263113856315613,
+            "headpair_argmax": [
+              3,
+              3
+            ],
+            "headpair_x_baseline": 8.116475126309071,
+            "top_intermediate_hist": {
+              "other symbol": 137,
+              "query-arg": 119
+            }
+          },
+          {
+            "layers": [
+              5,
+              6
+            ],
+            "composed_headmean": 0.02817568928003311,
+            "composed_headmean_no_self": 0.026591315865516663,
+            "composed_x_baseline": 0.8388157068677082,
+            "headpair_max": 0.12413721531629562,
+            "headpair_argmax": [
+              2,
+              1
+            ],
+            "headpair_x_baseline": 3.695676970994941,
+            "top_intermediate_hist": {
+              "other symbol": 144,
+              "query-arg": 92,
+              "SEP": 19,
+              "answer token (match+1)": 1
+            }
+          },
+          {
+            "layers": [
+              6,
+              7
+            ],
+            "composed_headmean": 0.010517816059291363,
+            "composed_headmean_no_self": 0.010408930480480194,
+            "composed_x_baseline": 0.3131248795652764,
+            "headpair_max": 0.029031582176685333,
+            "headpair_argmax": [
+              2,
+              1
+            ],
+            "headpair_x_baseline": 0.8642964111008129,
+            "top_intermediate_hist": {
+              "SEP": 155,
+              "query-arg": 81,
+              "other symbol": 16,
+              "answer token (match+1)": 3,
+              "name": 1
+            }
+          }
+        ]
+      },
+      "qmark_hop1_match": {
+        "table": [
+          [
+            0.0009448787895962596,
+            0.006215816829353571,
+            0.015277490019798279,
+            0.002282216912135482
+          ],
+          [
+            0.0024983698967844248,
+            0.0006445001345127821,
+            0.005244104657322168,
+            0.0006937753641977906
+          ],
+          [
+            0.006905191577970982,
+            0.004423120990395546,
+            0.002011350356042385,
+            0.0002864165580831468
+          ],
+          [
+            0.0032069641165435314,
+            0.003385159419849515,
+            0.0006538075394928455,
+            0.003514362033456564
+          ],
+          [
+            1.9281538698123768e-05,
+            0.00023463397519662976,
+            1.6345815083695925e-06,
+            0.00010483829828444868
+          ],
+          [
+            0.011023828759789467,
+            0.019078798592090607,
+            0.005511417053639889,
+            0.001374316867440939
+          ],
+          [
+            0.008236839435994625,
+            0.00018027368059847504,
+            0.0013404784258455038,
+            0.00021297609782777727
+          ],
+          [
+            0.0001724407047731802,
+            2.561215660534799e-05,
+            0.001581560936756432,
+            7.03174591762945e-05
+          ]
+        ],
+        "per_head_uniform": 0.035714285714285705,
+        "aggregate": 0.10735677375976138,
+        "aggregate_baseline": 1.1428571428571426,
+        "aggregate_x_baseline": 0.09393717703979124,
+        "max_single": 0.019078798592090607,
+        "max_single_head": [
+          5,
+          1
+        ],
+        "max_single_x_baseline": 0.5342063605785371,
+        "localised_edge_present": false,
+        "contributing_heads": [],
+        "n_contributing": 0,
+        "contributing_layer_hist": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0
+        },
+        "composed_baseline": 0.03774875572426832,
+        "composed_pairs": [
+          {
+            "layers": [
+              0,
+              1
+            ],
+            "composed_headmean": 0.007515041157603264,
+            "composed_headmean_no_self": 0.006859230808913708,
+            "composed_x_baseline": 0.19908049983146636,
+            "headpair_max": 0.020810045301914215,
+            "headpair_argmax": [
+              3,
+              0
+            ],
+            "headpair_x_baseline": 0.5512776488295118,
+            "top_intermediate_hist": {
+              "name": 185,
+              "answer token (match+1)": 50,
+              "match itself": 16,
+              "relation token": 5
+            }
+          },
+          {
+            "layers": [
+              1,
+              2
+            ],
+            "composed_headmean": 0.004530203063040972,
+            "composed_headmean_no_self": 0.0044786036014556885,
+            "composed_x_baseline": 0.12000933477467038,
+            "headpair_max": 0.009601753205060959,
+            "headpair_argmax": [
+              0,
+              1
+            ],
+            "headpair_x_baseline": 0.2543594622083949,
+            "top_intermediate_hist": {
+              "other": 149,
+              "SEP": 64,
+              "answer token (match+1)": 31,
+              "other symbol": 9,
+              "query-arg": 2,
+              "match itself": 1
+            }
+          },
+          {
+            "layers": [
+              2,
+              3
+            ],
+            "composed_headmean": 0.005843526218086481,
+            "composed_headmean_no_self": 0.005826596170663834,
+            "composed_x_baseline": 0.15480049887656913,
+            "headpair_max": 0.021035313606262207,
+            "headpair_argmax": [
+              2,
+              0
+            ],
+            "headpair_x_baseline": 0.5572452178268436,
+            "top_intermediate_hist": {
+              "QMARK": 133,
+              "query-arg": 112,
+              "answer token (match+1)": 5,
+              "SEP": 5,
+              "other symbol": 1
+            }
+          },
+          {
+            "layers": [
+              3,
+              4
+            ],
+            "composed_headmean": 0.007499446626752615,
+            "composed_headmean_no_self": 0.0074892411939799786,
+            "composed_x_baseline": 0.19866738605986134,
+            "headpair_max": 0.013509759679436684,
+            "headpair_argmax": [
+              3,
+              3
+            ],
+            "headpair_x_baseline": 0.3578862248630724,
+            "top_intermediate_hist": {
+              "QMARK": 122,
+              "answer token (match+1)": 114,
+              "other symbol": 10,
+              "name": 9,
+              "query-arg": 1
+            }
+          },
+          {
+            "layers": [
+              4,
+              5
+            ],
+            "composed_headmean": 0.01756041869521141,
+            "composed_headmean_no_self": 0.011812100186944008,
+            "composed_x_baseline": 0.4651919873460089,
+            "headpair_max": 0.044462814927101135,
+            "headpair_argmax": [
+              1,
+              1
+            ],
+            "headpair_x_baseline": 1.1778617354138752,
+            "top_intermediate_hist": {
+              "relation token": 135,
+              "match itself": 119,
+              "query-arg": 2
+            }
+          },
+          {
+            "layers": [
+              5,
+              6
+            ],
+            "composed_headmean": 0.004791145212948322,
+            "composed_headmean_no_self": 0.0047899880446493626,
+            "composed_x_baseline": 0.12692193745258046,
+            "headpair_max": 0.019825447350740433,
+            "headpair_argmax": [
+              0,
+              1
+            ],
+            "headpair_x_baseline": 0.5251947241798711,
+            "top_intermediate_hist": {
+              "QMARK": 206,
+              "answer token (match+1)": 33,
+              "query-arg": 9,
+              "other symbol": 8
+            }
+          },
+          {
+            "layers": [
+              6,
+              7
+            ],
+            "composed_headmean": 0.02315540425479412,
+            "composed_headmean_no_self": 0.02315540239214897,
+            "composed_x_baseline": 0.6134084107018057,
+            "headpair_max": 0.08239205181598663,
+            "headpair_argmax": [
+              0,
+              1
+            ],
+            "headpair_x_baseline": 2.1826428510070746,
+            "top_intermediate_hist": {
+              "SEP": 164,
+              "QMARK": 86,
+              "other symbol": 5,
+              "answer token (match+1)": 1
+            }
+          }
+        ]
+      },
+      "qmark_hop1_succ": {
+        "table": [
+          [
+            0.0006470908992923796,
+            0.051338985562324524,
+            0.10443530231714249,
+            0.014593455009162426
+          ],
+          [
+            0.005556196440011263,
+            0.001546703977510333,
+            0.0049718706868588924,
+            0.004328565672039986
+          ],
+          [
+            0.03697158023715019,
+            0.029810890555381775,
+            0.035871561616659164,
+            0.0016895267181098461
+          ],
+          [
+            0.0351330041885376,
+            0.08123226463794708,
+            0.0006180167547427118,
+            0.05185723304748535
+          ],
+          [
+            0.38424646854400635,
+            0.38628384470939636,
+            0.38293689489364624,
+            0.37436333298683167
+          ],
+          [
+            0.005598478019237518,
+            0.05176299437880516,
+            0.06270621716976166,
+            0.08499003946781158
+          ],
+          [
+            0.06385910511016846,
+            0.008295297622680664,
+            0.031596191227436066,
+            0.00010312442464055493
+          ],
+          [
+            6.353973731165752e-05,
+            0.00031712549389339983,
+            0.005635665263980627,
+            0.0001588278537383303
+          ]
+        ],
+        "per_head_uniform": 0.035714285714285705,
+        "aggregate": 2.3035193952237023,
+        "aggregate_baseline": 1.1428571428571426,
+        "aggregate_x_baseline": 2.01557947082074,
+        "max_single": 0.38628384470939636,
+        "max_single_head": [
+          4,
+          1
+        ],
+        "max_single_x_baseline": 10.815947651863102,
+        "localised_edge_present": true,
+        "contributing_heads": [
+          [
+            0,
+            2,
+            0.10443530231714249
+          ],
+          [
+            3,
+            1,
+            0.08123226463794708
+          ],
+          [
+            4,
+            0,
+            0.38424646854400635
+          ],
+          [
+            4,
+            1,
+            0.38628384470939636
+          ],
+          [
+            4,
+            2,
+            0.38293689489364624
+          ],
+          [
+            4,
+            3,
+            0.37436333298683167
+          ],
+          [
+            5,
+            3,
+            0.08499003946781158
+          ]
+        ],
+        "n_contributing": 7,
+        "contributing_layer_hist": {
+          "0": 1,
+          "1": 0,
+          "2": 0,
+          "3": 1,
+          "4": 4,
+          "5": 1,
+          "6": 0,
+          "7": 0
+        },
+        "composed_baseline": 0.03333452832382197,
+        "composed_pairs": [
+          {
+            "layers": [
+              0,
+              1
+            ],
+            "composed_headmean": 0.007204413414001465,
+            "composed_headmean_no_self": 0.005645688157528639,
+            "composed_x_baseline": 0.21612465441285245,
+            "headpair_max": 0.014109929092228413,
+            "headpair_argmax": [
+              3,
+              0
+            ],
+            "headpair_x_baseline": 0.42328269820290165,
+            "top_intermediate_hist": {
+              "name": 160,
+              "answer token (match+1)": 94,
+              "other symbol": 2
+            }
+          },
+          {
+            "layers": [
+              1,
+              2
+            ],
+            "composed_headmean": 0.0995912104845047,
+            "composed_headmean_no_self": 0.09942328929901123,
+            "composed_x_baseline": 2.987629208880495,
+            "headpair_max": 0.4727047085762024,
+            "headpair_argmax": [
+              3,
+              1
+            ],
+            "headpair_x_baseline": 14.180632885643435,
+            "top_intermediate_hist": {
+              "query-arg": 256
+            }
+          },
+          {
+            "layers": [
+              2,
+              3
+            ],
+            "composed_headmean": 0.021634342148900032,
+            "composed_headmean_no_self": 0.01932603307068348,
+            "composed_x_baseline": 0.6490069977513198,
+            "headpair_max": 0.03527337312698364,
+            "headpair_argmax": [
+              1,
+              0
+            ],
+            "headpair_x_baseline": 1.0581632589586127,
+            "top_intermediate_hist": {
+              "QMARK": 208,
+              "query-arg": 42,
+              "other symbol": 4,
+              "answer token (match+1)": 1,
+              "SEP": 1
+            }
+          },
+          {
+            "layers": [
+              3,
+              4
+            ],
+            "composed_headmean": 0.07116445153951645,
+            "composed_headmean_no_self": 0.0036666912492364645,
+            "composed_x_baseline": 2.134857012170769,
+            "headpair_max": 0.20280161499977112,
+            "headpair_argmax": [
+              1,
+              1
+            ],
+            "headpair_x_baseline": 6.0838303464111805,
+            "top_intermediate_hist": {
+              "answer token (match+1)": 117,
+              "QMARK": 90,
+              "name": 39,
+              "other symbol": 8,
+              "query-arg": 2
+            }
+          },
+          {
+            "layers": [
+              4,
+              5
+            ],
+            "composed_headmean": 0.10854019224643707,
+            "composed_headmean_no_self": 0.06712046265602112,
+            "composed_x_baseline": 3.256089037530212,
+            "headpair_max": 0.1916370689868927,
+            "headpair_argmax": [
+              3,
+              1
+            ],
+            "headpair_x_baseline": 5.748905972968048,
+            "top_intermediate_hist": {
+              "name": 116,
+              "QMARK": 97,
+              "answer token (match+1)": 36,
+              "other symbol": 4,
+              "relation token": 2,
+              "SEP": 1
+            }
+          },
+          {
+            "layers": [
+              5,
+              6
+            ],
+            "composed_headmean": 0.03690825402736664,
+            "composed_headmean_no_self": 0.029160546138882637,
+            "composed_x_baseline": 1.1072079277327216,
+            "headpair_max": 0.09547354280948639,
+            "headpair_argmax": [
+              0,
+              3
+            ],
+            "headpair_x_baseline": 2.864103606987527,
+            "top_intermediate_hist": {
+              "QMARK": 142,
+              "query-arg": 53,
+              "other symbol": 41,
+              "answer token (match+1)": 14,
+              "name": 4,
+              "SEP": 2
+            }
+          },
+          {
+            "layers": [
+              6,
+              7
+            ],
+            "composed_headmean": 0.012159830890595913,
+            "composed_headmean_no_self": 0.011935590766370296,
+            "composed_x_baseline": 0.36478184939266384,
+            "headpair_max": 0.054096803069114685,
+            "headpair_argmax": [
+              2,
+              0
+            ],
+            "headpair_x_baseline": 1.6228459135105056,
+            "top_intermediate_hist": {
+              "QMARK": 147,
+              "SEP": 79,
+              "other symbol": 24,
+              "query-arg": 4,
+              "answer token (match+1)": 2
+            }
+          }
+        ]
+      },
+      "qmark_hop2_match": {
+        "table": [
+          [
+            0.0008318572654388845,
+            0.007065984420478344,
+            0.00727451778948307,
+            0.0066294195130467415
+          ],
+          [
+            0.001148299896158278,
+            0.0057477764785289764,
+            0.004168280865997076,
+            0.009549305774271488
+          ],
+          [
+            0.014565187506377697,
+            0.0026725439820438623,
+            0.006565253250300884,
+            0.00019821440218947828
+          ],
+          [
+            0.00016958985361270607,
+            0.00013519851199816912,
+            0.00181197514757514,
+            0.002556150546297431
+          ],
+          [
+            6.838486297056079e-05,
+            1.395991330355173e-05,
+            0.0006281652022153139,
+            4.3812196963699535e-05
+          ],
+          [
+            0.013689657673239708,
+            0.01588037610054016,
+            0.021412009373307228,
+            0.013262207619845867
+          ],
+          [
+            0.007023876067250967,
+            0.007778908126056194,
+            0.03627581521868706,
+            1.0054964150185697e-05
+          ],
+          [
+            0.0017179723363369703,
+            3.216004915884696e-05,
+            0.1772339642047882,
+            0.000426119368057698
+          ]
+        ],
+        "per_head_uniform": 0.035714285714285705,
+        "aggregate": 0.36658699848067045,
+        "aggregate_baseline": 1.1428571428571426,
+        "aggregate_x_baseline": 0.3207636236705867,
+        "max_single": 0.1772339642047882,
+        "max_single_head": [
+          7,
+          2
+        ],
+        "max_single_x_baseline": 4.962550997734071,
+        "localised_edge_present": false,
+        "contributing_heads": [
+          [
+            7,
+            2,
+            0.1772339642047882
+          ]
+        ],
+        "n_contributing": 1,
+        "contributing_layer_hist": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 1
+        },
+        "composed_baseline": 0.038253494507390254,
+        "composed_pairs": [
+          {
+            "layers": [
+              0,
+              1
+            ],
+            "composed_headmean": 0.05459044873714447,
+            "composed_headmean_no_self": 0.05304897949099541,
+            "composed_x_baseline": 1.4270708974469783,
+            "headpair_max": 0.21060365438461304,
+            "headpair_argmax": [
+              1,
+              0
+            ],
+            "headpair_x_baseline": 5.505474914035009,
+            "top_intermediate_hist": {
+              "answer token (match+1)": 256
+            }
+          },
+          {
+            "layers": [
+              1,
+              2
+            ],
+            "composed_headmean": 0.013113833963871002,
+            "composed_headmean_no_self": 0.013038530014455318,
+            "composed_x_baseline": 0.3428140130135698,
+            "headpair_max": 0.07205595821142197,
+            "headpair_argmax": [
+              3,
+              3
+            ],
+            "headpair_x_baseline": 1.8836438118745298,
+            "top_intermediate_hist": {
+              "query-arg": 152,
+              "other property": 63,
+              "SEP": 27,
+              "QMARK": 9,
+              "other symbol": 4,
+              "match itself": 1
+            }
+          },
+          {
+            "layers": [
+              2,
+              3
+            ],
+            "composed_headmean": 0.008338600397109985,
+            "composed_headmean_no_self": 0.008331268094480038,
+            "composed_x_baseline": 0.21798270993252755,
+            "headpair_max": 0.029185466468334198,
+            "headpair_argmax": [
+              2,
+              0
+            ],
+            "headpair_x_baseline": 0.7629490284265614,
+            "top_intermediate_hist": {
+              "QMARK": 139,
+              "query-arg": 100,
+              "other symbol": 11,
+              "SEP": 6
+            }
+          },
+          {
+            "layers": [
+              3,
+              4
+            ],
+            "composed_headmean": 0.010678155347704887,
+            "composed_headmean_no_self": 0.01065251138061285,
+            "composed_x_baseline": 0.27914195775347944,
+            "headpair_max": 0.01875937357544899,
+            "headpair_argmax": [
+              3,
+              2
+            ],
+            "headpair_x_baseline": 0.49039633677976363,
+            "top_intermediate_hist": {
+              "other symbol": 120,
+              "QMARK": 90,
+              "name": 45,
+              "answer token (match+1)": 1
+            }
+          },
+          {
+            "layers": [
+              4,
+              5
+            ],
+            "composed_headmean": 0.017813613638281822,
+            "composed_headmean_no_self": 0.017133960500359535,
+            "composed_x_baseline": 0.46567284551847626,
+            "headpair_max": 0.0420498251914978,
+            "headpair_argmax": [
+              2,
+              0
+            ],
+            "headpair_x_baseline": 1.0992414087391187,
+            "top_intermediate_hist": {
+              "answer token (match+1)": 143,
+              "relation token": 98,
+              "other symbol": 11,
+              "name": 3,
+              "QMARK": 1
+            }
+          },
+          {
+            "layers": [
+              5,
+              6
+            ],
+            "composed_headmean": 0.021642537787556648,
+            "composed_headmean_no_self": 0.019086401909589767,
+            "composed_x_baseline": 0.5657662931520019,
+            "headpair_max": 0.17292962968349457,
+            "headpair_argmax": [
+              2,
+              3
+            ],
+            "headpair_x_baseline": 4.52062306752357,
+            "top_intermediate_hist": {
+              "QMARK": 86,
+              "query-arg": 76,
+              "other symbol": 72,
+              "match itself": 22
+            }
+          },
+          {
+            "layers": [
+              6,
+              7
+            ],
+            "composed_headmean": 0.03140248730778694,
+            "composed_headmean_no_self": 0.02394052967429161,
+            "composed_x_baseline": 0.8209050627183941,
+            "headpair_max": 0.1242881566286087,
+            "headpair_argmax": [
+              0,
+              3
+            ],
+            "headpair_x_baseline": 3.2490667383236653,
+            "top_intermediate_hist": {
+              "match itself": 126,
+              "SEP": 86,
+              "QMARK": 34,
+              "other symbol": 6,
+              "query-arg": 4
+            }
+          }
+        ]
+      },
+      "qmark_hop2_succ": {
+        "table": [
+          [
+            0.0005457495572045445,
+            0.009380348026752472,
+            0.007405051030218601,
+            0.010147767141461372
+          ],
+          [
+            0.30661794543266296,
+            0.3108179569244385,
+            0.28737130761146545,
+            0.3208959698677063
+          ],
+          [
+            0.04726183041930199,
+            0.005489986389875412,
+            0.09299767017364502,
+            0.0011385844554752111
+          ],
+          [
+            0.0023200190626084805,
+            0.0018825347069650888,
+            0.009226172231137753,
+            0.004194236360490322
+          ],
+          [
+            0.0009102527983486652,
+            0.00013844488421455026,
+            0.0004957345663569868,
+            0.0187008548527956
+          ],
+          [
+            0.021517489105463028,
+            0.023090356960892677,
+            0.03355652838945389,
+            0.03284706547856331
+          ],
+          [
+            0.004476531874388456,
+            0.00495892995968461,
+            0.003690852550789714,
+            9.708658762974665e-05
+          ],
+          [
+            5.438915468403138e-05,
+            8.022646215977147e-05,
+            0.001470467308536172,
+            2.4187304006773047e-05
+          ]
+        ],
+        "per_head_uniform": 0.035714285714285705,
+        "aggregate": 1.5638025276293774,
+        "aggregate_baseline": 1.1428571428571426,
+        "aggregate_x_baseline": 1.3683272116757057,
+        "max_single": 0.3208959698677063,
+        "max_single_head": [
+          1,
+          3
+        ],
+        "max_single_x_baseline": 8.985087156295778,
+        "localised_edge_present": true,
+        "contributing_heads": [
+          [
+            1,
+            0,
+            0.30661794543266296
+          ],
+          [
+            1,
+            1,
+            0.3108179569244385
+          ],
+          [
+            1,
+            2,
+            0.28737130761146545
+          ],
+          [
+            1,
+            3,
+            0.3208959698677063
+          ],
+          [
+            2,
+            2,
+            0.09299767017364502
+          ]
+        ],
+        "n_contributing": 5,
+        "contributing_layer_hist": {
+          "0": 0,
+          "1": 4,
+          "2": 1,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0
+        },
+        "composed_baseline": 0.03366571754097647,
+        "composed_pairs": [
+          {
+            "layers": [
+              0,
+              1
+            ],
+            "composed_headmean": 0.22835996747016907,
+            "composed_headmean_no_self": 0.038946837186813354,
+            "composed_x_baseline": 6.783160560656968,
+            "headpair_max": 0.32171833515167236,
+            "headpair_argmax": [
+              3,
+              1
+            ],
+            "headpair_x_baseline": 9.556259561676967,
+            "top_intermediate_hist": {
+              "answer token (match+1)": 232,
+              "name": 24
+            }
+          },
+          {
+            "layers": [
+              1,
+              2
+            ],
+            "composed_headmean": 0.027314994484186172,
+            "composed_headmean_no_self": 0.027311354875564575,
+            "composed_x_baseline": 0.8113593435499936,
+            "headpair_max": 0.044587187469005585,
+            "headpair_argmax": [
+              2,
+              1
+            ],
+            "headpair_x_baseline": 1.3244092425695655,
+            "top_intermediate_hist": {
+              "QMARK": 144,
+              "other symbol": 111,
+              "query-arg": 1
+            }
+          },
+          {
+            "layers": [
+              2,
+              3
+            ],
+            "composed_headmean": 0.026424465700984,
+            "composed_headmean_no_self": 0.0262901708483696,
+            "composed_x_baseline": 0.7849072478203167,
+            "headpair_max": 0.08237458020448685,
+            "headpair_argmax": [
+              1,
+              2
+            ],
+            "headpair_x_baseline": 2.4468386899588292,
+            "top_intermediate_hist": {
+              "QMARK": 244,
+              "query-arg": 7,
+              "other symbol": 5
+            }
+          },
+          {
+            "layers": [
+              3,
+              4
+            ],
+            "composed_headmean": 0.029755739495158195,
+            "composed_headmean_no_self": 0.029248226433992386,
+            "composed_x_baseline": 0.8838587640064639,
+            "headpair_max": 0.07954644411802292,
+            "headpair_argmax": [
+              3,
+              1
+            ],
+            "headpair_x_baseline": 2.362832279490327,
+            "top_intermediate_hist": {
+              "other symbol": 111,
+              "name": 74,
+              "QMARK": 64,
+              "answer token (match+1)": 4,
+              "query-arg": 3
+            }
+          },
+          {
+            "layers": [
+              4,
+              5
+            ],
+            "composed_headmean": 0.06446311622858047,
+            "composed_headmean_no_self": 0.061711736023426056,
+            "composed_x_baseline": 1.9148000083502967,
+            "headpair_max": 0.1144978255033493,
+            "headpair_argmax": [
+              2,
+              3
+            ],
+            "headpair_x_baseline": 3.401021391092807,
+            "top_intermediate_hist": {
+              "other symbol": 154,
+              "query-arg": 100,
+              "QMARK": 2
+            }
+          },
+          {
+            "layers": [
+              5,
+              6
+            ],
+            "composed_headmean": 0.037676502019166946,
+            "composed_headmean_no_self": 0.0374455489218235,
+            "composed_x_baseline": 1.1191355708758834,
+            "headpair_max": 0.3902936577796936,
+            "headpair_argmax": [
+              2,
+              1
+            ],
+            "headpair_x_baseline": 11.593207758148772,
+            "top_intermediate_hist": {
+              "other symbol": 119,
+              "QMARK": 84,
+              "query-arg": 53
+            }
+          },
+          {
+            "layers": [
+              6,
+              7
+            ],
+            "composed_headmean": 0.005527638830244541,
+            "composed_headmean_no_self": 0.005519794765859842,
+            "composed_x_baseline": 0.16419192086182438,
+            "headpair_max": 0.024867869913578033,
+            "headpair_argmax": [
+              0,
+              0
+            ],
+            "headpair_x_baseline": 0.7386704258808661,
+            "top_intermediate_hist": {
+              "SEP": 108,
+              "QMARK": 102,
+              "other symbol": 39,
+              "query-arg": 7
+            }
+          }
+        ]
+      }
+    }
+  },
+  "adjudication": {
+    "seed2|property->symbol": {
+      "verdict": "HIGH (distributed/multi-step route present)",
+      "direct_x": 0.2109165978965919,
+      "comp_x": 4.21439545213547,
+      "pair_x": 19.768986032912498,
+      "qmark_x": 0.1668461059092579,
+      "qmark_comp_x": 0.8772515641154915,
+      "qmark_pair_x": 3.3202939740913213,
+      "retrieval_acc": 0.9921875
+    },
+    "seed2|symbol->person": {
+      "verdict": "HIGH (distributed/multi-step route present)",
+      "direct_x": 0.3618965028043597,
+      "comp_x": 3.7488033527514255,
+      "pair_x": 16.37407931611172,
+      "qmark_x": 0.27537100823476474,
+      "qmark_comp_x": 1.4678026924291836,
+      "qmark_pair_x": 5.724377846568939,
+      "retrieval_acc": 1.0
+    }
+  },
+  "overall": "no STOP flag; see per-condition verdicts",
+  "rule": {
+    "contrib_rel": 2.0,
+    "local_abs": 0.25,
+    "local_rel": 5.0,
+    "agg_high": 2.0,
+    "agg_base": 1.5,
+    "n_ep": 256,
+    "n_layers": 8
+  }
+}

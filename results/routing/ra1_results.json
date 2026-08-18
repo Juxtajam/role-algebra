@@ -1,0 +1,178 @@
+{
+ "model": "Qwen/Qwen2.5-72B-Instruct",
+ "layers": 80,
+ "heads": 64,
+ "frozen_n": 900,
+ "joint_n": 900,
+ "n_strong_pointer_heads_frozen": 72,
+ "top5_selectivity_fraction": 0.1288291960954666,
+ "pointer_heads": [
+  {
+   "layer": 64,
+   "head": 12,
+   "frozen_answer": 0.973511278629303,
+   "frozen_other": 0.0009415178210474551,
+   "frozen_sel": 0.9725697636604309,
+   "joint_answer": 0.9635319113731384,
+   "joint_other": 0.0015797795495018363,
+   "joint_sel": 0.9619521318236366,
+   "role_follows": true
+  },
+  {
+   "layer": 64,
+   "head": 9,
+   "frozen_answer": 0.828159749507904,
+   "frozen_other": 0.008585900068283081,
+   "frozen_sel": 0.8195738792419434,
+   "joint_answer": 0.8084515929222107,
+   "joint_other": 0.011327110230922699,
+   "joint_sel": 0.797124482691288,
+   "role_follows": true
+  },
+  {
+   "layer": 64,
+   "head": 13,
+   "frozen_answer": 0.8319900035858154,
+   "frozen_other": 0.030781259760260582,
+   "frozen_sel": 0.8012087345123291,
+   "joint_answer": 0.823572039604187,
+   "joint_other": 0.03293926268815994,
+   "joint_sel": 0.7906327769160271,
+   "role_follows": true
+  },
+  {
+   "layer": 62,
+   "head": 1,
+   "frozen_answer": 0.7798122763633728,
+   "frozen_other": 0.0014943912392482162,
+   "frozen_sel": 0.7783178687095642,
+   "joint_answer": 0.7658534049987793,
+   "joint_other": 0.00213715061545372,
+   "joint_sel": 0.7637162543833256,
+   "role_follows": true
+  },
+  {
+   "layer": 62,
+   "head": 0,
+   "frozen_answer": 0.6081567406654358,
+   "frozen_other": 0.0012749119196087122,
+   "frozen_sel": 0.606881856918335,
+   "joint_answer": 0.5870757102966309,
+   "joint_other": 0.0015495067927986383,
+   "joint_sel": 0.5855262035038322,
+   "role_follows": true
+  },
+  {
+   "layer": 68,
+   "head": 25,
+   "frozen_answer": 0.609913170337677,
+   "frozen_other": 0.011983928270637989,
+   "frozen_sel": 0.5979292392730713,
+   "joint_answer": 0.5963603854179382,
+   "joint_other": 0.014510375447571278,
+   "joint_sel": 0.581850009970367,
+   "role_follows": true
+  },
+  {
+   "layer": 64,
+   "head": 8,
+   "frozen_answer": 0.5341201424598694,
+   "frozen_other": 0.007415090221911669,
+   "frozen_sel": 0.5267050266265869,
+   "joint_answer": 0.5080475807189941,
+   "joint_other": 0.00948059931397438,
+   "joint_sel": 0.49856698140501976,
+   "role_follows": true
+  },
+  {
+   "layer": 72,
+   "head": 47,
+   "frozen_answer": 0.6462163925170898,
+   "frozen_other": 0.12344065308570862,
+   "frozen_sel": 0.5227757692337036,
+   "joint_answer": 0.6299187541007996,
+   "joint_other": 0.12400904297828674,
+   "joint_sel": 0.5059097111225128,
+   "role_follows": true
+  },
+  {
+   "layer": 68,
+   "head": 15,
+   "frozen_answer": 0.5184971690177917,
+   "frozen_other": 0.03262569010257721,
+   "frozen_sel": 0.48587149381637573,
+   "joint_answer": 0.49484944343566895,
+   "joint_other": 0.032795269042253494,
+   "joint_sel": 0.46205417439341545,
+   "role_follows": true
+  },
+  {
+   "layer": 71,
+   "head": 28,
+   "frozen_answer": 0.48218342661857605,
+   "frozen_other": 0.025179659947752953,
+   "frozen_sel": 0.45700377225875854,
+   "joint_answer": 0.4516305923461914,
+   "joint_other": 0.024811668321490288,
+   "joint_sel": 0.4268189240247011,
+   "role_follows": true
+  },
+  {
+   "layer": 75,
+   "head": 20,
+   "frozen_answer": 0.45136040449142456,
+   "frozen_other": 0.004596829880028963,
+   "frozen_sel": 0.4467635750770569,
+   "joint_answer": 0.4360395073890686,
+   "joint_other": 0.004824723582714796,
+   "joint_sel": 0.4312147838063538,
+   "role_follows": true
+  },
+  {
+   "layer": 64,
+   "head": 10,
+   "frozen_answer": 0.4779866635799408,
+   "frozen_other": 0.03614698722958565,
+   "frozen_sel": 0.44183966517448425,
+   "joint_answer": 0.4751761853694916,
+   "joint_other": 0.04286038875579834,
+   "joint_sel": 0.43231579661369324,
+   "role_follows": true
+  },
+  {
+   "layer": 76,
+   "head": 10,
+   "frozen_answer": 0.5823827981948853,
+   "frozen_other": 0.15218916535377502,
+   "frozen_sel": 0.43019363284111023,
+   "joint_answer": 0.5636295676231384,
+   "joint_other": 0.1609877347946167,
+   "joint_sel": 0.40264183282852173,
+   "role_follows": true
+  },
+  {
+   "layer": 62,
+   "head": 7,
+   "frozen_answer": 0.41809067130088806,
+   "frozen_other": 0.012791462242603302,
+   "frozen_sel": 0.40529921650886536,
+   "joint_answer": 0.39794352650642395,
+   "joint_other": 0.013703060336411,
+   "joint_sel": 0.38424046617001295,
+   "role_follows": true
+  },
+  {
+   "layer": 74,
+   "head": 23,
+   "frozen_answer": 0.5651087164878845,
+   "frozen_other": 0.169500932097435,
+   "frozen_sel": 0.39560776948928833,
+   "joint_answer": 0.5566022396087646,
+   "joint_other": 0.16797935962677002,
+   "joint_sel": 0.38862287998199463,
+   "role_follows": true
+  }
+ ],
+ "n_pointer_heads_role_following": 15,
+ "verdict": "Role-tracking readout: the pointer heads keep attending the answer entity after the joint permutation moves it, so the readout follows the answer by content rather than by a fixed position. These are late copy heads reading out an answer computed upstream, so this describes how the retrieval reads out, not a transportable role operator."
+}

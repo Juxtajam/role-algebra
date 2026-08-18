@@ -1,0 +1,92 @@
+{
+  "phase": "9-item2-prep",
+  "set": "inplace-base-draw-control",
+  "generation_module": "phase8a_generate_tasks.py (frozen; imported)",
+  "rule": "FROZEN 8A in-place action (gen.episode/gen.facts_for): names permute in place, fact display order fixed by base['fact_order'] across the orbit. Bases are the SAME new G base problems as the joint set (same master seed 20260808, same rng stream, asserted equal per base_id against the base dicts embedded in joint_G_{fit,transfer}.jsonl).",
+  "base_source": "results/phase9/tasks_joint/joint_G_{fit,transfer}.jsonl (regenerated from the same rng stream and asserted equal per base_id)",
+  "target_tokeniser": {
+    "model": "Qwen/Qwen2.5-72B-Instruct",
+    "revision": "495f39366efef23836d0cfae4fbe635880d2be31"
+  },
+  "master_seed": 20260808,
+  "k": 3,
+  "perms": [
+    [
+      0,
+      1,
+      2
+    ],
+    [
+      0,
+      2,
+      1
+    ],
+    [
+      1,
+      0,
+      2
+    ],
+    [
+      1,
+      2,
+      0
+    ],
+    [
+      2,
+      0,
+      1
+    ],
+    [
+      2,
+      1,
+      0
+    ]
+  ],
+  "n_bases_per_cell": 150,
+  "vocab_source": "results/phase8a/tasks/name_pools.json (frozen, reused)",
+  "system": "You answer questions about short fact lists. Respond with exactly one name and nothing else.",
+  "templates": {
+    "bears": "The {sym} sigil bears the {mark} mark.",
+    "holds": "{name} holds the {sym} sigil.",
+    "guards": "The {a} sigil guards the {b} sigil.",
+    "shelters": "The {b} sigil relies on the {a} sigil.",
+    "stage_p": "One sigil bears the {mark} mark.",
+    "query_p": "Which person holds the sigil that bears the {mark} mark?",
+    "stage_g": "One sigil guards the {sym} sigil.",
+    "query_g": "Which person holds the sigil that guards the {sym} sigil?"
+  },
+  "base_identity_check": {
+    "G/fit": {
+      "bases_compared": 150,
+      "bases_equal": 150,
+      "joint_file": "tasks_joint/joint_G_fit.jsonl",
+      "identity_member_byte_identical": true,
+      "fact_multiset_equal_all_g": true,
+      "answer_equal_all_g": true
+    },
+    "G/transfer": {
+      "bases_compared": 150,
+      "bases_equal": 150,
+      "joint_file": "tasks_joint/joint_G_transfer.jsonl",
+      "identity_member_byte_identical": true,
+      "fact_multiset_equal_all_g": true,
+      "answer_equal_all_g": true
+    }
+  },
+  "cells": {
+    "inplace_control/G/fit": {
+      "episodes": 900,
+      "bases": 150,
+      "sha256_16": "9263dd3ea3fb1902"
+    },
+    "inplace_control/G/transfer": {
+      "episodes": 900,
+      "bases": 150,
+      "sha256_16": "46f99539f2a6ac58"
+    }
+  },
+  "episode_token_check": {
+    "total": 1800,
+    "failures": 0
+  }
+}

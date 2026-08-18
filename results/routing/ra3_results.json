@@ -1,0 +1,72 @@
+{
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "revision": "495f39366efef23836d0cfae4fbe635880d2be31",
+  "gpu": "H100:2",
+  "n_pointer": 72,
+  "n_random": 72,
+  "pointer_layers": [
+    57,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76
+  ],
+  "intervention": "zero o_proj input head-block (all positions)",
+  "results": {
+    "frozen": {
+      "baseline": {
+        "kway_acc": 1.0,
+        "top1_acc": 1.0,
+        "mean_ans_logit": 37.557291666666664,
+        "n": 720
+      },
+      "pointer": {
+        "kway_acc": 1.0,
+        "top1_acc": 0.8486111111111111,
+        "mean_ans_logit": 31.587152777777778,
+        "n": 720
+      },
+      "random": {
+        "kway_acc": 1.0,
+        "top1_acc": 1.0,
+        "mean_ans_logit": 37.821875,
+        "n": 720
+      }
+    },
+    "joint": {
+      "baseline": {
+        "kway_acc": 1.0,
+        "top1_acc": 1.0,
+        "mean_ans_logit": 37.49861111111111,
+        "n": 720
+      },
+      "pointer": {
+        "kway_acc": 1.0,
+        "top1_acc": 0.8083333333333333,
+        "mean_ans_logit": 31.636111111111113,
+        "n": 720
+      },
+      "random": {
+        "kway_acc": 1.0,
+        "top1_acc": 1.0,
+        "mean_ans_logit": 37.765625,
+        "n": 720
+      }
+    }
+  },
+  "session_seconds": 260.2
+}

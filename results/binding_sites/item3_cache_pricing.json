@@ -1,0 +1,22 @@
+{
+  "scope": "P-only",
+  "episodes": {
+    "frozen_gate": 1200,
+    "frozen_disc": 3600,
+    "joint": 1800
+  },
+  "total_episodes": 6600,
+  "positions_per_episode": 11,
+  "layers": 22,
+  "d_model": 8192,
+  "dtype": "fp16",
+  "total_bytes": 26168524800,
+  "total_gb": 26.169,
+  "usd_per_month_at_0.09_per_gb": 2.36,
+  "session_estimate": {
+    "basis": "9A measured: model load ~130-900s + ~1.3s/episode forward at bs8 with 22-layer stack extraction",
+    "est_hours": 0.55,
+    "est_cost_usd": 2.75,
+    "usd_per_hour": 5.0
+  }
+}

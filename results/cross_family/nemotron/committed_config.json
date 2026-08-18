@@ -1,0 +1,115 @@
+{
+  "phase": "10",
+  "track": "A",
+  "role": "Second model family — replication of the frozen 8A/8C pipeline",
+  "frozen_at": "2026-08-08, BEFORE any GPU work and before any test data from this model is read",
+  "model": {
+    "repo": "nvidia/Llama-3.1-Nemotron-70B-Instruct-HF",
+    "revision": "031d4042f36adc1a52cca51b331d25cbe3cf1022",
+    "dtype": "bfloat16",
+    "gated": false,
+    "family": "Llama-3.1 (non-Qwen; satisfies the Track A cross-family requirement)",
+    "selection_basis": "approved fallback: the meta-llama/Llama-3.3-70B-Instruct token lacks the required scopes; Nemotron-70B-Instruct-HF is the approved ungated >=70B non-Qwen instruct model. Choice + revision stated here before launch.",
+    "config_json": {
+      "source": "phase10/trackA/tokenizer_files/config.json, fetched at the pinned revision",
+      "sha256": "31d5216804db298420edd8e9fe0f4d2a098c94999331d6322c9c584149be1490",
+      "num_hidden_layers": 80,
+      "hidden_size": 8192,
+      "vocab_size": 128256,
+      "architecture": "LlamaForCausalLM",
+      "weights_total_bytes": 141107412992,
+      "weights_total_gb": 141.107,
+      "weights_size_source": "phase10/trackA/tokenizer_files/model.safetensors.index.json metadata.total_size (sha256 2abe0910e23770a30ccf9b1b91804c64831c47f9c98defaa5293aa999433fc2b)"
+    }
+  },
+  "frozen_task_set": {
+    "content_hash": "84f2e54d85d6e8aa4c1474b608bef5ab69babe54353ef0ef2702d9f6ed38baef",
+    "definition": "8A-final definition verbatim (phase8a_final_gate.md section 1): sha256 over sorted 'relpath:sha256(file)' lines over tasks/{gate,disc}_{P,G}_{fit,transfer}.jsonl + tasks/manifest.json + tasks/name_pools.json + phase8a_generate_tasks.py + phase8a_modal.py, all read from dv3-results:phase8a/",
+    "hash_v2": "NOT FIRED — tokeniser check phase10/trackA/tokeniser_check.json: 24/24 names single-token in situ on the target tokeniser, 9600/9600 episodes pass the in-situ answer-token assertion, zero replacements. The byte-frozen run-2 set is used unchanged; 84f2e54d... governs all episodes.",
+    "in_session_rule": "hash re-verified against the volume bytes INSIDE the rented session before the model loads; mismatch aborts (8A-final/9A mechanism verbatim)"
+  },
+  "tokeniser": {
+    "check_artifact": "phase10/trackA/tokeniser_check.json",
+    "procedure": "frozen verify_single_token imported from phase8a_generate_tasks.py (spaced + sentence-medial in-situ contexts), 8A-final procedure",
+    "names_verified": "24/24 (both frozen vocabularies)",
+    "episode_check": "9600/9600 pass (4800 gate-file + disc-file episodes: 2400 gate + 7200 disc)",
+    "replacements": 0,
+    "declared_adaptation": "D3: Llama tokeniser prepends BOS on encode(); verification used encode(add_special_tokens=False). No threshold, context string, or counting rule changed.",
+    "multi_token_template_material": "marks scarlet/maroon/indigo, symbol acorn, scaffold strings 'Facts:', ' sigil', 'Answer:' are multi-token on this tokeniser — same items that were multi-token in 8A-final; template/context material, never the answer token, no design constraint violated (phase8a_final_gate.md section 2)"
+  },
+  "gate": {
+    "battery": "identical to 8A-final (phase8a_final_gate.md section 4): grid paths {P,G} x vocabularies {fit,transfer}, n=100 bases per cell (>=100 required), full six-member orbits, 600 episodes per cell",
+    "cell_counting_note": "the 'eight cells' definition = every thresholded component of every path x vocab cell (8A-final counting note verbatim); all components of all cells must clear their threshold",
+    "thresholds": {
+      "episode_acc": 0.95,
+      "strict_orbit": 0.9,
+      "orbit_consistency": 0.95
+    },
+    "thresholds_source": "loaded in-session from the frozen phase8a_modal.py bytes on dv3-results:phase8a/ via importlib (GATE + orbit_metrics); never redefined in the runner",
+    "bootstrap": {
+      "n_boot": 10000,
+      "seed": 20260807,
+      "unit": "base problems",
+      "cis": "95% percentile CIs for episode_acc, strict_orbit, orbit_consistency; boot_cis copied verbatim from phase8a_final_modal.py"
+    },
+    "rendering_decoding": "chat template via apply_chat_template(system+user, add_generation_prompt=True) — NO enable_thinking kwarg (Llama templates lack it; declared difference from the Qwen runners where it was a no-op); forced 'Answer:' prefix appended to the rendered string; greedy decode, max_new_tokens=8, do_sample=False; prediction = first whitespace-delimited word, stripped of '.,!'; exact match. Left padding; pad_token set to eos if undefined (Llama ships no pad token; padding is masked, content unaffected).",
+    "fail_branch": "any cell fails -> NO caching, NO 8C; store gate table + per-episode preds/CSVs; shortcut audit (phase8a_final_shortcut_audit.py machinery) run offline on the stored preds; the track stops — the fail is itself the cross-family scale finding.",
+    "outputs": "dv3-results:phase10/trackA/gate/{gate_results.json, preds_gate_*.json, episodes_gate_*.csv} written and committed BEFORE any caching"
+  },
+  "conditional_caching": {
+    "trigger": "all gate cells pass every component",
+    "what": "resid_post at the answer position (last prompt token under left padding; hidden_states[l+1] = resid_post of layer l), ALL 80 layers of this model, float16, for all 8 frozen episode files (gate + disc, 9600 episodes)",
+    "shapes": "gate files (600, 80, 8192); disc files (1800, 80, 8192)",
+    "destination": "dv3-results:phase10/trackA/acts/ + checksums.json",
+    "integrity": "per-file sha256 computed, file re-read (loadable, shape checked), re-hashed stable, before session end — 8A-final mechanism verbatim",
+    "disc_behavioural_labels": "disc-set predictions generated in the same session (preds_disc_*.json) — episode-correctness labels the 8C filtering consumes; behavioural labelling, NOT discriminator fitting; no discriminator work in the gate session"
+  },
+  "conditional_8c_plan": {
+    "runs_only_if": "gate passes all cells; executed as a separate pre-registered step with its own committed config extension frozen before the 8C test split is touched",
+    "machinery": "phase8c_lib.py + the 8C pipeline verbatim (results/phase8c/committed_config.json is the template), re-pointed at dv3-results:phase10/trackA/acts/",
+    "splits": "8C rule verbatim (phase8c_splits.py): universe = 300 disc bases per cell filtered to strict-orbit-correct under this model's preds_disc_*.json; deterministic split rng=default_rng((20260807, path=='G', vocab=='transfer', 8)) permutation; cal = first floor(n/2), test = next floor(n/2), odd remainder dropped (declared) for matched cal/test counts; test half read by no calibration/threshold code",
+    "matched_regime_nulls": "recalibrated ON THIS MODEL's activations at ITS d_model=8192 (phase10/trackA/tokenizer_files/config.json — numerically equal to the 72B's d_model but recalibrated regardless: 'thresholds at any other sample-to-dimension ratio are void'): identity null (1 rep, deterministic) + shuffled-pair nulls (10 reps, frozen seed rule 2000*rep+layer); identical sample counts, identical frozen lambda grid [1e-05,1e-04,1e-03,1e-02,1e-01,1.0], identical layer-set logic as the real fits",
+    "selection_rules": "lambda_rule and layer_rule frozen as in 8C: lambda = argmin over grid of min-over-layers cal transfer err (frozen calibrate_system rule); verdict layer = min(argmin cal transfer err at lambda*, first_decodable(P/fit cal)); single evaluation on the test split; no layer/lambda/threshold selection after test results are seen; fpr_target 0.05; descriptive per-layer reporting table Bonferroni-corrected at 0.05/|reporting set|, stated in advance",
+    "conditions_1_to_6_verbatim_phase8_part_8C": [
+      "Fit unconstrained d x d ridge generators R_12, R_23 at the answer position per layer. Never parameterise into any known representation — unchanged standing rule. Note d_model ~ 5-8k on this model: fits are ~25-67M parameters per generator; use the activation-weighted formulations throughout and report conditioning.",
+      "Conditions 1-6 exactly as specified in the programme record, including: transfer (condition 1) on the disjoint vocabulary; cross-path (condition 2) fit-on-P / eval-on-G; activation-weighted group laws + braid (condition 3); nontriviality with the corrected difference-subspace support test, direction lt (condition 4); causal transport by patch-and-continue at or before first-decodable layer (condition 5) — note this requires a second GPU session with the model loaded, price it in; content preservation with episode-local probes (condition 6).",
+      "Add the 8B spectrum diagnostic to the battery: if H_role fires, report the invariant-subspace dimension — the verdict then states which representation family was found, closing the old limitation with a measurement.",
+      "Thresholds: recalibrate on a calibration split of this model's activations against shuffled-pair nulls (the Stage 1 thresholds were calibrated at d=64 and do not port). Freeze to committed config before the test split is touched. Single evaluation. Multiple-comparison correction across layers stated in advance."
+    ],
+    "verdict_space_verbatim_phase8_part_8C": {
+      "H_role": "H_role (all conditions, both mandatory transfers): the model carries a cross-task role representation of S_3 — the big claim, positive, with the representation family identified by the spectrum diagnostic.",
+      "H_retrieval": "H_retrieval (condition 1 or 2 fails cleanly): the model solves composed role-binding by chained associative retrieval with no shared role operator — the big claim, answered in the negative, on the real object, with a validated instrument. This is the most likely outcome (prior ~0.7-0.8) and it is a *complete answer*, not a failure.",
+      "Inconclusive": "Inconclusive (probe unavailability, conditioning failure): reported as such with the blocking condition named."
+    },
+    "cross_family_stop_rule": "a Track A H_role verdict triggers an immediate stop-and-report across all Phase 10 tracks"
+  },
+  "budget": {
+    "track_cap_usd": 30.0,
+    "gpu": "A100-80GB:2",
+    "usd_per_hour": 5.0,
+    "hardware_basis": "bf16 weights 141.107 GB (model.safetensors.index.json at the pinned revision) exceed one A100-80GB; 2x = 160 GB, ~19 GB headroom for activations/KV at batch 24 — same choice logic as 8A-final section 3",
+    "estimates": {
+      "throughput_basis": {
+        "gate_seconds_per_600_ep_cell_72B": [46.2, 43.2, 49.1, 48.5],
+        "gate_seconds_source": "results/phase8a_final/gate_results.json cells[*].seconds (72B, same episode files, same batch size, same GPU config; Nemotron-70B is the same layer count/d_model and slightly smaller)",
+        "full_gate_plus_cache_session_hours_72B": 0.741,
+        "full_session_source": "results/phase8a_final/session_meta.json (model_load_seconds 906.4 cold; gate ~3.2 min; caching + disc preds ~26 min — phase8a_final_gate.md section 10)",
+        "warm_load_seconds_72B": 173.5,
+        "warm_load_source": "results/phase9/item3_cache_session_meta.json (hf-models volume cache; Nemotron is NOT yet on that volume, so this session prices as a COLD load)"
+      },
+      "gate_only_session": {
+        "hours": 0.4,
+        "usd": 2.0,
+        "arithmetic": "cold load ~0.25 h (906 s 72B analogue) + hash verify + gate 4 x ~50 s ~ 0.06 h + container/commit overhead ~0.09 h = ~0.40 h x $5.00/h = $2.00"
+      },
+      "gate_plus_cache_session": {
+        "hours": 0.8,
+        "usd": 4.0,
+        "arithmetic": "72B measured 0.741 h for the identical gate + all-layer answer-position caching + disc-preds workload = $3.70; +8% margin for download/throughput variance on the new repo -> ~0.80 h x $5.00/h = $4.00"
+      },
+      "note": "estimates only; actuals recorded in the run log; both fit far under the the budget, leaving room for the conditional 8C condition-5 patch-and-continue session (72B analogue: results/phase8c/ session pricing)"
+    }
+  },
+  "session_script": "phase10/trackA/trackA_gate_modal.py (py_compile-verified; launch is manual)",
+  "protocol": "config + sha256 frozen before any GPU work"
+}

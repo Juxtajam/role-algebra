@@ -1,0 +1,122 @@
+{
+ "config_sha256": "0c81725e68d487f020421eeb9bb947c1c0b35df536835db8de98476b401e998c",
+ "layer": 61,
+ "cap": "C2 unavailable (P-only cache); no H_role possible here",
+ "positions": {
+  "query_arg": {
+   "r32": {
+    "linear": {
+     "c1": 0.918518324813032,
+     "tau_c1": 12.086328356027725
+    },
+    "mlp_w16": {
+     "c1": 5.861093882949762,
+     "reveals_c1": false
+    },
+    "mlp_w64": {
+     "c1": 3.2844943418308716,
+     "reveals_c1": false
+    },
+    "mlp_w256": {
+     "c1": 2.365757929430297,
+     "reveals_c1": false
+    }
+   },
+   "r128": {
+    "linear": {
+     "c1": 0.9361906545834944,
+     "tau_c1": 10.6731968395641
+    },
+    "mlp_w16": {
+     "c1": 6.175076177711897,
+     "reveals_c1": false
+    },
+    "mlp_w64": {
+     "c1": 4.9791130380305475,
+     "reveals_c1": false
+    },
+    "mlp_w256": {
+     "c1": 4.395861389366319,
+     "reveals_c1": false
+    }
+   },
+   "r512": {
+    "linear": {
+     "c1": 2.687052576325387,
+     "tau_c1": 14.270612777468076
+    },
+    "mlp_w16": {
+     "c1": 5.2350293954699625,
+     "reveals_c1": false
+    },
+    "mlp_w64": {
+     "c1": 4.164769769434592,
+     "reveals_c1": false
+    },
+    "mlp_w256": {
+     "c1": 3.891180515907538,
+     "reveals_c1": false
+    }
+   }
+  },
+  "answer": {
+   "r32": {
+    "linear": {
+     "c1": 0.8155660696897589,
+     "tau_c1": 4.476820914261896
+    },
+    "mlp_w16": {
+     "c1": 1.9655356946920959,
+     "reveals_c1": false
+    },
+    "mlp_w64": {
+     "c1": 1.458873776841537,
+     "reveals_c1": false
+    },
+    "mlp_w256": {
+     "c1": 1.5290668532497609,
+     "reveals_c1": false
+    }
+   },
+   "r128": {
+    "linear": {
+     "c1": 0.840307862750733,
+     "tau_c1": 4.337266668119282
+    },
+    "mlp_w16": {
+     "c1": 2.112053139857136,
+     "reveals_c1": false
+    },
+    "mlp_w64": {
+     "c1": 2.010637706399065,
+     "reveals_c1": false
+    },
+    "mlp_w256": {
+     "c1": 2.0751237368593927,
+     "reveals_c1": false
+    }
+   },
+   "r512": {
+    "linear": {
+     "c1": 1.6111873141830368,
+     "tau_c1": 5.877558410881383
+    },
+    "mlp_w16": {
+     "c1": 1.983706606151399,
+     "reveals_c1": false
+    },
+    "mlp_w64": {
+     "c1": 1.9360174804439068,
+     "reveals_c1": false
+    },
+    "mlp_w256": {
+     "c1": 1.8750789833904367,
+     "reveals_c1": false
+    }
+   }
+  }
+ },
+ "any_c1_reveal": false,
+ "revealing": [],
+ "verdict": "No nonlinear C1 advantage at any P-path binding site/tier \u2014 consistent with the answer-position result; the linear binding-site negative (E16) is not a low-capacity-nonlinear artifact either."
+}

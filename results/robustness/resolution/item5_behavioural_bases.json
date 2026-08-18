@@ -1,0 +1,304 @@
+{
+  "disc_P_fit": {
+    "n_bases": 300,
+    "flagged": {}
+  },
+  "disc_P_transfer": {
+    "n_bases": 300,
+    "flagged": {}
+  },
+  "disc_G_fit": {
+    "n_bases": 300,
+    "flagged": {
+      "16": {
+        "n_errors": 4,
+        "strict": false,
+        "consistent": false,
+        "pred_slots": [
+          2,
+          0,
+          2,
+          0,
+          0,
+          0
+        ],
+        "qpos": 2
+      },
+      "44": {
+        "n_errors": 4,
+        "strict": false,
+        "consistent": false,
+        "pred_slots": [
+          1,
+          2,
+          1,
+          2,
+          1,
+          1
+        ],
+        "qpos": 2
+      },
+      "60": {
+        "n_errors": 1,
+        "strict": false,
+        "consistent": false,
+        "pred_slots": [
+          1,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "qpos": 2
+      },
+      "68": {
+        "n_errors": 1,
+        "strict": false,
+        "consistent": false,
+        "pred_slots": [
+          2,
+          2,
+          2,
+          0,
+          2,
+          2
+        ],
+        "qpos": 2
+      },
+      "78": {
+        "n_errors": 1,
+        "strict": false,
+        "consistent": false,
+        "pred_slots": [
+          1,
+          1,
+          2,
+          1,
+          1,
+          1
+        ],
+        "qpos": 2
+      },
+      "211": {
+        "n_errors": 2,
+        "strict": false,
+        "consistent": false,
+        "pred_slots": [
+          1,
+          0,
+          1,
+          0,
+          1,
+          1
+        ],
+        "qpos": 2
+      },
+      "232": {
+        "n_errors": 2,
+        "strict": false,
+        "consistent": false,
+        "pred_slots": [
+          2,
+          2,
+          2,
+          2,
+          0,
+          0
+        ],
+        "qpos": 2
+      },
+      "259": {
+        "n_errors": 5,
+        "strict": false,
+        "consistent": false,
+        "pred_slots": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "qpos": 2
+      },
+      "296": {
+        "n_errors": 1,
+        "strict": false,
+        "consistent": false,
+        "pred_slots": [
+          2,
+          2,
+          2,
+          0,
+          2,
+          2
+        ],
+        "qpos": 2
+      }
+    }
+  },
+  "disc_G_transfer": {
+    "n_bases": 300,
+    "flagged": {
+      "38": {
+        "n_errors": 3,
+        "strict": false,
+        "consistent": false,
+        "pred_slots": [
+          0,
+          2,
+          0,
+          0,
+          2,
+          2
+        ],
+        "qpos": 2
+      },
+      "96": {
+        "n_errors": 4,
+        "strict": false,
+        "consistent": false,
+        "pred_slots": [
+          0,
+          0,
+          1,
+          1,
+          0,
+          0
+        ],
+        "qpos": 2
+      },
+      "160": {
+        "n_errors": 3,
+        "strict": false,
+        "consistent": false,
+        "pred_slots": [
+          2,
+          0,
+          1,
+          0,
+          1,
+          0
+        ],
+        "qpos": 1
+      },
+      "164": {
+        "n_errors": 4,
+        "strict": false,
+        "consistent": false,
+        "pred_slots": [
+          2,
+          0,
+          0,
+          2,
+          2,
+          2
+        ],
+        "qpos": 2
+      },
+      "243": {
+        "n_errors": 1,
+        "strict": false,
+        "consistent": false,
+        "pred_slots": [
+          0,
+          2,
+          0,
+          0,
+          0,
+          0
+        ],
+        "qpos": 2
+      }
+    }
+  },
+  "gate_P_fit": {
+    "n_bases": 100,
+    "flagged": {}
+  },
+  "gate_P_transfer": {
+    "n_bases": 100,
+    "flagged": {}
+  },
+  "gate_G_fit": {
+    "n_bases": 100,
+    "flagged": {
+      "10": {
+        "n_errors": 1,
+        "strict": false,
+        "consistent": false,
+        "pred_slots": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          2
+        ],
+        "qpos": 2
+      },
+      "57": {
+        "n_errors": 6,
+        "strict": false,
+        "consistent": true,
+        "pred_slots": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "qpos": 2
+      }
+    }
+  },
+  "gate_G_transfer": {
+    "n_bases": 100,
+    "flagged": {
+      "62": {
+        "n_errors": 4,
+        "strict": false,
+        "consistent": false,
+        "pred_slots": [
+          2,
+          2,
+          2,
+          2,
+          0,
+          0
+        ],
+        "qpos": 2
+      },
+      "74": {
+        "n_errors": 2,
+        "strict": false,
+        "consistent": false,
+        "pred_slots": [
+          0,
+          1,
+          0,
+          1,
+          0,
+          0
+        ],
+        "qpos": 2
+      },
+      "99": {
+        "n_errors": 4,
+        "strict": false,
+        "consistent": false,
+        "pred_slots": [
+          0,
+          2,
+          0,
+          2,
+          2,
+          2
+        ],
+        "qpos": 2
+      }
+    }
+  }
+}

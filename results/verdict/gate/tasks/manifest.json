@@ -1,0 +1,92 @@
+{
+  "model": "Qwen/Qwen3-32B",
+  "master_seed": 20260807,
+  "k": 3,
+  "perms": [
+    [
+      0,
+      1,
+      2
+    ],
+    [
+      0,
+      2,
+      1
+    ],
+    [
+      1,
+      0,
+      2
+    ],
+    [
+      1,
+      2,
+      0
+    ],
+    [
+      2,
+      0,
+      1
+    ],
+    [
+      2,
+      1,
+      0
+    ]
+  ],
+  "n_gate_bases": 100,
+  "n_disc_bases": 300,
+  "system": "You answer questions about short fact lists. Respond with exactly one name and nothing else.",
+  "templates": {
+    "bears": "The {sym} sigil bears the {mark} mark.",
+    "holds": "{name} holds the {sym} sigil.",
+    "guards": "The {a} sigil guards the {b} sigil.",
+    "shelters": "The {b} sigil relies on the {a} sigil.",
+    "stage_p": "One sigil bears the {mark} mark.",
+    "query_p": "Which person holds the sigil that bears the {mark} mark?",
+    "stage_g": "One sigil guards the {sym} sigil.",
+    "query_g": "Which person holds the sigil that guards the {sym} sigil?"
+  },
+  "cells": {
+    "gate/P/fit": {
+      "episodes": 600,
+      "bases": 100,
+      "sha256_16": "38b6c557734bb535"
+    },
+    "gate/P/transfer": {
+      "episodes": 600,
+      "bases": 100,
+      "sha256_16": "493c684b9b5b83dc"
+    },
+    "gate/G/fit": {
+      "episodes": 600,
+      "bases": 100,
+      "sha256_16": "79fd3444d8bfa220"
+    },
+    "gate/G/transfer": {
+      "episodes": 600,
+      "bases": 100,
+      "sha256_16": "6cfb0b4ba508e938"
+    },
+    "disc/P/fit": {
+      "episodes": 1800,
+      "bases": 300,
+      "sha256_16": "24feb0dbd62a9b7d"
+    },
+    "disc/P/transfer": {
+      "episodes": 1800,
+      "bases": 300,
+      "sha256_16": "1e7f634cf1d33b8b"
+    },
+    "disc/G/fit": {
+      "episodes": 1800,
+      "bases": 300,
+      "sha256_16": "f805e1dde780cdc4"
+    },
+    "disc/G/transfer": {
+      "episodes": 1800,
+      "bases": 300,
+      "sha256_16": "ff6f0bf108765216"
+    }
+  }
+}

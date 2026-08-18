@@ -1,0 +1,1193 @@
+{
+  "track": "10A",
+  "target_model": "nvidia/Llama-3.1-Nemotron-70B-Instruct-HF",
+  "target_revision": "031d4042f36adc1a52cca51b331d25cbe3cf1022",
+  "target_tokenizer_files_sha256": {
+    "config.json": "31d5216804db298420edd8e9fe0f4d2a098c94999331d6322c9c584149be1490",
+    "generation_config.json": "a409f0bcabfa4177dc7c31b545f27507a325a54625ea869fbbc40f01472d52e8",
+    "model.safetensors.index.json": "2abe0910e23770a30ccf9b1b91804c64831c47f9c98defaa5293aa999433fc2b",
+    "special_tokens_map.json": "6f38c73729248f6c127296386e3cdde96e254636cc58b4169d3fd32328d9a8ec",
+    "tokenizer.json": "79e3e522635f3171300913bb421464a87de6222182a0570b9b2ccba2a964b2b4",
+    "tokenizer_config.json": "7d9e72de122ffa940711710f4e31d70b680d4015409c744856086bed53c43779"
+  },
+  "generation_model": "Qwen/Qwen3-32B",
+  "bos_adaptation": "encode(add_special_tokens=False) shim; Llama prepends BOS id 128000 by default",
+  "name_pools_sha256": "5797fb7fd675db1177e17840c1fdd59a329b0c45253d8287f623b7ef11e4b263",
+  "names_verified": "24/24",
+  "splitting_names": [],
+  "name_ids_identical_to_gen": false,
+  "name_id_diffs": [
+    [
+      "Bek",
+      [
+        71319
+      ],
+      [
+        70219
+      ]
+    ],
+    [
+      "Tus",
+      [
+        72004
+      ],
+      [
+        70904
+      ]
+    ],
+    [
+      "Miz",
+      [
+        72695
+      ],
+      [
+        71595
+      ]
+    ],
+    [
+      "Gat",
+      [
+        73213
+      ],
+      [
+        72113
+      ]
+    ],
+    [
+      "Fot",
+      [
+        74311
+      ],
+      [
+        73211
+      ]
+    ],
+    [
+      "Suk",
+      [
+        74874
+      ],
+      [
+        73774
+      ]
+    ],
+    [
+      "Dek",
+      [
+        75563
+      ],
+      [
+        74463
+      ]
+    ],
+    [
+      "Kag",
+      [
+        77091
+      ],
+      [
+        75991
+      ]
+    ],
+    [
+      "Bav",
+      [
+        78080
+      ],
+      [
+        76980
+      ]
+    ],
+    [
+      "Nir",
+      [
+        78843
+      ],
+      [
+        77743
+      ]
+    ],
+    [
+      "Lup",
+      [
+        79803
+      ],
+      [
+        78703
+      ]
+    ],
+    [
+      "Jub",
+      [
+        80380
+      ],
+      [
+        79280
+      ]
+    ],
+    [
+      "Fon",
+      [
+        71593
+      ],
+      [
+        70493
+      ]
+    ],
+    [
+      "Zum",
+      [
+        72574
+      ],
+      [
+        71474
+      ]
+    ],
+    [
+      "Jal",
+      [
+        72995
+      ],
+      [
+        71895
+      ]
+    ],
+    [
+      "Jad",
+      [
+        73824
+      ],
+      [
+        72724
+      ]
+    ],
+    [
+      "Kad",
+      [
+        74776
+      ],
+      [
+        73676
+      ]
+    ],
+    [
+      "Zam",
+      [
+        74989
+      ],
+      [
+        73889
+      ]
+    ],
+    [
+      "Bik",
+      [
+        76478
+      ],
+      [
+        75378
+      ]
+    ],
+    [
+      "Raz",
+      [
+        77919
+      ],
+      [
+        76819
+      ]
+    ],
+    [
+      "Sik",
+      [
+        78449
+      ],
+      [
+        77349
+      ]
+    ],
+    [
+      "Vij",
+      [
+        79127
+      ],
+      [
+        78027
+      ]
+    ],
+    [
+      "Poz",
+      [
+        80085
+      ],
+      [
+        78985
+      ]
+    ],
+    [
+      "Bij",
+      [
+        80666
+      ],
+      [
+        79566
+      ]
+    ]
+  ],
+  "aux": {
+    "marks": {
+      "crimson": {
+        "n_tokens": 1,
+        "ids": [
+          97119
+        ],
+        "same_as_gen": false
+      },
+      "amber": {
+        "n_tokens": 1,
+        "ids": [
+          68705
+        ],
+        "same_as_gen": false
+      },
+      "violet": {
+        "n_tokens": 1,
+        "ids": [
+          80836
+        ],
+        "same_as_gen": false
+      },
+      "copper": {
+        "n_tokens": 1,
+        "ids": [
+          24166
+        ],
+        "same_as_gen": false
+      },
+      "ivory": {
+        "n_tokens": 1,
+        "ids": [
+          70916
+        ],
+        "same_as_gen": false
+      },
+      "scarlet": {
+        "n_tokens": 2,
+        "ids": [
+          23087,
+          1169
+        ],
+        "same_as_gen": false
+      },
+      "golden": {
+        "n_tokens": 1,
+        "ids": [
+          21411
+        ],
+        "same_as_gen": false
+      },
+      "silver": {
+        "n_tokens": 1,
+        "ids": [
+          15310
+        ],
+        "same_as_gen": false
+      },
+      "maroon": {
+        "n_tokens": 2,
+        "ids": [
+          3678,
+          9186
+        ],
+        "same_as_gen": false
+      },
+      "indigo": {
+        "n_tokens": 2,
+        "ids": [
+          1280,
+          7992
+        ],
+        "same_as_gen": false
+      },
+      "teal": {
+        "n_tokens": 1,
+        "ids": [
+          95707
+        ],
+        "same_as_gen": false
+      },
+      "coral": {
+        "n_tokens": 1,
+        "ids": [
+          53103
+        ],
+        "same_as_gen": false
+      }
+    },
+    "symbols": {
+      "anchor": {
+        "n_tokens": 1,
+        "ids": [
+          17543
+        ],
+        "same_as_gen": false
+      },
+      "arrow": {
+        "n_tokens": 1,
+        "ids": [
+          18404
+        ],
+        "same_as_gen": false
+      },
+      "bell": {
+        "n_tokens": 1,
+        "ids": [
+          29519
+        ],
+        "same_as_gen": false
+      },
+      "comet": {
+        "n_tokens": 1,
+        "ids": [
+          71086
+        ],
+        "same_as_gen": false
+      },
+      "crown": {
+        "n_tokens": 1,
+        "ids": [
+          27631
+        ],
+        "same_as_gen": false
+      },
+      "drum": {
+        "n_tokens": 1,
+        "ids": [
+          24074
+        ],
+        "same_as_gen": false
+      },
+      "feather": {
+        "n_tokens": 1,
+        "ids": [
+          50876
+        ],
+        "same_as_gen": false
+      },
+      "hammer": {
+        "n_tokens": 1,
+        "ids": [
+          24354
+        ],
+        "same_as_gen": false
+      },
+      "ladder": {
+        "n_tokens": 1,
+        "ids": [
+          36865
+        ],
+        "same_as_gen": false
+      },
+      "lantern": {
+        "n_tokens": 1,
+        "ids": [
+          74265
+        ],
+        "same_as_gen": false
+      },
+      "mirror": {
+        "n_tokens": 1,
+        "ids": [
+          18327
+        ],
+        "same_as_gen": false
+      },
+      "ribbon": {
+        "n_tokens": 1,
+        "ids": [
+          45667
+        ],
+        "same_as_gen": false
+      },
+      "spiral": {
+        "n_tokens": 1,
+        "ids": [
+          42197
+        ],
+        "same_as_gen": false
+      },
+      "wheel": {
+        "n_tokens": 1,
+        "ids": [
+          13587
+        ],
+        "same_as_gen": false
+      },
+      "acorn": {
+        "n_tokens": 2,
+        "ids": [
+          1645,
+          1540
+        ],
+        "same_as_gen": false
+      },
+      "barrel": {
+        "n_tokens": 1,
+        "ids": [
+          20929
+        ],
+        "same_as_gen": false
+      }
+    },
+    "structural": {
+      "Facts:": {
+        "n_tokens": 3,
+        "ids": [
+          37,
+          11613,
+          25
+        ],
+        "same_as_gen": false
+      },
+      " sigil": {
+        "n_tokens": 2,
+        "ids": [
+          8531,
+          321
+        ],
+        "same_as_gen": false
+      },
+      " mark": {
+        "n_tokens": 1,
+        "ids": [
+          1906
+        ],
+        "same_as_gen": false
+      },
+      " holds": {
+        "n_tokens": 1,
+        "ids": [
+          10187
+        ],
+        "same_as_gen": false
+      },
+      " guards": {
+        "n_tokens": 1,
+        "ids": [
+          27270
+        ],
+        "same_as_gen": false
+      },
+      " relies": {
+        "n_tokens": 1,
+        "ids": [
+          34744
+        ],
+        "same_as_gen": false
+      },
+      " bears": {
+        "n_tokens": 1,
+        "ids": [
+          30824
+        ],
+        "same_as_gen": false
+      },
+      "Answer:": {
+        "n_tokens": 2,
+        "ids": [
+          16533,
+          25
+        ],
+        "same_as_gen": false
+      },
+      " Which": {
+        "n_tokens": 1,
+        "ids": [
+          16299
+        ],
+        "same_as_gen": false
+      },
+      " person": {
+        "n_tokens": 1,
+        "ids": [
+          1732
+        ],
+        "same_as_gen": false
+      }
+    }
+  },
+  "episode_check": {
+    "total": 9600,
+    "failures": 0,
+    "failures_by_file": {
+      "disc_G_fit.jsonl": 0,
+      "disc_G_transfer.jsonl": 0,
+      "disc_P_fit.jsonl": 0,
+      "disc_P_transfer.jsonl": 0,
+      "gate_G_fit.jsonl": 0,
+      "gate_G_transfer.jsonl": 0,
+      "gate_P_fit.jsonl": 0,
+      "gate_P_transfer.jsonl": 0
+    }
+  },
+  "candidate_pool_on_target": {
+    "verified": "59/59",
+    "ok": [
+      [
+        "Bek",
+        71319
+      ],
+      [
+        "Fon",
+        71593
+      ],
+      [
+        "Tus",
+        72004
+      ],
+      [
+        "Zum",
+        72574
+      ],
+      [
+        "Miz",
+        72695
+      ],
+      [
+        "Jal",
+        72995
+      ],
+      [
+        "Gat",
+        73213
+      ],
+      [
+        "Dek",
+        75563
+      ],
+      [
+        "Suk",
+        74874
+      ],
+      [
+        "Zam",
+        74989
+      ],
+      [
+        "Kad",
+        74776
+      ],
+      [
+        "Bik",
+        76478
+      ],
+      [
+        "Kag",
+        77091
+      ],
+      [
+        "Bav",
+        78080
+      ],
+      [
+        "Sik",
+        78449
+      ],
+      [
+        "Nir",
+        78843
+      ],
+      [
+        "Lup",
+        79803
+      ],
+      [
+        "Poz",
+        80085
+      ],
+      [
+        "Jub",
+        80380
+      ],
+      [
+        "Bij",
+        80666
+      ],
+      [
+        "Ler",
+        80940
+      ],
+      [
+        "Gim",
+        86771
+      ],
+      [
+        "Mej",
+        87245
+      ],
+      [
+        "Zot",
+        89924
+      ],
+      [
+        "Peb",
+        90005
+      ],
+      [
+        "Tud",
+        91251
+      ],
+      [
+        "Roz",
+        91580
+      ],
+      [
+        "Nes",
+        92508
+      ],
+      [
+        "Kov",
+        93981
+      ],
+      [
+        "Fus",
+        94400
+      ],
+      [
+        "Zub",
+        96814
+      ],
+      [
+        "Kut",
+        97007
+      ],
+      [
+        "Tup",
+        97197
+      ],
+      [
+        "Vib",
+        97664
+      ],
+      [
+        "Dop",
+        97674
+      ],
+      [
+        "Bez",
+        97989
+      ],
+      [
+        "Laz",
+        98903
+      ],
+      [
+        "Bip",
+        98948
+      ],
+      [
+        "Ruf",
+        99257
+      ],
+      [
+        "Lig",
+        99278
+      ],
+      [
+        "Geg",
+        99963
+      ],
+      [
+        "Jad",
+        73824
+      ],
+      [
+        "Fot",
+        74311
+      ],
+      [
+        "Raz",
+        77919
+      ],
+      [
+        "Vij",
+        79127
+      ],
+      [
+        "Kes",
+        84077
+      ],
+      [
+        "Sug",
+        84867
+      ],
+      [
+        "Lal",
+        84883
+      ],
+      [
+        "Sok",
+        85214
+      ],
+      [
+        "Kul",
+        85606
+      ],
+      [
+        "Kum",
+        86341
+      ],
+      [
+        "Kis",
+        86737
+      ],
+      [
+        "Paz",
+        88982
+      ],
+      [
+        "Lod",
+        89040
+      ],
+      [
+        "Zuk",
+        89119
+      ],
+      [
+        "Nel",
+        89461
+      ],
+      [
+        "Rif",
+        90831
+      ],
+      [
+        "Mim",
+        92946
+      ],
+      [
+        "Tig",
+        94979
+      ]
+    ],
+    "report": {
+      "Bek": {
+        "token_id": 71319,
+        "n_tokens_spaced": 1,
+        "in_situ_ok": true
+      },
+      "Fon": {
+        "token_id": 71593,
+        "n_tokens_spaced": 1,
+        "in_situ_ok": true
+      },
+      "Tus": {
+        "token_id": 72004,
+        "n_tokens_spaced": 1,
+        "in_situ_ok": true
+      },
+      "Zum": {
+        "token_id": 72574,
+        "n_tokens_spaced": 1,
+        "in_situ_ok": true
+      },
+      "Miz": {
+        "token_id": 72695,
+        "n_tokens_spaced": 1,
+        "in_situ_ok": true
+      },
+      "Jal": {
+        "token_id": 72995,
+        "n_tokens_spaced": 1,
+        "in_situ_ok": true
+      },
+      "Gat": {
+        "token_id": 73213,
+        "n_tokens_spaced": 1,
+        "in_situ_ok": true
+      },
+      "Dek": {
+        "token_id": 75563,
+        "n_tokens_spaced": 1,
+        "in_situ_ok": true
+      },
+      "Suk": {
+        "token_id": 74874,
+        "n_tokens_spaced": 1,
+        "in_situ_ok": true
+      },
+      "Zam": {
+        "token_id": 74989,
+        "n_tokens_spaced": 1,
+        "in_situ_ok": true
+      },
+      "Kad": {
+        "token_id": 74776,
+        "n_tokens_spaced": 1,
+        "in_situ_ok": true
+      },
+      "Bik": {
+        "token_id": 76478,
+        "n_tokens_spaced": 1,
+        "in_situ_ok": true
+      },
+      "Kag": {
+        "token_id": 77091,
+        "n_tokens_spaced": 1,
+        "in_situ_ok": true
+      },
+      "Bav": {
+        "token_id": 78080,
+        "n_tokens_spaced": 1,
+        "in_situ_ok": true
+      },
+      "Sik": {
+        "token_id": 78449,
+        "n_tokens_spaced": 1,
+        "in_situ_ok": true
+      },
+      "Nir": {
+        "token_id": 78843,
+        "n_tokens_spaced": 1,
+        "in_situ_ok": true
+      },
+      "Lup": {
+        "token_id": 79803,
+        "n_tokens_spaced": 1,
+        "in_situ_ok": true
+      },
+      "Poz": {
+        "token_id": 80085,
+        "n_tokens_spaced": 1,
+        "in_situ_ok": true
+      },
+      "Jub": {
+        "token_id": 80380,
+        "n_tokens_spaced": 1,
+        "in_situ_ok": true
+      },
+      "Bij": {
+        "token_id": 80666,
+        "n_tokens_spaced": 1,
+        "in_situ_ok": true
+      },
+      "Ler": {
+        "token_id": 80940,
+        "n_tokens_spaced": 1,
+        "in_situ_ok": true
+      },
+      "Gim": {
+        "token_id": 86771,
+        "n_tokens_spaced": 1,
+        "in_situ_ok": true
+      },
+      "Mej": {
+        "token_id": 87245,
+        "n_tokens_spaced": 1,
+        "in_situ_ok": true
+      },
+      "Zot": {
+        "token_id": 89924,
+        "n_tokens_spaced": 1,
+        "in_situ_ok": true
+      },
+      "Peb": {
+        "token_id": 90005,
+        "n_tokens_spaced": 1,
+        "in_situ_ok": true
+      },
+      "Tud": {
+        "token_id": 91251,
+        "n_tokens_spaced": 1,
+        "in_situ_ok": true
+      },
+      "Roz": {
+        "token_id": 91580,
+        "n_tokens_spaced": 1,
+        "in_situ_ok": true
+      },
+      "Nes": {
+        "token_id": 92508,
+        "n_tokens_spaced": 1,
+        "in_situ_ok": true
+      },
+      "Kov": {
+        "token_id": 93981,
+        "n_tokens_spaced": 1,
+        "in_situ_ok": true
+      },
+      "Fus": {
+        "token_id": 94400,
+        "n_tokens_spaced": 1,
+        "in_situ_ok": true
+      },
+      "Zub": {
+        "token_id": 96814,
+        "n_tokens_spaced": 1,
+        "in_situ_ok": true
+      },
+      "Kut": {
+        "token_id": 97007,
+        "n_tokens_spaced": 1,
+        "in_situ_ok": true
+      },
+      "Tup": {
+        "token_id": 97197,
+        "n_tokens_spaced": 1,
+        "in_situ_ok": true
+      },
+      "Vib": {
+        "token_id": 97664,
+        "n_tokens_spaced": 1,
+        "in_situ_ok": true
+      },
+      "Dop": {
+        "token_id": 97674,
+        "n_tokens_spaced": 1,
+        "in_situ_ok": true
+      },
+      "Bez": {
+        "token_id": 97989,
+        "n_tokens_spaced": 1,
+        "in_situ_ok": true
+      },
+      "Laz": {
+        "token_id": 98903,
+        "n_tokens_spaced": 1,
+        "in_situ_ok": true
+      },
+      "Bip": {
+        "token_id": 98948,
+        "n_tokens_spaced": 1,
+        "in_situ_ok": true
+      },
+      "Ruf": {
+        "token_id": 99257,
+        "n_tokens_spaced": 1,
+        "in_situ_ok": true
+      },
+      "Lig": {
+        "token_id": 99278,
+        "n_tokens_spaced": 1,
+        "in_situ_ok": true
+      },
+      "Geg": {
+        "token_id": 99963,
+        "n_tokens_spaced": 1,
+        "in_situ_ok": true
+      },
+      "Jad": {
+        "token_id": 73824,
+        "n_tokens_spaced": 1,
+        "in_situ_ok": true
+      },
+      "Fot": {
+        "token_id": 74311,
+        "n_tokens_spaced": 1,
+        "in_situ_ok": true
+      },
+      "Raz": {
+        "token_id": 77919,
+        "n_tokens_spaced": 1,
+        "in_situ_ok": true
+      },
+      "Vij": {
+        "token_id": 79127,
+        "n_tokens_spaced": 1,
+        "in_situ_ok": true
+      },
+      "Kes": {
+        "token_id": 84077,
+        "n_tokens_spaced": 1,
+        "in_situ_ok": true
+      },
+      "Sug": {
+        "token_id": 84867,
+        "n_tokens_spaced": 1,
+        "in_situ_ok": true
+      },
+      "Lal": {
+        "token_id": 84883,
+        "n_tokens_spaced": 1,
+        "in_situ_ok": true
+      },
+      "Sok": {
+        "token_id": 85214,
+        "n_tokens_spaced": 1,
+        "in_situ_ok": true
+      },
+      "Kul": {
+        "token_id": 85606,
+        "n_tokens_spaced": 1,
+        "in_situ_ok": true
+      },
+      "Kum": {
+        "token_id": 86341,
+        "n_tokens_spaced": 1,
+        "in_situ_ok": true
+      },
+      "Kis": {
+        "token_id": 86737,
+        "n_tokens_spaced": 1,
+        "in_situ_ok": true
+      },
+      "Paz": {
+        "token_id": 88982,
+        "n_tokens_spaced": 1,
+        "in_situ_ok": true
+      },
+      "Lod": {
+        "token_id": 89040,
+        "n_tokens_spaced": 1,
+        "in_situ_ok": true
+      },
+      "Zuk": {
+        "token_id": 89119,
+        "n_tokens_spaced": 1,
+        "in_situ_ok": true
+      },
+      "Nel": {
+        "token_id": 89461,
+        "n_tokens_spaced": 1,
+        "in_situ_ok": true
+      },
+      "Rif": {
+        "token_id": 90831,
+        "n_tokens_spaced": 1,
+        "in_situ_ok": true
+      },
+      "Mim": {
+        "token_id": 92946,
+        "n_tokens_spaced": 1,
+        "in_situ_ok": true
+      },
+      "Tig": {
+        "token_id": 94979,
+        "n_tokens_spaced": 1,
+        "in_situ_ok": true
+      }
+    }
+  },
+  "name_report": {
+    "Bek": {
+      "token_id": 71319,
+      "n_tokens_spaced": 1,
+      "in_situ_ok": true
+    },
+    "Tus": {
+      "token_id": 72004,
+      "n_tokens_spaced": 1,
+      "in_situ_ok": true
+    },
+    "Miz": {
+      "token_id": 72695,
+      "n_tokens_spaced": 1,
+      "in_situ_ok": true
+    },
+    "Gat": {
+      "token_id": 73213,
+      "n_tokens_spaced": 1,
+      "in_situ_ok": true
+    },
+    "Fot": {
+      "token_id": 74311,
+      "n_tokens_spaced": 1,
+      "in_situ_ok": true
+    },
+    "Suk": {
+      "token_id": 74874,
+      "n_tokens_spaced": 1,
+      "in_situ_ok": true
+    },
+    "Dek": {
+      "token_id": 75563,
+      "n_tokens_spaced": 1,
+      "in_situ_ok": true
+    },
+    "Kag": {
+      "token_id": 77091,
+      "n_tokens_spaced": 1,
+      "in_situ_ok": true
+    },
+    "Bav": {
+      "token_id": 78080,
+      "n_tokens_spaced": 1,
+      "in_situ_ok": true
+    },
+    "Nir": {
+      "token_id": 78843,
+      "n_tokens_spaced": 1,
+      "in_situ_ok": true
+    },
+    "Lup": {
+      "token_id": 79803,
+      "n_tokens_spaced": 1,
+      "in_situ_ok": true
+    },
+    "Jub": {
+      "token_id": 80380,
+      "n_tokens_spaced": 1,
+      "in_situ_ok": true
+    },
+    "Fon": {
+      "token_id": 71593,
+      "n_tokens_spaced": 1,
+      "in_situ_ok": true
+    },
+    "Zum": {
+      "token_id": 72574,
+      "n_tokens_spaced": 1,
+      "in_situ_ok": true
+    },
+    "Jal": {
+      "token_id": 72995,
+      "n_tokens_spaced": 1,
+      "in_situ_ok": true
+    },
+    "Jad": {
+      "token_id": 73824,
+      "n_tokens_spaced": 1,
+      "in_situ_ok": true
+    },
+    "Kad": {
+      "token_id": 74776,
+      "n_tokens_spaced": 1,
+      "in_situ_ok": true
+    },
+    "Zam": {
+      "token_id": 74989,
+      "n_tokens_spaced": 1,
+      "in_situ_ok": true
+    },
+    "Bik": {
+      "token_id": 76478,
+      "n_tokens_spaced": 1,
+      "in_situ_ok": true
+    },
+    "Raz": {
+      "token_id": 77919,
+      "n_tokens_spaced": 1,
+      "in_situ_ok": true
+    },
+    "Sik": {
+      "token_id": 78449,
+      "n_tokens_spaced": 1,
+      "in_situ_ok": true
+    },
+    "Vij": {
+      "token_id": 79127,
+      "n_tokens_spaced": 1,
+      "in_situ_ok": true
+    },
+    "Poz": {
+      "token_id": 80085,
+      "n_tokens_spaced": 1,
+      "in_situ_ok": true
+    },
+    "Bij": {
+      "token_id": 80666,
+      "n_tokens_spaced": 1,
+      "in_situ_ok": true
+    }
+  }
+}

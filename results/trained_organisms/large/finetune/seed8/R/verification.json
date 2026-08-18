@@ -1,0 +1,92 @@
+{
+  "seed": 8,
+  "arm": "R",
+  "steps": 50000,
+  "final": {
+    "step": 50000,
+    "loss": 1.269208550453186,
+    "train_aux": 0.8854166666666666,
+    "train_composed": 0.90625,
+    "held_composed_acc": 0.5920138888888888,
+    "held_composed_strict": 0.3177083333333333,
+    "held_composed_consistency": 0.109375,
+    "transfer_acc": 0.5173611111111112,
+    "transfer_strict": 0.25,
+    "transfer_consistency": 0.03125,
+    "aux_accs": {
+      "A_PS": 0.984375,
+      "A_SN": 0.9765625,
+      "A_NS": 0.3307291666666667,
+      "A_SG": 0.9817708333333334
+    },
+    "aux_min": 0.3307291666666667,
+    "threehop_acc": 0.34375,
+    "threehop_strict": 0.005208333333333333,
+    "threehop_consistency": 0.010416666666666666,
+    "k3_acc": 0.6067708333333334,
+    "k3_strict": 0.375,
+    "k4_acc": 0.4244791666666667,
+    "k4_strict": 0.203125,
+    "gen_acc": 0.625,
+    "gen_strict": 0.5104166666666666,
+    "full_acc": 0.578125,
+    "full_strict": 0.3333333333333333,
+    "perm_gap": 0.046875,
+    "ind_copy_acc": 0.0008981791459132849,
+    "ind_max_mass": 0.03774950365151182,
+    "ind_max_head": [
+      3,
+      0
+    ],
+    "ind_pretrained_head_mass": 0.032478558263281,
+    "ind_alive": false,
+    "ind_behavioural": false,
+    "frozen_rows_bit_exact": true
+  },
+  "max_composed_held": 0.6102430555555556,
+  "max_composed_transfer": 0.578125,
+  "max_aux_min": 0.4609375,
+  "max_threehop": 0.3559027777777778,
+  "max_perm_gap": 0.13020833333333326,
+  "final_ind_alive": false,
+  "final_ind_behav": false,
+  "min_ind_max_mass": 0.037197224048458835,
+  "min_ind_copy_acc": 0.0008165264962848044,
+  "query_breakdown": {
+    "A_PS": {
+      "accuracy": 0.96875,
+      "strict_orbit": 0.9583333333333334,
+      "orbit_consistency": 0.9791666666666666
+    },
+    "A_SN": {
+      "accuracy": 0.9930555555555556,
+      "strict_orbit": 0.96875,
+      "orbit_consistency": 0.96875
+    },
+    "A_NS": {
+      "accuracy": 0.359375,
+      "strict_orbit": 0.2916666666666667,
+      "orbit_consistency": 0.78125
+    },
+    "A_SG": {
+      "accuracy": 0.9947916666666666,
+      "strict_orbit": 0.9791666666666666,
+      "orbit_consistency": 0.9791666666666666
+    },
+    "Q_P": {
+      "accuracy": 0.3472222222222222,
+      "strict_orbit": 0.0,
+      "orbit_consistency": 0.0
+    },
+    "Q_G": {
+      "accuracy": 0.5017361111111112,
+      "strict_orbit": 0.03125,
+      "orbit_consistency": 0.041666666666666664
+    },
+    "Q_3H": {
+      "accuracy": 0.34375,
+      "strict_orbit": 0.0,
+      "orbit_consistency": 0.0
+    }
+  }
+}

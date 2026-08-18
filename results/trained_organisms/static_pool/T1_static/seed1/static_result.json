@@ -1,0 +1,19 @@
+{
+  "seed": 1,
+  "final": {
+    "step": 50000,
+    "loss": 0.4157089591026306,
+    "aux_held": {
+      "A_PS": 0.3880208333333333,
+      "A_SN": 0.3697916666666667,
+      "A_NS": 0.265625
+    },
+    "aux_min": 0.265625,
+    "train_aux": 1.0,
+    "train_composed": 1.0,
+    "held_episode": 0.3454861111111111,
+    "transfer_episode": 0.3350694444444444
+  },
+  "max_aux_held_min": 0.3489583333333333,
+  "max_train_aux": 1.0
+}

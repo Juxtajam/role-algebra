@@ -1,0 +1,37 @@
+{
+  "phase": "8A-final",
+  "frozen_from": "run-2 task set (dv3-results:phase8a/tasks/) + scoring code",
+  "hash_definition": "sha256 over concatenation of 'relpath:sha256(file)\\n' lines, sorted by relpath",
+  "files": {
+    "tasks/disc_G_fit.jsonl": "f805e1dde780cdc495ecbed8096d19c24741fff36bef991c6f0b5bbd9b7e1174",
+    "tasks/disc_G_transfer.jsonl": "ff6f0bf10876521613d6b3b3280ae4cdad7e8a9adf0ba3954b3ed7a87c9e94ec",
+    "tasks/disc_P_fit.jsonl": "24feb0dbd62a9b7dc4c6e53c453e7dc132c9bea9045b08440757f6846cdee184",
+    "tasks/disc_P_transfer.jsonl": "1e7f634cf1d33b8ba3ee571b8083b2ab9e937890e5a664d6a88e8e2c1240202d",
+    "tasks/gate_G_fit.jsonl": "79fd3444d8bfa220e55f6843c7f4d6c2c4ca4b8f5a80c79b1bf44b4ae593a87c",
+    "tasks/gate_G_transfer.jsonl": "6cfb0b4ba508e9386a03b16a01bb9217f497dc0e22e81fbaf8c880f6e0daf79e",
+    "tasks/gate_P_fit.jsonl": "38b6c557734bb53507e78deefa75e114a7906bcf10aeb00d39ae13f5869b4a89",
+    "tasks/gate_P_transfer.jsonl": "493c684b9b5b83dc79834d86b9b093177cf1ee7aa9c875e8cd01ba1aeb97f795",
+    "tasks/manifest.json": "2f3447e8e6ba181bf2db9ba8588833d915f866f25e77b953e511c7d2c55307b4",
+    "tasks/name_pools.json": "5797fb7fd675db1177e17840c1fdd59a329b0c45253d8287f623b7ef11e4b263",
+    "phase8a_generate_tasks.py": "d7b52a1d6482d9286ef2e9f9ab4c86256cb3b664a84e10b89e85cff7b3389bca",
+    "phase8a_modal.py": "4bf584065ad5e92d1b06c1252b6296ec57b9bdb53f04ae8bc5035071da8e10be"
+  },
+  "content_hash": "84f2e54d85d6e8aa4c1474b608bef5ab69babe54353ef0ef2702d9f6ed38baef",
+  "episode_counts": {
+    "disc_G_fit.jsonl": 1800,
+    "disc_G_transfer.jsonl": 1800,
+    "disc_P_fit.jsonl": 1800,
+    "disc_P_transfer.jsonl": 1800,
+    "gate_G_fit.jsonl": 600,
+    "gate_G_transfer.jsonl": 600,
+    "gate_P_fit.jsonl": 600,
+    "gate_P_transfer.jsonl": 600
+  },
+  "gate_thresholds": {
+    "episode_acc": 0.95,
+    "strict_orbit": 0.9,
+    "orbit_consistency": 0.95
+  },
+  "manifest_master_seed": 20260807,
+  "verified_local_equals_volume": true
+}

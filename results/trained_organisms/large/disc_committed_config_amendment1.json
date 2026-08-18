@@ -1,0 +1,11 @@
+{
+  "amends": "disc_committed_config.json (sha256 be8349c3468acbb82d14b67633a8452327eaf97f7c605846330de049c3731067)",
+  "date": "2026-08-15",
+  "declared_before": "any generator fit, any threshold computation, any test-base metric — only cache-stage strict-orbit COUNTS had been observed (seed9/R: P_fit 186/600, P_transfer 48/600, G_fit 11/600)",
+  "change": {
+    "eval_sets.disc_P_transfer.n_bases": 1800,
+    "eval_sets.disc_G_fit.n_bases": 6000
+  },
+  "reason": "The strict-orbit-correct filter (design 5.2, unchanged) leaves a G_fit universe of ~11 bases at n_bases=600 (Q_G strict-orbit rates are 0.01-0.28 across gated organisms), i.e. ~5 cal / 5 test bases for the MANDATORY C2 condition - too thin to evaluate. Set sizes are scaled so the filtered universes reach workable counts; the filter rule, seeds, split rule, thresholds rules, and battery are unchanged. Universe SIZE was the only quantity consulted; no metric value existed when this was declared.",
+  "supersedes_cache": "all cache-stage npz files regenerated under the amended sizes before any fit"
+}

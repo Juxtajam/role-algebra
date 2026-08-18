@@ -1,0 +1,336 @@
+{
+  "model": "Qwen/Qwen3-32B",
+  "verified": {
+    "Bek": {
+      "token_id": 70219,
+      "n_tokens_spaced": 1,
+      "in_situ_ok": true
+    },
+    "Fon": {
+      "token_id": 70493,
+      "n_tokens_spaced": 1,
+      "in_situ_ok": true
+    },
+    "Tus": {
+      "token_id": 70904,
+      "n_tokens_spaced": 1,
+      "in_situ_ok": true
+    },
+    "Zum": {
+      "token_id": 71474,
+      "n_tokens_spaced": 1,
+      "in_situ_ok": true
+    },
+    "Miz": {
+      "token_id": 71595,
+      "n_tokens_spaced": 1,
+      "in_situ_ok": true
+    },
+    "Jal": {
+      "token_id": 71895,
+      "n_tokens_spaced": 1,
+      "in_situ_ok": true
+    },
+    "Gat": {
+      "token_id": 72113,
+      "n_tokens_spaced": 1,
+      "in_situ_ok": true
+    },
+    "Dek": {
+      "token_id": 74463,
+      "n_tokens_spaced": 1,
+      "in_situ_ok": true
+    },
+    "Suk": {
+      "token_id": 73774,
+      "n_tokens_spaced": 1,
+      "in_situ_ok": true
+    },
+    "Zam": {
+      "token_id": 73889,
+      "n_tokens_spaced": 1,
+      "in_situ_ok": true
+    },
+    "Kad": {
+      "token_id": 73676,
+      "n_tokens_spaced": 1,
+      "in_situ_ok": true
+    },
+    "Bik": {
+      "token_id": 75378,
+      "n_tokens_spaced": 1,
+      "in_situ_ok": true
+    },
+    "Kag": {
+      "token_id": 75991,
+      "n_tokens_spaced": 1,
+      "in_situ_ok": true
+    },
+    "Bav": {
+      "token_id": 76980,
+      "n_tokens_spaced": 1,
+      "in_situ_ok": true
+    },
+    "Sik": {
+      "token_id": 77349,
+      "n_tokens_spaced": 1,
+      "in_situ_ok": true
+    },
+    "Nir": {
+      "token_id": 77743,
+      "n_tokens_spaced": 1,
+      "in_situ_ok": true
+    },
+    "Lup": {
+      "token_id": 78703,
+      "n_tokens_spaced": 1,
+      "in_situ_ok": true
+    },
+    "Poz": {
+      "token_id": 78985,
+      "n_tokens_spaced": 1,
+      "in_situ_ok": true
+    },
+    "Jub": {
+      "token_id": 79280,
+      "n_tokens_spaced": 1,
+      "in_situ_ok": true
+    },
+    "Bij": {
+      "token_id": 79566,
+      "n_tokens_spaced": 1,
+      "in_situ_ok": true
+    },
+    "Ler": {
+      "token_id": 79840,
+      "n_tokens_spaced": 1,
+      "in_situ_ok": true
+    },
+    "Gim": {
+      "token_id": 85671,
+      "n_tokens_spaced": 1,
+      "in_situ_ok": true
+    },
+    "Mej": {
+      "token_id": 86145,
+      "n_tokens_spaced": 1,
+      "in_situ_ok": true
+    },
+    "Zot": {
+      "token_id": 88824,
+      "n_tokens_spaced": 1,
+      "in_situ_ok": true
+    },
+    "Peb": {
+      "token_id": 88905,
+      "n_tokens_spaced": 1,
+      "in_situ_ok": true
+    },
+    "Tud": {
+      "token_id": 90151,
+      "n_tokens_spaced": 1,
+      "in_situ_ok": true
+    },
+    "Roz": {
+      "token_id": 90480,
+      "n_tokens_spaced": 1,
+      "in_situ_ok": true
+    },
+    "Nes": {
+      "token_id": 91408,
+      "n_tokens_spaced": 1,
+      "in_situ_ok": true
+    },
+    "Kov": {
+      "token_id": 92881,
+      "n_tokens_spaced": 1,
+      "in_situ_ok": true
+    },
+    "Fus": {
+      "token_id": 93300,
+      "n_tokens_spaced": 1,
+      "in_situ_ok": true
+    },
+    "Zub": {
+      "token_id": 95714,
+      "n_tokens_spaced": 1,
+      "in_situ_ok": true
+    },
+    "Kut": {
+      "token_id": 95907,
+      "n_tokens_spaced": 1,
+      "in_situ_ok": true
+    },
+    "Tup": {
+      "token_id": 96097,
+      "n_tokens_spaced": 1,
+      "in_situ_ok": true
+    },
+    "Vib": {
+      "token_id": 96564,
+      "n_tokens_spaced": 1,
+      "in_situ_ok": true
+    },
+    "Dop": {
+      "token_id": 96574,
+      "n_tokens_spaced": 1,
+      "in_situ_ok": true
+    },
+    "Bez": {
+      "token_id": 96889,
+      "n_tokens_spaced": 1,
+      "in_situ_ok": true
+    },
+    "Laz": {
+      "token_id": 97803,
+      "n_tokens_spaced": 1,
+      "in_situ_ok": true
+    },
+    "Bip": {
+      "token_id": 97848,
+      "n_tokens_spaced": 1,
+      "in_situ_ok": true
+    },
+    "Ruf": {
+      "token_id": 98157,
+      "n_tokens_spaced": 1,
+      "in_situ_ok": true
+    },
+    "Lig": {
+      "token_id": 98178,
+      "n_tokens_spaced": 1,
+      "in_situ_ok": true
+    },
+    "Geg": {
+      "token_id": 98863,
+      "n_tokens_spaced": 1,
+      "in_situ_ok": true
+    },
+    "Jad": {
+      "token_id": 72724,
+      "n_tokens_spaced": 1,
+      "in_situ_ok": true
+    },
+    "Fot": {
+      "token_id": 73211,
+      "n_tokens_spaced": 1,
+      "in_situ_ok": true
+    },
+    "Raz": {
+      "token_id": 76819,
+      "n_tokens_spaced": 1,
+      "in_situ_ok": true
+    },
+    "Vij": {
+      "token_id": 78027,
+      "n_tokens_spaced": 1,
+      "in_situ_ok": true
+    },
+    "Kes": {
+      "token_id": 82977,
+      "n_tokens_spaced": 1,
+      "in_situ_ok": true
+    },
+    "Sug": {
+      "token_id": 83767,
+      "n_tokens_spaced": 1,
+      "in_situ_ok": true
+    },
+    "Lal": {
+      "token_id": 83783,
+      "n_tokens_spaced": 1,
+      "in_situ_ok": true
+    },
+    "Sok": {
+      "token_id": 84114,
+      "n_tokens_spaced": 1,
+      "in_situ_ok": true
+    },
+    "Kul": {
+      "token_id": 84506,
+      "n_tokens_spaced": 1,
+      "in_situ_ok": true
+    },
+    "Kum": {
+      "token_id": 85241,
+      "n_tokens_spaced": 1,
+      "in_situ_ok": true
+    },
+    "Kis": {
+      "token_id": 85637,
+      "n_tokens_spaced": 1,
+      "in_situ_ok": true
+    },
+    "Paz": {
+      "token_id": 87882,
+      "n_tokens_spaced": 1,
+      "in_situ_ok": true
+    },
+    "Lod": {
+      "token_id": 87940,
+      "n_tokens_spaced": 1,
+      "in_situ_ok": true
+    },
+    "Zuk": {
+      "token_id": 88019,
+      "n_tokens_spaced": 1,
+      "in_situ_ok": true
+    },
+    "Nel": {
+      "token_id": 88361,
+      "n_tokens_spaced": 1,
+      "in_situ_ok": true
+    },
+    "Rif": {
+      "token_id": 89731,
+      "n_tokens_spaced": 1,
+      "in_situ_ok": true
+    },
+    "Mim": {
+      "token_id": 91846,
+      "n_tokens_spaced": 1,
+      "in_situ_ok": true
+    },
+    "Tig": {
+      "token_id": 93879,
+      "n_tokens_spaced": 1,
+      "in_situ_ok": true
+    }
+  },
+  "fit": [
+    "Bek",
+    "Tus",
+    "Miz",
+    "Gat",
+    "Fot",
+    "Suk",
+    "Dek",
+    "Kag",
+    "Bav",
+    "Nir",
+    "Lup",
+    "Jub"
+  ],
+  "transfer": [
+    "Fon",
+    "Zum",
+    "Jal",
+    "Jad",
+    "Kad",
+    "Zam",
+    "Bik",
+    "Raz",
+    "Sik",
+    "Vij",
+    "Poz",
+    "Bij"
+  ],
+  "frequency_match": {
+    "method": "token-id (BPE merge rank) consecutive-rank pairing",
+    "fit_mean_id": 74581.33333333333,
+    "transfer_mean_id": 75022.91666666667,
+    "fit_median_id": 74118.5,
+    "transfer_median_id": 74633.5,
+    "max_pair_gap": 915
+  }
+}

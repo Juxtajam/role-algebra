@@ -1,0 +1,165 @@
+{
+  "fixed": {
+    "trajectory": [
+      {
+        "step": 200,
+        "loss": 2.5323336124420166,
+        "ratio_mean": 1.0,
+        "ratio_min": 1.0,
+        "ratio_max": 1.0
+      },
+      {
+        "step": 400,
+        "loss": 2.072845935821533,
+        "ratio_mean": 1.0,
+        "ratio_min": 1.0,
+        "ratio_max": 1.0
+      },
+      {
+        "step": 600,
+        "loss": 1.936862587928772,
+        "ratio_mean": 1.0,
+        "ratio_min": 1.0,
+        "ratio_max": 1.0
+      },
+      {
+        "step": 800,
+        "loss": 1.779841423034668,
+        "ratio_mean": 1.0,
+        "ratio_min": 1.0,
+        "ratio_max": 1.0
+      },
+      {
+        "step": 1000,
+        "loss": 1.7664926052093506,
+        "ratio_mean": 1.0,
+        "ratio_min": 1.0,
+        "ratio_max": 1.0
+      },
+      {
+        "step": 1200,
+        "loss": 1.7408398389816284,
+        "ratio_mean": 1.0,
+        "ratio_min": 1.0,
+        "ratio_max": 1.0
+      },
+      {
+        "step": 1400,
+        "loss": 1.669725775718689,
+        "ratio_mean": 1.0,
+        "ratio_min": 1.0,
+        "ratio_max": 1.0
+      },
+      {
+        "step": 1600,
+        "loss": 1.6313562393188477,
+        "ratio_mean": 1.0,
+        "ratio_min": 1.0,
+        "ratio_max": 1.0
+      },
+      {
+        "step": 1800,
+        "loss": 1.5597251653671265,
+        "ratio_mean": 1.0,
+        "ratio_min": 1.0,
+        "ratio_max": 1.0
+      },
+      {
+        "step": 2000,
+        "loss": 1.4751073122024536,
+        "ratio_mean": 1.0,
+        "ratio_min": 1.0,
+        "ratio_max": 1.0
+      }
+    ],
+    "bit_exact": true,
+    "max_abs_diff": 0.0
+  },
+  "legacy": {
+    "trajectory": [
+      {
+        "step": 200,
+        "loss": 2.532560110092163,
+        "ratio_mean": 0.9995980858802795,
+        "ratio_min": 0.999597430229187,
+        "ratio_max": 0.9995982646942139
+      },
+      {
+        "step": 400,
+        "loss": 2.0762031078338623,
+        "ratio_mean": 0.9983972907066345,
+        "ratio_min": 0.9983963370323181,
+        "ratio_max": 0.9983975291252136
+      },
+      {
+        "step": 600,
+        "loss": 2.051663637161255,
+        "ratio_mean": 0.9964996576309204,
+        "ratio_min": 0.996498167514801,
+        "ratio_max": 0.9965011477470398
+      },
+      {
+        "step": 800,
+        "loss": 1.9138952493667603,
+        "ratio_mean": 0.9945060014724731,
+        "ratio_min": 0.9945037961006165,
+        "ratio_max": 0.9945085644721985
+      },
+      {
+        "step": 1000,
+        "loss": 1.7889589071273804,
+        "ratio_mean": 0.9925163388252258,
+        "ratio_min": 0.9925135970115662,
+        "ratio_max": 0.992518961429596
+      },
+      {
+        "step": 1200,
+        "loss": 1.7733259201049805,
+        "ratio_mean": 0.9905306100845337,
+        "ratio_min": 0.9905283451080322,
+        "ratio_max": 0.9905329942703247
+      },
+      {
+        "step": 1400,
+        "loss": 1.7474066019058228,
+        "ratio_mean": 0.9885488748550415,
+        "ratio_min": 0.9885470271110535,
+        "ratio_max": 0.9885506629943848
+      },
+      {
+        "step": 1600,
+        "loss": 1.700944185256958,
+        "ratio_mean": 0.9865710139274597,
+        "ratio_min": 0.986569344997406,
+        "ratio_max": 0.9865727424621582
+      },
+      {
+        "step": 1800,
+        "loss": 1.6613600254058838,
+        "ratio_mean": 0.9845972061157227,
+        "ratio_min": 0.9845952391624451,
+        "ratio_max": 0.9845994114875793
+      },
+      {
+        "step": 2000,
+        "loss": 1.6189600229263306,
+        "ratio_mean": 0.9826388359069824,
+        "ratio_min": 0.9826357364654541,
+        "ratio_max": 0.982642412185669
+      }
+    ],
+    "bit_exact": false,
+    "max_abs_diff": 0.0015416666865348816,
+    "expected_shrink": 0.9826578008634642
+  },
+  "compat": {
+    "ckpt_step": 50000,
+    "round_trip_full": 0.07900000363588333,
+    "round_trip_names": 1.0,
+    "cos_min": 0.9999998211860657,
+    "cos_mean": 1.0,
+    "ratio_mean": 0.769197404384613,
+    "ratio_std": 1.0303869203198701e-05
+  },
+  "verdict": "PASS \u2014 name-row norms bit-exact constant under the fixed optimizer; legacy control reproduces the decay fault; checkpoints compatible."
+}

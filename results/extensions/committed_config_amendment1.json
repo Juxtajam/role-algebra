@@ -1,0 +1,9 @@
+{
+  "amends": "phase10/nonlinear/committed_config.json (sha256 0c81725e68d487f020421eeb9bb947c1c0b35df536835db8de98476b401e998c)",
+  "date": "2026-08-15",
+  "declared_before": "any REAL-cache (8C / Phase 9) test read. Only the H6 SYNTHETIC control has been run; its first construction was found degenerate (below).",
+  "finding": "The H6 nonlinearity psi(u)=u+tanh(2u) applied to raw Stage-1 states was effectively LINEAR: state entries are O(0.1), where tanh(2u)~=2u, so a linear map transported the 'nonlinear' organism at c1=0.003 (identical to linear S-role). The control could not distinguish linear from nonlinear because its planted nonlinearity did not bite.",
+  "change": "Standardize before the elementwise nonlinearity so it operates in its nonlinear range: phi(z) = O^T [ (u) + tanh(2u) ] where u = (O z - mu)/sigma, and (mu, sigma) are per-dim mean/std frozen from a fixed reference draw of pooled P/fit states (deterministic seed). O fixed random orthogonal, unchanged. The map remains a FIXED, deterministic, invertible-on-range function; role information is preserved; alpha/form not tuned against any outcome.",
+  "unchanged": "Everything else: map classes, capacity tiers, conditions, nulls, decision rule, the H6 pass criterion, and all REAL-cache targets. This is a control-validity fix, not a change to what B measures.",
+  "note": "H6 is the precondition control; making it a valid test (nonlinearity that actually breaks linear transport) is legitimate and does not touch B's outcome, which has not been read."
+}

@@ -1,0 +1,20 @@
+{
+  "0": {
+    "seed": 0,
+    "formed": false,
+    "train_acc": 0.27141203703703703,
+    "verdict": "not-formed (discriminator not run; gate-first)"
+  },
+  "1": {
+    "seed": 1,
+    "formed": false,
+    "train_acc": 0.26851851851851855,
+    "verdict": "not-formed (discriminator not run; gate-first)"
+  },
+  "2": {
+    "seed": 2,
+    "formed": false,
+    "train_acc": 0.2789351851851852,
+    "verdict": "not-formed (discriminator not run; gate-first)"
+  }
+}

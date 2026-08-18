@@ -1,0 +1,82 @@
+{
+  "content_hash": "84f2e54d85d6e8aa4c1474b608bef5ab69babe54353ef0ef2702d9f6ed38baef",
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "revision": "495f39366efef23836d0cfae4fbe635880d2be31",
+  "d_model": 8192,
+  "n_layers": 80,
+  "act_dtype": "float16",
+  "files": {
+    "disc_G_fit.npy": {
+      "sha256": "787d63ce4c4b1fc06d181cade206c8aab10d4f493a123bab8cb3ab5bab1d7354",
+      "shape": [
+        1800,
+        80,
+        8192
+      ],
+      "dtype": "float16"
+    },
+    "disc_G_transfer.npy": {
+      "sha256": "e8af6751de7bafe1930be610ef52896f7e4cd27d37d819ba23d54467a7661c18",
+      "shape": [
+        1800,
+        80,
+        8192
+      ],
+      "dtype": "float16"
+    },
+    "disc_P_fit.npy": {
+      "sha256": "b84f68ee217a1b833d96a3a7dedc13ec358fc99d3303484e1c537f1bc91bee0d",
+      "shape": [
+        1800,
+        80,
+        8192
+      ],
+      "dtype": "float16"
+    },
+    "disc_P_transfer.npy": {
+      "sha256": "99617c67e0d9e554083973604a21276d7d2ebe51f129e622f80b69ee9c6b0c04",
+      "shape": [
+        1800,
+        80,
+        8192
+      ],
+      "dtype": "float16"
+    },
+    "gate_G_fit.npy": {
+      "sha256": "d2e853f4cbfae0224db62b7b66604d77233b45cdb2e537a1bc271e3333a68ce9",
+      "shape": [
+        600,
+        80,
+        8192
+      ],
+      "dtype": "float16"
+    },
+    "gate_G_transfer.npy": {
+      "sha256": "863b01d19a04be27d11d0f9b9f81c51569d690148efdbb06b070e8ebe7e6e2c1",
+      "shape": [
+        600,
+        80,
+        8192
+      ],
+      "dtype": "float16"
+    },
+    "gate_P_fit.npy": {
+      "sha256": "4d8145e8d0fa51a8a989679cc95c95032df3b07308efff9553349d3a5150490f",
+      "shape": [
+        600,
+        80,
+        8192
+      ],
+      "dtype": "float16"
+    },
+    "gate_P_transfer.npy": {
+      "sha256": "9e28be845c2537a30863754722960a09de03d2e006f4e5ab6bb1f8a13e918bcc",
+      "shape": [
+        600,
+        80,
+        8192
+      ],
+      "dtype": "float16"
+    }
+  }
+}

@@ -1,0 +1,169 @@
+{
+  "zero": {
+    "composed_intact": {
+      "acc": 0.9852430555555556,
+      "ci95": [
+        0.9730902777777778,
+        0.9947916666666666
+      ],
+      "n_bases": 192,
+      "n_episodes": 1152
+    },
+    "composed_ablated": {
+      "acc": 0.8949652777777778,
+      "ci95": [
+        0.8689236111111112,
+        0.9192708333333334
+      ],
+      "n_bases": 192,
+      "n_episodes": 1152
+    },
+    "A_PS_intact": {
+      "acc": 0.953125,
+      "ci95": [
+        0.890625,
+        1.0
+      ],
+      "n_bases": 64,
+      "n_episodes": 384
+    },
+    "A_PS_ablated": {
+      "acc": 0.9348958333333334,
+      "ci95": [
+        0.8723958333333333,
+        0.984375
+      ],
+      "n_bases": 64,
+      "n_episodes": 384
+    },
+    "A_SN_intact": {
+      "acc": 1.0,
+      "ci95": [
+        1.0,
+        1.0
+      ],
+      "n_bases": 64,
+      "n_episodes": 384
+    },
+    "A_SN_ablated": {
+      "acc": 0.9661458333333334,
+      "ci95": [
+        0.9401041666666666,
+        0.9869791666666667
+      ],
+      "n_bases": 64,
+      "n_episodes": 384
+    },
+    "A_NS_intact": {
+      "acc": 0.3489583333333333,
+      "ci95": [
+        0.23958333333333337,
+        0.46354166666666663
+      ],
+      "n_bases": 64,
+      "n_episodes": 384
+    },
+    "A_NS_ablated": {
+      "acc": 0.3619791666666667,
+      "ci95": [
+        0.25260416666666663,
+        0.4791666666666667
+      ],
+      "n_bases": 64,
+      "n_episodes": 384
+    }
+  },
+  "restore": {
+    "composed_mean_ablated": {
+      "acc": 0.9270833333333334,
+      "ci95": [
+        0.9053819444444445,
+        0.947048611111111
+      ],
+      "n_bases": 192,
+      "n_episodes": 1152
+    },
+    "composed_restored": {
+      "acc": 0.9852430555555556,
+      "ci95": [
+        0.9730902777777778,
+        0.9947916666666666
+      ],
+      "n_bases": 192,
+      "n_episodes": 1152
+    }
+  },
+  "transfer": {
+    "fit_A_PS": {
+      "acc": 0.953125,
+      "ci95": [
+        0.890625,
+        1.0
+      ],
+      "n_bases": 64,
+      "n_episodes": 384
+    },
+    "fit_A_SN": {
+      "acc": 1.0,
+      "ci95": [
+        1.0,
+        1.0
+      ],
+      "n_bases": 64,
+      "n_episodes": 384
+    },
+    "fit_composed": {
+      "acc": 0.9852430555555556,
+      "ci95": [
+        0.9730902777777778,
+        0.9947916666666666
+      ],
+      "n_bases": 192,
+      "n_episodes": 1152
+    },
+    "transfer_A_PS": {
+      "acc": 0.9947916666666666,
+      "ci95": [
+        0.984375,
+        1.0
+      ],
+      "n_bases": 64,
+      "n_episodes": 384
+    },
+    "transfer_A_SN": {
+      "acc": 0.7421875,
+      "ci95": [
+        0.6875,
+        0.796875
+      ],
+      "n_bases": 64,
+      "n_episodes": 384
+    },
+    "transfer_composed": {
+      "acc": 0.6336805555555556,
+      "ci95": [
+        0.5868055555555555,
+        0.6822916666666666
+      ],
+      "n_bases": 96,
+      "n_episodes": 576
+    }
+  },
+  "adjudication": {
+    "verdict": "EPIPHENOMENAL \u2014 composed survives ablation (0.895 > 0.5); hop-2 mechanism is elsewhere or distributed; hedged phrasing kept",
+    "collapses": false,
+    "holds": true,
+    "recovers": true,
+    "cuts": {
+      "collapse": 0.5,
+      "hold": 0.9,
+      "recover": 0.95
+    }
+  },
+  "scope": {
+    "layer": 4,
+    "head": 3,
+    "seed": 2,
+    "step": 50000
+  }
+}

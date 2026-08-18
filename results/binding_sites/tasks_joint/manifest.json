@@ -1,0 +1,79 @@
+{
+  "phase": "9-stage1-prep",
+  "set": "joint-permutation",
+  "generation_module": "phase8a_generate_tasks.py (frozen; imported)",
+  "joint_rule": "g applied to names AND holds-clause display order together: role i is held by names[g[i]] AND role i's holds clause is displayed at the identity display slot of role g[i] (the home slot of its new name). Non-holds clauses keep their identity slots. See README.md and phase9_generate_joint.py docstring.",
+  "target_tokeniser": {
+    "model": "Qwen/Qwen2.5-72B-Instruct",
+    "revision": "495f39366efef23836d0cfae4fbe635880d2be31"
+  },
+  "master_seed": 20260808,
+  "k": 3,
+  "perms": [
+    [
+      0,
+      1,
+      2
+    ],
+    [
+      0,
+      2,
+      1
+    ],
+    [
+      1,
+      0,
+      2
+    ],
+    [
+      1,
+      2,
+      0
+    ],
+    [
+      2,
+      0,
+      1
+    ],
+    [
+      2,
+      1,
+      0
+    ]
+  ],
+  "n_bases_per_cell": 150,
+  "vocab_source": "results/phase8a/tasks/name_pools.json (frozen, reused)",
+  "system": "You answer questions about short fact lists. Respond with exactly one name and nothing else.",
+  "templates": {
+    "bears": "The {sym} sigil bears the {mark} mark.",
+    "holds": "{name} holds the {sym} sigil.",
+    "guards": "The {a} sigil guards the {b} sigil.",
+    "shelters": "The {b} sigil relies on the {a} sigil.",
+    "stage_p": "One sigil bears the {mark} mark.",
+    "query_p": "Which person holds the sigil that bears the {mark} mark?",
+    "stage_g": "One sigil guards the {sym} sigil.",
+    "query_g": "Which person holds the sigil that guards the {sym} sigil?"
+  },
+  "cells": {
+    "joint/P/fit": {
+      "episodes": 900,
+      "bases": 150,
+      "sha256_16": "4f42a7f82e8a69ed"
+    },
+    "joint/P/transfer": {
+      "episodes": 900,
+      "bases": 150,
+      "sha256_16": "f08fefb1bafaa5e0"
+    },
+    "joint/G/fit": {
+      "episodes": 900,
+      "bases": 150,
+      "sha256_16": "67655a0b88c39be8"
+    },
+    "joint/G/transfer": {
+      "episodes": 900,
+      "bases": 150,
+      "sha256_16": "585f19f0a6f36df1"
+    }
+  }
+}

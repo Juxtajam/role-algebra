@@ -1,0 +1,47 @@
+{
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "revision": "495f39366efef23836d0cfae4fbe635880d2be31",
+  "k": 4,
+  "content_hash": "d803215509ec1d0b17f85f71c4c7dde8b8d98fa0137523ce1d041ae7f06e9a33",
+  "gate_thresholds": {
+    "episode_acc": 0.95,
+    "strict_orbit": 0.9,
+    "orbit_consistency": 0.95
+  },
+  "strict_orbit_note": "over 24 permutations (S_4)",
+  "cells": {
+    "P/fit": {
+      "episode_acc": 1.0,
+      "strict_orbit": 1.0,
+      "orbit_consistency": 1.0,
+      "passed": true,
+      "n_episodes": 2400,
+      "seconds": 203.7
+    },
+    "P/transfer": {
+      "episode_acc": 1.0,
+      "strict_orbit": 1.0,
+      "orbit_consistency": 1.0,
+      "passed": true,
+      "n_episodes": 2400,
+      "seconds": 203.1
+    },
+    "G/fit": {
+      "episode_acc": 0.95125,
+      "strict_orbit": 0.85,
+      "orbit_consistency": 0.86,
+      "passed": false,
+      "n_episodes": 2400,
+      "seconds": 248.2
+    },
+    "G/transfer": {
+      "episode_acc": 0.9325,
+      "strict_orbit": 0.83,
+      "orbit_consistency": 0.84,
+      "passed": false,
+      "n_episodes": 2400,
+      "seconds": 248.9
+    }
+  },
+  "gate_all_pass": false
+}

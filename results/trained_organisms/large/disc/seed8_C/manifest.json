@@ -1,0 +1,29 @@
+{
+ "seed": 8,
+ "arm": "C",
+ "ckpt": "<repo>/results/phase10/trackB/finetune/seed8/C/ckpt.pt",
+ "ckpt_sha256": "df8b74e50efa90ce171c8a55fe7938dc477bd978d6f904bc3e9efd222d7f68ed",
+ "sets": {
+  "disc_P_fit": {
+   "n_bases": 600,
+   "strict_ok": 268,
+   "episode_acc": 0.7613888888888889
+  },
+  "disc_P_fit_joint": {
+   "episode_acc": 0.7588888888888888
+  },
+  "disc_P_transfer": {
+   "n_bases": 1800,
+   "strict_ok": 9,
+   "episode_acc": 0.37796296296296295
+  },
+  "disc_P_transfer_joint": {
+   "episode_acc": 0.38083333333333336
+  },
+  "disc_G_fit": {
+   "n_bases": 6000,
+   "strict_ok": 1849,
+   "episode_acc": 0.7235
+  }
+ }
+}

@@ -1,0 +1,21 @@
+{
+  "phase": "Phase 10 section F — attention-output and MLP-output transport (the plan F3/F4)",
+  "written_utc": "2026-08-15",
+  "written_before_any_F_cache_exists": true,
+  "question": "The residual-stream negative (E13/E16/E21) does not cover non-residual objects. Does a transportable role operator (linear or low-complexity nonlinear) live in the ATTENTION OUTPUT or the MLP OUTPUT at the answer position, where the residual-stream analysis found none?",
+  "authorisation": "section F objects: attention and MLP outputs.",
+  "capture": {
+    "objects": ["attn_out = self_attn module output (before residual add)", "mlp_out = mlp module output (before residual add)"],
+    "position": "answer position only (last token under left padding; the 8C/8A answer position)",
+    "layers": [40, 48, 56, 60, 61, 64, 68, 72],
+    "cells": ["disc_P_fit", "disc_P_transfer", "disc_G_fit"],
+    "dtype": "float16",
+    "model": "Qwen/Qwen2.5-72B-Instruct @ 495f39366efef23836d0cfae4fbe635880d2be31, bf16",
+    "frozen_hash_verified_in_session": "84f2e54d85d6e8aa4c1474b608bef5ab69babe54353ef0ef2702d9f6ed38baef"
+  },
+  "battery": "the H6-validated nonlinear transport battery (phase10/nonlinear/nl_transport_lib.py), identical to section B: PCA-r reduce, map classes {linear anchor, MLP widths 16/64/256, kernel RBF}, relative transport error, C1 (disjoint vocab) + C2 (cross-path) both mandatory.",
+  "ranks": [32, 128, 512],
+  "decision_rule": "IDENTICAL to section B (committed_config.json): a class reveals transport iff it beats identity, the linear anchor, and the shuffled null by >=20% margin on C1 AND C2 at some tier; claim attaches to the lowest passing tier; top-tier-only -> memorisation-consistent. H6 remains the precondition (already PASSED, results/phase10/nonlinear/H6_results.json).",
+  "interpretation": "This tests a DIFFERENT internal object, not a different verdict. A positive would refine the scope: role structure lives in attn/mlp writes, consumed into the residual stream. A negative deepens the residual-stream negative to these components. Any positive still faces Section I (fresh-vocab replication, causal confirmation).",
+  "verification": "frozen hash verified in-session (abort on mismatch); per-file sha256 written + re-read-verified; artifacts verified on filesystem before the battery runs."
+}

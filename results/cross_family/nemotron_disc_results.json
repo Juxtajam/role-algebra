@@ -1,0 +1,49 @@
+{
+  "model": "nvidia/Llama-3.1-Nemotron-70B-Instruct-HF",
+  "k": 3,
+  "layer": 48,
+  "lam": 1.0,
+  "strict_ok": {
+    "P_fit": 300,
+    "P_transfer": 300,
+    "G_fit": 271,
+    "G_transfer": 274
+  },
+  "n_test": {
+    "P_fit": 150,
+    "P_transfer": 150,
+    "G_fit": 135
+  },
+  "metrics": {
+    "content_transfer_err": 0.8075774960484228,
+    "crosspath_err": 2.265836656590131,
+    "law_inv_defect": 0.044912200748374195,
+    "law_braid_defect": 0.00013814341663159952,
+    "nontriv": 0.043221385442382326,
+    "noncommute": 0.00030529218496513964,
+    "identity_baseline": 1.0,
+    "content_transfer_err_identity_fit": 0.9288279627148998,
+    "crosspath_err_identity_fit": 2.132568280094544,
+    "C1_beats_identity_fit": true,
+    "C2_beats_identity_fit": false,
+    "C1_below_1": true,
+    "C2_below_1": false
+  },
+  "thresholds": {
+    "content_transfer_err": 1.4196315229155358,
+    "crosspath_err": 4.174882715116629,
+    "law_inv_defect": 0.091040063451732,
+    "nontriv": 0.024361608210945487,
+    "noncommute": 0.0
+  },
+  "conditions": {
+    "C1_vs_shuffled": "pass",
+    "C2_vs_shuffled": "pass",
+    "C3_inv": "pass",
+    "C4_nontriv": "pass",
+    "C5_causal_transport": "unavailable"
+  },
+  "verdict": "H_retrieval",
+  "verdict_basis": "C2 (cross-path) transports no better than the identity-fit ridge (fitted 2.266 >= identity 2.133, both > 1.0): no shared role operator across paths. The within-path C1 beats identity (fitted 0.808 < identity 0.929), so the structure is PATH-LOCAL \u2014 exactly Qwen's E13/E15 conclusion. Also C5 unavailable, so a formal H_role is not even claimable.",
+  "reading": "fitted C1=0.808 vs identity-fit 0.929 vs 1.0; C2=2.266 vs identity-fit 2.133. If fitted ~ identity-fit and > 1.0, the operator is a near-identity map -> retrieval."
+}

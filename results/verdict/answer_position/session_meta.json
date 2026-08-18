@@ -1,0 +1,14 @@
+{
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "revision": "495f39366efef23836d0cfae4fbe635880d2be31",
+  "gpu": "A100-80GB:2",
+  "content_hash": "84f2e54d85d6e8aa4c1474b608bef5ab69babe54353ef0ef2702d9f6ed38baef",
+  "d_model": 8192,
+  "n_layers": 80,
+  "dtype": "bfloat16",
+  "model_load_seconds": 906.4,
+  "wall_hours": 0.741,
+  "est_cost_usd": 3.7,
+  "usd_per_hour": 5.0,
+  "gate_passed": true
+}

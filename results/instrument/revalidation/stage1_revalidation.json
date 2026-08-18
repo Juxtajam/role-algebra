@@ -1,0 +1,320 @@
+{
+ "n_seeds": 5,
+ "frozen_lambda": 0.01,
+ "results": {
+  "S-role@10": {
+   "required": "H_role",
+   "verdicts": [
+    "H_role",
+    "H_role",
+    "H_role",
+    "H_role",
+    "H_role"
+   ],
+   "modal_verdict": "H_role",
+   "scores": [
+    6.995,
+    6.994,
+    6.994,
+    6.994,
+    6.994
+   ],
+   "self_accuracy": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "reproduces": true
+  },
+  "S-role@3": {
+   "required": "H_role",
+   "verdicts": [
+    "H_role",
+    "H_role",
+    "H_role",
+    "H_role",
+    "H_role"
+   ],
+   "modal_verdict": "H_role",
+   "scores": [
+    6.949,
+    6.947,
+    6.948,
+    6.949,
+    6.948
+   ],
+   "self_accuracy": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "reproduces": true
+  },
+  "S-role@1": {
+   "required": null,
+   "verdicts": [
+    "H_role",
+    "H_role",
+    "H_role",
+    "H_role",
+    "H_role"
+   ],
+   "modal_verdict": "H_role",
+   "scores": [
+    6.647,
+    6.645,
+    6.647,
+    6.646,
+    6.651
+   ],
+   "self_accuracy": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "reproduces": false
+  },
+  "S-shared@10": {
+   "required": null,
+   "verdicts": [
+    "H_role",
+    "H_role",
+    "H_role",
+    "H_role",
+    "H_role"
+   ],
+   "modal_verdict": "H_role",
+   "scores": [
+    6.993,
+    6.993,
+    6.993,
+    6.993,
+    6.993
+   ],
+   "self_accuracy": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "reproduces": false
+  },
+  "S-shared@3": {
+   "required": null,
+   "verdicts": [
+    "H_role",
+    "H_role",
+    "H_role",
+    "H_role",
+    "H_role"
+   ],
+   "modal_verdict": "H_role",
+   "scores": [
+    6.935,
+    6.934,
+    6.935,
+    6.936,
+    6.935
+   ],
+   "self_accuracy": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "reproduces": false
+  },
+  "S-shared@1": {
+   "required": null,
+   "verdicts": [
+    "H_role",
+    "H_role",
+    "H_role",
+    "H_role",
+    "H_role"
+   ],
+   "modal_verdict": "H_role",
+   "scores": [
+    6.596,
+    6.586,
+    6.595,
+    6.593,
+    6.598
+   ],
+   "self_accuracy": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "reproduces": false
+  },
+  "S-retrieval@10": {
+   "required": "H_retrieval",
+   "verdicts": [
+    "H_retrieval",
+    "H_retrieval",
+    "H_retrieval",
+    "H_retrieval",
+    "H_retrieval"
+   ],
+   "modal_verdict": "H_retrieval",
+   "scores": [
+    1.498,
+    0.496,
+    1.496,
+    0.498,
+    0.5
+   ],
+   "self_accuracy": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "reproduces": true
+  },
+  "S-retrieval@3": {
+   "required": "H_retrieval",
+   "verdicts": [
+    "H_retrieval",
+    "H_retrieval",
+    "H_retrieval",
+    "H_retrieval",
+    "H_retrieval"
+   ],
+   "modal_verdict": "H_retrieval",
+   "scores": [
+    0.469,
+    0.467,
+    0.457,
+    0.463,
+    0.463
+   ],
+   "self_accuracy": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "reproduces": true
+  },
+  "S-retrieval@1": {
+   "required": "H_retrieval",
+   "verdicts": [
+    "H_retrieval",
+    "H_retrieval",
+    "H_retrieval",
+    "H_retrieval",
+    "H_retrieval"
+   ],
+   "modal_verdict": "H_retrieval",
+   "scores": [
+    1.281,
+    0.276,
+    1.267,
+    1.27,
+    1.27
+   ],
+   "self_accuracy": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "reproduces": true
+  },
+  "S-position@10": {
+   "required": "H_retrieval",
+   "verdicts": [
+    "H_retrieval",
+    "H_retrieval",
+    "H_retrieval",
+    "H_retrieval",
+    "H_retrieval"
+   ],
+   "modal_verdict": "H_retrieval",
+   "scores": [
+    1.581,
+    1.58,
+    1.583,
+    1.581,
+    1.581
+   ],
+   "self_accuracy": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "reproduces": true
+  },
+  "S-position@3": {
+   "required": "H_retrieval",
+   "verdicts": [
+    "H_retrieval",
+    "H_retrieval",
+    "H_retrieval",
+    "H_retrieval",
+    "H_retrieval"
+   ],
+   "modal_verdict": "H_retrieval",
+   "scores": [
+    1.538,
+    1.531,
+    1.53,
+    1.537,
+    1.539
+   ],
+   "self_accuracy": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "reproduces": true
+  },
+  "S-position@1": {
+   "required": "H_retrieval",
+   "verdicts": [
+    "H_retrieval",
+    "H_retrieval",
+    "H_retrieval",
+    "H_retrieval",
+    "H_retrieval"
+   ],
+   "modal_verdict": "H_retrieval",
+   "scores": [
+    0.319,
+    0.316,
+    0.336,
+    0.318,
+    0.313
+   ],
+   "self_accuracy": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "reproduces": true
+  }
+ },
+ "snr_sensitivity_floor_fresh": 1,
+ "all_required_reproduce": true
+}

@@ -1,0 +1,76 @@
+{
+  "date": "2026-08-08",
+  "scope": "every activation ingress into generator fitting and the spectrum/invariant-subspace pipeline, both implementations",
+  "summary": {
+    "generator_fitting_centered": false,
+    "spectrum_pipeline_centered": false,
+    "probe_pipeline_standardized": true,
+    "note": "Mean-centering appears ONLY inside the probe fitter (mu/sd standardization of features). Generator fits and the spectrum/invariant-subspace estimate consume raw activations. Therefore the item-3 recompute-without-centering applies only if the 8C run invoked spectrum_diagnostic(centered=True); checked against the run's driver when it lands."
+  },
+  "findings": [
+    {
+      "file": "src/shared/discriminator.py",
+      "lines": "88-93 (ridge_fit)",
+      "stage": "generator fitting",
+      "mean_centering": false,
+      "code": "G = X.T @ X; lam_eff = lam * np.trace(G) / d + 1e-12; solve(G + lam_eff*I, X.T @ Y).T",
+      "verdict": "raw activations; no mean subtraction anywhere in fit_maps/ridge_fit"
+    },
+    {
+      "file": "src/shared/discriminator.py",
+      "lines": "113-128 (group_law_metrics)",
+      "stage": "law/nontriviality metrics",
+      "mean_centering": false,
+      "code": "H = system.states(eps, layer); hn = (H**2).sum(); defects use H directly",
+      "verdict": "raw activations"
+    },
+    {
+      "file": "src/shared/discriminator.py",
+      "lines": "176-179 (_fit_probe)",
+      "stage": "probes (conditions 6 / first-decodable)",
+      "mean_centering": true,
+      "code": "mu, sd = X.mean(0), X.std(0)+1e-9; Xn = (X-mu)/sd",
+      "verdict": "probe features ARE standardized (mean-centered + scaled). This affects probe-based metrics only (C6, first_decodable_layer), NOT the generator fit and NOT the spectrum estimate"
+    },
+    {
+      "file": "phase8b_spectrum_diagnostic.py",
+      "lines": "92-99 (role_subspace)",
+      "stage": "invariant-subspace estimate (Stage 1 validation)",
+      "mean_centering": false,
+      "code": "_, S, Vt = np.linalg.svd(U, full_matrices=False)  # U = u_vectors, slot-conditional means, no grand-mean subtraction",
+      "verdict": "NOT centered: SVD taken on raw slot-mean vectors u_1..u_k. The invariant (all-ones) direction is retained in the span, which is what lets inv_dim separate permutation-rep (S-shared) from standard-rep (S-role)"
+    },
+    {
+      "file": "src/synth/organisms.py",
+      "lines": "88-101 (u_vectors)",
+      "stage": "u_i construction (Stage 1)",
+      "mean_centering": false,
+      "code": "means = stack([rb[ans==j].mean(axis=0) ...]) \u2014 per-slot means of role blocks; the per-slot mean is a class-conditional mean, not a centering of activations",
+      "verdict": "class-conditional averaging only; no grand-mean removed"
+    },
+    {
+      "file": "phase8c_lib.py",
+      "lines": "fit_generators/DualRidge",
+      "stage": "8C generator fitting",
+      "mean_centering": false,
+      "code": "DualRidge(X, Y, lam): XXt = X @ X.T on raw float64 casts of the cached fp16 activations; no mean subtraction",
+      "verdict": "raw activations"
+    },
+    {
+      "file": "phase8c_lib.py",
+      "lines": "spectrum_diagnostic (centered=False default)",
+      "stage": "8C invariant-subspace estimate",
+      "mean_centering": "flag-dependent",
+      "code": "U = stack([X[lab==j].mean(0)]); if centered: U -= U.mean(0)",
+      "verdict": "the 8C lib EXPOSES a centered flag; the resolution must record which value the run invoked and, if centered=True was used anywhere, recompute with centered=False and report both"
+    },
+    {
+      "file": "phase8c_lib.py",
+      "lines": "fit_probe (frozen verbatim copy)",
+      "stage": "8C probes (C6, decodability curves)",
+      "mean_centering": true,
+      "code": "identical standardization to the frozen _fit_probe",
+      "verdict": "probe-only, as in the frozen code"
+    }
+  ]
+}

@@ -1,0 +1,360 @@
+[18:04:32] : layer=0 verdict=H_role score=6.995 C1=pass C2=pass C3=pass C4=pass C5=pass C6=pass
+[18:04:32] :   content_transfer_err=0.00788911514782313
+[18:04:32] :   law_inv_defect=0.004493494954641235
+[18:04:32] :   transport_agree=1.0
+[18:04:32] :   support_mass=0.09354997426335514
+[18:04:32] :   eff_rank=36.7343780358821 (diagnostic only)
+[18:04:32] : layer=0 verdict=H_role score=6.994 C1=pass C2=pass C3=pass C4=pass C5=pass C6=pass
+[18:04:32] :   content_transfer_err=0.00803278730938125
+[18:04:32] :   law_inv_defect=0.0046069200305954485
+[18:04:32] :   transport_agree=1.0
+[18:04:32] :   support_mass=0.09408379171038905
+[18:04:32] :   eff_rank=36.72176422594203 (diagnostic only)
+[18:04:33] : layer=0 verdict=H_role score=6.994 C1=pass C2=pass C3=pass C4=pass C5=pass C6=pass
+[18:04:33] :   content_transfer_err=0.007824261822608609
+[18:04:33] :   law_inv_defect=0.00472708565870675
+[18:04:33] :   transport_agree=1.0
+[18:04:33] :   support_mass=0.09391053817609765
+[18:04:33] :   eff_rank=36.739288298724205 (diagnostic only)
+[18:04:33] : layer=0 verdict=H_role score=6.994 C1=pass C2=pass C3=pass C4=pass C5=pass C6=pass
+[18:04:33] :   content_transfer_err=0.007928301656553415
+[18:04:33] :   law_inv_defect=0.004636802011173178
+[18:04:33] :   transport_agree=1.0
+[18:04:33] :   support_mass=0.09362625298116212
+[18:04:33] :   eff_rank=36.76843695157483 (diagnostic only)
+[18:04:33] : layer=0 verdict=H_role score=6.994 C1=pass C2=pass C3=pass C4=pass C5=pass C6=pass
+[18:04:33] :   content_transfer_err=0.00800229296409764
+[18:04:33] :   law_inv_defect=0.004677135769484124
+[18:04:33] :   transport_agree=1.0
+[18:04:33] :   support_mass=0.09361382586462895
+[18:04:33] :   eff_rank=36.741794609553594 (diagnostic only)
+[18:04:33] : layer=0 verdict=H_role score=6.949 C1=pass C2=pass C3=pass C4=pass C5=pass C6=pass
+[18:04:33] :   content_transfer_err=0.08338999065766589
+[18:04:33] :   law_inv_defect=0.05016921672059145
+[18:04:33] :   transport_agree=1.0
+[18:04:33] :   support_mass=0.08238921889218327
+[18:04:33] :   eff_rank=36.21077462706215 (diagnostic only)
+[18:04:33] : layer=0 verdict=H_role score=6.947 C1=pass C2=pass C3=pass C4=pass C5=pass C6=pass
+[18:04:33] :   content_transfer_err=0.08298729306383965
+[18:04:33] :   law_inv_defect=0.0516952580204509
+[18:04:33] :   transport_agree=1.0
+[18:04:33] :   support_mass=0.0821719195597248
+[18:04:33] :   eff_rank=36.02956207418131 (diagnostic only)
+[18:04:33] : layer=0 verdict=H_role score=6.948 C1=pass C2=pass C3=pass C4=pass C5=pass C6=pass
+[18:04:33] :   content_transfer_err=0.08369157471954661
+[18:04:33] :   law_inv_defect=0.050722720056520024
+[18:04:33] :   transport_agree=1.0
+[18:04:33] :   support_mass=0.08162486200524878
+[18:04:33] :   eff_rank=36.13752243312685 (diagnostic only)
+[18:04:33] : layer=0 verdict=H_role score=6.949 C1=pass C2=pass C3=pass C4=pass C5=pass C6=pass
+[18:04:33] :   content_transfer_err=0.08261157700648486
+[18:04:33] :   law_inv_defect=0.05000799932473967
+[18:04:33] :   transport_agree=1.0
+[18:04:33] :   support_mass=0.08141565546282814
+[18:04:33] :   eff_rank=36.1081559124415 (diagnostic only)
+[18:04:33] : layer=0 verdict=H_role score=6.948 C1=pass C2=pass C3=pass C4=pass C5=pass C6=pass
+[18:04:33] :   content_transfer_err=0.08282481296827157
+[18:04:33] :   law_inv_defect=0.050901899349794694
+[18:04:33] :   transport_agree=1.0
+[18:04:33] :   support_mass=0.08252913978112733
+[18:04:33] :   eff_rank=36.18592762198577 (diagnostic only)
+[18:04:33] : layer=0 verdict=H_role score=6.647 C1=pass C2=pass C3=pass C4=pass C5=pass C6=pass
+[18:04:33] :   content_transfer_err=0.40881033106553766
+[18:04:33] :   law_inv_defect=0.35194577833118346
+[18:04:33] :   transport_agree=1.0
+[18:04:33] :   support_mass=0.07120828186607635
+[18:04:33] :   eff_rank=39.977325010424494 (diagnostic only)
+[18:04:34] : layer=0 verdict=H_role score=6.645 C1=pass C2=pass C3=pass C4=pass C5=pass C6=pass
+[18:04:34] :   content_transfer_err=0.4051377380568315
+[18:04:34] :   law_inv_defect=0.3546071681881279
+[18:04:34] :   transport_agree=1.0
+[18:04:34] :   support_mass=0.07262096030933332
+[18:04:34] :   eff_rank=39.896644593019374 (diagnostic only)
+[18:04:34] : layer=0 verdict=H_role score=6.647 C1=pass C2=pass C3=pass C4=pass C5=pass C6=pass
+[18:04:34] :   content_transfer_err=0.4008493475033576
+[18:04:34] :   law_inv_defect=0.3518550885184498
+[18:04:34] :   transport_agree=1.0
+[18:04:34] :   support_mass=0.07023120289435934
+[18:04:34] :   eff_rank=40.16188584448295 (diagnostic only)
+[18:04:34] : layer=0 verdict=H_role score=6.646 C1=pass C2=pass C3=pass C4=pass C5=pass C6=pass
+[18:04:34] :   content_transfer_err=0.40431216288734545
+[18:04:34] :   law_inv_defect=0.35285687791884
+[18:04:34] :   transport_agree=1.0
+[18:04:34] :   support_mass=0.06992422378956553
+[18:04:34] :   eff_rank=40.18262100855855 (diagnostic only)
+[18:04:34] : layer=0 verdict=H_role score=6.651 C1=pass C2=pass C3=pass C4=pass C5=pass C6=pass
+[18:04:34] :   content_transfer_err=0.40421787383614394
+[18:04:34] :   law_inv_defect=0.3482201120817703
+[18:04:34] :   transport_agree=1.0
+[18:04:34] :   support_mass=0.0712965016712315
+[18:04:34] :   eff_rank=39.942459559829864 (diagnostic only)
+[18:04:34] : layer=0 verdict=H_role score=6.993 C1=pass C2=pass C3=pass C4=pass C5=pass C6=pass
+[18:04:34] :   content_transfer_err=0.01461978475276594
+[18:04:34] :   law_inv_defect=0.005673870856966586
+[18:04:34] :   transport_agree=1.0
+[18:04:34] :   support_mass=0.09498003103037207
+[18:04:34] :   eff_rank=36.5700221552695 (diagnostic only)
+[18:04:34] : layer=0 verdict=H_role score=6.993 C1=pass C2=pass C3=pass C4=pass C5=pass C6=pass
+[18:04:34] :   content_transfer_err=0.014859801803642355
+[18:04:34] :   law_inv_defect=0.005832068607844489
+[18:04:34] :   transport_agree=1.0
+[18:04:34] :   support_mass=0.09560222309120242
+[18:04:34] :   eff_rank=36.55165942161977 (diagnostic only)
+[18:04:34] : layer=0 verdict=H_role score=6.993 C1=pass C2=pass C3=pass C4=pass C5=pass C6=pass
+[18:04:34] :   content_transfer_err=0.014508720081171942
+[18:04:34] :   law_inv_defect=0.005913107123729213
+[18:04:34] :   transport_agree=1.0
+[18:04:34] :   support_mass=0.09559547478050825
+[18:04:34] :   eff_rank=36.56427049814009 (diagnostic only)
+[18:04:34] : layer=0 verdict=H_role score=6.993 C1=pass C2=pass C3=pass C4=pass C5=pass C6=pass
+[18:04:34] :   content_transfer_err=0.014594489637895093
+[18:04:34] :   law_inv_defect=0.0058524812218131075
+[18:04:34] :   transport_agree=1.0
+[18:04:34] :   support_mass=0.095301574068179
+[18:04:34] :   eff_rank=36.593731548315645 (diagnostic only)
+[18:04:34] : layer=0 verdict=H_role score=6.993 C1=pass C2=pass C3=pass C4=pass C5=pass C6=pass
+[18:04:34] :   content_transfer_err=0.014746389476029569
+[18:04:34] :   law_inv_defect=0.0059221766743911206
+[18:04:34] :   transport_agree=1.0
+[18:04:34] :   support_mass=0.09516498052101433
+[18:04:34] :   eff_rank=36.58696479693956 (diagnostic only)
+[18:04:35] : layer=0 verdict=H_role score=6.935 C1=pass C2=pass C3=pass C4=pass C5=pass C6=pass
+[18:04:35] :   content_transfer_err=0.14307780289799815
+[18:04:35] :   law_inv_defect=0.06384848841068697
+[18:04:35] :   transport_agree=1.0
+[18:04:35] :   support_mass=0.0827624256653762
+[18:04:35] :   eff_rank=36.298958392540726 (diagnostic only)
+[18:04:35] : layer=0 verdict=H_role score=6.934 C1=pass C2=pass C3=pass C4=pass C5=pass C6=pass
+[18:04:35] :   content_transfer_err=0.14316648040504593
+[18:04:35] :   law_inv_defect=0.06521299629436184
+[18:04:35] :   transport_agree=1.0
+[18:04:35] :   support_mass=0.08266115072749004
+[18:04:35] :   eff_rank=36.15038349897033 (diagnostic only)
+[18:04:35] : layer=0 verdict=H_role score=6.935 C1=pass C2=pass C3=pass C4=pass C5=pass C6=pass
+[18:04:35] :   content_transfer_err=0.1439115405528017
+[18:04:35] :   law_inv_defect=0.06392024775321827
+[18:04:35] :   transport_agree=1.0
+[18:04:35] :   support_mass=0.08269649934730816
+[18:04:35] :   eff_rank=36.334632754169675 (diagnostic only)
+[18:04:35] : layer=0 verdict=H_role score=6.936 C1=pass C2=pass C3=pass C4=pass C5=pass C6=pass
+[18:04:35] :   content_transfer_err=0.1409649063203297
+[18:04:35] :   law_inv_defect=0.06326182533369254
+[18:04:35] :   transport_agree=1.0
+[18:04:35] :   support_mass=0.08198631438837375
+[18:04:35] :   eff_rank=36.258439435986354 (diagnostic only)
+[18:04:35] : layer=0 verdict=H_role score=6.935 C1=pass C2=pass C3=pass C4=pass C5=pass C6=pass
+[18:04:35] :   content_transfer_err=0.14090355797263085
+[18:04:35] :   law_inv_defect=0.06375280278508914
+[18:04:35] :   transport_agree=1.0
+[18:04:35] :   support_mass=0.08284539729403785
+[18:04:35] :   eff_rank=36.373167425383656 (diagnostic only)
+[18:04:35] : layer=0 verdict=H_role score=6.596 C1=pass C2=pass C3=pass C4=pass C5=pass C6=pass
+[18:04:35] :   content_transfer_err=0.511252273781715
+[18:04:35] :   law_inv_defect=0.40304891377252017
+[18:04:35] :   transport_agree=1.0
+[18:04:35] :   support_mass=0.06956163621822278
+[18:04:35] :   eff_rank=41.527934359185174 (diagnostic only)
+[18:04:35] : layer=0 verdict=H_role score=6.586 C1=pass C2=pass C3=pass C4=pass C5=pass C6=pass
+[18:04:35] :   content_transfer_err=0.5115780663217744
+[18:04:35] :   law_inv_defect=0.4132917915592241
+[18:04:35] :   transport_agree=1.0
+[18:04:35] :   support_mass=0.06988132227650964
+[18:04:35] :   eff_rank=41.55340819505524 (diagnostic only)
+[18:04:35] : layer=0 verdict=H_role score=6.595 C1=pass C2=pass C3=pass C4=pass C5=pass C6=pass
+[18:04:35] :   content_transfer_err=0.5111426388587802
+[18:04:35] :   law_inv_defect=0.4039857584139237
+[18:04:35] :   transport_agree=1.0
+[18:04:35] :   support_mass=0.06772003588944728
+[18:04:35] :   eff_rank=41.679438801785324 (diagnostic only)
+[18:04:36] : layer=0 verdict=H_role score=6.593 C1=pass C2=pass C3=pass C4=pass C5=pass C6=pass
+[18:04:36] :   content_transfer_err=0.5155233680682434
+[18:04:36] :   law_inv_defect=0.40620077709890723
+[18:04:36] :   transport_agree=1.0
+[18:04:36] :   support_mass=0.06897304715064756
+[18:04:36] :   eff_rank=41.74936601218971 (diagnostic only)
+[18:04:36] : layer=0 verdict=H_role score=6.598 C1=pass C2=pass C3=pass C4=pass C5=pass C6=pass
+[18:04:36] :   content_transfer_err=0.5115824205659057
+[18:04:36] :   law_inv_defect=0.40141611061908056
+[18:04:36] :   transport_agree=1.0
+[18:04:36] :   support_mass=0.0675505930959587
+[18:04:36] :   eff_rank=41.493857581951445 (diagnostic only)
+[18:04:36] : layer=0 verdict=H_retrieval score=1.498 C1=pass C2=fail C3=fail C4=fail C5=fail C6=unav
+[18:04:36] :   content_transfer_err=0.5860731400186483
+[18:04:36] :   law_inv_defect=0.5015721236071728
+[18:04:36] :   transport_agree=0.3125
+[18:04:36] :   support_mass=0.02882949467655213
+[18:04:36] :   eff_rank=23.332384783640624 (diagnostic only)
+[18:04:36] : layer=0 verdict=H_retrieval score=0.496 C1=fail C2=fail C3=fail C4=fail C5=fail C6=unav
+[18:04:36] :   content_transfer_err=0.5906007086555861
+[18:04:36] :   law_inv_defect=0.5034207445899799
+[18:04:36] :   transport_agree=0.32421875
+[18:04:36] :   support_mass=0.028537205286283396
+[18:04:36] :   eff_rank=23.204548379216767 (diagnostic only)
+[18:04:36] : layer=0 verdict=H_retrieval score=1.496 C1=pass C2=fail C3=fail C4=fail C5=fail C6=unav
+[18:04:36] :   content_transfer_err=0.5859299299702883
+[18:04:36] :   law_inv_defect=0.5035497582993336
+[18:04:36] :   transport_agree=0.33203125
+[18:04:36] :   support_mass=0.027707983485266582
+[18:04:36] :   eff_rank=22.427025661424715 (diagnostic only)
+[18:04:36] : layer=0 verdict=H_retrieval score=0.498 C1=fail C2=fail C3=fail C4=fail C5=fail C6=unav
+[18:04:36] :   content_transfer_err=0.5891564696594753
+[18:04:36] :   law_inv_defect=0.5016498768777402
+[18:04:36] :   transport_agree=0.328125
+[18:04:36] :   support_mass=0.029250589965932616
+[18:04:36] :   eff_rank=23.484866550454818 (diagnostic only)
+[18:04:37] : layer=0 verdict=H_retrieval score=0.500 C1=fail C2=fail C3=fail C4=fail C5=fail C6=unav
+[18:04:37] :   content_transfer_err=0.5880928894979366
+[18:04:37] :   law_inv_defect=0.499539504915687
+[18:04:37] :   transport_agree=0.3203125
+[18:04:37] :   support_mass=0.02836234786902921
+[18:04:37] :   eff_rank=23.264243733816727 (diagnostic only)
+[18:04:37] : layer=2 verdict=H_retrieval score=0.469 C1=fail C2=fail C3=fail C4=fail C5=fail C6=unav
+[18:04:37] :   content_transfer_err=0.6277334437224502
+[18:04:37] :   law_inv_defect=0.5306698846411878
+[18:04:37] :   transport_agree=0.3359375
+[18:04:37] :   support_mass=0.03219853299495097
+[18:04:37] :   eff_rank=26.430519464105423 (diagnostic only)
+[18:04:37] : layer=2 verdict=H_retrieval score=0.467 C1=fail C2=fail C3=fail C4=fail C5=fail C6=unav
+[18:04:37] :   content_transfer_err=0.6249473309441436
+[18:04:37] :   law_inv_defect=0.5326927330323388
+[18:04:37] :   transport_agree=0.328125
+[18:04:37] :   support_mass=0.0328361770513953
+[18:04:37] :   eff_rank=27.19361262956877 (diagnostic only)
+[18:04:37] : layer=2 verdict=H_retrieval score=0.457 C1=fail C2=fail C3=fail C4=fail C5=fail C6=unav
+[18:04:37] :   content_transfer_err=0.6295250288912507
+[18:04:37] :   law_inv_defect=0.5421093177382557
+[18:04:37] :   transport_agree=0.3515625
+[18:04:37] :   support_mass=0.03191902880902886
+[18:04:37] :   eff_rank=27.074667776510317 (diagnostic only)
+[18:04:37] : layer=2 verdict=H_retrieval score=0.463 C1=fail C2=fail C3=fail C4=fail C5=fail C6=unav
+[18:04:37] :   content_transfer_err=0.6242449348472738
+[18:04:37] :   law_inv_defect=0.5366300241066178
+[18:04:37] :   transport_agree=0.3046875
+[18:04:37] :   support_mass=0.031079846780265208
+[18:04:37] :   eff_rank=26.581897635161212 (diagnostic only)
+[18:04:38] : layer=2 verdict=H_retrieval score=0.463 C1=fail C2=fail C3=fail C4=fail C5=fail C6=unav
+[18:04:38] :   content_transfer_err=0.627928898531234
+[18:04:38] :   law_inv_defect=0.536527041433323
+[18:04:38] :   transport_agree=0.37109375
+[18:04:38] :   support_mass=0.03147901820895071
+[18:04:38] :   eff_rank=26.053148209334335 (diagnostic only)
+[18:04:38] : layer=2 verdict=H_retrieval score=1.281 C1=fail C2=fail C3=fail C4=pass C5=fail C6=unav
+[18:04:38] :   content_transfer_err=0.6829151438351769
+[18:04:38] :   law_inv_defect=0.7186609980431615
+[18:04:38] :   transport_agree=0.35546875
+[18:04:38] :   support_mass=0.041928027350233876
+[18:04:38] :   eff_rank=41.025633820562476 (diagnostic only)
+[18:04:38] : layer=2 verdict=H_retrieval score=0.276 C1=fail C2=fail C3=fail C4=fail C5=fail C6=unav
+[18:04:38] :   content_transfer_err=0.6807795774863732
+[18:04:38] :   law_inv_defect=0.7236316217511681
+[18:04:38] :   transport_agree=0.3515625
+[18:04:38] :   support_mass=0.038769118397139396
+[18:04:38] :   eff_rank=40.56842364358094 (diagnostic only)
+[18:04:38] : layer=2 verdict=H_retrieval score=1.267 C1=fail C2=fail C3=fail C4=pass C5=fail C6=unav
+[18:04:38] :   content_transfer_err=0.6863498896391509
+[18:04:38] :   law_inv_defect=0.7323757960479979
+[18:04:38] :   transport_agree=0.36328125
+[18:04:38] :   support_mass=0.04116167351329131
+[18:04:38] :   eff_rank=41.099277051035926 (diagnostic only)
+[18:04:38] : layer=2 verdict=H_retrieval score=1.270 C1=fail C2=fail C3=fail C4=pass C5=fail C6=unav
+[18:04:38] :   content_transfer_err=0.6835351125230946
+[18:04:38] :   law_inv_defect=0.729586445092373
+[18:04:38] :   transport_agree=0.3359375
+[18:04:38] :   support_mass=0.042422666019601554
+[18:04:38] :   eff_rank=40.868598271115715 (diagnostic only)
+[18:04:38] : layer=2 verdict=H_retrieval score=1.270 C1=fail C2=fail C3=fail C4=pass C5=fail C6=unav
+[18:04:38] :   content_transfer_err=0.6864158021281545
+[18:04:38] :   law_inv_defect=0.7297778779583508
+[18:04:38] :   transport_agree=0.35546875
+[18:04:38] :   support_mass=0.04045977127984894
+[18:04:38] :   eff_rank=41.029962912300064 (diagnostic only)
+[18:04:39] : layer=0 verdict=H_retrieval score=1.581 C1=fail C2=fail C3=pass C4=fail C5=fail C6=unav
+[18:04:39] :   content_transfer_err=0.8009149784571454
+[18:04:39] :   law_inv_defect=0.41866663393817094
+[18:04:39] :   transport_agree=0.28515625
+[18:04:39] :   support_mass=0.0190727085389818
+[18:04:39] :   eff_rank=22.21612768209255 (diagnostic only)
+[18:04:39] : layer=0 verdict=H_retrieval score=1.580 C1=fail C2=fail C3=pass C4=fail C5=fail C6=unav
+[18:04:39] :   content_transfer_err=0.8006867857250632
+[18:04:39] :   law_inv_defect=0.41915815730137573
+[18:04:39] :   transport_agree=0.2890625
+[18:04:39] :   support_mass=0.01948427931891694
+[18:04:39] :   eff_rank=22.879304101064896 (diagnostic only)
+[18:04:39] : layer=0 verdict=H_retrieval score=1.583 C1=fail C2=fail C3=pass C4=fail C5=fail C6=unav
+[18:04:39] :   content_transfer_err=0.7977529861210653
+[18:04:39] :   law_inv_defect=0.4165067644977884
+[18:04:39] :   transport_agree=0.29296875
+[18:04:39] :   support_mass=0.019061173919887403
+[18:04:39] :   eff_rank=22.944642535713818 (diagnostic only)
+[18:04:39] : layer=0 verdict=H_retrieval score=1.581 C1=fail C2=fail C3=pass C4=fail C5=fail C6=unav
+[18:04:39] :   content_transfer_err=0.8015963153051977
+[18:04:39] :   law_inv_defect=0.4184187959597792
+[18:04:39] :   transport_agree=0.30078125
+[18:04:39] :   support_mass=0.01903617063398741
+[18:04:39] :   eff_rank=22.704670256172236 (diagnostic only)
+[18:04:39] : layer=0 verdict=H_retrieval score=1.581 C1=fail C2=fail C3=pass C4=fail C5=fail C6=unav
+[18:04:39] :   content_transfer_err=0.7987601902074035
+[18:04:39] :   law_inv_defect=0.41871775125009625
+[18:04:39] :   transport_agree=0.2890625
+[18:04:39] :   support_mass=0.018563955277027783
+[18:04:39] :   eff_rank=22.52091153911313 (diagnostic only)
+[18:04:39] : layer=2 verdict=H_retrieval score=1.538 C1=fail C2=fail C3=pass C4=fail C5=fail C6=unav
+[18:04:39] :   content_transfer_err=0.8342707235312044
+[18:04:39] :   law_inv_defect=0.4613710661304965
+[18:04:39] :   transport_agree=0.296875
+[18:04:39] :   support_mass=0.02174662953999715
+[18:04:39] :   eff_rank=26.278837963415622 (diagnostic only)
+[18:04:39] : layer=2 verdict=H_retrieval score=1.531 C1=fail C2=fail C3=pass C4=fail C5=fail C6=unav
+[18:04:39] :   content_transfer_err=0.8296554252942094
+[18:04:39] :   law_inv_defect=0.4686897878048051
+[18:04:39] :   transport_agree=0.3046875
+[18:04:39] :   support_mass=0.02068786537700746
+[18:04:39] :   eff_rank=25.268019158502035 (diagnostic only)
+[18:04:40] : layer=2 verdict=H_retrieval score=1.530 C1=fail C2=fail C3=pass C4=fail C5=fail C6=unav
+[18:04:40] :   content_transfer_err=0.8260098586167226
+[18:04:40] :   law_inv_defect=0.46921516222614823
+[18:04:40] :   transport_agree=0.28515625
+[18:04:40] :   support_mass=0.02049340246765914
+[18:04:40] :   eff_rank=25.45810018780103 (diagnostic only)
+[18:04:40] : layer=2 verdict=H_retrieval score=1.537 C1=fail C2=fail C3=pass C4=fail C5=fail C6=unav
+[18:04:40] :   content_transfer_err=0.8242485308115848
+[18:04:40] :   law_inv_defect=0.4628204652649132
+[18:04:40] :   transport_agree=0.31640625
+[18:04:40] :   support_mass=0.020145650509326603
+[18:04:40] :   eff_rank=25.3742078087135 (diagnostic only)
+[18:04:40] : layer=2 verdict=H_retrieval score=1.539 C1=fail C2=fail C3=pass C4=fail C5=fail C6=unav
+[18:04:40] :   content_transfer_err=0.8266516751988355
+[18:04:40] :   law_inv_defect=0.45997209749632295
+[18:04:40] :   transport_agree=0.28515625
+[18:04:40] :   support_mass=0.02165726084995912
+[18:04:40] :   eff_rank=25.967075515866803 (diagnostic only)
+[18:04:40] : layer=1 verdict=H_retrieval score=0.319 C1=fail C2=fail C3=fail C4=fail C5=fail C6=unav
+[18:04:40] :   content_transfer_err=0.7950415382576204
+[18:04:40] :   law_inv_defect=0.6802967317512909
+[18:04:40] :   transport_agree=0.328125
+[18:04:40] :   support_mass=0.029179837051370585
+[18:04:40] :   eff_rank=39.928721735878014 (diagnostic only)
+[18:04:40] : layer=1 verdict=H_retrieval score=0.316 C1=fail C2=fail C3=fail C4=fail C5=fail C6=unav
+[18:04:40] :   content_transfer_err=0.7932864411919918
+[18:04:40] :   law_inv_defect=0.6837813674632791
+[18:04:40] :   transport_agree=0.359375
+[18:04:40] :   support_mass=0.028017501288538027
+[18:04:40] :   eff_rank=40.00407753198486 (diagnostic only)
+[18:04:40] : layer=1 verdict=H_retrieval score=0.336 C1=fail C2=fail C3=fail C4=fail C5=fail C6=unav
+[18:04:40] :   content_transfer_err=0.7981228223460162
+[18:04:40] :   law_inv_defect=0.6639122551706482
+[18:04:40] :   transport_agree=0.25390625
+[18:04:40] :   support_mass=0.02981491285608688
+[18:04:40] :   eff_rank=39.823463622631195 (diagnostic only)
+[18:04:40] : layer=1 verdict=H_retrieval score=0.318 C1=fail C2=fail C3=fail C4=fail C5=fail C6=unav
+[18:04:40] :   content_transfer_err=0.7935449528619349
+[18:04:40] :   law_inv_defect=0.6819740021520959
+[18:04:40] :   transport_agree=0.296875
+[18:04:40] :   support_mass=0.029843541366685974
+[18:04:40] :   eff_rank=39.78138959042 (diagnostic only)
+[18:04:41] : layer=1 verdict=H_retrieval score=0.313 C1=fail C2=fail C3=fail C4=fail C5=fail C6=unav
+[18:04:41] :   content_transfer_err=0.8040564293951736
+[18:04:41] :   law_inv_defect=0.6865808730363265
+[18:04:41] :   transport_agree=0.32421875
+[18:04:41] :   support_mass=0.028395443006060617
+[18:04:41] :   eff_rank=39.76606625758793 (diagnostic only)

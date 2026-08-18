@@ -1,0 +1,70 @@
+{
+  "P/fit": {
+    "raw_correct": 571,
+    "corrected_correct": 600,
+    "n_star_preds": 29,
+    "n_total": 600,
+    "episode_acc": 1.0,
+    "strict_orbit": 1.0,
+    "ci_acc": [
+      1.0,
+      1.0
+    ],
+    "ci_strict": [
+      1.0,
+      1.0
+    ],
+    "n_bases": 100
+  },
+  "P/transfer": {
+    "raw_correct": 545,
+    "corrected_correct": 600,
+    "n_star_preds": 55,
+    "n_total": 600,
+    "episode_acc": 1.0,
+    "strict_orbit": 1.0,
+    "ci_acc": [
+      1.0,
+      1.0
+    ],
+    "ci_strict": [
+      1.0,
+      1.0
+    ],
+    "n_bases": 100
+  },
+  "G/fit": {
+    "raw_correct": 560,
+    "corrected_correct": 560,
+    "n_star_preds": 0,
+    "n_total": 600,
+    "episode_acc": 0.9333333333333333,
+    "strict_orbit": 0.87,
+    "ci_acc": [
+      0.89,
+      0.97
+    ],
+    "ci_strict": [
+      0.8,
+      0.93
+    ],
+    "n_bases": 100
+  },
+  "G/transfer": {
+    "raw_correct": 578,
+    "corrected_correct": 580,
+    "n_star_preds": 4,
+    "n_total": 600,
+    "episode_acc": 0.9666666666666667,
+    "strict_orbit": 0.94,
+    "ci_acc": [
+      0.93,
+      0.995
+    ],
+    "ci_strict": [
+      0.89,
+      0.98
+    ],
+    "n_bases": 100
+  }
+}

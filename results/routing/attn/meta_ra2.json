@@ -1,0 +1,19 @@
+{
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "revision": "495f39366efef23836d0cfae4fbe635880d2be31",
+  "gpu": "H100:2",
+  "n_layers": 80,
+  "n_heads": 64,
+  "k": 3,
+  "edges": {
+    "hop1": "mark[a]->sigil[b]",
+    "hop2": "sigil[a]->person[b]",
+    "deliv": "answer_pos->person[b]"
+  },
+  "binding": "index-aligned diagonal a==b is the correct binding; qi = queried role",
+  "sets": {
+    "frozen_Pfit": 264,
+    "joint_Pfit": 306
+  },
+  "session_seconds": 227.5
+}

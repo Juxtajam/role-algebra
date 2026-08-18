@@ -1,0 +1,145 @@
+{
+  "outlier_rule": "err_b > Q3 + 1.5*IQR of per-base pooled-generator num/den ratio at the verdict layer (L61); top-5 listed regardless",
+  "sources": {
+    "per_base": "results/phase8c/test_per_base.json",
+    "behavioural": "results/phase8c_resolution/item5_behavioural_bases.json",
+    "splits": "results/phase8c/splits.json"
+  },
+  "cells": {
+    "C1_content_transfer__P/transfer_test": {
+      "n_test_bases": 150,
+      "outlier_threshold": 2.0976228395440604,
+      "outlier_bases": {
+        "237": 3.2355397891497146,
+        "76": 2.5905882490933894,
+        "101": 2.172008212167361,
+        "231": 2.1485215017332138,
+        "297": 2.1459831499924773
+      },
+      "top5": {
+        "237": 3.2355397891497146,
+        "76": 2.5905882490933894,
+        "101": 2.172008212167361,
+        "231": 2.1485215017332138,
+        "297": 2.1459831499924773
+      },
+      "flagged_bases_in_cell": [],
+      "flagged_in_test_split": [],
+      "overlap_flagged_x_outliers": []
+    },
+    "C2_crosspath__G/fit_test": {
+      "n_test_bases": 145,
+      "outlier_threshold": 10.712171039142525,
+      "outlier_bases": {
+        "196": 14.819579825545151,
+        "53": 13.830494469409345,
+        "197": 12.547785522227286,
+        "226": 11.873526808622202,
+        "81": 11.56413865149183,
+        "199": 10.874360186400976
+      },
+      "top5": {
+        "196": 14.819579825545151,
+        "53": 13.830494469409345,
+        "197": 12.547785522227286,
+        "226": 11.873526808622202,
+        "81": 11.56413865149183
+      },
+      "flagged_bases_in_cell": [
+        16,
+        44,
+        60,
+        68,
+        78,
+        211,
+        232,
+        259,
+        296
+      ],
+      "flagged_in_test_split": [],
+      "flagged_in_cal_split": [],
+      "overlap_flagged_x_outliers": []
+    },
+    "C3_law_inv__P/transfer_test": {
+      "n_test_bases": 150,
+      "outlier_threshold": 0.04690338698038701,
+      "outlier_bases": {
+        "233": 0.057039735734369094,
+        "95": 0.05086067737045637,
+        "122": 0.04971151717274967,
+        "240": 0.04910657654090685,
+        "250": 0.04823632821583125,
+        "244": 0.04787060350158085
+      },
+      "top5": {
+        "233": 0.057039735734369094,
+        "95": 0.05086067737045637,
+        "122": 0.04971151717274967,
+        "240": 0.04910657654090685,
+        "250": 0.04823632821583125
+      },
+      "flagged_bases_in_cell": [],
+      "overlap_flagged_x_outliers": []
+    }
+  },
+  "flagged_base_disposition": {
+    "disc_P_fit": {
+      "flagged": [],
+      "in_cal": [],
+      "in_test": [],
+      "dropped_odd": []
+    },
+    "disc_P_transfer": {
+      "flagged": [],
+      "in_cal": [],
+      "in_test": [],
+      "dropped_odd": []
+    },
+    "disc_G_fit": {
+      "flagged": [
+        16,
+        44,
+        60,
+        68,
+        78,
+        211,
+        232,
+        259,
+        296
+      ],
+      "in_cal": [],
+      "in_test": [],
+      "dropped_odd": []
+    },
+    "disc_G_transfer": {
+      "flagged": [
+        38,
+        96,
+        160,
+        164,
+        243
+      ],
+      "in_cal": [],
+      "in_test": [],
+      "dropped_odd": []
+    }
+  },
+  "base_57_note": {
+    "cell": "gate_G_fit",
+    "record": {
+      "n_errors": 6,
+      "strict": false,
+      "consistent": true,
+      "pred_slots": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "qpos": 2
+    },
+    "disposition": "gate-set base; gate bases are not part of the disc splits and produce no per-base condition records in test_per_base.json"
+  }
+}

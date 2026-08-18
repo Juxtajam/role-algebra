@@ -1,0 +1,46 @@
+{
+  "k": 4,
+  "cells": {
+    "G/fit": {
+      "n_episodes": 2400,
+      "n_errors": 117,
+      "episode_acc": 0.9513,
+      "error_distribution": {
+        "guarded_not_guard": 70,
+        "upstream_guard": 46,
+        "inner_colocation": 1
+      },
+      "error_fractions": {
+        "guarded_not_guard": 0.598,
+        "upstream_guard": 0.393,
+        "inner_colocation": 0.009
+      },
+      "per_qpos_episode_acc": {
+        "1": 0.9291,
+        "2": 0.963,
+        "3": 0.966
+      }
+    },
+    "G/transfer": {
+      "n_episodes": 2400,
+      "n_errors": 162,
+      "episode_acc": 0.9325,
+      "error_distribution": {
+        "upstream_guard": 46,
+        "guarded_not_guard": 112,
+        "inner_colocation": 4
+      },
+      "error_fractions": {
+        "upstream_guard": 0.284,
+        "guarded_not_guard": 0.691,
+        "inner_colocation": 0.025
+      },
+      "per_qpos_episode_acc": {
+        "1": 0.8619,
+        "2": 0.9583,
+        "3": 0.9877
+      }
+    }
+  },
+  "reading": "The k=4 guardian path degrades not by random noise but by a chain-structure error mode; per-qpos accuracy localises whether middle-of-chain queries (as at k=3) carry the residual error. See per-cell error_fractions and per_qpos_episode_acc."
+}

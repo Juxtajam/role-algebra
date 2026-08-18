@@ -1,0 +1,66 @@
+{
+  "model": "nvidia/Llama-3.1-Nemotron-70B-Instruct-HF",
+  "revision": "031d4042f36adc1a52cca51b331d25cbe3cf1022",
+  "gpu": "H100:2",
+  "k": 3,
+  "layers": [
+    0,
+    8,
+    16,
+    24,
+    32,
+    40,
+    48,
+    56,
+    61,
+    64,
+    72,
+    79
+  ],
+  "position": "answer(last col, left pad)",
+  "d_model": 8192,
+  "frozen_hash": "84f2e54d85d6e8aa4c1474b608bef5ab69babe54353ef0ef2702d9f6ed38baef",
+  "session_seconds": 742.8,
+  "files": {
+    "disc_P_fit": {
+      "sha256": "a7bc49e21b63bbc4ca0711f5cf3724730bb4ca6cd4688e2647bf3c3a1591111d",
+      "shape": [
+        1800,
+        12,
+        8192
+      ],
+      "episode_acc": 1.0,
+      "strict_orbit": 1.0
+    },
+    "disc_P_transfer": {
+      "sha256": "21eae4d716650c1fda52067dcbc98aebada3ed80f31f39a6ba762019b0a9ac4b",
+      "shape": [
+        1800,
+        12,
+        8192
+      ],
+      "episode_acc": 1.0,
+      "strict_orbit": 1.0
+    },
+    "disc_G_fit": {
+      "sha256": "16419681acc89ce45c11a1baaa532e20dbaa3364cb953610962c8251ad0dab83",
+      "shape": [
+        1800,
+        12,
+        8192
+      ],
+      "episode_acc": 0.9427777777777778,
+      "strict_orbit": 0.9033333333333333
+    },
+    "disc_G_transfer": {
+      "sha256": "f9a9210f374d37d2d29a9881ac8b8d0efc8e96a3b899a01f0e959b2cb4577580",
+      "shape": [
+        1800,
+        12,
+        8192
+      ],
+      "episode_acc": 0.9561111111111111,
+      "strict_orbit": 0.9133333333333333
+    }
+  }
+}

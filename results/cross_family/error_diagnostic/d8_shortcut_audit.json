@@ -1,0 +1,1559 @@
+{
+  "Nemotron/P/fit": {
+    "model": "Nemotron",
+    "path": "P",
+    "vocab": "fit",
+    "n": 600,
+    "position_match": {
+      "first_fact": {
+        "pred": 0.245,
+        "gold": 0.26
+      },
+      "middle_fact": {
+        "pred": 0.2967,
+        "gold": 0.32
+      },
+      "last_fact": {
+        "pred": 0.41,
+        "gold": 0.42
+      },
+      "queried": {
+        "pred": 0.9517,
+        "gold": 1.0
+      }
+    },
+    "name_selection": {
+      "Bav": {
+        "pred": 0.04,
+        "gold": 0.0733,
+        "pred_count": 24,
+        "gold_count": 44
+      },
+      "Bek": {
+        "pred": 0.0733,
+        "gold": 0.0733,
+        "pred_count": 44,
+        "gold_count": 44
+      },
+      "Dek": {
+        "pred": 0.0833,
+        "gold": 0.0833,
+        "pred_count": 50,
+        "gold_count": 50
+      },
+      "Fot": {
+        "pred": 0.0817,
+        "gold": 0.0867,
+        "pred_count": 49,
+        "gold_count": 52
+      },
+      "Gat": {
+        "pred": 0.07,
+        "gold": 0.07,
+        "pred_count": 42,
+        "gold_count": 42
+      },
+      "Jub": {
+        "pred": 0.0767,
+        "gold": 0.08,
+        "pred_count": 46,
+        "gold_count": 48
+      },
+      "Kag": {
+        "pred": 0.08,
+        "gold": 0.08,
+        "pred_count": 48,
+        "gold_count": 48
+      },
+      "Lup": {
+        "pred": 0.1067,
+        "gold": 0.1067,
+        "pred_count": 64,
+        "gold_count": 64
+      },
+      "Miz": {
+        "pred": 0.1117,
+        "gold": 0.1133,
+        "pred_count": 67,
+        "gold_count": 68
+      },
+      "Nir": {
+        "pred": 0.0933,
+        "gold": 0.0933,
+        "pred_count": 56,
+        "gold_count": 56
+      },
+      "Suk": {
+        "pred": 0.0667,
+        "gold": 0.0667,
+        "pred_count": 40,
+        "gold_count": 40
+      },
+      "Tus": {
+        "pred": 0.0683,
+        "gold": 0.0733,
+        "pred_count": 41,
+        "gold_count": 44
+      }
+    },
+    "max_abs_name_bias": 0.0333,
+    "direction_split": {
+      "correct": 571,
+      "wrong": 29
+    },
+    "q_stratification": {
+      "qi=0": {
+        "acc": 0.9429,
+        "n": 210,
+        "correct": 198
+      },
+      "qi=1": {
+        "acc": 0.9533,
+        "n": 150,
+        "correct": 143
+      },
+      "qi=2": {
+        "acc": 0.9583,
+        "n": 240,
+        "correct": 230
+      }
+    },
+    "overall_acc": 0.9517,
+    "n_correct": 571,
+    "allwrong_bases": [],
+    "n_allwrong_bases": 0
+  },
+  "Llama-3.3/P/fit": {
+    "model": "Llama-3.3",
+    "path": "P",
+    "vocab": "fit",
+    "n": 600,
+    "position_match": {
+      "first_fact": {
+        "pred": 0.26,
+        "gold": 0.26
+      },
+      "middle_fact": {
+        "pred": 0.32,
+        "gold": 0.32
+      },
+      "last_fact": {
+        "pred": 0.42,
+        "gold": 0.42
+      },
+      "queried": {
+        "pred": 1.0,
+        "gold": 1.0
+      }
+    },
+    "name_selection": {
+      "Bav": {
+        "pred": 0.0733,
+        "gold": 0.0733,
+        "pred_count": 44,
+        "gold_count": 44
+      },
+      "Bek": {
+        "pred": 0.0733,
+        "gold": 0.0733,
+        "pred_count": 44,
+        "gold_count": 44
+      },
+      "Dek": {
+        "pred": 0.0833,
+        "gold": 0.0833,
+        "pred_count": 50,
+        "gold_count": 50
+      },
+      "Fot": {
+        "pred": 0.0867,
+        "gold": 0.0867,
+        "pred_count": 52,
+        "gold_count": 52
+      },
+      "Gat": {
+        "pred": 0.07,
+        "gold": 0.07,
+        "pred_count": 42,
+        "gold_count": 42
+      },
+      "Jub": {
+        "pred": 0.08,
+        "gold": 0.08,
+        "pred_count": 48,
+        "gold_count": 48
+      },
+      "Kag": {
+        "pred": 0.08,
+        "gold": 0.08,
+        "pred_count": 48,
+        "gold_count": 48
+      },
+      "Lup": {
+        "pred": 0.1067,
+        "gold": 0.1067,
+        "pred_count": 64,
+        "gold_count": 64
+      },
+      "Miz": {
+        "pred": 0.1133,
+        "gold": 0.1133,
+        "pred_count": 68,
+        "gold_count": 68
+      },
+      "Nir": {
+        "pred": 0.0933,
+        "gold": 0.0933,
+        "pred_count": 56,
+        "gold_count": 56
+      },
+      "Suk": {
+        "pred": 0.0667,
+        "gold": 0.0667,
+        "pred_count": 40,
+        "gold_count": 40
+      },
+      "Tus": {
+        "pred": 0.0733,
+        "gold": 0.0733,
+        "pred_count": 44,
+        "gold_count": 44
+      }
+    },
+    "max_abs_name_bias": 0.0,
+    "direction_split": {
+      "correct": 600,
+      "wrong": 0
+    },
+    "q_stratification": {
+      "qi=0": {
+        "acc": 1.0,
+        "n": 210,
+        "correct": 210
+      },
+      "qi=1": {
+        "acc": 1.0,
+        "n": 150,
+        "correct": 150
+      },
+      "qi=2": {
+        "acc": 1.0,
+        "n": 240,
+        "correct": 240
+      }
+    },
+    "overall_acc": 1.0,
+    "n_correct": 600,
+    "allwrong_bases": [],
+    "n_allwrong_bases": 0
+  },
+  "Qwen2.5-72B/P/fit": {
+    "model": "Qwen2.5-72B",
+    "path": "P",
+    "vocab": "fit",
+    "n": 600,
+    "position_match": {
+      "first_fact": {
+        "pred": 0.26,
+        "gold": 0.26
+      },
+      "middle_fact": {
+        "pred": 0.32,
+        "gold": 0.32
+      },
+      "last_fact": {
+        "pred": 0.42,
+        "gold": 0.42
+      },
+      "queried": {
+        "pred": 1.0,
+        "gold": 1.0
+      }
+    },
+    "name_selection": {
+      "Bav": {
+        "pred": 0.0733,
+        "gold": 0.0733,
+        "pred_count": 44,
+        "gold_count": 44
+      },
+      "Bek": {
+        "pred": 0.0733,
+        "gold": 0.0733,
+        "pred_count": 44,
+        "gold_count": 44
+      },
+      "Dek": {
+        "pred": 0.0833,
+        "gold": 0.0833,
+        "pred_count": 50,
+        "gold_count": 50
+      },
+      "Fot": {
+        "pred": 0.0867,
+        "gold": 0.0867,
+        "pred_count": 52,
+        "gold_count": 52
+      },
+      "Gat": {
+        "pred": 0.07,
+        "gold": 0.07,
+        "pred_count": 42,
+        "gold_count": 42
+      },
+      "Jub": {
+        "pred": 0.08,
+        "gold": 0.08,
+        "pred_count": 48,
+        "gold_count": 48
+      },
+      "Kag": {
+        "pred": 0.08,
+        "gold": 0.08,
+        "pred_count": 48,
+        "gold_count": 48
+      },
+      "Lup": {
+        "pred": 0.1067,
+        "gold": 0.1067,
+        "pred_count": 64,
+        "gold_count": 64
+      },
+      "Miz": {
+        "pred": 0.1133,
+        "gold": 0.1133,
+        "pred_count": 68,
+        "gold_count": 68
+      },
+      "Nir": {
+        "pred": 0.0933,
+        "gold": 0.0933,
+        "pred_count": 56,
+        "gold_count": 56
+      },
+      "Suk": {
+        "pred": 0.0667,
+        "gold": 0.0667,
+        "pred_count": 40,
+        "gold_count": 40
+      },
+      "Tus": {
+        "pred": 0.0733,
+        "gold": 0.0733,
+        "pred_count": 44,
+        "gold_count": 44
+      }
+    },
+    "max_abs_name_bias": 0.0,
+    "direction_split": {
+      "correct": 600,
+      "wrong": 0
+    },
+    "q_stratification": {
+      "qi=0": {
+        "acc": 1.0,
+        "n": 210,
+        "correct": 210
+      },
+      "qi=1": {
+        "acc": 1.0,
+        "n": 150,
+        "correct": 150
+      },
+      "qi=2": {
+        "acc": 1.0,
+        "n": 240,
+        "correct": 240
+      }
+    },
+    "overall_acc": 1.0,
+    "n_correct": 600,
+    "allwrong_bases": [],
+    "n_allwrong_bases": 0
+  },
+  "Nemotron/P/transfer": {
+    "model": "Nemotron",
+    "path": "P",
+    "vocab": "transfer",
+    "n": 600,
+    "position_match": {
+      "first_fact": {
+        "pred": 0.2583,
+        "gold": 0.31
+      },
+      "middle_fact": {
+        "pred": 0.3233,
+        "gold": 0.35
+      },
+      "last_fact": {
+        "pred": 0.3267,
+        "gold": 0.34
+      },
+      "queried": {
+        "pred": 0.9083,
+        "gold": 1.0
+      }
+    },
+    "name_selection": {
+      "Bij": {
+        "pred": 0.0633,
+        "gold": 0.07,
+        "pred_count": 38,
+        "gold_count": 42
+      },
+      "Bik": {
+        "pred": 0.0517,
+        "gold": 0.0833,
+        "pred_count": 31,
+        "gold_count": 50
+      },
+      "Fon": {
+        "pred": 0.0733,
+        "gold": 0.0733,
+        "pred_count": 44,
+        "gold_count": 44
+      },
+      "Jad": {
+        "pred": 0.0867,
+        "gold": 0.0867,
+        "pred_count": 52,
+        "gold_count": 52
+      },
+      "Jal": {
+        "pred": 0.0767,
+        "gold": 0.0767,
+        "pred_count": 46,
+        "gold_count": 46
+      },
+      "Kad": {
+        "pred": 0.0983,
+        "gold": 0.1067,
+        "pred_count": 59,
+        "gold_count": 64
+      },
+      "Poz": {
+        "pred": 0.0867,
+        "gold": 0.0867,
+        "pred_count": 52,
+        "gold_count": 52
+      },
+      "Raz": {
+        "pred": 0.08,
+        "gold": 0.0867,
+        "pred_count": 48,
+        "gold_count": 52
+      },
+      "Sik": {
+        "pred": 0.0817,
+        "gold": 0.0867,
+        "pred_count": 49,
+        "gold_count": 52
+      },
+      "Vij": {
+        "pred": 0.0733,
+        "gold": 0.0733,
+        "pred_count": 44,
+        "gold_count": 44
+      },
+      "Zam": {
+        "pred": 0.0867,
+        "gold": 0.0867,
+        "pred_count": 52,
+        "gold_count": 52
+      },
+      "Zum": {
+        "pred": 0.05,
+        "gold": 0.0833,
+        "pred_count": 30,
+        "gold_count": 50
+      }
+    },
+    "max_abs_name_bias": 0.0333,
+    "direction_split": {
+      "correct": 545,
+      "wrong": 55
+    },
+    "q_stratification": {
+      "qi=0": {
+        "acc": 0.881,
+        "n": 210,
+        "correct": 185
+      },
+      "qi=1": {
+        "acc": 0.9067,
+        "n": 150,
+        "correct": 136
+      },
+      "qi=2": {
+        "acc": 0.9333,
+        "n": 240,
+        "correct": 224
+      }
+    },
+    "overall_acc": 0.9083,
+    "n_correct": 545,
+    "allwrong_bases": [
+      {
+        "base_id": 3,
+        "qpos": null,
+        "cats": [
+          "wrong"
+        ],
+        "n_errors": 6
+      },
+      {
+        "base_id": 52,
+        "qpos": null,
+        "cats": [
+          "wrong"
+        ],
+        "n_errors": 6
+      }
+    ],
+    "n_allwrong_bases": 2
+  },
+  "Llama-3.3/P/transfer": {
+    "model": "Llama-3.3",
+    "path": "P",
+    "vocab": "transfer",
+    "n": 600,
+    "position_match": {
+      "first_fact": {
+        "pred": 0.31,
+        "gold": 0.31
+      },
+      "middle_fact": {
+        "pred": 0.35,
+        "gold": 0.35
+      },
+      "last_fact": {
+        "pred": 0.34,
+        "gold": 0.34
+      },
+      "queried": {
+        "pred": 1.0,
+        "gold": 1.0
+      }
+    },
+    "name_selection": {
+      "Bij": {
+        "pred": 0.07,
+        "gold": 0.07,
+        "pred_count": 42,
+        "gold_count": 42
+      },
+      "Bik": {
+        "pred": 0.0833,
+        "gold": 0.0833,
+        "pred_count": 50,
+        "gold_count": 50
+      },
+      "Fon": {
+        "pred": 0.0733,
+        "gold": 0.0733,
+        "pred_count": 44,
+        "gold_count": 44
+      },
+      "Jad": {
+        "pred": 0.0867,
+        "gold": 0.0867,
+        "pred_count": 52,
+        "gold_count": 52
+      },
+      "Jal": {
+        "pred": 0.0767,
+        "gold": 0.0767,
+        "pred_count": 46,
+        "gold_count": 46
+      },
+      "Kad": {
+        "pred": 0.1067,
+        "gold": 0.1067,
+        "pred_count": 64,
+        "gold_count": 64
+      },
+      "Poz": {
+        "pred": 0.0867,
+        "gold": 0.0867,
+        "pred_count": 52,
+        "gold_count": 52
+      },
+      "Raz": {
+        "pred": 0.0867,
+        "gold": 0.0867,
+        "pred_count": 52,
+        "gold_count": 52
+      },
+      "Sik": {
+        "pred": 0.0867,
+        "gold": 0.0867,
+        "pred_count": 52,
+        "gold_count": 52
+      },
+      "Vij": {
+        "pred": 0.0733,
+        "gold": 0.0733,
+        "pred_count": 44,
+        "gold_count": 44
+      },
+      "Zam": {
+        "pred": 0.0867,
+        "gold": 0.0867,
+        "pred_count": 52,
+        "gold_count": 52
+      },
+      "Zum": {
+        "pred": 0.0833,
+        "gold": 0.0833,
+        "pred_count": 50,
+        "gold_count": 50
+      }
+    },
+    "max_abs_name_bias": 0.0,
+    "direction_split": {
+      "correct": 600,
+      "wrong": 0
+    },
+    "q_stratification": {
+      "qi=0": {
+        "acc": 1.0,
+        "n": 210,
+        "correct": 210
+      },
+      "qi=1": {
+        "acc": 1.0,
+        "n": 150,
+        "correct": 150
+      },
+      "qi=2": {
+        "acc": 1.0,
+        "n": 240,
+        "correct": 240
+      }
+    },
+    "overall_acc": 1.0,
+    "n_correct": 600,
+    "allwrong_bases": [],
+    "n_allwrong_bases": 0
+  },
+  "Qwen2.5-72B/P/transfer": {
+    "model": "Qwen2.5-72B",
+    "path": "P",
+    "vocab": "transfer",
+    "n": 600,
+    "position_match": {
+      "first_fact": {
+        "pred": 0.31,
+        "gold": 0.31
+      },
+      "middle_fact": {
+        "pred": 0.35,
+        "gold": 0.35
+      },
+      "last_fact": {
+        "pred": 0.34,
+        "gold": 0.34
+      },
+      "queried": {
+        "pred": 1.0,
+        "gold": 1.0
+      }
+    },
+    "name_selection": {
+      "Bij": {
+        "pred": 0.07,
+        "gold": 0.07,
+        "pred_count": 42,
+        "gold_count": 42
+      },
+      "Bik": {
+        "pred": 0.0833,
+        "gold": 0.0833,
+        "pred_count": 50,
+        "gold_count": 50
+      },
+      "Fon": {
+        "pred": 0.0733,
+        "gold": 0.0733,
+        "pred_count": 44,
+        "gold_count": 44
+      },
+      "Jad": {
+        "pred": 0.0867,
+        "gold": 0.0867,
+        "pred_count": 52,
+        "gold_count": 52
+      },
+      "Jal": {
+        "pred": 0.0767,
+        "gold": 0.0767,
+        "pred_count": 46,
+        "gold_count": 46
+      },
+      "Kad": {
+        "pred": 0.1067,
+        "gold": 0.1067,
+        "pred_count": 64,
+        "gold_count": 64
+      },
+      "Poz": {
+        "pred": 0.0867,
+        "gold": 0.0867,
+        "pred_count": 52,
+        "gold_count": 52
+      },
+      "Raz": {
+        "pred": 0.0867,
+        "gold": 0.0867,
+        "pred_count": 52,
+        "gold_count": 52
+      },
+      "Sik": {
+        "pred": 0.0867,
+        "gold": 0.0867,
+        "pred_count": 52,
+        "gold_count": 52
+      },
+      "Vij": {
+        "pred": 0.0733,
+        "gold": 0.0733,
+        "pred_count": 44,
+        "gold_count": 44
+      },
+      "Zam": {
+        "pred": 0.0867,
+        "gold": 0.0867,
+        "pred_count": 52,
+        "gold_count": 52
+      },
+      "Zum": {
+        "pred": 0.0833,
+        "gold": 0.0833,
+        "pred_count": 50,
+        "gold_count": 50
+      }
+    },
+    "max_abs_name_bias": 0.0,
+    "direction_split": {
+      "correct": 600,
+      "wrong": 0
+    },
+    "q_stratification": {
+      "qi=0": {
+        "acc": 1.0,
+        "n": 210,
+        "correct": 210
+      },
+      "qi=1": {
+        "acc": 1.0,
+        "n": 150,
+        "correct": 150
+      },
+      "qi=2": {
+        "acc": 1.0,
+        "n": 240,
+        "correct": 240
+      }
+    },
+    "overall_acc": 1.0,
+    "n_correct": 600,
+    "allwrong_bases": [],
+    "n_allwrong_bases": 0
+  },
+  "Nemotron/G/fit": {
+    "model": "Nemotron",
+    "path": "G",
+    "vocab": "fit",
+    "n": 600,
+    "position_match": {
+      "first_fact": {
+        "pred": 0.3483,
+        "gold": 0.3
+      },
+      "middle_fact": {
+        "pred": 0.2717,
+        "gold": 0.26
+      },
+      "last_fact": {
+        "pred": 0.38,
+        "gold": 0.44
+      },
+      "queried": {
+        "pred": 0.03,
+        "gold": 0.0
+      }
+    },
+    "name_selection": {
+      "Bav": {
+        "pred": 0.0767,
+        "gold": 0.0833,
+        "pred_count": 46,
+        "gold_count": 50
+      },
+      "Bek": {
+        "pred": 0.1017,
+        "gold": 0.1033,
+        "pred_count": 61,
+        "gold_count": 62
+      },
+      "Dek": {
+        "pred": 0.1217,
+        "gold": 0.1067,
+        "pred_count": 73,
+        "gold_count": 64
+      },
+      "Fot": {
+        "pred": 0.105,
+        "gold": 0.11,
+        "pred_count": 63,
+        "gold_count": 66
+      },
+      "Gat": {
+        "pred": 0.0817,
+        "gold": 0.08,
+        "pred_count": 49,
+        "gold_count": 48
+      },
+      "Jub": {
+        "pred": 0.0883,
+        "gold": 0.0867,
+        "pred_count": 53,
+        "gold_count": 52
+      },
+      "Kag": {
+        "pred": 0.0767,
+        "gold": 0.0767,
+        "pred_count": 46,
+        "gold_count": 46
+      },
+      "Lup": {
+        "pred": 0.0617,
+        "gold": 0.0633,
+        "pred_count": 37,
+        "gold_count": 38
+      },
+      "Miz": {
+        "pred": 0.0767,
+        "gold": 0.0767,
+        "pred_count": 46,
+        "gold_count": 46
+      },
+      "Nir": {
+        "pred": 0.055,
+        "gold": 0.0533,
+        "pred_count": 33,
+        "gold_count": 32
+      },
+      "Suk": {
+        "pred": 0.0767,
+        "gold": 0.08,
+        "pred_count": 46,
+        "gold_count": 48
+      },
+      "Tus": {
+        "pred": 0.0783,
+        "gold": 0.08,
+        "pred_count": 47,
+        "gold_count": 48
+      }
+    },
+    "max_abs_name_bias": 0.015,
+    "direction_split": {
+      "correct": 560,
+      "opposite_endpoint": 22,
+      "inner_clause": 18
+    },
+    "q_stratification": {
+      "qpos=1": {
+        "acc": 0.9203,
+        "n": 276,
+        "correct": 254
+      },
+      "qpos=2": {
+        "acc": 0.9444,
+        "n": 324,
+        "correct": 306
+      }
+    },
+    "overall_acc": 0.9333,
+    "n_correct": 560,
+    "allwrong_bases": [
+      {
+        "base_id": 7,
+        "qpos": 2,
+        "cats": [
+          "opposite_endpoint"
+        ],
+        "n_errors": 6
+      },
+      {
+        "base_id": 40,
+        "qpos": 2,
+        "cats": [
+          "opposite_endpoint"
+        ],
+        "n_errors": 6
+      },
+      {
+        "base_id": 46,
+        "qpos": 1,
+        "cats": [
+          "inner_clause"
+        ],
+        "n_errors": 6
+      },
+      {
+        "base_id": 69,
+        "qpos": 1,
+        "cats": [
+          "inner_clause"
+        ],
+        "n_errors": 6
+      }
+    ],
+    "n_allwrong_bases": 4
+  },
+  "Llama-3.3/G/fit": {
+    "model": "Llama-3.3",
+    "path": "G",
+    "vocab": "fit",
+    "n": 600,
+    "position_match": {
+      "first_fact": {
+        "pred": 0.3367,
+        "gold": 0.3
+      },
+      "middle_fact": {
+        "pred": 0.2717,
+        "gold": 0.26
+      },
+      "last_fact": {
+        "pred": 0.3917,
+        "gold": 0.44
+      },
+      "queried": {
+        "pred": 0.0367,
+        "gold": 0.0
+      }
+    },
+    "name_selection": {
+      "Bav": {
+        "pred": 0.0767,
+        "gold": 0.0833,
+        "pred_count": 46,
+        "gold_count": 50
+      },
+      "Bek": {
+        "pred": 0.105,
+        "gold": 0.1033,
+        "pred_count": 63,
+        "gold_count": 62
+      },
+      "Dek": {
+        "pred": 0.125,
+        "gold": 0.1067,
+        "pred_count": 75,
+        "gold_count": 64
+      },
+      "Fot": {
+        "pred": 0.0983,
+        "gold": 0.11,
+        "pred_count": 59,
+        "gold_count": 66
+      },
+      "Gat": {
+        "pred": 0.0733,
+        "gold": 0.08,
+        "pred_count": 44,
+        "gold_count": 48
+      },
+      "Jub": {
+        "pred": 0.0817,
+        "gold": 0.0867,
+        "pred_count": 49,
+        "gold_count": 52
+      },
+      "Kag": {
+        "pred": 0.0783,
+        "gold": 0.0767,
+        "pred_count": 47,
+        "gold_count": 46
+      },
+      "Lup": {
+        "pred": 0.0683,
+        "gold": 0.0633,
+        "pred_count": 41,
+        "gold_count": 38
+      },
+      "Miz": {
+        "pred": 0.0783,
+        "gold": 0.0767,
+        "pred_count": 47,
+        "gold_count": 46
+      },
+      "Nir": {
+        "pred": 0.0533,
+        "gold": 0.0533,
+        "pred_count": 32,
+        "gold_count": 32
+      },
+      "Suk": {
+        "pred": 0.08,
+        "gold": 0.08,
+        "pred_count": 48,
+        "gold_count": 48
+      },
+      "Tus": {
+        "pred": 0.0817,
+        "gold": 0.08,
+        "pred_count": 49,
+        "gold_count": 48
+      }
+    },
+    "max_abs_name_bias": 0.0183,
+    "direction_split": {
+      "correct": 558,
+      "opposite_endpoint": 20,
+      "inner_clause": 22
+    },
+    "q_stratification": {
+      "qpos=1": {
+        "acc": 0.9348,
+        "n": 276,
+        "correct": 258
+      },
+      "qpos=2": {
+        "acc": 0.9259,
+        "n": 324,
+        "correct": 300
+      }
+    },
+    "overall_acc": 0.93,
+    "n_correct": 558,
+    "allwrong_bases": [],
+    "n_allwrong_bases": 0
+  },
+  "Qwen2.5-72B/G/fit": {
+    "model": "Qwen2.5-72B",
+    "path": "G",
+    "vocab": "fit",
+    "n": 600,
+    "position_match": {
+      "first_fact": {
+        "pred": 0.3083,
+        "gold": 0.3
+      },
+      "middle_fact": {
+        "pred": 0.25,
+        "gold": 0.26
+      },
+      "last_fact": {
+        "pred": 0.4417,
+        "gold": 0.44
+      },
+      "queried": {
+        "pred": 0.0,
+        "gold": 0.0
+      }
+    },
+    "name_selection": {
+      "Bav": {
+        "pred": 0.0833,
+        "gold": 0.0833,
+        "pred_count": 50,
+        "gold_count": 50
+      },
+      "Bek": {
+        "pred": 0.1033,
+        "gold": 0.1033,
+        "pred_count": 62,
+        "gold_count": 62
+      },
+      "Dek": {
+        "pred": 0.1067,
+        "gold": 0.1067,
+        "pred_count": 64,
+        "gold_count": 64
+      },
+      "Fot": {
+        "pred": 0.11,
+        "gold": 0.11,
+        "pred_count": 66,
+        "gold_count": 66
+      },
+      "Gat": {
+        "pred": 0.0783,
+        "gold": 0.08,
+        "pred_count": 47,
+        "gold_count": 48
+      },
+      "Jub": {
+        "pred": 0.0867,
+        "gold": 0.0867,
+        "pred_count": 52,
+        "gold_count": 52
+      },
+      "Kag": {
+        "pred": 0.0767,
+        "gold": 0.0767,
+        "pred_count": 46,
+        "gold_count": 46
+      },
+      "Lup": {
+        "pred": 0.0633,
+        "gold": 0.0633,
+        "pred_count": 38,
+        "gold_count": 38
+      },
+      "Miz": {
+        "pred": 0.0767,
+        "gold": 0.0767,
+        "pred_count": 46,
+        "gold_count": 46
+      },
+      "Nir": {
+        "pred": 0.0533,
+        "gold": 0.0533,
+        "pred_count": 32,
+        "gold_count": 32
+      },
+      "Suk": {
+        "pred": 0.08,
+        "gold": 0.08,
+        "pred_count": 48,
+        "gold_count": 48
+      },
+      "Tus": {
+        "pred": 0.0817,
+        "gold": 0.08,
+        "pred_count": 49,
+        "gold_count": 48
+      }
+    },
+    "max_abs_name_bias": 0.0017,
+    "direction_split": {
+      "correct": 593,
+      "opposite_endpoint": 7
+    },
+    "q_stratification": {
+      "qpos=1": {
+        "acc": 1.0,
+        "n": 276,
+        "correct": 276
+      },
+      "qpos=2": {
+        "acc": 0.9784,
+        "n": 324,
+        "correct": 317
+      }
+    },
+    "overall_acc": 0.9883,
+    "n_correct": 593,
+    "allwrong_bases": [
+      {
+        "base_id": 57,
+        "qpos": 2,
+        "cats": [
+          "opposite_endpoint"
+        ],
+        "n_errors": 6
+      }
+    ],
+    "n_allwrong_bases": 1
+  },
+  "Nemotron/G/transfer": {
+    "model": "Nemotron",
+    "path": "G",
+    "vocab": "transfer",
+    "n": 600,
+    "position_match": {
+      "first_fact": {
+        "pred": 0.3267,
+        "gold": 0.32
+      },
+      "middle_fact": {
+        "pred": 0.3783,
+        "gold": 0.38
+      },
+      "last_fact": {
+        "pred": 0.2883,
+        "gold": 0.3
+      },
+      "queried": {
+        "pred": 0.02,
+        "gold": 0.0
+      }
+    },
+    "name_selection": {
+      "Bij": {
+        "pred": 0.0933,
+        "gold": 0.0967,
+        "pred_count": 56,
+        "gold_count": 58
+      },
+      "Bik": {
+        "pred": 0.0817,
+        "gold": 0.08,
+        "pred_count": 49,
+        "gold_count": 48
+      },
+      "Fon": {
+        "pred": 0.1,
+        "gold": 0.1,
+        "pred_count": 60,
+        "gold_count": 60
+      },
+      "Jad": {
+        "pred": 0.0967,
+        "gold": 0.0967,
+        "pred_count": 58,
+        "gold_count": 58
+      },
+      "Jal": {
+        "pred": 0.0483,
+        "gold": 0.05,
+        "pred_count": 29,
+        "gold_count": 30
+      },
+      "Kad": {
+        "pred": 0.0817,
+        "gold": 0.08,
+        "pred_count": 49,
+        "gold_count": 48
+      },
+      "Poz": {
+        "pred": 0.0833,
+        "gold": 0.0833,
+        "pred_count": 50,
+        "gold_count": 50
+      },
+      "Raz": {
+        "pred": 0.0633,
+        "gold": 0.0633,
+        "pred_count": 38,
+        "gold_count": 38
+      },
+      "Sik": {
+        "pred": 0.0667,
+        "gold": 0.0667,
+        "pred_count": 40,
+        "gold_count": 40
+      },
+      "Vij": {
+        "pred": 0.1083,
+        "gold": 0.11,
+        "pred_count": 65,
+        "gold_count": 66
+      },
+      "Zam": {
+        "pred": 0.1,
+        "gold": 0.0967,
+        "pred_count": 60,
+        "gold_count": 58
+      },
+      "Zum": {
+        "pred": 0.07,
+        "gold": 0.0767,
+        "pred_count": 42,
+        "gold_count": 46
+      }
+    },
+    "max_abs_name_bias": 0.0067,
+    "direction_split": {
+      "correct": 578,
+      "opposite_endpoint": 6,
+      "other": 4,
+      "inner_clause": 12
+    },
+    "q_stratification": {
+      "qpos=1": {
+        "acc": 0.9457,
+        "n": 258,
+        "correct": 244
+      },
+      "qpos=2": {
+        "acc": 0.9766,
+        "n": 342,
+        "correct": 334
+      }
+    },
+    "overall_acc": 0.9633,
+    "n_correct": 578,
+    "allwrong_bases": [
+      {
+        "base_id": 70,
+        "qpos": 1,
+        "cats": [
+          "inner_clause"
+        ],
+        "n_errors": 6
+      },
+      {
+        "base_id": 74,
+        "qpos": 2,
+        "cats": [
+          "opposite_endpoint",
+          "other"
+        ],
+        "n_errors": 6
+      }
+    ],
+    "n_allwrong_bases": 2
+  },
+  "Llama-3.3/G/transfer": {
+    "model": "Llama-3.3",
+    "path": "G",
+    "vocab": "transfer",
+    "n": 600,
+    "position_match": {
+      "first_fact": {
+        "pred": 0.3483,
+        "gold": 0.32
+      },
+      "middle_fact": {
+        "pred": 0.3733,
+        "gold": 0.38
+      },
+      "last_fact": {
+        "pred": 0.2783,
+        "gold": 0.3
+      },
+      "queried": {
+        "pred": 0.0333,
+        "gold": 0.0
+      }
+    },
+    "name_selection": {
+      "Bij": {
+        "pred": 0.0983,
+        "gold": 0.0967,
+        "pred_count": 59,
+        "gold_count": 58
+      },
+      "Bik": {
+        "pred": 0.0733,
+        "gold": 0.08,
+        "pred_count": 44,
+        "gold_count": 48
+      },
+      "Fon": {
+        "pred": 0.1,
+        "gold": 0.1,
+        "pred_count": 60,
+        "gold_count": 60
+      },
+      "Jad": {
+        "pred": 0.0967,
+        "gold": 0.0967,
+        "pred_count": 58,
+        "gold_count": 58
+      },
+      "Jal": {
+        "pred": 0.05,
+        "gold": 0.05,
+        "pred_count": 30,
+        "gold_count": 30
+      },
+      "Kad": {
+        "pred": 0.075,
+        "gold": 0.08,
+        "pred_count": 45,
+        "gold_count": 48
+      },
+      "Poz": {
+        "pred": 0.0833,
+        "gold": 0.0833,
+        "pred_count": 50,
+        "gold_count": 50
+      },
+      "Raz": {
+        "pred": 0.0617,
+        "gold": 0.0633,
+        "pred_count": 37,
+        "gold_count": 38
+      },
+      "Sik": {
+        "pred": 0.0667,
+        "gold": 0.0667,
+        "pred_count": 40,
+        "gold_count": 40
+      },
+      "Vij": {
+        "pred": 0.11,
+        "gold": 0.11,
+        "pred_count": 66,
+        "gold_count": 66
+      },
+      "Zam": {
+        "pred": 0.11,
+        "gold": 0.0967,
+        "pred_count": 66,
+        "gold_count": 58
+      },
+      "Zum": {
+        "pred": 0.075,
+        "gold": 0.0767,
+        "pred_count": 45,
+        "gold_count": 46
+      }
+    },
+    "max_abs_name_bias": 0.0133,
+    "direction_split": {
+      "correct": 566,
+      "opposite_endpoint": 14,
+      "inner_clause": 20
+    },
+    "q_stratification": {
+      "qpos=1": {
+        "acc": 0.9302,
+        "n": 258,
+        "correct": 240
+      },
+      "qpos=2": {
+        "acc": 0.9532,
+        "n": 342,
+        "correct": 326
+      }
+    },
+    "overall_acc": 0.9433,
+    "n_correct": 566,
+    "allwrong_bases": [
+      {
+        "base_id": 70,
+        "qpos": 1,
+        "cats": [
+          "inner_clause"
+        ],
+        "n_errors": 6
+      },
+      {
+        "base_id": 87,
+        "qpos": 1,
+        "cats": [
+          "inner_clause"
+        ],
+        "n_errors": 6
+      }
+    ],
+    "n_allwrong_bases": 2
+  },
+  "Qwen2.5-72B/G/transfer": {
+    "model": "Qwen2.5-72B",
+    "path": "G",
+    "vocab": "transfer",
+    "n": 600,
+    "position_match": {
+      "first_fact": {
+        "pred": 0.32,
+        "gold": 0.32
+      },
+      "middle_fact": {
+        "pred": 0.3833,
+        "gold": 0.38
+      },
+      "last_fact": {
+        "pred": 0.2967,
+        "gold": 0.3
+      },
+      "queried": {
+        "pred": 0.0,
+        "gold": 0.0
+      }
+    },
+    "name_selection": {
+      "Bij": {
+        "pred": 0.1017,
+        "gold": 0.0967,
+        "pred_count": 61,
+        "gold_count": 58
+      },
+      "Bik": {
+        "pred": 0.08,
+        "gold": 0.08,
+        "pred_count": 48,
+        "gold_count": 48
+      },
+      "Fon": {
+        "pred": 0.0983,
+        "gold": 0.1,
+        "pred_count": 59,
+        "gold_count": 60
+      },
+      "Jad": {
+        "pred": 0.0967,
+        "gold": 0.0967,
+        "pred_count": 58,
+        "gold_count": 58
+      },
+      "Jal": {
+        "pred": 0.0483,
+        "gold": 0.05,
+        "pred_count": 29,
+        "gold_count": 30
+      },
+      "Kad": {
+        "pred": 0.0783,
+        "gold": 0.08,
+        "pred_count": 47,
+        "gold_count": 48
+      },
+      "Poz": {
+        "pred": 0.0833,
+        "gold": 0.0833,
+        "pred_count": 50,
+        "gold_count": 50
+      },
+      "Raz": {
+        "pred": 0.06,
+        "gold": 0.0633,
+        "pred_count": 36,
+        "gold_count": 38
+      },
+      "Sik": {
+        "pred": 0.07,
+        "gold": 0.0667,
+        "pred_count": 42,
+        "gold_count": 40
+      },
+      "Vij": {
+        "pred": 0.11,
+        "gold": 0.11,
+        "pred_count": 66,
+        "gold_count": 66
+      },
+      "Zam": {
+        "pred": 0.0967,
+        "gold": 0.0967,
+        "pred_count": 58,
+        "gold_count": 58
+      },
+      "Zum": {
+        "pred": 0.0767,
+        "gold": 0.0767,
+        "pred_count": 46,
+        "gold_count": 46
+      }
+    },
+    "max_abs_name_bias": 0.005,
+    "direction_split": {
+      "correct": 590,
+      "opposite_endpoint": 10
+    },
+    "q_stratification": {
+      "qpos=1": {
+        "acc": 1.0,
+        "n": 258,
+        "correct": 258
+      },
+      "qpos=2": {
+        "acc": 0.9708,
+        "n": 342,
+        "correct": 332
+      }
+    },
+    "overall_acc": 0.9833,
+    "n_correct": 590,
+    "allwrong_bases": [],
+    "n_allwrong_bases": 0
+  }
+}

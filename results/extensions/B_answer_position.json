@@ -1,0 +1,93 @@
+{
+ "config_sha256": "0c81725e68d487f020421eeb9bb947c1c0b35df536835db8de98476b401e998c",
+ "layer": 61,
+ "tiers": {
+  "r32": {
+   "linear": {
+    "c1": 0.8155660696897589,
+    "c2": 0.8681889588531523,
+    "tau_c1": 4.476820914261896,
+    "tau_c2": 3.7401047924885336
+   },
+   "kernel": {
+    "c1": 1.1509243682917008,
+    "c2": 1.6202881768729893,
+    "reveals": false
+   },
+   "mlp_w16": {
+    "c1": 1.9655356946920959,
+    "c2": 2.0627210691013844,
+    "reveals": false
+   },
+   "mlp_w64": {
+    "c1": 1.458873776841537,
+    "c2": 1.6535107575933408,
+    "reveals": false
+   },
+   "mlp_w256": {
+    "c1": 1.5290668532497609,
+    "c2": 1.777556555235933,
+    "reveals": false
+   }
+  },
+  "r128": {
+   "linear": {
+    "c1": 0.840307862750733,
+    "c2": 1.0931001927590618,
+    "tau_c1": 4.337266668119282,
+    "tau_c2": 4.266064888841718
+   },
+   "kernel": {
+    "c1": 1.1664926173867127,
+    "c2": 1.8380214901735146,
+    "reveals": false
+   },
+   "mlp_w16": {
+    "c1": 2.112053139857136,
+    "c2": 2.8436690102250104,
+    "reveals": false
+   },
+   "mlp_w64": {
+    "c1": 2.010637706399065,
+    "c2": 2.851347607413733,
+    "reveals": false
+   },
+   "mlp_w256": {
+    "c1": 2.0751237368593927,
+    "c2": 2.883978851845436,
+    "reveals": false
+   }
+  },
+  "r512": {
+   "linear": {
+    "c1": 1.6111873141830368,
+    "c2": 4.278512922972017,
+    "tau_c1": 5.877558410881383,
+    "tau_c2": 11.144220421200124
+   },
+   "kernel": {
+    "c1": 1.341031909706961,
+    "c2": 2.7424831213056313,
+    "reveals": false
+   },
+   "mlp_w16": {
+    "c1": 1.983706606151399,
+    "c2": 3.5230468015344805,
+    "reveals": false
+   },
+   "mlp_w64": {
+    "c1": 1.9360174804439068,
+    "c2": 3.7985201228010217,
+    "reveals": false
+   },
+   "mlp_w256": {
+    "c1": 1.8750789833904367,
+    "c2": 3.610547485218893,
+    "reveals": false
+   }
+  }
+ },
+ "any_reveal": false,
+ "revealing_tiers": [],
+ "verdict": "NO nonlinear transport beyond linear at the answer position: no map class beats the linear anchor by margin on C1 AND C2 at any tier. The linear H_retrieval negative (E13) is NOT a map-class artifact \u2014 the model has no nonlinear role operator the battery can find here either."
+}

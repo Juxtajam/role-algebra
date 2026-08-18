@@ -1,0 +1,203 @@
+{
+  "date": "2026-08-08",
+  "file_hashes": {
+    "phase8c_lib": "182276f8640a81590e4badbc6a137325fe6fa1c39bfe22405349a77879e44e20",
+    "phase8c_test_eval": "52ce825b92bd5b8ac66facaf8265a941f5de8824686ddb27750400dc94c1497b"
+  },
+  "summary": {
+    "generator_fitting_centered": false,
+    "metric_code_centered": false,
+    "probe_pipeline_standardized": true,
+    "spectrum_pipeline": "both branches (centered=False and centered=True) computed in the genuine run and stored in results/phase8c/test_metrics.json.spectrum_diagnostic; both re-derived here"
+  },
+  "findings": [
+    {
+      "file": "phase8c_lib.py",
+      "lines": "157-167",
+      "stage": "generator fitting (DualRidge)",
+      "mean_centering": false,
+      "code": "self.lam_eff = lam * float((X * X).sum()) / d + 1e-12; XXt = X @ X.T; s, U = np.linalg.eigh(XXt); self.M = (U / (s + self.lam_eff)) @ U.T",
+      "verdict": "raw activations; no mean subtraction"
+    },
+    {
+      "file": "phase8c_lib.py",
+      "lines": "85-86",
+      "stage": "activation ingress (Cell.states)",
+      "mean_centering": false,
+      "code": "return np.asarray(self.acts[rows, layer, :], dtype=np.float64)",
+      "verdict": "raw fp16 -> float64 cast only"
+    },
+    {
+      "file": "phase8c_lib.py",
+      "lines": "215-232, 235-277, 280-308",
+      "stage": "metrics (pair_error, group_law_metrics, support_mass_lexical)",
+      "mean_centering": false,
+      "code": "num = ((P - Y) ** 2).sum(axis=1); den = ((Y - X) ** 2).sum(axis=1) ... H = cell_eval.states(...); hn = (H ** 2).sum() \u2014 all on raw states",
+      "verdict": "raw activations"
+    },
+    {
+      "file": "phase8c_lib.py",
+      "lines": "335-336",
+      "stage": "probes (fit_probe, frozen _fit_probe verbatim)",
+      "mean_centering": true,
+      "code": "mu, sd = X.mean(0), X.std(0) + 1e-9; Xn = (X - mu) / sd",
+      "verdict": "probe-feature standardization only; affects C6/decodability, NOT fits, NOT spectrum"
+    },
+    {
+      "file": "phase8c_lib.py",
+      "lines": "432-435",
+      "stage": "spectrum/invariant-subspace estimate (spectrum_diagnostic)",
+      "mean_centering": "explicit flag; run stored BOTH branches",
+      "code": "U = np.stack([X[lab == j].mean(0) for j in range(K)]); if centered: U = U - U.mean(0, keepdims=True); _, S, Vt = np.linalg.svd(U, full_matrices=False)",
+      "verdict": "slot-conditional means (class means, not activation centering); grand-mean removal only under centered=True"
+    },
+    {
+      "file": "phase8c_test_eval.py",
+      "lines": "188-194",
+      "stage": "spectrum invocation in the run",
+      "mean_centering": "both",
+      "code": "spec_raw = lib.spectrum_diagnostic(..., centered=False); spec_cen = lib.spectrum_diagnostic(..., centered=True); results['spectrum_diagnostic'] = dict(raw=spec_raw, centered=spec_cen)",
+      "verdict": "both branches computed in-run and stored; tau_inv recalibrated per branch (lines 204-222)"
+    }
+  ],
+  "recompute_both_ways": {
+    "layer": 61,
+    "lam": 1.0,
+    "rank_cut": 0.1,
+    "raw": {
+      "sing_vals_u": [
+        476.4298823886869,
+        2.9745686942640344,
+        2.051648698236431
+      ],
+      "span_dim": 1,
+      "sv_ratios": [
+        1.0,
+        0.006243455341949531,
+        0.004306297262359017
+      ],
+      "spectrum_R12": {
+        "real": [
+          0.999950034485303
+        ],
+        "imag": [
+          0.0
+        ]
+      },
+      "spectrum_R23": {
+        "real": [
+          0.9999931339490897
+        ],
+        "imag": [
+          0.0
+        ]
+      },
+      "stacked_min_sv": 5.043506036521949e-05,
+      "stacked_svs": [
+        5.043506036521949e-05
+      ],
+      "top_sv_A": 0.9999715842171963
+    },
+    "centered": {
+      "sing_vals_u": [
+        2.980837505758453,
+        2.052731167334298,
+        3.675180962475365e-14
+      ],
+      "span_dim": 2,
+      "sv_ratios": [
+        1.0,
+        0.6886424246101248,
+        1.2329356952116855e-14
+      ],
+      "spectrum_R12": {
+        "real": [
+          0.2747005124420035,
+          0.07779393037037954
+        ],
+        "imag": [
+          0.0,
+          0.0
+        ]
+      },
+      "spectrum_R23": {
+        "real": [
+          0.3682554666262735,
+          0.15411194607319462
+        ],
+        "imag": [
+          0.0,
+          0.0
+        ]
+      },
+      "stacked_min_sv": 0.9575533638005789,
+      "stacked_svs": [
+        1.259690380479715,
+        0.9575533638005789
+      ],
+      "top_sv_A": 0.3327992554569703
+    },
+    "stored_source": "results/phase8c/test_metrics.json.spectrum_diagnostic",
+    "exact_match_checks": {
+      "raw_span": {
+        "recomputed": 1,
+        "stored": 1,
+        "match": true
+      },
+      "raw_min_sv": {
+        "recomputed": 5.043506036521949e-05,
+        "stored": 5.043506036521949e-05,
+        "match": true
+      },
+      "raw_sv_ratio_1": {
+        "recomputed": 0.006243455341949531,
+        "stored": 0.006243455341949531,
+        "match": true
+      },
+      "cen_span": {
+        "recomputed": 2,
+        "stored": 2,
+        "match": true
+      },
+      "cen_min_sv": {
+        "recomputed": 0.9575533638005789,
+        "stored": 0.9575533638005789,
+        "match": true
+      },
+      "cen_sv_ratio_1": {
+        "recomputed": 0.6886424246101248,
+        "stored": 0.6886424246101248,
+        "match": true
+      }
+    },
+    "tau_inv_stored": {
+      "raw": 0.00025236183170117954,
+      "centered": 1.3261986575970286,
+      "null_min_svs_raw": [
+        0.0002594777792252406,
+        0.0002595294893534322,
+        0.00025466393826657384,
+        0.0002535031040478346,
+        0.00025675791244567916,
+        0.0002563848154531525,
+        0.00025142806341755267,
+        0.0002617123539309389,
+        0.00025977636862291136,
+        0.00025993007245419066
+      ],
+      "null_min_svs_cen": [
+        1.3752304838280631,
+        1.3656205016845266,
+        1.3441788986200396,
+        1.3114875513054742,
+        1.3844126189622186,
+        1.401890317126397,
+        1.3780627775272012,
+        1.3521013091381953,
+        1.4192946790659908,
+        1.3687554371858388
+      ],
+      "rule": "0.05 quantile of stacked-min-sv over the shuffled-null fits at the verdict layer (recalibrated per 8B section 2.5)"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# Large binary activation caches / checkpoints — local mirrors of the
+# dv3-results Modal volume; reproducible, re-fetchable, not tracked in git.
+*.npy
+*.npz
+*.pt
+acts_P_local/
+
+# Downloaded model tokenizer files (reproducible)
+tokenizer_files/
+
+# Process telemetry and scratch state (not research artifacts)
+.report_state
+.sweep_report_state
+.wd_report_state
+.*_usage.json
+*_pull.log
+*_pull_analyze.log
+
+# Editor / OS cruft
+.DS_Store
+*.swp

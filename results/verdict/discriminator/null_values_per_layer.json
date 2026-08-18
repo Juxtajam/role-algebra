@@ -1,0 +1,1262 @@
+{
+  "0": {
+    "shuffled": [
+      {
+        "content_transfer_err": 13.081012566226438,
+        "crosspath_err": 11.77389334019431,
+        "law_inv_defect": 0.007040366144138702,
+        "law_braid_defect": 2.2359856273285144e-07,
+        "nontriv": 0.007165653978025302,
+        "noncommute": 1.3822944354547452e-06,
+        "support_mass_lex": 0.000244173541676086
+      },
+      {
+        "content_transfer_err": 12.894511387085638,
+        "crosspath_err": 11.752515128515412,
+        "law_inv_defect": 0.007045116232117172,
+        "law_braid_defect": 9.977775014943015e-08,
+        "nontriv": 0.007063333476945,
+        "noncommute": 1.2593377379904805e-06,
+        "support_mass_lex": 0.00024413523799074455
+      },
+      {
+        "content_transfer_err": 13.078134348982275,
+        "crosspath_err": 11.664898450083111,
+        "law_inv_defect": 0.0070405129254167646,
+        "law_braid_defect": 2.486116906419918e-07,
+        "nontriv": 0.007164359799851937,
+        "noncommute": 1.5229839601456997e-06,
+        "support_mass_lex": 0.00024414059939457928
+      },
+      {
+        "content_transfer_err": 12.83711586437786,
+        "crosspath_err": 11.743682067533001,
+        "law_inv_defect": 0.007033092100101251,
+        "law_braid_defect": 2.1044812998830224e-07,
+        "nontriv": 0.0070319359520532605,
+        "noncommute": 1.473817928482783e-06,
+        "support_mass_lex": 0.00024416156609179953
+      },
+      {
+        "content_transfer_err": 12.717501742473338,
+        "crosspath_err": 11.602987174944825,
+        "law_inv_defect": 0.007045777389428009,
+        "law_braid_defect": 1.704946483763132e-07,
+        "nontriv": 0.0069660303751594484,
+        "noncommute": 1.4383326640266356e-06,
+        "support_mass_lex": 0.0002441573897672676
+      },
+      {
+        "content_transfer_err": 13.031932591618666,
+        "crosspath_err": 11.724033119412379,
+        "law_inv_defect": 0.007038595641319492,
+        "law_braid_defect": 1.4457272873345943e-07,
+        "nontriv": 0.007138849912063916,
+        "noncommute": 1.1232198731179162e-06,
+        "support_mass_lex": 0.00024415371660169735
+      },
+      {
+        "content_transfer_err": 13.133582535335904,
+        "crosspath_err": 11.617496783341307,
+        "law_inv_defect": 0.007043358953799681,
+        "law_braid_defect": 1.9692975378899473e-07,
+        "nontriv": 0.007194535813288513,
+        "noncommute": 1.3849422642795487e-06,
+        "support_mass_lex": 0.00024416882626735847
+      },
+      {
+        "content_transfer_err": 13.320381719450697,
+        "crosspath_err": 11.740438657098426,
+        "law_inv_defect": 0.007044987240062238,
+        "law_braid_defect": 2.466780088827826e-07,
+        "nontriv": 0.0072972006946123436,
+        "noncommute": 1.6264369635364219e-06,
+        "support_mass_lex": 0.0002441600569478832
+      },
+      {
+        "content_transfer_err": 13.030994551394325,
+        "crosspath_err": 11.689917345248574,
+        "law_inv_defect": 0.0070484587053280395,
+        "law_braid_defect": 2.121063131224055e-07,
+        "nontriv": 0.007138071029184699,
+        "noncommute": 1.3142101120263443e-06,
+        "support_mass_lex": 0.00024416271291726897
+      },
+      {
+        "content_transfer_err": 13.065200827677032,
+        "crosspath_err": 11.744045696726758,
+        "law_inv_defect": 0.007033586137466533,
+        "law_braid_defect": 2.304175011170583e-07,
+        "nontriv": 0.007157687581295881,
+        "noncommute": 1.4541264216679454e-06,
+        "support_mass_lex": 0.00024416093298885744
+      }
+    ],
+    "identity": [
+      {
+        "content_transfer_err": 4.819827719039375,
+        "crosspath_err": 7.6932530414177975,
+        "law_inv_defect": 0.0036003961136991413,
+        "law_braid_defect": 0.0,
+        "nontriv": 0.002616054310850024,
+        "noncommute": 0.0,
+        "support_mass_lex": 0.00024428221033532486
+      }
+    ]
+  },
+  "8": {
+    "shuffled": [
+      {
+        "content_transfer_err": 8.681571917936255,
+        "crosspath_err": 19.104338450005105,
+        "law_inv_defect": 0.005715604887848712,
+        "law_braid_defect": 1.3836964586230778e-07,
+        "nontriv": 0.005773599596305294,
+        "noncommute": 5.141975343816981e-07,
+        "support_mass_lex": 0.0002441462480530578
+      },
+      {
+        "content_transfer_err": 8.404331945209494,
+        "crosspath_err": 18.943905129331604,
+        "law_inv_defect": 0.005718269703562231,
+        "law_braid_defect": 7.7020659270554e-08,
+        "nontriv": 0.005589522942114466,
+        "noncommute": 3.824936711190012e-07,
+        "support_mass_lex": 0.00024413921434926413
+      },
+      {
+        "content_transfer_err": 8.697054747659838,
+        "crosspath_err": 19.28188424905552,
+        "law_inv_defect": 0.005718254124302289,
+        "law_braid_defect": 7.329424366008089e-08,
+        "nontriv": 0.0057839714088108105,
+        "noncommute": 3.3926863753938145e-07,
+        "support_mass_lex": 0.0002441661299379275
+      },
+      {
+        "content_transfer_err": 8.807364990757453,
+        "crosspath_err": 19.593028829695072,
+        "law_inv_defect": 0.005723462045252594,
+        "law_braid_defect": 7.637395858256123e-08,
+        "nontriv": 0.005857989686790787,
+        "noncommute": 4.691479322783056e-07,
+        "support_mass_lex": 0.00024416369807322394
+      },
+      {
+        "content_transfer_err": 8.880892808493867,
+        "crosspath_err": 19.394384719300923,
+        "law_inv_defect": 0.005726533475166544,
+        "law_braid_defect": 1.542819650581569e-07,
+        "nontriv": 0.005905940043640132,
+        "noncommute": 4.2191721022788707e-07,
+        "support_mass_lex": 0.0002441721629837778
+      },
+      {
+        "content_transfer_err": 8.96416631702844,
+        "crosspath_err": 19.478481485761005,
+        "law_inv_defect": 0.005703610906490294,
+        "law_braid_defect": 1.0268080545099108e-07,
+        "nontriv": 0.005959815790254081,
+        "noncommute": 5.823244966360186e-07,
+        "support_mass_lex": 0.0002441642064157669
+      },
+      {
+        "content_transfer_err": 8.602677081106211,
+        "crosspath_err": 19.050324011230572,
+        "law_inv_defect": 0.005711133476056262,
+        "law_braid_defect": 2.2494567991296793e-07,
+        "nontriv": 0.005718609749176672,
+        "noncommute": 5.961210764623448e-07,
+        "support_mass_lex": 0.00024414677105124254
+      },
+      {
+        "content_transfer_err": 8.852229811557766,
+        "crosspath_err": 19.13110057454763,
+        "law_inv_defect": 0.005728417463530086,
+        "law_braid_defect": 1.3728128839853965e-07,
+        "nontriv": 0.005886556825217059,
+        "noncommute": 3.8715391987346863e-07,
+        "support_mass_lex": 0.000244171421704759
+      },
+      {
+        "content_transfer_err": 8.709795189858308,
+        "crosspath_err": 19.165273222758877,
+        "law_inv_defect": 0.0057211923806805495,
+        "law_braid_defect": 6.892186757718373e-08,
+        "nontriv": 0.0057932841237605115,
+        "noncommute": 3.478735660634193e-07,
+        "support_mass_lex": 0.00024415717110662697
+      },
+      {
+        "content_transfer_err": 8.463045444860859,
+        "crosspath_err": 19.267109134544505,
+        "law_inv_defect": 0.0057194372177219,
+        "law_braid_defect": 1.591973520746895e-07,
+        "nontriv": 0.005629927956739691,
+        "noncommute": 4.3534176639104735e-07,
+        "support_mass_lex": 0.00024415060785833
+      }
+    ],
+    "identity": [
+      {
+        "content_transfer_err": 3.061007734650685,
+        "crosspath_err": 11.90717224008583,
+        "law_inv_defect": 0.0025814210397423084,
+        "law_braid_defect": 0.0,
+        "nontriv": 0.0019254386622293415,
+        "noncommute": 0.0,
+        "support_mass_lex": 0.0002441857774366192
+      }
+    ]
+  },
+  "16": {
+    "shuffled": [
+      {
+        "content_transfer_err": 6.5260516785129985,
+        "crosspath_err": 22.11003698183781,
+        "law_inv_defect": 0.003854315827132188,
+        "law_braid_defect": 6.652377041305279e-08,
+        "nontriv": 0.003959240297233822,
+        "noncommute": 2.995601192682638e-07,
+        "support_mass_lex": 0.00024416199150413466
+      },
+      {
+        "content_transfer_err": 6.200204152058935,
+        "crosspath_err": 21.852212356643676,
+        "law_inv_defect": 0.0038578642653751016,
+        "law_braid_defect": 6.522830858086884e-08,
+        "nontriv": 0.0037648025393726098,
+        "noncommute": 1.568131100630247e-07,
+        "support_mass_lex": 0.000244152444687628
+      },
+      {
+        "content_transfer_err": 6.356798149740428,
+        "crosspath_err": 21.8384408080426,
+        "law_inv_defect": 0.003862937302355287,
+        "law_braid_defect": 5.584093429675571e-08,
+        "nontriv": 0.0038566410336971016,
+        "noncommute": 2.3521928064177783e-07,
+        "support_mass_lex": 0.0002441478353669339
+      },
+      {
+        "content_transfer_err": 6.583887295313585,
+        "crosspath_err": 22.26596069366877,
+        "law_inv_defect": 0.003866506089521299,
+        "law_braid_defect": 3.8018661963160144e-08,
+        "nontriv": 0.00399803590216831,
+        "noncommute": 1.8194666851187693e-07,
+        "support_mass_lex": 0.0002441646609120763
+      },
+      {
+        "content_transfer_err": 6.578793946055672,
+        "crosspath_err": 22.02146409333792,
+        "law_inv_defect": 0.003850519731612689,
+        "law_braid_defect": 4.611932703099716e-08,
+        "nontriv": 0.003995875482015162,
+        "noncommute": 2.2206239517697716e-07,
+        "support_mass_lex": 0.0002441665045525812
+      },
+      {
+        "content_transfer_err": 6.333517521714034,
+        "crosspath_err": 21.93833678897776,
+        "law_inv_defect": 0.003856696264042149,
+        "law_braid_defect": 4.312557655143523e-08,
+        "nontriv": 0.0038381589924204986,
+        "noncommute": 1.7031918988141955e-07,
+        "support_mass_lex": 0.00024415766248022015
+      },
+      {
+        "content_transfer_err": 6.30800654892694,
+        "crosspath_err": 21.810584125430125,
+        "law_inv_defect": 0.003860779775182295,
+        "law_braid_defect": 7.540811026000416e-08,
+        "nontriv": 0.003824178539873632,
+        "noncommute": 1.7857038921152612e-07,
+        "support_mass_lex": 0.0002441706545058929
+      },
+      {
+        "content_transfer_err": 6.36368139762858,
+        "crosspath_err": 21.798754793209483,
+        "law_inv_defect": 0.0038593132078934096,
+        "law_braid_defect": 9.581867130959199e-08,
+        "nontriv": 0.003860435304517394,
+        "noncommute": 2.0551774492699916e-07,
+        "support_mass_lex": 0.0002441551032173314
+      },
+      {
+        "content_transfer_err": 6.379758509908134,
+        "crosspath_err": 22.040281926544793,
+        "law_inv_defect": 0.0038646211997454367,
+        "law_braid_defect": 5.747026230283201e-08,
+        "nontriv": 0.0038691986581596885,
+        "noncommute": 2.0028960702585706e-07,
+        "support_mass_lex": 0.00024415624318409334
+      },
+      {
+        "content_transfer_err": 6.492522881696162,
+        "crosspath_err": 22.004166696198755,
+        "law_inv_defect": 0.00386106640741234,
+        "law_braid_defect": 9.829691754493297e-08,
+        "nontriv": 0.003941584595207532,
+        "noncommute": 2.536524140902249e-07,
+        "support_mass_lex": 0.0002441663480654397
+      }
+    ],
+    "identity": [
+      {
+        "content_transfer_err": 2.6950430394247915,
+        "crosspath_err": 15.956740439199596,
+        "law_inv_defect": 0.0020342997682935853,
+        "law_braid_defect": 0.0,
+        "nontriv": 0.0015541622898087692,
+        "noncommute": 0.0,
+        "support_mass_lex": 0.000244205642437718
+      }
+    ]
+  },
+  "24": {
+    "shuffled": [
+      {
+        "content_transfer_err": 4.812535688992368,
+        "crosspath_err": 15.397030136370187,
+        "law_inv_defect": 0.002128099881528096,
+        "law_braid_defect": 2.0657487810358585e-08,
+        "nontriv": 0.0020798616070288297,
+        "noncommute": 4.926915046579711e-08,
+        "support_mass_lex": 0.00024415454212876105
+      },
+      {
+        "content_transfer_err": 4.9210598259401035,
+        "crosspath_err": 15.409214588775265,
+        "law_inv_defect": 0.0021309513388239995,
+        "law_braid_defect": 2.93851275530611e-08,
+        "nontriv": 0.002124929624755611,
+        "noncommute": 4.6262096402937714e-08,
+        "support_mass_lex": 0.0002441612848888081
+      },
+      {
+        "content_transfer_err": 4.928530683381476,
+        "crosspath_err": 15.446160624660031,
+        "law_inv_defect": 0.002133516480269281,
+        "law_braid_defect": 3.115024216592036e-08,
+        "nontriv": 0.002129416955540259,
+        "noncommute": 4.5425991307545785e-08,
+        "support_mass_lex": 0.0002441646192794382
+      },
+      {
+        "content_transfer_err": 5.0279895605883205,
+        "crosspath_err": 15.599038475474998,
+        "law_inv_defect": 0.0021296487831565097,
+        "law_braid_defect": 1.2155225214305838e-08,
+        "nontriv": 0.0021722734406048436,
+        "noncommute": 4.118860175269497e-08,
+        "support_mass_lex": 0.0002441641021321417
+      },
+      {
+        "content_transfer_err": 5.0119281902322586,
+        "crosspath_err": 15.399418512506283,
+        "law_inv_defect": 0.0021329414080983825,
+        "law_braid_defect": 4.244330425387881e-08,
+        "nontriv": 0.0021662610951893604,
+        "noncommute": 5.824588181669975e-08,
+        "support_mass_lex": 0.0002441637872900882
+      },
+      {
+        "content_transfer_err": 4.996864984554611,
+        "crosspath_err": 15.464078763750727,
+        "law_inv_defect": 0.0021305397750310136,
+        "law_braid_defect": 3.909860494911199e-08,
+        "nontriv": 0.0021579209999917984,
+        "noncommute": 5.735040558365454e-08,
+        "support_mass_lex": 0.00024416550351678227
+      },
+      {
+        "content_transfer_err": 4.808673919725503,
+        "crosspath_err": 15.22498316207409,
+        "law_inv_defect": 0.0021300416758821663,
+        "law_braid_defect": 5.670486292996693e-08,
+        "nontriv": 0.0020771351782585255,
+        "noncommute": 7.710650814981631e-08,
+        "support_mass_lex": 0.0002441495252524516
+      },
+      {
+        "content_transfer_err": 5.022727584277994,
+        "crosspath_err": 15.561724018154838,
+        "law_inv_defect": 0.0021319894565490043,
+        "law_braid_defect": 8.110297300827414e-08,
+        "nontriv": 0.002169809141893085,
+        "noncommute": 9.930979824747506e-08,
+        "support_mass_lex": 0.0002441641533310427
+      },
+      {
+        "content_transfer_err": 4.936614725344125,
+        "crosspath_err": 15.395476086808863,
+        "law_inv_defect": 0.0021327532689878166,
+        "law_braid_defect": 6.608482762066271e-08,
+        "nontriv": 0.0021324519679707136,
+        "noncommute": 8.376683495997831e-08,
+        "support_mass_lex": 0.0002441533724197336
+      },
+      {
+        "content_transfer_err": 4.957450837922986,
+        "crosspath_err": 15.357531833969785,
+        "law_inv_defect": 0.0021303383237373783,
+        "law_braid_defect": 6.048615110880209e-08,
+        "nontriv": 0.0021413408733609108,
+        "noncommute": 7.728912520710419e-08,
+        "support_mass_lex": 0.0002441616048687355
+      }
+    ],
+    "identity": [
+      {
+        "content_transfer_err": 2.515293777312473,
+        "crosspath_err": 12.537298093410794,
+        "law_inv_defect": 0.001318712510680323,
+        "law_braid_defect": 0.0,
+        "nontriv": 0.001044170342099921,
+        "noncommute": 0.0,
+        "support_mass_lex": 0.00024417112325467405
+      }
+    ]
+  },
+  "32": {
+    "shuffled": [
+      {
+        "content_transfer_err": 5.016055480509916,
+        "crosspath_err": 16.171557154182846,
+        "law_inv_defect": 0.003537725529992903,
+        "law_braid_defect": 6.008896388781005e-08,
+        "nontriv": 0.003523691980109103,
+        "noncommute": 1.4248668383042132e-07,
+        "support_mass_lex": 0.0002441389641075905
+      },
+      {
+        "content_transfer_err": 4.984853357916426,
+        "crosspath_err": 16.05342063242545,
+        "law_inv_defect": 0.003536683251455509,
+        "law_braid_defect": 3.0319304637600067e-08,
+        "nontriv": 0.0035009013317782965,
+        "noncommute": 1.539969066362793e-07,
+        "support_mass_lex": 0.0002441274189031362
+      },
+      {
+        "content_transfer_err": 5.089680946694957,
+        "crosspath_err": 16.185509396584408,
+        "law_inv_defect": 0.0035381247359508794,
+        "law_braid_defect": 9.626231458538845e-08,
+        "nontriv": 0.00357590000074185,
+        "noncommute": 2.3240041380087246e-07,
+        "support_mass_lex": 0.0002441360360629838
+      },
+      {
+        "content_transfer_err": 4.961724488873357,
+        "crosspath_err": 15.985769096205406,
+        "law_inv_defect": 0.0035391595868707474,
+        "law_braid_defect": 7.707545231120581e-08,
+        "nontriv": 0.003486345188489586,
+        "noncommute": 1.8716470117662656e-07,
+        "support_mass_lex": 0.0002441347660362061
+      },
+      {
+        "content_transfer_err": 5.005427607734564,
+        "crosspath_err": 16.0800735092027,
+        "law_inv_defect": 0.003534129528488462,
+        "law_braid_defect": 1.0399327265414453e-07,
+        "nontriv": 0.0035160070666241765,
+        "noncommute": 2.1962754410873076e-07,
+        "support_mass_lex": 0.00024414161318275795
+      },
+      {
+        "content_transfer_err": 5.132449210560023,
+        "crosspath_err": 16.263100703322195,
+        "law_inv_defect": 0.0035394930476859397,
+        "law_braid_defect": 1.0060249479601729e-07,
+        "nontriv": 0.0036070779197803567,
+        "noncommute": 1.930400737064981e-07,
+        "support_mass_lex": 0.0002441451811230707
+      },
+      {
+        "content_transfer_err": 5.010042757825362,
+        "crosspath_err": 16.08385604940554,
+        "law_inv_defect": 0.0035381558384073083,
+        "law_braid_defect": 5.966775122528031e-08,
+        "nontriv": 0.0035198449363762667,
+        "noncommute": 2.0479976935864896e-07,
+        "support_mass_lex": 0.00024413648968020632
+      },
+      {
+        "content_transfer_err": 5.099345751550393,
+        "crosspath_err": 16.16719421114633,
+        "law_inv_defect": 0.0035411350494767915,
+        "law_braid_defect": 6.652512011642197e-08,
+        "nontriv": 0.0035837470369553147,
+        "noncommute": 1.9060214136956022e-07,
+        "support_mass_lex": 0.00024412511228685384
+      },
+      {
+        "content_transfer_err": 5.1474184898510735,
+        "crosspath_err": 16.18611683792912,
+        "law_inv_defect": 0.0035353765315125543,
+        "law_braid_defect": 1.0134294867821037e-07,
+        "nontriv": 0.00361749084350509,
+        "noncommute": 2.2806251571063193e-07,
+        "support_mass_lex": 0.00024414538241827313
+      },
+      {
+        "content_transfer_err": 5.059669689295966,
+        "crosspath_err": 16.12455081748896,
+        "law_inv_defect": 0.0035384897878030985,
+        "law_braid_defect": 1.6141664176844326e-07,
+        "nontriv": 0.0035552227003889498,
+        "noncommute": 2.461565207248814e-07,
+        "support_mass_lex": 0.00024412285526473424
+      }
+    ],
+    "identity": [
+      {
+        "content_transfer_err": 2.633002748629756,
+        "crosspath_err": 12.486695278242845,
+        "law_inv_defect": 0.002259995279258868,
+        "law_braid_defect": 0.0,
+        "nontriv": 0.0017757833539414766,
+        "noncommute": 0.0,
+        "support_mass_lex": 0.0002441699334510498
+      }
+    ]
+  },
+  "40": {
+    "shuffled": [
+      {
+        "content_transfer_err": 5.049345364083034,
+        "crosspath_err": 19.506031330666076,
+        "law_inv_defect": 0.0030391239705588255,
+        "law_braid_defect": 6.040779253373189e-08,
+        "nontriv": 0.003004296710096629,
+        "noncommute": 1.1809824954840032e-07,
+        "support_mass_lex": 0.0002441544940293871
+      },
+      {
+        "content_transfer_err": 5.130072303365074,
+        "crosspath_err": 19.71843019597049,
+        "law_inv_defect": 0.00303721216739472,
+        "law_braid_defect": 4.403014250992259e-08,
+        "nontriv": 0.0030536682887397325,
+        "noncommute": 1.1698728358484066e-07,
+        "support_mass_lex": 0.00024414720559718907
+      },
+      {
+        "content_transfer_err": 5.152693767669502,
+        "crosspath_err": 19.739521535427947,
+        "law_inv_defect": 0.003040603686666977,
+        "law_braid_defect": 6.766935376018901e-08,
+        "nontriv": 0.003068750074894456,
+        "noncommute": 1.3176176040286043e-07,
+        "support_mass_lex": 0.00024415018073317365
+      },
+      {
+        "content_transfer_err": 5.110427070450303,
+        "crosspath_err": 19.803205478754016,
+        "law_inv_defect": 0.003038696099566178,
+        "law_braid_defect": 1.1004124125121213e-07,
+        "nontriv": 0.0030434030343671637,
+        "noncommute": 2.0557873549465878e-07,
+        "support_mass_lex": 0.00024414034569026716
+      },
+      {
+        "content_transfer_err": 5.112146749401427,
+        "crosspath_err": 19.647749383175746,
+        "law_inv_defect": 0.0030382539679929452,
+        "law_braid_defect": 6.380379855496786e-08,
+        "nontriv": 0.003042581483541094,
+        "noncommute": 1.5241829740937155e-07,
+        "support_mass_lex": 0.000244143228874321
+      },
+      {
+        "content_transfer_err": 5.174576486219948,
+        "crosspath_err": 19.705842738126464,
+        "law_inv_defect": 0.003041626467057644,
+        "law_braid_defect": 3.1449313264065284e-08,
+        "nontriv": 0.0030801158718952275,
+        "noncommute": 1.0688021875327398e-07,
+        "support_mass_lex": 0.0002441551907788016
+      },
+      {
+        "content_transfer_err": 5.094627740162506,
+        "crosspath_err": 19.61076314053478,
+        "law_inv_defect": 0.0030414527059637237,
+        "law_braid_defect": 1.7422482871354598e-07,
+        "nontriv": 0.0030312714626777666,
+        "noncommute": 2.5179304087114e-07,
+        "support_mass_lex": 0.00024413882183478873
+      },
+      {
+        "content_transfer_err": 5.201945810309719,
+        "crosspath_err": 19.703916611482363,
+        "law_inv_defect": 0.0030413493661930716,
+        "law_braid_defect": 7.509165610682493e-08,
+        "nontriv": 0.0030972372656233376,
+        "noncommute": 1.446844966409467e-07,
+        "support_mass_lex": 0.00024414528629240415
+      },
+      {
+        "content_transfer_err": 5.0378226960800205,
+        "crosspath_err": 19.566280565695134,
+        "law_inv_defect": 0.003037953589358811,
+        "law_braid_defect": 1.0155326598009798e-07,
+        "nontriv": 0.00299914164973758,
+        "noncommute": 1.9904651492427484e-07,
+        "support_mass_lex": 0.0002441478204093246
+      },
+      {
+        "content_transfer_err": 5.121990501560237,
+        "crosspath_err": 19.741026273899458,
+        "law_inv_defect": 0.003039125982831123,
+        "law_braid_defect": 3.174545559066628e-08,
+        "nontriv": 0.0030504125968059083,
+        "noncommute": 1.3493372435387953e-07,
+        "support_mass_lex": 0.00024415352464068267
+      }
+    ],
+    "identity": [
+      {
+        "content_transfer_err": 2.6822233340398034,
+        "crosspath_err": 14.875213220214793,
+        "law_inv_defect": 0.001960454987935106,
+        "law_braid_defect": 0.0,
+        "nontriv": 0.0015224529945803878,
+        "noncommute": 0.0,
+        "support_mass_lex": 0.00024413561804689313
+      }
+    ]
+  },
+  "48": {
+    "shuffled": [
+      {
+        "content_transfer_err": 5.201826512883549,
+        "crosspath_err": 24.12621114792048,
+        "law_inv_defect": 0.005069148702718958,
+        "law_braid_defect": 1.6445773569160637e-07,
+        "nontriv": 0.005077251444899941,
+        "noncommute": 5.577241939535013e-07,
+        "support_mass_lex": 0.00024416199945687957
+      },
+      {
+        "content_transfer_err": 5.211773341206676,
+        "crosspath_err": 24.012302147663487,
+        "law_inv_defect": 0.005071654018258028,
+        "law_braid_defect": 2.5030285727892085e-07,
+        "nontriv": 0.005087028128151178,
+        "noncommute": 7.58591837175129e-07,
+        "support_mass_lex": 0.0002441512759353368
+      },
+      {
+        "content_transfer_err": 5.198825938488041,
+        "crosspath_err": 24.14850019674777,
+        "law_inv_defect": 0.005062795277172567,
+        "law_braid_defect": 1.255604078518083e-07,
+        "nontriv": 0.005075357739014577,
+        "noncommute": 5.00052504150552e-07,
+        "support_mass_lex": 0.00024415758140400464
+      },
+      {
+        "content_transfer_err": 5.233590753417397,
+        "crosspath_err": 24.00445101109987,
+        "law_inv_defect": 0.005059670698951694,
+        "law_braid_defect": 1.6724201103108936e-07,
+        "nontriv": 0.005110814334130305,
+        "noncommute": 5.736528316281677e-07,
+        "support_mass_lex": 0.0002441512330919708
+      },
+      {
+        "content_transfer_err": 5.2399829589723,
+        "crosspath_err": 24.081535551217844,
+        "law_inv_defect": 0.005061697474259221,
+        "law_braid_defect": 2.2991580615044366e-07,
+        "nontriv": 0.005117230810374471,
+        "noncommute": 5.487463031859239e-07,
+        "support_mass_lex": 0.00024414109282773423
+      },
+      {
+        "content_transfer_err": 5.159874510146936,
+        "crosspath_err": 23.969697043242327,
+        "law_inv_defect": 0.005068724549882298,
+        "law_braid_defect": 1.7937588900365685e-07,
+        "nontriv": 0.005037573076973757,
+        "noncommute": 5.149754861723099e-07,
+        "support_mass_lex": 0.0002441435059499353
+      },
+      {
+        "content_transfer_err": 5.175391992112561,
+        "crosspath_err": 24.034953925412168,
+        "law_inv_defect": 0.005066374940314736,
+        "law_braid_defect": 2.673155000400865e-07,
+        "nontriv": 0.005054630907972906,
+        "noncommute": 6.050365926147479e-07,
+        "support_mass_lex": 0.00024414283925033994
+      },
+      {
+        "content_transfer_err": 5.240820082025397,
+        "crosspath_err": 24.140550313538213,
+        "law_inv_defect": 0.005060960139029082,
+        "law_braid_defect": 2.5503891077578403e-07,
+        "nontriv": 0.005119593997412091,
+        "noncommute": 6.537436880139555e-07,
+        "support_mass_lex": 0.0002441585181968383
+      },
+      {
+        "content_transfer_err": 5.215719362386491,
+        "crosspath_err": 24.107118260656357,
+        "law_inv_defect": 0.005060000581066681,
+        "law_braid_defect": 1.3915991072114977e-07,
+        "nontriv": 0.005094801827819906,
+        "noncommute": 5.170061650653295e-07,
+        "support_mass_lex": 0.0002441745659696561
+      },
+      {
+        "content_transfer_err": 5.205265482196314,
+        "crosspath_err": 24.12946701919752,
+        "law_inv_defect": 0.0050658664096792875,
+        "law_braid_defect": 1.9645159722181115e-07,
+        "nontriv": 0.005081956155723308,
+        "noncommute": 6.34300466993511e-07,
+        "support_mass_lex": 0.0002441615555696304
+      }
+    ],
+    "identity": [
+      {
+        "content_transfer_err": 2.5271504783573198,
+        "crosspath_err": 19.56444020116403,
+        "law_inv_defect": 0.0030763924522203114,
+        "law_braid_defect": 0.0,
+        "nontriv": 0.0023456029173533556,
+        "noncommute": 0.0,
+        "support_mass_lex": 0.00024407405598715997
+      }
+    ]
+  },
+  "56": {
+    "shuffled": [
+      {
+        "content_transfer_err": 6.254688884460202,
+        "crosspath_err": 15.94604936655745,
+        "law_inv_defect": 0.05154661558282071,
+        "law_braid_defect": 4.785107680992334e-06,
+        "nontriv": 0.05281391809304166,
+        "noncommute": 0.00012822543819583713,
+        "support_mass_lex": 0.0002441831657562432
+      },
+      {
+        "content_transfer_err": 6.445999951835458,
+        "crosspath_err": 16.554685920441685,
+        "law_inv_defect": 0.05165440028161601,
+        "law_braid_defect": 5.091591507440957e-06,
+        "nontriv": 0.05440761076455616,
+        "noncommute": 0.00013238602903450135,
+        "support_mass_lex": 0.000244273895215065
+      },
+      {
+        "content_transfer_err": 6.19663445225339,
+        "crosspath_err": 17.063695177338616,
+        "law_inv_defect": 0.05150877044694381,
+        "law_braid_defect": 7.121624421946468e-06,
+        "nontriv": 0.05237106209853476,
+        "noncommute": 0.00013127445465005054,
+        "support_mass_lex": 0.00024409585048638688
+      },
+      {
+        "content_transfer_err": 6.225613531214055,
+        "crosspath_err": 16.005934268491455,
+        "law_inv_defect": 0.051579644488748244,
+        "law_braid_defect": 6.623025076422119e-06,
+        "nontriv": 0.0526132394838356,
+        "noncommute": 0.00013574641914574728,
+        "support_mass_lex": 0.00024407081081333378
+      },
+      {
+        "content_transfer_err": 6.412190028432386,
+        "crosspath_err": 16.615201664654045,
+        "law_inv_defect": 0.05127378247447224,
+        "law_braid_defect": 5.7998787348789935e-06,
+        "nontriv": 0.05410443707573068,
+        "noncommute": 0.00011818408387628978,
+        "support_mass_lex": 0.00024399401322806923
+      },
+      {
+        "content_transfer_err": 6.425984462323373,
+        "crosspath_err": 16.07725156390275,
+        "law_inv_defect": 0.051465125268730934,
+        "law_braid_defect": 6.507527372658861e-06,
+        "nontriv": 0.05428237110819328,
+        "noncommute": 0.00012573613382701134,
+        "support_mass_lex": 0.0002440880337815937
+      },
+      {
+        "content_transfer_err": 6.352666736458282,
+        "crosspath_err": 16.47503937633187,
+        "law_inv_defect": 0.05147368604272784,
+        "law_braid_defect": 5.271191704754148e-06,
+        "nontriv": 0.05360535661565191,
+        "noncommute": 0.00010403995951920808,
+        "support_mass_lex": 0.0002441383897270008
+      },
+      {
+        "content_transfer_err": 6.379149563501361,
+        "crosspath_err": 16.266238400496896,
+        "law_inv_defect": 0.05133538927059683,
+        "law_braid_defect": 5.9463905130036365e-06,
+        "nontriv": 0.05380831993902819,
+        "noncommute": 0.00011850255534385793,
+        "support_mass_lex": 0.00024431506918796606
+      },
+      {
+        "content_transfer_err": 6.339044731010707,
+        "crosspath_err": 15.802247912886642,
+        "law_inv_defect": 0.05120641185454031,
+        "law_braid_defect": 5.213270542479299e-06,
+        "nontriv": 0.05356735496278563,
+        "noncommute": 0.00011884983304812446,
+        "support_mass_lex": 0.00024421788799290764
+      },
+      {
+        "content_transfer_err": 6.468130366912229,
+        "crosspath_err": 16.220876753716063,
+        "law_inv_defect": 0.05161592278121589,
+        "law_braid_defect": 5.635524014505801e-06,
+        "nontriv": 0.054608188757527404,
+        "noncommute": 0.00011258384894501611,
+        "support_mass_lex": 0.00024414650550023655
+      }
+    ],
+    "identity": [
+      {
+        "content_transfer_err": 1.753518594085235,
+        "crosspath_err": 10.320817947859105,
+        "law_inv_defect": 0.013308928651296962,
+        "law_braid_defect": 0.0,
+        "nontriv": 0.010552883871750305,
+        "noncommute": 0.0,
+        "support_mass_lex": 0.000244093602828028
+      }
+    ]
+  },
+  "61": {
+    "shuffled": [
+      {
+        "content_transfer_err": 3.171130958801819,
+        "crosspath_err": 5.579490494019561,
+        "law_inv_defect": 0.07721375832241885,
+        "law_braid_defect": 2.1179444063263572e-05,
+        "nontriv": 0.08105816063992527,
+        "noncommute": 0.00034368461264959785,
+        "support_mass_lex": 0.000244328242714542
+      },
+      {
+        "content_transfer_err": 3.1665950002515526,
+        "crosspath_err": 5.335972526929888,
+        "law_inv_defect": 0.07728718192862827,
+        "law_braid_defect": 1.868677800017178e-05,
+        "nontriv": 0.08074882245919426,
+        "noncommute": 0.00030852331405161165,
+        "support_mass_lex": 0.00024408095361588697
+      },
+      {
+        "content_transfer_err": 3.115417487737795,
+        "crosspath_err": 5.431069567400051,
+        "law_inv_defect": 0.07700219803712907,
+        "law_braid_defect": 2.0417112520046816e-05,
+        "nontriv": 0.07966250368164585,
+        "noncommute": 0.0003365506802124906,
+        "support_mass_lex": 0.00024389458928985024
+      },
+      {
+        "content_transfer_err": 3.047884241959361,
+        "crosspath_err": 5.330049966956176,
+        "law_inv_defect": 0.07715216238073247,
+        "law_braid_defect": 2.2341588557550042e-05,
+        "nontriv": 0.07794257929176013,
+        "noncommute": 0.00031848652430525236,
+        "support_mass_lex": 0.00024405795352235704
+      },
+      {
+        "content_transfer_err": 3.111168994245082,
+        "crosspath_err": 5.349203906761709,
+        "law_inv_defect": 0.07698291742924845,
+        "law_braid_defect": 1.9162002279597494e-05,
+        "nontriv": 0.07942895435863148,
+        "noncommute": 0.00032934940566157084,
+        "support_mass_lex": 0.00024391668673937625
+      },
+      {
+        "content_transfer_err": 3.216324072175068,
+        "crosspath_err": 5.50379988876807,
+        "law_inv_defect": 0.07674717259069394,
+        "law_braid_defect": 2.4284083962098264e-05,
+        "nontriv": 0.08262071854741962,
+        "noncommute": 0.00035376584596023,
+        "support_mass_lex": 0.00024413015615752236
+      },
+      {
+        "content_transfer_err": 3.1766382638981785,
+        "crosspath_err": 5.4790114464644875,
+        "law_inv_defect": 0.07690341813693863,
+        "law_braid_defect": 2.065902030140061e-05,
+        "nontriv": 0.08117961682217723,
+        "noncommute": 0.0003481598787407635,
+        "support_mass_lex": 0.000244060739784548
+      },
+      {
+        "content_transfer_err": 3.1364863511986,
+        "crosspath_err": 5.556735589855064,
+        "law_inv_defect": 0.07664563797530081,
+        "law_braid_defect": 2.254413547749409e-05,
+        "nontriv": 0.08002319692092093,
+        "noncommute": 0.000355456201129625,
+        "support_mass_lex": 0.0002441449411936232
+      },
+      {
+        "content_transfer_err": 3.1730664652404688,
+        "crosspath_err": 5.481534448292061,
+        "law_inv_defect": 0.07694585766521739,
+        "law_braid_defect": 2.1010747117379546e-05,
+        "nontriv": 0.08104199761400001,
+        "noncommute": 0.00033680481029315685,
+        "support_mass_lex": 0.0002441427453057673
+      },
+      {
+        "content_transfer_err": 3.099604194121813,
+        "crosspath_err": 5.335532739293002,
+        "law_inv_defect": 0.07663975650324249,
+        "law_braid_defect": 2.0773161889225467e-05,
+        "nontriv": 0.07935188769455719,
+        "noncommute": 0.00033299942260209573,
+        "support_mass_lex": 0.00024393925752444034
+      }
+    ],
+    "identity": [
+      {
+        "content_transfer_err": 1.2110584327306406,
+        "crosspath_err": 3.30602438171396,
+        "law_inv_defect": 0.02044956641063049,
+        "law_braid_defect": 0.0,
+        "nontriv": 0.016617804584602106,
+        "noncommute": 0.0,
+        "support_mass_lex": 0.00024449132967636276
+      }
+    ]
+  },
+  "64": {
+    "shuffled": [
+      {
+        "content_transfer_err": 1.638357465806207,
+        "crosspath_err": 2.6848492832165953,
+        "law_inv_defect": 0.08622948769572658,
+        "law_braid_defect": 2.7830091314511585e-05,
+        "nontriv": 0.09003745524519202,
+        "noncommute": 0.0004269600915671628,
+        "support_mass_lex": 0.0002441298917629335
+      },
+      {
+        "content_transfer_err": 1.6539654812186813,
+        "crosspath_err": 2.714441031249809,
+        "law_inv_defect": 0.08685433359459525,
+        "law_braid_defect": 3.0527673680698386e-05,
+        "nontriv": 0.09072987479258735,
+        "noncommute": 0.000431107210917446,
+        "support_mass_lex": 0.0002441848814857796
+      },
+      {
+        "content_transfer_err": 1.6608546832562423,
+        "crosspath_err": 2.7178182997061526,
+        "law_inv_defect": 0.0866512512203971,
+        "law_braid_defect": 3.184984602101894e-05,
+        "nontriv": 0.09120800527807923,
+        "noncommute": 0.0004631540078365722,
+        "support_mass_lex": 0.00024425394246749786
+      },
+      {
+        "content_transfer_err": 1.672277454176245,
+        "crosspath_err": 2.800788150314684,
+        "law_inv_defect": 0.08649201711634305,
+        "law_braid_defect": 2.776927118385894e-05,
+        "nontriv": 0.09167515281715216,
+        "noncommute": 0.00044202440664523014,
+        "support_mass_lex": 0.00024395456744661176
+      },
+      {
+        "content_transfer_err": 1.6531042553187771,
+        "crosspath_err": 2.7643829344982294,
+        "law_inv_defect": 0.08679772864672047,
+        "law_braid_defect": 2.8462972754917347e-05,
+        "nontriv": 0.09057662881309292,
+        "noncommute": 0.00042100632327707154,
+        "support_mass_lex": 0.0002441469027664116
+      },
+      {
+        "content_transfer_err": 1.6494525557949191,
+        "crosspath_err": 2.742420864449548,
+        "law_inv_defect": 0.08661626982602522,
+        "law_braid_defect": 2.8199483532575062e-05,
+        "nontriv": 0.09083143471777838,
+        "noncommute": 0.00044569705288778025,
+        "support_mass_lex": 0.00024417285583540197
+      },
+      {
+        "content_transfer_err": 1.638994481343694,
+        "crosspath_err": 2.790371643689015,
+        "law_inv_defect": 0.0868391044280417,
+        "law_braid_defect": 2.671542890989665e-05,
+        "nontriv": 0.08960760627149215,
+        "noncommute": 0.0004474645782118626,
+        "support_mass_lex": 0.00024405544813458887
+      },
+      {
+        "content_transfer_err": 1.6523677932557714,
+        "crosspath_err": 2.7284646821430476,
+        "law_inv_defect": 0.0864703682653238,
+        "law_braid_defect": 2.7231246206828607e-05,
+        "nontriv": 0.09027867392732342,
+        "noncommute": 0.000428218040524878,
+        "support_mass_lex": 0.0002440140949451185
+      },
+      {
+        "content_transfer_err": 1.6327412981908143,
+        "crosspath_err": 2.778779657520169,
+        "law_inv_defect": 0.086895313440583,
+        "law_braid_defect": 2.4324136029011727e-05,
+        "nontriv": 0.0891594878153722,
+        "noncommute": 0.00037876104736724617,
+        "support_mass_lex": 0.00024406088696179838
+      },
+      {
+        "content_transfer_err": 1.6463925513577409,
+        "crosspath_err": 2.709354809032808,
+        "law_inv_defect": 0.08652368436303068,
+        "law_braid_defect": 2.5331297924339135e-05,
+        "nontriv": 0.09031822990343495,
+        "noncommute": 0.00043181485319561223,
+        "support_mass_lex": 0.00024415629267696116
+      }
+    ],
+    "identity": [
+      {
+        "content_transfer_err": 0.9684519421542495,
+        "crosspath_err": 1.926462738004667,
+        "law_inv_defect": 0.037169021940494595,
+        "law_braid_defect": 0.0,
+        "nontriv": 0.03212274554768249,
+        "noncommute": 0.0,
+        "support_mass_lex": 0.0002445770490258347
+      }
+    ]
+  },
+  "72": {
+    "shuffled": [
+      {
+        "content_transfer_err": 1.3728678736434532,
+        "crosspath_err": 1.635825953883446,
+        "law_inv_defect": 0.11471636745599119,
+        "law_braid_defect": 3.3185567329025035e-05,
+        "nontriv": 0.11915040395885483,
+        "noncommute": 0.0004924161941797912,
+        "support_mass_lex": 0.0002443643688967347
+      },
+      {
+        "content_transfer_err": 1.3620715940633938,
+        "crosspath_err": 1.6559395360792177,
+        "law_inv_defect": 0.11448483320580594,
+        "law_braid_defect": 2.9678553122753552e-05,
+        "nontriv": 0.11819635326853145,
+        "noncommute": 0.0004710095510014152,
+        "support_mass_lex": 0.00024434974803909533
+      },
+      {
+        "content_transfer_err": 1.372589603513561,
+        "crosspath_err": 1.6436408606691488,
+        "law_inv_defect": 0.11458270044096536,
+        "law_braid_defect": 3.1941539984514356e-05,
+        "nontriv": 0.11928768866987888,
+        "noncommute": 0.0005167119894037272,
+        "support_mass_lex": 0.00024447626413583634
+      },
+      {
+        "content_transfer_err": 1.3696015237084915,
+        "crosspath_err": 1.651578331168187,
+        "law_inv_defect": 0.11478875764092927,
+        "law_braid_defect": 3.525380200978213e-05,
+        "nontriv": 0.11909549411663334,
+        "noncommute": 0.0005445807185866035,
+        "support_mass_lex": 0.0002443270278234983
+      },
+      {
+        "content_transfer_err": 1.3684418501463451,
+        "crosspath_err": 1.6628439033203666,
+        "law_inv_defect": 0.11440841349387953,
+        "law_braid_defect": 3.4851825746882013e-05,
+        "nontriv": 0.11866109074643173,
+        "noncommute": 0.0005505344525643371,
+        "support_mass_lex": 0.00024419668211764575
+      },
+      {
+        "content_transfer_err": 1.364690765571969,
+        "crosspath_err": 1.6468824621183917,
+        "law_inv_defect": 0.11446927578607105,
+        "law_braid_defect": 3.3287565486082095e-05,
+        "nontriv": 0.11778187454993408,
+        "noncommute": 0.0004865246000113752,
+        "support_mass_lex": 0.00024410271468354618
+      },
+      {
+        "content_transfer_err": 1.365378921419258,
+        "crosspath_err": 1.6594100698522607,
+        "law_inv_defect": 0.1144440447916487,
+        "law_braid_defect": 3.4235853727983815e-05,
+        "nontriv": 0.11836450810749091,
+        "noncommute": 0.000578453369194507,
+        "support_mass_lex": 0.0002442316700110179
+      },
+      {
+        "content_transfer_err": 1.3791319520683643,
+        "crosspath_err": 1.6529604282038708,
+        "law_inv_defect": 0.11434899743164062,
+        "law_braid_defect": 3.6619133391740676e-05,
+        "nontriv": 0.11999948810901127,
+        "noncommute": 0.0005697263086936888,
+        "support_mass_lex": 0.00024402937082459292
+      },
+      {
+        "content_transfer_err": 1.3674516143510658,
+        "crosspath_err": 1.6598132299797244,
+        "law_inv_defect": 0.1145536301970783,
+        "law_braid_defect": 3.609974499939633e-05,
+        "nontriv": 0.11878230004938947,
+        "noncommute": 0.0005934423614170585,
+        "support_mass_lex": 0.0002444936542569648
+      },
+      {
+        "content_transfer_err": 1.369481461132097,
+        "crosspath_err": 1.6624159059153278,
+        "law_inv_defect": 0.11451404417750434,
+        "law_braid_defect": 3.709857763573601e-05,
+        "nontriv": 0.1185630954576879,
+        "noncommute": 0.0005313941381564607,
+        "support_mass_lex": 0.00024421882216184114
+      }
+    ],
+    "identity": [
+      {
+        "content_transfer_err": 1.121845908640665,
+        "crosspath_err": 1.2257348613265453,
+        "law_inv_defect": 0.08380374745579283,
+        "law_braid_defect": 0.0,
+        "nontriv": 0.07703415126041162,
+        "noncommute": 0.0,
+        "support_mass_lex": 0.00024415858372676085
+      }
+    ]
+  },
+  "79": {
+    "shuffled": [
+      {
+        "content_transfer_err": 2.026073471033849,
+        "crosspath_err": 2.8212870926315894,
+        "law_inv_defect": 0.2907546545790948,
+        "law_braid_defect": 0.0005351308033433457,
+        "nontriv": 0.353873058461853,
+        "noncommute": 0.005209147299399996,
+        "support_mass_lex": 0.00024531522463648136
+      },
+      {
+        "content_transfer_err": 1.9552384870988417,
+        "crosspath_err": 2.7295602498867915,
+        "law_inv_defect": 0.2910425207254544,
+        "law_braid_defect": 0.0005485487653785167,
+        "nontriv": 0.3441697512626224,
+        "noncommute": 0.005011242757677441,
+        "support_mass_lex": 0.0002441003285736849
+      },
+      {
+        "content_transfer_err": 1.85577486492208,
+        "crosspath_err": 2.7574401814139877,
+        "law_inv_defect": 0.2899199813831257,
+        "law_braid_defect": 0.0005069769794520444,
+        "nontriv": 0.32392356285133794,
+        "noncommute": 0.005358097799768269,
+        "support_mass_lex": 0.0002436213076447015
+      },
+      {
+        "content_transfer_err": 1.8965359484480857,
+        "crosspath_err": 2.824643289223217,
+        "law_inv_defect": 0.28979106184874576,
+        "law_braid_defect": 0.0005515246520584918,
+        "nontriv": 0.3329940672786068,
+        "noncommute": 0.005815380337344165,
+        "support_mass_lex": 0.0002444172897253822
+      },
+      {
+        "content_transfer_err": 2.020228707997323,
+        "crosspath_err": 2.695385414456535,
+        "law_inv_defect": 0.2924634148807261,
+        "law_braid_defect": 0.0005660684492870125,
+        "nontriv": 0.35385142885651927,
+        "noncommute": 0.006455027120172333,
+        "support_mass_lex": 0.00024495726794395724
+      },
+      {
+        "content_transfer_err": 1.9563815702657787,
+        "crosspath_err": 2.8487159652400322,
+        "law_inv_defect": 0.29145029395269273,
+        "law_braid_defect": 0.00040684174780637847,
+        "nontriv": 0.3439939847431357,
+        "noncommute": 0.00501760811703337,
+        "support_mass_lex": 0.0002451468171112949
+      },
+      {
+        "content_transfer_err": 1.9996142800144017,
+        "crosspath_err": 2.6369235790248267,
+        "law_inv_defect": 0.28894112080157763,
+        "law_braid_defect": 0.0004680195205467467,
+        "nontriv": 0.34940318565783346,
+        "noncommute": 0.005386178511357005,
+        "support_mass_lex": 0.0002450857344876913
+      },
+      {
+        "content_transfer_err": 1.9587599495874293,
+        "crosspath_err": 2.768368152487701,
+        "law_inv_defect": 0.2910112967655426,
+        "law_braid_defect": 0.0004132724840824625,
+        "nontriv": 0.3418375433295569,
+        "noncommute": 0.006714211060803778,
+        "support_mass_lex": 0.00024433698635667873
+      },
+      {
+        "content_transfer_err": 1.9701443598750892,
+        "crosspath_err": 2.831248075064382,
+        "law_inv_defect": 0.291354720043509,
+        "law_braid_defect": 0.0005900872105818754,
+        "nontriv": 0.3451247345716144,
+        "noncommute": 0.0055955489847623234,
+        "support_mass_lex": 0.0002451328930438831
+      },
+      {
+        "content_transfer_err": 1.9534065556674594,
+        "crosspath_err": 2.9220122758265923,
+        "law_inv_defect": 0.2883431884625679,
+        "law_braid_defect": 0.0005298554877665355,
+        "nontriv": 0.33900692394912313,
+        "noncommute": 0.005611238480483354,
+        "support_mass_lex": 0.0002447609637876691
+      }
+    ],
+    "identity": [
+      {
+        "content_transfer_err": 1.2766797534556527,
+        "crosspath_err": 1.037053844969489,
+        "law_inv_defect": 0.1887350666565806,
+        "law_braid_defect": 0.0,
+        "nontriv": 0.16128451454854698,
+        "noncommute": 0.0,
+        "support_mass_lex": 0.00024261860204435426
+      }
+    ]
+  }
+}

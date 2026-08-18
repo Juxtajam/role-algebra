@@ -1,0 +1,24 @@
+{
+  "seed": 2,
+  "final": {
+    "step": 50000,
+    "loss": 1.1462135314941406,
+    "aux_held": {
+      "A_PS": 0.3359375,
+      "A_SN": 0.3515625,
+      "A_NS": 0.3229166666666667
+    },
+    "aux_min": 0.3229166666666667,
+    "train_aux": 0.53125,
+    "train_composed": 0.3854166666666667,
+    "held_episode": 0.3168402777777778,
+    "transfer_episode": 0.3385416666666667,
+    "frozen_rows_bit_exact": true,
+    "fit_norm_ratio_mean": 9.24439811706543,
+    "fit_norm_ratio_min": 8.418339729309082,
+    "fit_norm_ratio_max": 9.801702499389648
+  },
+  "max_aux_held_min": 0.359375,
+  "max_aux_held_any": 0.453125,
+  "max_train_aux": 0.8541666666666666
+}

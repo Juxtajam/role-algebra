@@ -1,0 +1,125 @@
+{
+  "model": "meta-llama/Llama-3.3-70B-Instruct",
+  "revision": "6f6073b423013f6a7d4d9f39144961bfbfbc386b",
+  "gpu": "A100-80GB:2",
+  "family": "Llama-3.1 (non-Qwen)",
+  "content_hash": "84f2e54d85d6e8aa4c1474b608bef5ab69babe54353ef0ef2702d9f6ed38baef",
+  "committed_config_sha": "b6fa9dce222b3abb907e668e916f6187c2477639388367d72dc98e16de54fa30",
+  "gate_thresholds": {
+    "episode_acc": 0.95,
+    "strict_orbit": 0.9,
+    "orbit_consistency": 0.95
+  },
+  "d_model": 8192,
+  "n_layers": 80,
+  "dtype": "bfloat16",
+  "n_boot": 10000,
+  "boot_seed": 20260807,
+  "cells": {
+    "P/fit": {
+      "episode_acc": 1.0,
+      "strict_orbit": 1.0,
+      "orbit_consistency": 1.0,
+      "cis": {
+        "episode_acc": [
+          1.0,
+          1.0
+        ],
+        "strict_orbit": [
+          1.0,
+          1.0
+        ],
+        "orbit_consistency": [
+          1.0,
+          1.0
+        ]
+      },
+      "passed": true,
+      "n_bases": 100,
+      "n_eps": 600,
+      "categories": null,
+      "seconds": 50.4
+    },
+    "P/transfer": {
+      "episode_acc": 1.0,
+      "strict_orbit": 1.0,
+      "orbit_consistency": 1.0,
+      "cis": {
+        "episode_acc": [
+          1.0,
+          1.0
+        ],
+        "strict_orbit": [
+          1.0,
+          1.0
+        ],
+        "orbit_consistency": [
+          1.0,
+          1.0
+        ]
+      },
+      "passed": true,
+      "n_bases": 100,
+      "n_eps": 600,
+      "categories": null,
+      "seconds": 50.1
+    },
+    "G/fit": {
+      "episode_acc": 0.93,
+      "strict_orbit": 0.83,
+      "orbit_consistency": 0.83,
+      "cis": {
+        "episode_acc": [
+          0.8933333333333333,
+          0.9633333333333333
+        ],
+        "strict_orbit": [
+          0.75,
+          0.9
+        ],
+        "orbit_consistency": [
+          0.75,
+          0.9
+        ]
+      },
+      "passed": false,
+      "n_bases": 100,
+      "n_eps": 600,
+      "categories": {
+        "correct": 558,
+        "opposite_endpoint": 20,
+        "inner_clause": 22
+      },
+      "seconds": 55.8
+    },
+    "G/transfer": {
+      "episode_acc": 0.9433333333333334,
+      "strict_orbit": 0.9,
+      "orbit_consistency": 0.92,
+      "cis": {
+        "episode_acc": [
+          0.9016666666666666,
+          0.9783333333333334
+        ],
+        "strict_orbit": [
+          0.84,
+          0.96
+        ],
+        "orbit_consistency": [
+          0.86,
+          0.97
+        ]
+      },
+      "passed": false,
+      "n_bases": 100,
+      "n_eps": 600,
+      "categories": {
+        "correct": 566,
+        "opposite_endpoint": 14,
+        "inner_clause": 20
+      },
+      "seconds": 54.7
+    }
+  },
+  "all_cells_met_thresholds": false
+}

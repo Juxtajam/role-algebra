@@ -1,0 +1,92 @@
+{
+  "what_ran": {
+    "statistic": "phase8c_lib.support_mass_lexical (lines 280-308): ||(R-I)q_b||_F^2 / ||R-I||_F^2, q_b = orthonormal basis of episode-local span{u_i - u_1}, mean over first 48 eval episodes and both generators",
+    "u_vectors": "READOUT rows (lm_head.weight) of the episode's 3 name tokens \u2014 phase8c_test_eval.py lines 40-41 load name_vectors.npz key 'readout'",
+    "direction": "lt (committed_config.json .thresholds.support_mass_lex.dir)",
+    "null": "shuffled x10 (seed 2000*rep+layer) + identity, cal-split fits evaluated on P/transfer CAL, pooled over 12 frozen layers (132 values), LENIENT_QUANTILE -> tau = 0.95 quantile (phase8c_freeze_config.py lines 42-69, 198-208)"
+  },
+  "registered_definition": "'nontriviality with the corrected difference-subspace support test, direction lt'; src/shared/discriminator.py lines 33-38: u_i = the episode's name embeddings, lt, LENIENT",
+  "match_statement": "structure (episode-local name-difference span), direction (lt), and null/threshold rule (LENIENT 1-FPR quantile) all match the registered definition; the run instantiated 'name embedding' as the lm_head READOUT row (the vector a lexical-swap readout artifact acts on). The embed_tokens reading is recomputed in r1_registered_c4.json to close the ambiguity.",
+  "stored_values": {
+    "source": "results/phase8c/test_metrics.json",
+    "verdict_layer": {
+      "layer": 61,
+      "support_mass_lex": 0.0002442527143675167,
+      "support_mass_ci": [
+        0.0002441984500002239,
+        0.0002443036365443694
+      ],
+      "nontriv": 0.02350092617548702,
+      "nontriv_ci": [
+        0.022287903755690952,
+        0.024753926749465905
+      ],
+      "noncommute": 0.00010175482565950442,
+      "noncommute_ci": [
+        9.305898505086015e-05,
+        0.00011096656270810767
+      ]
+    },
+    "per_layer_support_mass_lex": {
+      "0": 0.00024427499428238993,
+      "8": 0.00024418232432636634,
+      "16": 0.00024419890921337836,
+      "24": 0.00024414258248913856,
+      "32": 0.00024412334339053677,
+      "40": 0.000244127276223899,
+      "48": 0.00024409843301079486,
+      "56": 0.00024400082104437934,
+      "61": 0.0002442527143675167,
+      "64": 0.00024419621964554493,
+      "72": 0.00024422245441201956,
+      "79": 0.00024386986940551798
+    },
+    "thresholds": {
+      "support_mass_lex": {
+        "dir": "lt",
+        "null_n": 132,
+        "tau": 0.0002445311819029563
+      },
+      "nontriv": {
+        "dir": "gt",
+        "null_n": 12,
+        "tau": 0.11494681474007247
+      },
+      "noncommute": {
+        "dir": "gt",
+        "null_n": 12,
+        "tau": 0.0
+      }
+    },
+    "thresholds_bonferroni": {
+      "support_mass_lex": {
+        "dir": "lt",
+        "null_n": 132,
+        "tau": 0.00024522330219565043
+      },
+      "nontriv": {
+        "dir": "gt",
+        "null_n": 12,
+        "tau": 0.1574230395645075
+      },
+      "noncommute": {
+        "dir": "gt",
+        "null_n": 12,
+        "tau": 0.0
+      }
+    }
+  },
+  "tau_rederivation": {
+    "n_stored_null_values": 132,
+    "quantile": 0.95,
+    "tau_rederived": 0.0002445311819029563,
+    "tau_stored": 0.0002445311819029563,
+    "exact_match": true,
+    "source": "results/phase8c/null_values_per_layer.json"
+  },
+  "noncommute_tau_note": {
+    "stored_tau": 0.0,
+    "report_text_value": "~4.7e-9 (phase8c_discriminator_report.md table)",
+    "note": "report table quotes ~4.7e-9; committed_config.json and verdict.json both store tau=0.0 (identity-null noncommute is exactly 0). Flagged as a report-prose discrepancy; the stored config governs. gt-0 comparison unaffected."
+  }
+}

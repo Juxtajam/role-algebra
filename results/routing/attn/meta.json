@@ -1,0 +1,15 @@
+{
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "revision": "495f39366efef23836d0cfae4fbe635880d2be31",
+  "gpu": "H100:2",
+  "n_layers": 80,
+  "n_heads": 64,
+  "k": 3,
+  "position": "answer(last prompt token)",
+  "sets": {
+    "frozen_Pfit": 900,
+    "joint_Pfit": 900
+  },
+  "note": "mass[ep,layer,head,slot] = answer-position attention on the entity name at canonical slot 'slot'; answer_idx = the canonical slot index of the ANSWER entity (matched by name).",
+  "session_seconds": 257.3
+}

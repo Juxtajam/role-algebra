@@ -1,0 +1,802 @@
+[
+  {
+    "step": 500,
+    "loss": 2.0706756114959717,
+    "held_episode": 0.3333333333333333,
+    "held_strict": 0.0,
+    "held_consistency": 0.0,
+    "transfer_episode": 0.3333333333333333
+  },
+  {
+    "step": 1000,
+    "loss": 2.0309154987335205,
+    "held_episode": 0.3333333333333333,
+    "held_strict": 0.0,
+    "held_consistency": 0.0,
+    "transfer_episode": 0.3333333333333333
+  },
+  {
+    "step": 1500,
+    "loss": 1.7652570009231567,
+    "held_episode": 0.3333333333333333,
+    "held_strict": 0.0,
+    "held_consistency": 0.0,
+    "transfer_episode": 0.3333333333333333
+  },
+  {
+    "step": 2000,
+    "loss": 1.7105978727340698,
+    "held_episode": 0.3342013888888889,
+    "held_strict": 0.0,
+    "held_consistency": 0.0,
+    "transfer_episode": 0.3333333333333333
+  },
+  {
+    "step": 2500,
+    "loss": 1.5997992753982544,
+    "held_episode": 0.3342013888888889,
+    "held_strict": 0.0,
+    "held_consistency": 0.0,
+    "transfer_episode": 0.3333333333333333
+  },
+  {
+    "step": 3000,
+    "loss": 1.5611518621444702,
+    "held_episode": 0.3333333333333333,
+    "held_strict": 0.0,
+    "held_consistency": 0.0,
+    "transfer_episode": 0.3333333333333333
+  },
+  {
+    "step": 3500,
+    "loss": 1.2973040342330933,
+    "held_episode": 0.3350694444444444,
+    "held_strict": 0.0,
+    "held_consistency": 0.0,
+    "transfer_episode": 0.3333333333333333
+  },
+  {
+    "step": 4000,
+    "loss": 1.1866111755371094,
+    "held_episode": 0.3333333333333333,
+    "held_strict": 0.0,
+    "held_consistency": 0.0,
+    "transfer_episode": 0.3333333333333333
+  },
+  {
+    "step": 4500,
+    "loss": 1.137653112411499,
+    "held_episode": 0.3342013888888889,
+    "held_strict": 0.0,
+    "held_consistency": 0.0,
+    "transfer_episode": 0.3333333333333333
+  },
+  {
+    "step": 5000,
+    "loss": 1.1009124517440796,
+    "held_episode": 0.3342013888888889,
+    "held_strict": 0.0,
+    "held_consistency": 0.0,
+    "transfer_episode": 0.3350694444444444
+  },
+  {
+    "step": 5500,
+    "loss": 1.429525375366211,
+    "held_episode": 0.3333333333333333,
+    "held_strict": 0.0,
+    "held_consistency": 0.0,
+    "transfer_episode": 0.3333333333333333
+  },
+  {
+    "step": 6000,
+    "loss": 1.1711876392364502,
+    "held_episode": 0.3333333333333333,
+    "held_strict": 0.0,
+    "held_consistency": 0.0,
+    "transfer_episode": 0.3333333333333333
+  },
+  {
+    "step": 6500,
+    "loss": 1.1006885766983032,
+    "held_episode": 0.3333333333333333,
+    "held_strict": 0.0,
+    "held_consistency": 0.0,
+    "transfer_episode": 0.3333333333333333
+  },
+  {
+    "step": 7000,
+    "loss": 1.0739401578903198,
+    "held_episode": 0.3315972222222222,
+    "held_strict": 0.0,
+    "held_consistency": 0.0,
+    "transfer_episode": 0.3333333333333333
+  },
+  {
+    "step": 7500,
+    "loss": 1.0638108253479004,
+    "held_episode": 0.3324652777777778,
+    "held_strict": 0.0,
+    "held_consistency": 0.0,
+    "transfer_episode": 0.3333333333333333
+  },
+  {
+    "step": 8000,
+    "loss": 1.3623220920562744,
+    "held_episode": 0.3342013888888889,
+    "held_strict": 0.0,
+    "held_consistency": 0.0,
+    "transfer_episode": 0.3315972222222222
+  },
+  {
+    "step": 8500,
+    "loss": 1.0889602899551392,
+    "held_episode": 0.3454861111111111,
+    "held_strict": 0.0,
+    "held_consistency": 0.0,
+    "transfer_episode": 0.3350694444444444
+  },
+  {
+    "step": 9000,
+    "loss": 1.0108343362808228,
+    "held_episode": 0.3402777777777778,
+    "held_strict": 0.005208333333333333,
+    "held_consistency": 0.005208333333333333,
+    "transfer_episode": 0.3350694444444444
+  },
+  {
+    "step": 9500,
+    "loss": 0.9606319069862366,
+    "held_episode": 0.3428819444444444,
+    "held_strict": 0.005208333333333333,
+    "held_consistency": 0.015625,
+    "transfer_episode": 0.3333333333333333
+  },
+  {
+    "step": 10000,
+    "loss": 0.8652228116989136,
+    "held_episode": 0.3428819444444444,
+    "held_strict": 0.0,
+    "held_consistency": 0.0,
+    "transfer_episode": 0.3420138888888889
+  },
+  {
+    "step": 10500,
+    "loss": 1.3037725687026978,
+    "held_episode": 0.3315972222222222,
+    "held_strict": 0.005208333333333333,
+    "held_consistency": 0.005208333333333333,
+    "transfer_episode": 0.3315972222222222
+  },
+  {
+    "step": 11000,
+    "loss": 1.002336025238037,
+    "held_episode": 0.3498263888888889,
+    "held_strict": 0.0,
+    "held_consistency": 0.005208333333333333,
+    "transfer_episode": 0.3385416666666667
+  },
+  {
+    "step": 11500,
+    "loss": 0.8299771547317505,
+    "held_episode": 0.3376736111111111,
+    "held_strict": 0.005208333333333333,
+    "held_consistency": 0.005208333333333333,
+    "transfer_episode": 0.3298611111111111
+  },
+  {
+    "step": 12000,
+    "loss": 0.7707875370979309,
+    "held_episode": 0.3559027777777778,
+    "held_strict": 0.005208333333333333,
+    "held_consistency": 0.005208333333333333,
+    "transfer_episode": 0.328125
+  },
+  {
+    "step": 12500,
+    "loss": 0.7017587423324585,
+    "held_episode": 0.3446180555555556,
+    "held_strict": 0.005208333333333333,
+    "held_consistency": 0.005208333333333333,
+    "transfer_episode": 0.3263888888888889
+  },
+  {
+    "step": 13000,
+    "loss": 1.287912130355835,
+    "held_episode": 0.3263888888888889,
+    "held_strict": 0.0,
+    "held_consistency": 0.005208333333333333,
+    "transfer_episode": 0.3298611111111111
+  },
+  {
+    "step": 13500,
+    "loss": 0.9412447810173035,
+    "held_episode": 0.3385416666666667,
+    "held_strict": 0.005208333333333333,
+    "held_consistency": 0.015625,
+    "transfer_episode": 0.3229166666666667
+  },
+  {
+    "step": 14000,
+    "loss": 0.7603940963745117,
+    "held_episode": 0.3315972222222222,
+    "held_strict": 0.010416666666666666,
+    "held_consistency": 0.010416666666666666,
+    "transfer_episode": 0.3385416666666667
+  },
+  {
+    "step": 14500,
+    "loss": 0.6739140748977661,
+    "held_episode": 0.3298611111111111,
+    "held_strict": 0.0,
+    "held_consistency": 0.010416666666666666,
+    "transfer_episode": 0.3246527777777778
+  },
+  {
+    "step": 15000,
+    "loss": 0.6475135684013367,
+    "held_episode": 0.3532986111111111,
+    "held_strict": 0.020833333333333332,
+    "held_consistency": 0.026041666666666668,
+    "transfer_episode": 0.3298611111111111
+  },
+  {
+    "step": 15500,
+    "loss": 1.3013197183609009,
+    "held_episode": 0.3611111111111111,
+    "held_strict": 0.046875,
+    "held_consistency": 0.07291666666666667,
+    "transfer_episode": 0.3368055555555556
+  },
+  {
+    "step": 16000,
+    "loss": 0.9786816835403442,
+    "held_episode": 0.3428819444444444,
+    "held_strict": 0.005208333333333333,
+    "held_consistency": 0.005208333333333333,
+    "transfer_episode": 0.3454861111111111
+  },
+  {
+    "step": 16500,
+    "loss": 0.7835208177566528,
+    "held_episode": 0.3454861111111111,
+    "held_strict": 0.0,
+    "held_consistency": 0.0,
+    "transfer_episode": 0.34375
+  },
+  {
+    "step": 17000,
+    "loss": 0.7052192687988281,
+    "held_episode": 0.34375,
+    "held_strict": 0.015625,
+    "held_consistency": 0.046875,
+    "transfer_episode": 0.3315972222222222
+  },
+  {
+    "step": 17500,
+    "loss": 0.6451611518859863,
+    "held_episode": 0.3168402777777778,
+    "held_strict": 0.015625,
+    "held_consistency": 0.07291666666666667,
+    "transfer_episode": 0.3402777777777778
+  },
+  {
+    "step": 18000,
+    "loss": 1.2971546649932861,
+    "held_episode": 0.3472222222222222,
+    "held_strict": 0.005208333333333333,
+    "held_consistency": 0.020833333333333332,
+    "transfer_episode": 0.3350694444444444
+  },
+  {
+    "step": 18500,
+    "loss": 0.9796308875083923,
+    "held_episode": 0.3402777777777778,
+    "held_strict": 0.0,
+    "held_consistency": 0.010416666666666666,
+    "transfer_episode": 0.3350694444444444
+  },
+  {
+    "step": 19000,
+    "loss": 0.7932359576225281,
+    "held_episode": 0.3454861111111111,
+    "held_strict": 0.0,
+    "held_consistency": 0.0,
+    "transfer_episode": 0.3333333333333333
+  },
+  {
+    "step": 19500,
+    "loss": 0.6918805837631226,
+    "held_episode": 0.3350694444444444,
+    "held_strict": 0.015625,
+    "held_consistency": 0.036458333333333336,
+    "transfer_episode": 0.3368055555555556
+  },
+  {
+    "step": 20000,
+    "loss": 0.644335925579071,
+    "held_episode": 0.3420138888888889,
+    "held_strict": 0.015625,
+    "held_consistency": 0.03125,
+    "transfer_episode": 0.3263888888888889
+  },
+  {
+    "step": 20500,
+    "loss": 1.3104140758514404,
+    "held_episode": 0.3307291666666667,
+    "held_strict": 0.0,
+    "held_consistency": 0.005208333333333333,
+    "transfer_episode": 0.3402777777777778
+  },
+  {
+    "step": 21000,
+    "loss": 1.074002981185913,
+    "held_episode": 0.3385416666666667,
+    "held_strict": 0.010416666666666666,
+    "held_consistency": 0.015625,
+    "transfer_episode": 0.3368055555555556
+  },
+  {
+    "step": 21500,
+    "loss": 0.8422055840492249,
+    "held_episode": 0.3359375,
+    "held_strict": 0.005208333333333333,
+    "held_consistency": 0.005208333333333333,
+    "transfer_episode": 0.3333333333333333
+  },
+  {
+    "step": 22000,
+    "loss": 0.6998120546340942,
+    "held_episode": 0.3324652777777778,
+    "held_strict": 0.0,
+    "held_consistency": 0.010416666666666666,
+    "transfer_episode": 0.3350694444444444
+  },
+  {
+    "step": 22500,
+    "loss": 0.6511476635932922,
+    "held_episode": 0.3394097222222222,
+    "held_strict": 0.010416666666666666,
+    "held_consistency": 0.015625,
+    "transfer_episode": 0.3420138888888889
+  },
+  {
+    "step": 23000,
+    "loss": 1.3023964166641235,
+    "held_episode": 0.3645833333333333,
+    "held_strict": 0.020833333333333332,
+    "held_consistency": 0.03125,
+    "transfer_episode": 0.3402777777777778
+  },
+  {
+    "step": 23500,
+    "loss": 1.12991464138031,
+    "held_episode": 0.3454861111111111,
+    "held_strict": 0.015625,
+    "held_consistency": 0.026041666666666668,
+    "transfer_episode": 0.3472222222222222
+  },
+  {
+    "step": 24000,
+    "loss": 0.8734685778617859,
+    "held_episode": 0.3654513888888889,
+    "held_strict": 0.005208333333333333,
+    "held_consistency": 0.005208333333333333,
+    "transfer_episode": 0.3368055555555556
+  },
+  {
+    "step": 24500,
+    "loss": 0.7399725317955017,
+    "held_episode": 0.3289930555555556,
+    "held_strict": 0.0,
+    "held_consistency": 0.015625,
+    "transfer_episode": 0.3472222222222222
+  },
+  {
+    "step": 25000,
+    "loss": 0.6571797728538513,
+    "held_episode": 0.3263888888888889,
+    "held_strict": 0.005208333333333333,
+    "held_consistency": 0.015625,
+    "transfer_episode": 0.3246527777777778
+  },
+  {
+    "step": 25500,
+    "loss": 1.3102306127548218,
+    "held_episode": 0.3090277777777778,
+    "held_strict": 0.0,
+    "held_consistency": 0.010416666666666666,
+    "transfer_episode": 0.3402777777777778
+  },
+  {
+    "step": 26000,
+    "loss": 1.1644420623779297,
+    "held_episode": 0.3489583333333333,
+    "held_strict": 0.015625,
+    "held_consistency": 0.026041666666666668,
+    "transfer_episode": 0.3402777777777778
+  },
+  {
+    "step": 26500,
+    "loss": 0.930953860282898,
+    "held_episode": 0.3289930555555556,
+    "held_strict": 0.0,
+    "held_consistency": 0.010416666666666666,
+    "transfer_episode": 0.3454861111111111
+  },
+  {
+    "step": 27000,
+    "loss": 0.7855575680732727,
+    "held_episode": 0.3454861111111111,
+    "held_strict": 0.005208333333333333,
+    "held_consistency": 0.005208333333333333,
+    "transfer_episode": 0.3315972222222222
+  },
+  {
+    "step": 27500,
+    "loss": 0.7082195281982422,
+    "held_episode": 0.3272569444444444,
+    "held_strict": 0.005208333333333333,
+    "held_consistency": 0.026041666666666668,
+    "transfer_episode": 0.3472222222222222
+  },
+  {
+    "step": 28000,
+    "loss": 1.3182151317596436,
+    "held_episode": 0.3359375,
+    "held_strict": 0.005208333333333333,
+    "held_consistency": 0.010416666666666666,
+    "transfer_episode": 0.3402777777777778
+  },
+  {
+    "step": 28500,
+    "loss": 1.175132393836975,
+    "held_episode": 0.3307291666666667,
+    "held_strict": 0.0,
+    "held_consistency": 0.010416666666666666,
+    "transfer_episode": 0.3472222222222222
+  },
+  {
+    "step": 29000,
+    "loss": 0.9739141464233398,
+    "held_episode": 0.3515625,
+    "held_strict": 0.005208333333333333,
+    "held_consistency": 0.015625,
+    "transfer_episode": 0.3385416666666667
+  },
+  {
+    "step": 29500,
+    "loss": 0.8164075016975403,
+    "held_episode": 0.3489583333333333,
+    "held_strict": 0.005208333333333333,
+    "held_consistency": 0.005208333333333333,
+    "transfer_episode": 0.3315972222222222
+  },
+  {
+    "step": 30000,
+    "loss": 0.7368068099021912,
+    "held_episode": 0.3394097222222222,
+    "held_strict": 0.005208333333333333,
+    "held_consistency": 0.010416666666666666,
+    "transfer_episode": 0.3368055555555556
+  },
+  {
+    "step": 30500,
+    "loss": 1.3242037296295166,
+    "held_episode": 0.3376736111111111,
+    "held_strict": 0.010416666666666666,
+    "held_consistency": 0.015625,
+    "transfer_episode": 0.3350694444444444
+  },
+  {
+    "step": 31000,
+    "loss": 1.2174843549728394,
+    "held_episode": 0.3350694444444444,
+    "held_strict": 0.0,
+    "held_consistency": 0.0,
+    "transfer_episode": 0.3350694444444444
+  },
+  {
+    "step": 31500,
+    "loss": 1.0421749353408813,
+    "held_episode": 0.3550347222222222,
+    "held_strict": 0.005208333333333333,
+    "held_consistency": 0.010416666666666666,
+    "transfer_episode": 0.3298611111111111
+  },
+  {
+    "step": 32000,
+    "loss": 0.8626993894577026,
+    "held_episode": 0.3342013888888889,
+    "held_strict": 0.0,
+    "held_consistency": 0.010416666666666666,
+    "transfer_episode": 0.3368055555555556
+  },
+  {
+    "step": 32500,
+    "loss": 0.7740117311477661,
+    "held_episode": 0.3359375,
+    "held_strict": 0.010416666666666666,
+    "held_consistency": 0.015625,
+    "transfer_episode": 0.3350694444444444
+  },
+  {
+    "step": 33000,
+    "loss": 1.3182566165924072,
+    "held_episode": 0.3359375,
+    "held_strict": 0.0,
+    "held_consistency": 0.0,
+    "transfer_episode": 0.3385416666666667
+  },
+  {
+    "step": 33500,
+    "loss": 1.2370024919509888,
+    "held_episode": 0.3333333333333333,
+    "held_strict": 0.0,
+    "held_consistency": 0.0,
+    "transfer_episode": 0.3385416666666667
+  },
+  {
+    "step": 34000,
+    "loss": 1.0917389392852783,
+    "held_episode": 0.3498263888888889,
+    "held_strict": 0.005208333333333333,
+    "held_consistency": 0.010416666666666666,
+    "transfer_episode": 0.3350694444444444
+  },
+  {
+    "step": 34500,
+    "loss": 0.9434294104576111,
+    "held_episode": 0.3454861111111111,
+    "held_strict": 0.010416666666666666,
+    "held_consistency": 0.010416666666666666,
+    "transfer_episode": 0.3350694444444444
+  },
+  {
+    "step": 35000,
+    "loss": 0.84890216588974,
+    "held_episode": 0.3229166666666667,
+    "held_strict": 0.0,
+    "held_consistency": 0.005208333333333333,
+    "transfer_episode": 0.328125
+  },
+  {
+    "step": 35500,
+    "loss": 1.323693037033081,
+    "held_episode": 0.3263888888888889,
+    "held_strict": 0.0,
+    "held_consistency": 0.010416666666666666,
+    "transfer_episode": 0.3298611111111111
+  },
+  {
+    "step": 36000,
+    "loss": 1.2443009614944458,
+    "held_episode": 0.3289930555555556,
+    "held_strict": 0.005208333333333333,
+    "held_consistency": 0.005208333333333333,
+    "transfer_episode": 0.3315972222222222
+  },
+  {
+    "step": 36500,
+    "loss": 1.1144708395004272,
+    "held_episode": 0.3168402777777778,
+    "held_strict": 0.005208333333333333,
+    "held_consistency": 0.010416666666666666,
+    "transfer_episode": 0.3315972222222222
+  },
+  {
+    "step": 37000,
+    "loss": 0.9936137795448303,
+    "held_episode": 0.328125,
+    "held_strict": 0.015625,
+    "held_consistency": 0.020833333333333332,
+    "transfer_episode": 0.3402777777777778
+  },
+  {
+    "step": 37500,
+    "loss": 0.8944104313850403,
+    "held_episode": 0.3255208333333333,
+    "held_strict": 0.0,
+    "held_consistency": 0.010416666666666666,
+    "transfer_episode": 0.3333333333333333
+  },
+  {
+    "step": 38000,
+    "loss": 1.3207467794418335,
+    "held_episode": 0.3411458333333333,
+    "held_strict": 0.0,
+    "held_consistency": 0.005208333333333333,
+    "transfer_episode": 0.3333333333333333
+  },
+  {
+    "step": 38500,
+    "loss": 1.2585176229476929,
+    "held_episode": 0.3463541666666667,
+    "held_strict": 0.0,
+    "held_consistency": 0.0,
+    "transfer_episode": 0.328125
+  },
+  {
+    "step": 39000,
+    "loss": 1.1851445436477661,
+    "held_episode": 0.3402777777777778,
+    "held_strict": 0.005208333333333333,
+    "held_consistency": 0.015625,
+    "transfer_episode": 0.3333333333333333
+  },
+  {
+    "step": 39500,
+    "loss": 1.0914973020553589,
+    "held_episode": 0.3385416666666667,
+    "held_strict": 0.0,
+    "held_consistency": 0.0,
+    "transfer_episode": 0.3420138888888889
+  },
+  {
+    "step": 40000,
+    "loss": 1.0005286931991577,
+    "held_episode": 0.34375,
+    "held_strict": 0.0,
+    "held_consistency": 0.0,
+    "transfer_episode": 0.3420138888888889
+  },
+  {
+    "step": 40500,
+    "loss": 1.3258063793182373,
+    "held_episode": 0.328125,
+    "held_strict": 0.0,
+    "held_consistency": 0.0,
+    "transfer_episode": 0.3420138888888889
+  },
+  {
+    "step": 41000,
+    "loss": 1.2742407321929932,
+    "held_episode": 0.3463541666666667,
+    "held_strict": 0.0,
+    "held_consistency": 0.005208333333333333,
+    "transfer_episode": 0.3420138888888889
+  },
+  {
+    "step": 41500,
+    "loss": 1.196542739868164,
+    "held_episode": 0.3272569444444444,
+    "held_strict": 0.005208333333333333,
+    "held_consistency": 0.015625,
+    "transfer_episode": 0.3454861111111111
+  },
+  {
+    "step": 42000,
+    "loss": 1.1313565969467163,
+    "held_episode": 0.3385416666666667,
+    "held_strict": 0.005208333333333333,
+    "held_consistency": 0.005208333333333333,
+    "transfer_episode": 0.3472222222222222
+  },
+  {
+    "step": 42500,
+    "loss": 1.060977816581726,
+    "held_episode": 0.3324652777777778,
+    "held_strict": 0.005208333333333333,
+    "held_consistency": 0.005208333333333333,
+    "transfer_episode": 0.3420138888888889
+  },
+  {
+    "step": 43000,
+    "loss": 1.3268035650253296,
+    "held_episode": 0.3350694444444444,
+    "held_strict": 0.005208333333333333,
+    "held_consistency": 0.005208333333333333,
+    "transfer_episode": 0.3472222222222222
+  },
+  {
+    "step": 43500,
+    "loss": 1.281044840812683,
+    "held_episode": 0.328125,
+    "held_strict": 0.0,
+    "held_consistency": 0.005208333333333333,
+    "transfer_episode": 0.3368055555555556
+  },
+  {
+    "step": 44000,
+    "loss": 1.2415300607681274,
+    "held_episode": 0.3307291666666667,
+    "held_strict": 0.0,
+    "held_consistency": 0.005208333333333333,
+    "transfer_episode": 0.3368055555555556
+  },
+  {
+    "step": 44500,
+    "loss": 1.173956036567688,
+    "held_episode": 0.3385416666666667,
+    "held_strict": 0.0,
+    "held_consistency": 0.005208333333333333,
+    "transfer_episode": 0.3298611111111111
+  },
+  {
+    "step": 45000,
+    "loss": 1.1458877325057983,
+    "held_episode": 0.3472222222222222,
+    "held_strict": 0.005208333333333333,
+    "held_consistency": 0.010416666666666666,
+    "transfer_episode": 0.3454861111111111
+  },
+  {
+    "step": 45500,
+    "loss": 1.3341690301895142,
+    "held_episode": 0.3342013888888889,
+    "held_strict": 0.0,
+    "held_consistency": 0.005208333333333333,
+    "transfer_episode": 0.34375
+  },
+  {
+    "step": 46000,
+    "loss": 1.3004966974258423,
+    "held_episode": 0.3532986111111111,
+    "held_strict": 0.0,
+    "held_consistency": 0.0,
+    "transfer_episode": 0.3454861111111111
+  },
+  {
+    "step": 46500,
+    "loss": 1.254799246788025,
+    "held_episode": 0.3333333333333333,
+    "held_strict": 0.005208333333333333,
+    "held_consistency": 0.010416666666666666,
+    "transfer_episode": 0.3333333333333333
+  },
+  {
+    "step": 47000,
+    "loss": 1.2096471786499023,
+    "held_episode": 0.3515625,
+    "held_strict": 0.0,
+    "held_consistency": 0.0,
+    "transfer_episode": 0.34375
+  },
+  {
+    "step": 47500,
+    "loss": 1.1728805303573608,
+    "held_episode": 0.3463541666666667,
+    "held_strict": 0.0,
+    "held_consistency": 0.0,
+    "transfer_episode": 0.3402777777777778
+  },
+  {
+    "step": 48000,
+    "loss": 1.323896050453186,
+    "held_episode": 0.3420138888888889,
+    "held_strict": 0.005208333333333333,
+    "held_consistency": 0.015625,
+    "transfer_episode": 0.3368055555555556
+  },
+  {
+    "step": 48500,
+    "loss": 1.2974921464920044,
+    "held_episode": 0.34375,
+    "held_strict": 0.0,
+    "held_consistency": 0.0,
+    "transfer_episode": 0.3385416666666667
+  },
+  {
+    "step": 49000,
+    "loss": 1.2632278203964233,
+    "held_episode": 0.3472222222222222,
+    "held_strict": 0.005208333333333333,
+    "held_consistency": 0.005208333333333333,
+    "transfer_episode": 0.3454861111111111
+  },
+  {
+    "step": 49500,
+    "loss": 1.2245594263076782,
+    "held_episode": 0.3333333333333333,
+    "held_strict": 0.0,
+    "held_consistency": 0.005208333333333333,
+    "transfer_episode": 0.3454861111111111
+  },
+  {
+    "step": 50000,
+    "loss": 1.1938354969024658,
+    "held_episode": 0.3428819444444444,
+    "held_strict": 0.0,
+    "held_consistency": 0.0,
+    "transfer_episode": 0.3402777777777778
+  }
+]

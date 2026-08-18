@@ -1,0 +1,18 @@
+{
+  "property->symbol": {
+    "accuracy": 0.96875,
+    "orbit_consistency": 1.0
+  },
+  "symbol->person": {
+    "accuracy": 0.9965277777777778,
+    "orbit_consistency": 0.9895833333333334
+  },
+  "person->symbol": {
+    "accuracy": 0.3576388888888889,
+    "orbit_consistency": 0.8645833333333334
+  },
+  "composed_P": {
+    "accuracy": 0.34375,
+    "orbit_consistency": 0.0
+  }
+}

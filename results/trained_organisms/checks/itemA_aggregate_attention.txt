@@ -1,0 +1,205 @@
+========================================================================================
+PHASE 6 ITEM A — AGGREGATE ATTENTION DIAGNOSTIC
+256 held-out episodes per (seed, query type); arms: Phase 5 finals (generalising) + from-scratch T1 finals (comparison)
+declared cuts: contributing head >= 2.0x uniform; localised edge >= 0.25 & >= 5.0x; aggregate HIGH >= 2.0x, AT-BASELINE < 1.5x (see script docstring for the full rule)
+========================================================================================
+
+--- arm phase5 seed0 (ckpt step 50000) ---
+
+  [property->symbol] retrieval acc (masked, these episodes): 0.930
+    DIRECT arg->match: aggregate 0.124 vs uniform-aggregate 0.593 (0.21x) | max single head 0.066 at L2h2 (1.8x) localised=False
+    contributing heads (>= 2.0x uniform 0.0370): 0/16, layer hist {0: 0, 1: 0, 2: 0, 3: 0}
+    two-step L0->L1: head-mean 0.1538 (4.07x baseline 0.0378; no-self 0.1528) | head-pair max 0.5806 (15.35x) at hi-h0/lo-h0 | top intermediate: {'answer token (match+1)': 256}
+    two-step L1->L2: head-mean 0.0015 (0.04x baseline 0.0378; no-self 0.0009) | head-pair max 0.0039 (0.10x) at hi-h1/lo-h1 | top intermediate: {'query-arg': 160, 'other': 42, 'match itself': 28, 'relation token': 15, 'SEP': 5, 'answer token (match+1)': 4, 'other property': 1, 'other symbol': 1}
+    two-step L2->L3: head-mean 0.0193 (0.51x baseline 0.0378; no-self 0.0177) | head-pair max 0.0759 (2.01x) at hi-h0/lo-h2 | top intermediate: {'query-arg': 235, 'other property': 8, 'match itself': 7, 'relation token': 3, 'answer token (match+1)': 1, 'other symbol': 1, 'name': 1}
+    [suppl] arg->match+1 (answer token; canonical induction edge): aggregate 2.568 (4.33x), max single 0.699 at L1h0 (18.9x) localised=True, contributing 4/16 {0: 0, 1: 4, 2: 0, 3: 0}
+    [suppl] QMARK->match: aggregate 0.012 (0.02x), max single 0.004 at L1h1, contributing 0/16 {0: 0, 1: 0, 2: 0, 3: 0}; two-step head-mean x-baseline: L0L1=0.76x, L1L2=0.03x, L2L3=0.49x
+
+  [symbol->person] retrieval acc (masked, these episodes): 0.996
+    DIRECT arg->match: aggregate 0.854 vs uniform-aggregate 0.593 (1.44x) | max single head 0.253 at L1h0 (6.8x) localised=True
+    contributing heads (>= 2.0x uniform 0.0370): 4/16, layer hist {0: 0, 1: 4, 2: 0, 3: 0}, heads [(1, 0, 0.25255322456359863), (1, 1, 0.16058588027954102), (1, 2, 0.23059265315532684), (1, 3, 0.1316446214914322)]
+    two-step L0->L1: head-mean 0.0764 (2.17x baseline 0.0352; no-self 0.0387) | head-pair max 0.1434 (4.07x) at hi-h0/lo-h2 | top intermediate: {'other symbol': 133, 'match itself': 123}
+    two-step L1->L2: head-mean 0.0576 (1.63x baseline 0.0352; no-self 0.0563) | head-pair max 0.2382 (6.76x) at hi-h2/lo-h0 | top intermediate: {'other property': 130, 'query-arg': 83, 'relation token': 31, 'match itself': 7, 'other symbol': 2, 'answer token (match+1)': 2, 'other': 1}
+    two-step L2->L3: head-mean 0.0107 (0.30x baseline 0.0352; no-self 0.0107) | head-pair max 0.0432 (1.23x) at hi-h0/lo-h0 | top intermediate: {'query-arg': 256}
+    [suppl] arg->match+1 (answer token; canonical induction edge): aggregate 0.024 (0.04x), max single 0.021 at L2h0 (0.6x) localised=False, contributing 0/16 {0: 0, 1: 0, 2: 0, 3: 0}
+    [suppl] QMARK->match: aggregate 0.010 (0.02x), max single 0.003 at L0h0, contributing 0/16 {0: 0, 1: 0, 2: 0, 3: 0}; two-step head-mean x-baseline: L0L1=3.01x, L1L2=0.00x, L2L3=0.00x
+    [A_SN secondary] arg->HAS-target occurrence: aggregate 0.197 (0.33x), max 0.069, contributing 0/16
+
+--- arm phase5 seed1 (ckpt step 50000) ---
+
+  [property->symbol] retrieval acc (masked, these episodes): 0.949
+    DIRECT arg->match: aggregate 0.029 vs uniform-aggregate 0.593 (0.05x) | max single head 0.008 at L0h1 (0.2x) localised=False
+    contributing heads (>= 2.0x uniform 0.0370): 0/16, layer hist {0: 0, 1: 0, 2: 0, 3: 0}
+    two-step L0->L1: head-mean 0.1292 (3.46x baseline 0.0374; no-self 0.1282) | head-pair max 0.5701 (15.25x) at hi-h0/lo-h1 | top intermediate: {'answer token (match+1)': 255, 'other symbol': 1}
+    two-step L1->L2: head-mean 0.0079 (0.21x baseline 0.0374; no-self 0.0079) | head-pair max 0.0338 (0.90x) at hi-h2/lo-h2 | top intermediate: {'SEP': 182, 'query-arg': 68, 'other': 6}
+    two-step L2->L3: head-mean 0.0006 (0.02x baseline 0.0374; no-self 0.0006) | head-pair max 0.0022 (0.06x) at hi-h1/lo-h0 | top intermediate: {'query-arg': 212, 'other': 35, 'relation token': 7, 'match itself': 1, 'SEP': 1}
+    [suppl] arg->match+1 (answer token; canonical induction edge): aggregate 1.997 (3.37x), max single 0.695 at L1h0 (18.8x) localised=True, contributing 3/16 {0: 0, 1: 3, 2: 0, 3: 0}
+    [suppl] QMARK->match: aggregate 0.023 (0.04x), max single 0.012 at L1h2, contributing 0/16 {0: 0, 1: 0, 2: 0, 3: 0}; two-step head-mean x-baseline: L0L1=0.35x, L1L2=0.19x, L2L3=0.02x
+
+  [symbol->person] retrieval acc (masked, these episodes): 0.996
+    DIRECT arg->match: aggregate 0.089 vs uniform-aggregate 0.593 (0.15x) | max single head 0.024 at L1h1 (0.6x) localised=False
+    contributing heads (>= 2.0x uniform 0.0370): 0/16, layer hist {0: 0, 1: 0, 2: 0, 3: 0}
+    two-step L0->L1: head-mean 0.0170 (0.48x baseline 0.0352; no-self 0.0142) | head-pair max 0.0322 (0.91x) at hi-h2/lo-h2 | top intermediate: {'other symbol': 196, 'match itself': 37, 'query-arg': 21, 'relation token': 1, 'answer token (match+1)': 1}
+    two-step L1->L2: head-mean 0.0126 (0.36x baseline 0.0352; no-self 0.0126) | head-pair max 0.0240 (0.68x) at hi-h0/lo-h1 | top intermediate: {'query-arg': 198, 'SEP': 57, 'other property': 1}
+    two-step L2->L3: head-mean 0.0000 (0.00x baseline 0.0352; no-self 0.0000) | head-pair max 0.0000 (0.00x) at hi-h0/lo-h2 | top intermediate: {'query-arg': 255, 'relation token': 1}
+    [suppl] arg->match+1 (answer token; canonical induction edge): aggregate 0.014 (0.02x), max single 0.004 at L1h1 (0.1x) localised=False, contributing 0/16 {0: 0, 1: 0, 2: 0, 3: 0}
+    [suppl] QMARK->match: aggregate 0.024 (0.04x), max single 0.014 at L0h1, contributing 0/16 {0: 0, 1: 0, 2: 0, 3: 0}; two-step head-mean x-baseline: L0L1=2.94x, L1L2=0.08x, L2L3=0.01x
+    [A_SN secondary] arg->HAS-target occurrence: aggregate 0.639 (1.08x), max 0.253, contributing 3/16
+
+--- arm phase5 seed2 (ckpt step 50000) ---
+
+  [property->symbol] retrieval acc (masked, these episodes): 0.906
+    DIRECT arg->match: aggregate 0.199 vs uniform-aggregate 0.593 (0.34x) | max single head 0.121 at L3h1 (3.3x) localised=False
+    contributing heads (>= 2.0x uniform 0.0370): 1/16, layer hist {0: 0, 1: 0, 2: 0, 3: 1}, heads [(3, 1, 0.12149401754140854)]
+    two-step L0->L1: head-mean 0.1448 (3.65x baseline 0.0397; no-self 0.1445) | head-pair max 0.6822 (17.18x) at hi-h2/lo-h0 | top intermediate: {'answer token (match+1)': 252, 'other symbol': 4}
+    two-step L1->L2: head-mean 0.0006 (0.01x baseline 0.0397; no-self 0.0006) | head-pair max 0.0019 (0.05x) at hi-h3/lo-h2 | top intermediate: {'query-arg': 137, 'SEP': 59, 'other': 30, 'relation token': 17, 'other symbol': 6, 'other property': 4, 'answer token (match+1)': 2, 'match itself': 1}
+    two-step L2->L3: head-mean 0.0183 (0.46x baseline 0.0397; no-self 0.0089) | head-pair max 0.1539 (3.88x) at hi-h1/lo-h3 | top intermediate: {'query-arg': 129, 'match itself': 93, 'relation token': 27, 'other property': 4, 'name': 2, 'answer token (match+1)': 1}
+    [suppl] arg->match+1 (answer token; canonical induction edge): aggregate 2.242 (3.78x), max single 0.765 at L1h2 (20.7x) localised=True, contributing 4/16 {0: 0, 1: 4, 2: 0, 3: 0}
+    [suppl] QMARK->match: aggregate 0.058 (0.10x), max single 0.017 at L1h1, contributing 0/16 {0: 0, 1: 0, 2: 0, 3: 0}; two-step head-mean x-baseline: L0L1=0.65x, L1L2=0.05x, L2L3=0.26x
+
+  [symbol->person] retrieval acc (masked, these episodes): 1.000
+    DIRECT arg->match: aggregate 0.011 vs uniform-aggregate 0.593 (0.02x) | max single head 0.004 at L0h1 (0.1x) localised=False
+    contributing heads (>= 2.0x uniform 0.0370): 0/16, layer hist {0: 0, 1: 0, 2: 0, 3: 0}
+    two-step L0->L1: head-mean 0.1439 (3.77x baseline 0.0381; no-self 0.1438) | head-pair max 0.6738 (17.67x) at hi-h0/lo-h0 | top intermediate: {'answer token (match+1)': 256}
+    two-step L1->L2: head-mean 0.0003 (0.01x baseline 0.0381; no-self 0.0002) | head-pair max 0.0020 (0.05x) at hi-h3/lo-h3 | top intermediate: {'answer token (match+1)': 72, 'match itself': 62, 'query-arg': 56, 'name': 41, 'SEP': 17, 'other symbol': 8}
+    two-step L2->L3: head-mean 0.0004 (0.01x baseline 0.0381; no-self 0.0003) | head-pair max 0.0031 (0.08x) at hi-h1/lo-h2 | top intermediate: {'query-arg': 172, 'other property': 37, 'match itself': 18, 'relation token': 16, 'other symbol': 8, 'SEP': 3, 'other': 2}
+    [suppl] arg->match+1 (answer token; canonical induction edge): aggregate 2.498 (4.22x), max single 0.721 at L1h0 (19.5x) localised=True, contributing 4/16 {0: 0, 1: 4, 2: 0, 3: 0}
+    [suppl] QMARK->match: aggregate 0.213 (0.37x), max single 0.059 at L1h2, contributing 0/16 {0: 0, 1: 0, 2: 0, 3: 0}; two-step head-mean x-baseline: L0L1=1.07x, L1L2=0.21x, L2L3=0.00x
+    [A_SN secondary] arg->HAS-target occurrence: aggregate 0.031 (0.05x), max 0.008, contributing 0/16
+
+--- arm scratch seed0 (ckpt step 27500) ---
+
+  [property->symbol] retrieval acc (masked, these episodes): 0.383
+    DIRECT arg->match: aggregate 0.371 vs uniform-aggregate 0.593 (0.63x) | max single head 0.156 at L1h0 (4.2x) localised=False
+    contributing heads (>= 2.0x uniform 0.0370): 1/16, layer hist {0: 0, 1: 1, 2: 0, 3: 0}, heads [(1, 0, 0.15629972517490387)]
+    two-step L0->L1: head-mean 0.0274 (0.73x baseline 0.0378; no-self 0.0179) | head-pair max 0.1035 (2.74x) at hi-h0/lo-h2 | top intermediate: {'SEP': 103, 'match itself': 50, 'other': 47, 'other symbol': 29, 'relation token': 13, 'answer token (match+1)': 7, 'other property': 4, 'query-arg': 3}
+    two-step L1->L2: head-mean 0.0056 (0.15x baseline 0.0378; no-self 0.0055) | head-pair max 0.0220 (0.58x) at hi-h3/lo-h3 | top intermediate: {'SEP': 111, 'answer token (match+1)': 65, 'other symbol': 45, 'name': 17, 'match itself': 7, 'relation token': 6, 'other': 3, 'other property': 1, 'query-arg': 1}
+    two-step L2->L3: head-mean 0.0031 (0.08x baseline 0.0378; no-self 0.0015) | head-pair max 0.0280 (0.74x) at hi-h0/lo-h1 | top intermediate: {'SEP': 113, 'other symbol': 54, 'answer token (match+1)': 45, 'match itself': 31, 'query-arg': 7, 'other': 5, 'other property': 1}
+    [suppl] arg->match+1 (answer token; canonical induction edge): aggregate 0.203 (0.34x), max single 0.104 at L0h2 (2.8x) localised=False, contributing 1/16 {0: 1, 1: 0, 2: 0, 3: 0}
+    [suppl] QMARK->match: aggregate 0.422 (0.74x), max single 0.172 at L3h0, contributing 2/16 {0: 0, 1: 0, 2: 0, 3: 2}; two-step head-mean x-baseline: L0L1=0.77x, L1L2=0.18x, L2L3=0.37x
+
+  [symbol->person] retrieval acc (masked, these episodes): 0.316
+    DIRECT arg->match: aggregate 0.252 vs uniform-aggregate 0.593 (0.42x) | max single head 0.070 at L0h1 (1.9x) localised=False
+    contributing heads (>= 2.0x uniform 0.0370): 0/16, layer hist {0: 0, 1: 0, 2: 0, 3: 0}
+    two-step L0->L1: head-mean 0.0259 (0.73x baseline 0.0352; no-self 0.0240) | head-pair max 0.0772 (2.19x) at hi-h0/lo-h2 | top intermediate: {'match itself': 77, 'SEP': 68, 'other symbol': 38, 'relation token': 26, 'other property': 26, 'answer token (match+1)': 20, 'query-arg': 1}
+    two-step L1->L2: head-mean 0.0247 (0.70x baseline 0.0352; no-self 0.0241) | head-pair max 0.0598 (1.70x) at hi-h0/lo-h1 | top intermediate: {'SEP': 102, 'match itself': 52, 'other symbol': 29, 'relation token': 28, 'answer token (match+1)': 14, 'query-arg': 12, 'other property': 9, 'name': 6, 'other': 4}
+    two-step L2->L3: head-mean 0.0047 (0.13x baseline 0.0352; no-self 0.0046) | head-pair max 0.0099 (0.28x) at hi-h2/lo-h2 | top intermediate: {'SEP': 98, 'match itself': 82, 'other symbol': 46, 'answer token (match+1)': 7, 'other property': 6, 'query-arg': 5, 'other': 5, 'relation token': 5, 'name': 2}
+    [suppl] arg->match+1 (answer token; canonical induction edge): aggregate 0.154 (0.26x), max single 0.043 at L0h1 (1.2x) localised=False, contributing 0/16 {0: 0, 1: 0, 2: 0, 3: 0}
+    [suppl] QMARK->match: aggregate 0.074 (0.13x), max single 0.034 at L1h0, contributing 0/16 {0: 0, 1: 0, 2: 0, 3: 0}; two-step head-mean x-baseline: L0L1=0.43x, L1L2=0.69x, L2L3=0.09x
+    [A_SN secondary] arg->HAS-target occurrence: aggregate 0.162 (0.27x), max 0.085, contributing 1/16
+
+--- arm scratch seed1 (ckpt step 25000) ---
+
+  [property->symbol] retrieval acc (masked, these episodes): 0.332
+    DIRECT arg->match: aggregate 0.386 vs uniform-aggregate 0.593 (0.65x) | max single head 0.165 at L3h3 (4.5x) localised=False
+    contributing heads (>= 2.0x uniform 0.0370): 2/16, layer hist {0: 0, 1: 1, 2: 0, 3: 1}, heads [(1, 3, 0.10339932143688202), (3, 3, 0.165408656001091)]
+    two-step L0->L1: head-mean 0.0419 (1.12x baseline 0.0374; no-self 0.0407) | head-pair max 0.0925 (2.48x) at hi-h0/lo-h2 | top intermediate: {'other symbol': 109, 'SEP': 65, 'other': 50, 'answer token (match+1)': 16, 'name': 10, 'relation token': 3, 'other property': 2, 'match itself': 1}
+    two-step L1->L2: head-mean 0.0298 (0.80x baseline 0.0374; no-self 0.0297) | head-pair max 0.0772 (2.07x) at hi-h3/lo-h0 | top intermediate: {'SEP': 173, 'query-arg': 53, 'answer token (match+1)': 14, 'other symbol': 11, 'relation token': 3, 'other': 1, 'name': 1}
+    two-step L2->L3: head-mean 0.0162 (0.43x baseline 0.0374; no-self 0.0015) | head-pair max 0.1577 (4.22x) at hi-h3/lo-h2 | top intermediate: {'answer token (match+1)': 69, 'match itself': 59, 'SEP': 52, 'name': 31, 'other symbol': 29, 'relation token': 9, 'query-arg': 7}
+    [suppl] arg->match+1 (answer token; canonical induction edge): aggregate 0.349 (0.59x), max single 0.074 at L0h3 (2.0x) localised=False, contributing 1/16 {0: 1, 1: 0, 2: 0, 3: 0}
+    [suppl] QMARK->match: aggregate 0.321 (0.56x), max single 0.151 at L3h3, contributing 1/16 {0: 0, 1: 0, 2: 0, 3: 1}; two-step head-mean x-baseline: L0L1=0.86x, L1L2=0.58x, L2L3=0.36x
+
+  [symbol->person] retrieval acc (masked, these episodes): 0.336
+    DIRECT arg->match: aggregate 0.371 vs uniform-aggregate 0.593 (0.63x) | max single head 0.115 at L1h2 (3.1x) localised=False
+    contributing heads (>= 2.0x uniform 0.0370): 1/16, layer hist {0: 0, 1: 1, 2: 0, 3: 0}, heads [(1, 2, 0.11512403190135956)]
+    two-step L0->L1: head-mean 0.0445 (1.26x baseline 0.0352; no-self 0.0407) | head-pair max 0.1271 (3.61x) at hi-h2/lo-h1 | top intermediate: {'other symbol': 78, 'SEP': 59, 'other property': 39, 'relation token': 37, 'match itself': 24, 'other': 18, 'answer token (match+1)': 1}
+    two-step L1->L2: head-mean 0.0349 (0.99x baseline 0.0352; no-self 0.0304) | head-pair max 0.0978 (2.78x) at hi-h0/lo-h0 | top intermediate: {'SEP': 124, 'match itself': 40, 'other symbol': 31, 'answer token (match+1)': 25, 'query-arg': 12, 'other': 11, 'other property': 6, 'relation token': 6, 'name': 1}
+    two-step L2->L3: head-mean 0.0120 (0.34x baseline 0.0352; no-self 0.0041) | head-pair max 0.0511 (1.45x) at hi-h3/lo-h2 | top intermediate: {'match itself': 140, 'other symbol': 52, 'SEP': 27, 'answer token (match+1)': 17, 'query-arg': 11, 'relation token': 8, 'name': 1}
+    [suppl] arg->match+1 (answer token; canonical induction edge): aggregate 0.260 (0.44x), max single 0.065 at L0h3 (1.8x) localised=False, contributing 0/16 {0: 0, 1: 0, 2: 0, 3: 0}
+    [suppl] QMARK->match: aggregate 1.960 (3.43x), max single 0.305 at L2h0, contributing 8/16 {0: 2, 1: 2, 2: 3, 3: 1}; two-step head-mean x-baseline: L0L1=1.67x, L1L2=2.41x, L2L3=1.81x
+    [A_SN secondary] arg->HAS-target occurrence: aggregate 0.311 (0.52x), max 0.082, contributing 1/16
+
+--- arm scratch seed2 (ckpt step 29000) ---
+
+  [property->symbol] retrieval acc (masked, these episodes): 0.297
+    DIRECT arg->match: aggregate 0.363 vs uniform-aggregate 0.593 (0.61x) | max single head 0.168 at L2h1 (4.5x) localised=False
+    contributing heads (>= 2.0x uniform 0.0370): 1/16, layer hist {0: 0, 1: 0, 2: 1, 3: 0}, heads [(2, 1, 0.16812823712825775)]
+    two-step L0->L1: head-mean 0.0493 (1.24x baseline 0.0397; no-self 0.0482) | head-pair max 0.0995 (2.51x) at hi-h1/lo-h2 | top intermediate: {'answer token (match+1)': 116, 'other symbol': 52, 'other': 52, 'SEP': 24, 'query-arg': 9, 'relation token': 1, 'match itself': 1, 'name': 1}
+    two-step L1->L2: head-mean 0.0289 (0.73x baseline 0.0397; no-self 0.0289) | head-pair max 0.2293 (5.77x) at hi-h2/lo-h1 | top intermediate: {'relation token': 149, 'query-arg': 44, 'other': 31, 'SEP': 22, 'answer token (match+1)': 5, 'other symbol': 5}
+    two-step L2->L3: head-mean 0.0495 (1.25x baseline 0.0397; no-self 0.0494) | head-pair max 0.1984 (5.00x) at hi-h2/lo-h1 | top intermediate: {'name': 87, 'SEP': 61, 'other': 47, 'answer token (match+1)': 39, 'other symbol': 10, 'relation token': 10, 'match itself': 2}
+    [suppl] arg->match+1 (answer token; canonical induction edge): aggregate 0.451 (0.76x), max single 0.072 at L1h0 (2.0x) localised=False, contributing 0/16 {0: 0, 1: 0, 2: 0, 3: 0}
+    [suppl] QMARK->match: aggregate 0.007 (0.01x), max single 0.003 at L0h0, contributing 0/16 {0: 0, 1: 0, 2: 0, 3: 0}; two-step head-mean x-baseline: L0L1=0.89x, L1L2=1.29x, L2L3=0.16x
+
+  [symbol->person] retrieval acc (masked, these episodes): 0.238
+    DIRECT arg->match: aggregate 0.581 vs uniform-aggregate 0.593 (0.98x) | max single head 0.170 at L1h2 (4.6x) localised=False
+    contributing heads (>= 2.0x uniform 0.0370): 3/16, layer hist {0: 1, 1: 2, 2: 0, 3: 0}, heads [(0, 2, 0.14175604283809662), (1, 2, 0.16968929767608643), (1, 3, 0.13724954426288605)]
+    two-step L0->L1: head-mean 0.0688 (1.80x baseline 0.0381; no-self 0.0502) | head-pair max 0.1823 (4.78x) at hi-h2/lo-h1 | top intermediate: {'other symbol': 128, 'match itself': 101, 'query-arg': 18, 'answer token (match+1)': 9}
+    two-step L1->L2: head-mean 0.0983 (2.58x baseline 0.0381; no-self 0.0980) | head-pair max 0.1961 (5.14x) at hi-h1/lo-h3 | top intermediate: {'query-arg': 85, 'relation token': 74, 'SEP': 45, 'other property': 40, 'other symbol': 11, 'other': 1}
+    two-step L2->L3: head-mean 0.0284 (0.74x baseline 0.0381; no-self 0.0280) | head-pair max 0.1073 (2.81x) at hi-h0/lo-h2 | top intermediate: {'SEP': 125, 'other property': 60, 'other': 43, 'relation token': 17, 'match itself': 6, 'answer token (match+1)': 3, 'other symbol': 1, 'name': 1}
+    [suppl] arg->match+1 (answer token; canonical induction edge): aggregate 0.505 (0.85x), max single 0.220 at L3h2 (6.0x) localised=False, contributing 2/16 {0: 1, 1: 0, 2: 0, 3: 1}
+    [suppl] QMARK->match: aggregate 0.048 (0.08x), max single 0.012 at L1h2, contributing 0/16 {0: 0, 1: 0, 2: 0, 3: 0}; two-step head-mean x-baseline: L0L1=0.58x, L1L2=0.35x, L2L3=0.24x
+    [A_SN secondary] arg->HAS-target occurrence: aggregate 0.408 (0.69x), max 0.067, contributing 0/16
+
+--- arm scratch_L4_50k seed0 (ckpt step 50000) ---
+
+  [property->symbol] retrieval acc (masked, these episodes): 0.285
+    DIRECT arg->match: aggregate 0.169 vs uniform-aggregate 0.593 (0.29x) | max single head 0.117 at L0h2 (3.2x) localised=False
+    contributing heads (>= 2.0x uniform 0.0370): 1/16, layer hist {0: 1, 1: 0, 2: 0, 3: 0}, heads [(0, 2, 0.11738802492618561)]
+    two-step L0->L1: head-mean 0.0109 (0.29x baseline 0.0378; no-self 0.0109) | head-pair max 0.0377 (1.00x) at hi-h3/lo-h1 | top intermediate: {'SEP': 240, 'relation token': 15, 'answer token (match+1)': 1}
+    two-step L1->L2: head-mean 0.0023 (0.06x baseline 0.0378; no-self 0.0017) | head-pair max 0.0076 (0.20x) at hi-h3/lo-h3 | top intermediate: {'SEP': 148, 'answer token (match+1)': 46, 'other symbol': 25, 'name': 17, 'match itself': 12, 'query-arg': 7, 'relation token': 1}
+    two-step L2->L3: head-mean 0.0016 (0.04x baseline 0.0378; no-self 0.0016) | head-pair max 0.0106 (0.28x) at hi-h3/lo-h1 | top intermediate: {'answer token (match+1)': 121, 'SEP': 68, 'other symbol': 45, 'name': 21, 'query-arg': 1}
+    [suppl] arg->match+1 (answer token; canonical induction edge): aggregate 0.202 (0.34x), max single 0.071 at L0h1 (1.9x) localised=False, contributing 0/16 {0: 0, 1: 0, 2: 0, 3: 0}
+    [suppl] QMARK->match: aggregate 0.012 (0.02x), max single 0.003 at L0h0, contributing 0/16 {0: 0, 1: 0, 2: 0, 3: 0}; two-step head-mean x-baseline: L0L1=0.30x, L1L2=0.03x, L2L3=0.01x
+
+  [symbol->person] retrieval acc (masked, these episodes): 0.340
+    DIRECT arg->match: aggregate 0.163 vs uniform-aggregate 0.593 (0.28x) | max single head 0.044 at L0h0 (1.2x) localised=False
+    contributing heads (>= 2.0x uniform 0.0370): 0/16, layer hist {0: 0, 1: 0, 2: 0, 3: 0}
+    two-step L0->L1: head-mean 0.0134 (0.38x baseline 0.0352; no-self 0.0134) | head-pair max 0.0299 (0.85x) at hi-h3/lo-h0 | top intermediate: {'SEP': 235, 'other property': 15, 'relation token': 5, 'other': 1}
+    two-step L1->L2: head-mean 0.0102 (0.29x baseline 0.0352; no-self 0.0076) | head-pair max 0.0385 (1.09x) at hi-h0/lo-h3 | top intermediate: {'SEP': 139, 'match itself': 53, 'answer token (match+1)': 46, 'other symbol': 11, 'name': 7}
+    two-step L2->L3: head-mean 0.0005 (0.01x baseline 0.0352; no-self 0.0005) | head-pair max 0.0025 (0.07x) at hi-h3/lo-h2 | top intermediate: {'SEP': 74, 'relation token': 44, 'answer token (match+1)': 36, 'other': 34, 'other symbol': 26, 'match itself': 22, 'other property': 18, 'name': 1, 'query-arg': 1}
+    [suppl] arg->match+1 (answer token; canonical induction edge): aggregate 0.349 (0.59x), max single 0.262 at L2h1 (7.1x) localised=True, contributing 1/16 {0: 0, 1: 0, 2: 1, 3: 0}
+    [suppl] QMARK->match: aggregate 0.007 (0.01x), max single 0.004 at L1h3, contributing 0/16 {0: 0, 1: 0, 2: 0, 3: 0}; two-step head-mean x-baseline: L0L1=0.35x, L1L2=0.15x, L2L3=0.01x
+    [A_SN secondary] arg->HAS-target occurrence: aggregate 0.123 (0.21x), max 0.040, contributing 0/16
+
+--- arm scratch_L4_50k seed1 (ckpt step 50000) ---
+
+  [property->symbol] retrieval acc (masked, these episodes): 0.312
+    DIRECT arg->match: aggregate 0.203 vs uniform-aggregate 0.593 (0.34x) | max single head 0.088 at L1h3 (2.4x) localised=False
+    contributing heads (>= 2.0x uniform 0.0370): 1/16, layer hist {0: 0, 1: 1, 2: 0, 3: 0}, heads [(1, 3, 0.08796605467796326)]
+    two-step L0->L1: head-mean 0.0320 (0.86x baseline 0.0374; no-self 0.0305) | head-pair max 0.0827 (2.21x) at hi-h1/lo-h0 | top intermediate: {'other symbol': 77, 'answer token (match+1)': 57, 'other': 50, 'name': 42, 'SEP': 17, 'match itself': 9, 'query-arg': 2, 'other property': 1, 'relation token': 1}
+    two-step L1->L2: head-mean 0.0072 (0.19x baseline 0.0374; no-self 0.0067) | head-pair max 0.0688 (1.84x) at hi-h3/lo-h3 | top intermediate: {'query-arg': 210, 'relation token': 16, 'match itself': 8, 'SEP': 8, 'other symbol': 7, 'answer token (match+1)': 5, 'other property': 2}
+    two-step L2->L3: head-mean 0.0016 (0.04x baseline 0.0374; no-self 0.0015) | head-pair max 0.0092 (0.24x) at hi-h3/lo-h1 | top intermediate: {'name': 83, 'answer token (match+1)': 72, 'other symbol': 50, 'query-arg': 25, 'match itself': 15, 'SEP': 7, 'other property': 3, 'relation token': 1}
+    [suppl] arg->match+1 (answer token; canonical induction edge): aggregate 0.523 (0.88x), max single 0.207 at L1h1 (5.6x) localised=False, contributing 2/16 {0: 0, 1: 2, 2: 0, 3: 0}
+    [suppl] QMARK->match: aggregate 0.015 (0.03x), max single 0.004 at L0h0, contributing 0/16 {0: 0, 1: 0, 2: 0, 3: 0}; two-step head-mean x-baseline: L0L1=0.42x, L1L2=0.15x, L2L3=0.01x
+
+  [symbol->person] retrieval acc (masked, these episodes): 0.316
+    DIRECT arg->match: aggregate 0.148 vs uniform-aggregate 0.593 (0.25x) | max single head 0.046 at L3h2 (1.2x) localised=False
+    contributing heads (>= 2.0x uniform 0.0370): 0/16, layer hist {0: 0, 1: 0, 2: 0, 3: 0}
+    two-step L0->L1: head-mean 0.0284 (0.81x baseline 0.0352; no-self 0.0282) | head-pair max 0.0818 (2.32x) at hi-h2/lo-h0 | top intermediate: {'other property': 61, 'answer token (match+1)': 60, 'name': 57, 'other symbol': 49, 'SEP': 13, 'relation token': 13, 'match itself': 2, 'other': 1}
+    two-step L1->L2: head-mean 0.0190 (0.54x baseline 0.0352; no-self 0.0185) | head-pair max 0.0491 (1.39x) at hi-h0/lo-h2 | top intermediate: {'answer token (match+1)': 97, 'relation token': 69, 'other symbol': 40, 'query-arg': 16, 'name': 15, 'match itself': 13, 'other property': 3, 'SEP': 3}
+    two-step L2->L3: head-mean 0.0134 (0.38x baseline 0.0352; no-self 0.0110) | head-pair max 0.0565 (1.60x) at hi-h3/lo-h2 | top intermediate: {'answer token (match+1)': 93, 'relation token': 47, 'other symbol': 46, 'match itself': 43, 'name': 18, 'query-arg': 9}
+    [suppl] arg->match+1 (answer token; canonical induction edge): aggregate 0.735 (1.24x), max single 0.279 at L0h3 (7.5x) localised=True, contributing 3/16 {0: 1, 1: 2, 2: 0, 3: 0}
+    [suppl] QMARK->match: aggregate 0.014 (0.03x), max single 0.003 at L1h0, contributing 0/16 {0: 0, 1: 0, 2: 0, 3: 0}; two-step head-mean x-baseline: L0L1=0.41x, L1L2=0.02x, L2L3=0.00x
+    [A_SN secondary] arg->HAS-target occurrence: aggregate 0.450 (0.76x), max 0.121, contributing 3/16
+
+--- arm scratch_L4_50k seed2 (ckpt step 50000) ---
+
+  [property->symbol] retrieval acc (masked, these episodes): 0.309
+    DIRECT arg->match: aggregate 0.259 vs uniform-aggregate 0.593 (0.44x) | max single head 0.159 at L0h0 (4.3x) localised=False
+    contributing heads (>= 2.0x uniform 0.0370): 1/16, layer hist {0: 1, 1: 0, 2: 0, 3: 0}, heads [(0, 0, 0.15906813740730286)]
+    two-step L0->L1: head-mean 0.0425 (1.07x baseline 0.0397; no-self 0.0424) | head-pair max 0.0964 (2.43x) at hi-h1/lo-h2 | top intermediate: {'answer token (match+1)': 100, 'SEP': 91, 'name': 29, 'other symbol': 19, 'other': 9, 'query-arg': 7, 'relation token': 1}
+    two-step L1->L2: head-mean 0.0084 (0.21x baseline 0.0397; no-self 0.0084) | head-pair max 0.0289 (0.73x) at hi-h1/lo-h2 | top intermediate: {'SEP': 184, 'query-arg': 65, 'relation token': 5, 'other symbol': 2}
+    two-step L2->L3: head-mean 0.0000 (0.00x baseline 0.0397; no-self 0.0000) | head-pair max 0.0001 (0.00x) at hi-h3/lo-h3 | top intermediate: {'SEP': 95, 'name': 55, 'query-arg': 41, 'other symbol': 36, 'answer token (match+1)': 23, 'relation token': 5, 'other': 1}
+    [suppl] arg->match+1 (answer token; canonical induction edge): aggregate 0.240 (0.40x), max single 0.110 at L1h1 (3.0x) localised=False, contributing 1/16 {0: 0, 1: 1, 2: 0, 3: 0}
+    [suppl] QMARK->match: aggregate 0.053 (0.09x), max single 0.023 at L0h2, contributing 0/16 {0: 0, 1: 0, 2: 0, 3: 0}; two-step head-mean x-baseline: L0L1=1.06x, L1L2=0.21x, L2L3=0.00x
+
+  [symbol->person] retrieval acc (masked, these episodes): 0.312
+    DIRECT arg->match: aggregate 0.333 vs uniform-aggregate 0.593 (0.56x) | max single head 0.230 at L1h2 (6.2x) localised=False
+    contributing heads (>= 2.0x uniform 0.0370): 1/16, layer hist {0: 0, 1: 1, 2: 0, 3: 0}, heads [(1, 2, 0.23035883903503418)]
+    two-step L0->L1: head-mean 0.0506 (1.33x baseline 0.0381; no-self 0.0422) | head-pair max 0.2378 (6.24x) at hi-h2/lo-h0 | top intermediate: {'other symbol': 161, 'match itself': 78, 'answer token (match+1)': 8, 'other': 6, 'SEP': 2, 'query-arg': 1}
+    two-step L1->L2: head-mean 0.0031 (0.08x baseline 0.0381; no-self 0.0031) | head-pair max 0.0135 (0.35x) at hi-h2/lo-h2 | top intermediate: {'SEP': 151, 'query-arg': 88, 'other symbol': 7, 'match itself': 4, 'name': 3, 'relation token': 2, 'answer token (match+1)': 1}
+    two-step L2->L3: head-mean 0.0001 (0.00x baseline 0.0381; no-self 0.0001) | head-pair max 0.0003 (0.01x) at hi-h1/lo-h2 | top intermediate: {'SEP': 131, 'query-arg': 52, 'answer token (match+1)': 33, 'other symbol': 19, 'match itself': 15, 'name': 6}
+    [suppl] arg->match+1 (answer token; canonical induction edge): aggregate 0.542 (0.92x), max single 0.176 at L1h3 (4.8x) localised=False, contributing 3/16 {0: 0, 1: 2, 2: 0, 3: 1}
+    [suppl] QMARK->match: aggregate 2.022 (3.54x), max single 0.376 at L3h1, contributing 8/16 {0: 3, 1: 2, 2: 1, 3: 2}; two-step head-mean x-baseline: L0L1=2.16x, L1L2=1.44x, L2L3=0.53x
+    [A_SN secondary] arg->HAS-target occurrence: aggregate 0.257 (0.43x), max 0.143, contributing 1/16
+
+========================================================================================
+ADJUDICATION (phase5 arm; rule declared in the script docstring):
+  seed0 property->symbol   acc 0.930 | direct 0.21x comp 4.07x pair 15.35x | QMARK 0.02x comp 0.76x pair 2.51x -> HIGH (distributed/multi-step route present)
+  seed0 symbol->person     acc 0.996 | direct 1.44x comp 2.17x pair 6.76x | QMARK 0.02x comp 3.01x pair 12.54x -> HIGH (distributed/multi-step route present)
+  seed1 property->symbol   acc 0.949 | direct 0.05x comp 3.46x pair 15.25x | QMARK 0.04x comp 0.35x pair 0.91x -> HIGH (distributed/multi-step route present)
+  seed1 symbol->person     acc 0.996 | direct 0.15x comp 0.48x pair 0.91x | QMARK 0.04x comp 2.94x pair 15.74x -> INTERMEDIATE
+  seed2 property->symbol   acc 0.906 | direct 0.34x comp 3.65x pair 17.18x | QMARK 0.10x comp 0.65x pair 1.32x -> HIGH (distributed/multi-step route present)
+  seed2 symbol->person     acc 1.000 | direct 0.02x comp 3.77x pair 17.67x | QMARK 0.37x comp 1.07x pair 1.65x -> HIGH (distributed/multi-step route present)
+
+OVERALL: HIGH in some conditions, INTERMEDIATE in others

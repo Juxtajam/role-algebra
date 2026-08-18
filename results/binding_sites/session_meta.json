@@ -1,0 +1,10 @@
+{
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "revision": "495f39366efef23836d0cfae4fbe635880d2be31",
+  "gpu": "A100-80GB:2",
+  "frozen_hash": "84f2e54d85d6e8aa4c1474b608bef5ab69babe54353ef0ef2702d9f6ed38baef",
+  "joint_hash": "422b8fb97a255092cb5e3934a69e0ad7746bf891052a1edd125c3f1057933db2",
+  "cached": false,
+  "wall_hours": 0.114,
+  "est_cost_usd": 0.57
+}

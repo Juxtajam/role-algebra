@@ -1,0 +1,179 @@
+{
+ "sources": [
+  "results/phase8a_final/gate_results.json",
+  "results/phase9/gate_local/gate_results.json",
+  "phase10/trackA/gate/gate_results.json",
+  "phase10/trackA2/gate/gate_results.json"
+ ],
+ "rows": [
+  {
+   "model": "Qwen2.5-72B (8A frozen)",
+   "cell": "P/fit",
+   "episode_acc": 1.0,
+   "strict_orbit": 1.0,
+   "orbit_consistency": 1.0,
+   "ep_minus_strict": 0.0,
+   "hidden_by_episode_acc": false,
+   "caveat": null
+  },
+  {
+   "model": "Qwen2.5-72B (8A frozen)",
+   "cell": "P/transfer",
+   "episode_acc": 1.0,
+   "strict_orbit": 1.0,
+   "orbit_consistency": 1.0,
+   "ep_minus_strict": 0.0,
+   "hidden_by_episode_acc": false,
+   "caveat": null
+  },
+  {
+   "model": "Qwen2.5-72B (8A frozen)",
+   "cell": "G/fit",
+   "episode_acc": 0.9883333333333333,
+   "strict_orbit": 0.98,
+   "orbit_consistency": 0.99,
+   "ep_minus_strict": 0.0083,
+   "hidden_by_episode_acc": false,
+   "caveat": null
+  },
+  {
+   "model": "Qwen2.5-72B (8A frozen)",
+   "cell": "G/transfer",
+   "episode_acc": 0.9833333333333333,
+   "strict_orbit": 0.97,
+   "orbit_consistency": 0.97,
+   "ep_minus_strict": 0.0133,
+   "hidden_by_episode_acc": false,
+   "caveat": null
+  },
+  {
+   "model": "Qwen2.5-72B (9 joint-perm)",
+   "cell": "P/fit",
+   "episode_acc": 1.0,
+   "strict_orbit": 1.0,
+   "orbit_consistency": 1.0,
+   "ep_minus_strict": 0.0,
+   "hidden_by_episode_acc": false,
+   "caveat": null
+  },
+  {
+   "model": "Qwen2.5-72B (9 joint-perm)",
+   "cell": "P/transfer",
+   "episode_acc": 1.0,
+   "strict_orbit": 1.0,
+   "orbit_consistency": 1.0,
+   "ep_minus_strict": 0.0,
+   "hidden_by_episode_acc": false,
+   "caveat": null
+  },
+  {
+   "model": "Qwen2.5-72B (9 joint-perm)",
+   "cell": "G/fit",
+   "episode_acc": 0.9844444444444445,
+   "strict_orbit": 0.9333333333333333,
+   "orbit_consistency": 0.9333333333333333,
+   "ep_minus_strict": 0.0511,
+   "hidden_by_episode_acc": false,
+   "caveat": null
+  },
+  {
+   "model": "Qwen2.5-72B (9 joint-perm)",
+   "cell": "G/transfer",
+   "episode_acc": 0.9877777777777778,
+   "strict_orbit": 0.94,
+   "orbit_consistency": 0.94,
+   "ep_minus_strict": 0.0478,
+   "hidden_by_episode_acc": false,
+   "caveat": null
+  },
+  {
+   "model": "Nemotron-70B (10A)",
+   "cell": "P/fit",
+   "episode_acc": 0.9516666666666667,
+   "strict_orbit": 0.85,
+   "orbit_consistency": 0.85,
+   "ep_minus_strict": 0.1017,
+   "hidden_by_episode_acc": true,
+   "caveat": "Nemotron P-cell gap is the pre-D10 markdown-asterisk scorer artifact (D10: P/fit->1.000, P/transfer->1.000), not genuine orbit inconsistency"
+  },
+  {
+   "model": "Nemotron-70B (10A)",
+   "cell": "P/transfer",
+   "episode_acc": 0.9083333333333333,
+   "strict_orbit": 0.76,
+   "orbit_consistency": 0.76,
+   "ep_minus_strict": 0.1483,
+   "hidden_by_episode_acc": false,
+   "caveat": "Nemotron P-cell gap is the pre-D10 markdown-asterisk scorer artifact (D10: P/fit->1.000, P/transfer->1.000), not genuine orbit inconsistency"
+  },
+  {
+   "model": "Nemotron-70B (10A)",
+   "cell": "G/fit",
+   "episode_acc": 0.9333333333333333,
+   "strict_orbit": 0.87,
+   "orbit_consistency": 0.91,
+   "ep_minus_strict": 0.0633,
+   "hidden_by_episode_acc": false,
+   "caveat": null
+  },
+  {
+   "model": "Nemotron-70B (10A)",
+   "cell": "G/transfer",
+   "episode_acc": 0.9633333333333334,
+   "strict_orbit": 0.93,
+   "orbit_consistency": 0.94,
+   "ep_minus_strict": 0.0333,
+   "hidden_by_episode_acc": false,
+   "caveat": null
+  },
+  {
+   "model": "Llama-3.3-70B (10A)",
+   "cell": "P/fit",
+   "episode_acc": 1.0,
+   "strict_orbit": 1.0,
+   "orbit_consistency": 1.0,
+   "ep_minus_strict": 0.0,
+   "hidden_by_episode_acc": false,
+   "caveat": null
+  },
+  {
+   "model": "Llama-3.3-70B (10A)",
+   "cell": "P/transfer",
+   "episode_acc": 1.0,
+   "strict_orbit": 1.0,
+   "orbit_consistency": 1.0,
+   "ep_minus_strict": 0.0,
+   "hidden_by_episode_acc": false,
+   "caveat": null
+  },
+  {
+   "model": "Llama-3.3-70B (10A)",
+   "cell": "G/fit",
+   "episode_acc": 0.93,
+   "strict_orbit": 0.83,
+   "orbit_consistency": 0.83,
+   "ep_minus_strict": 0.1,
+   "hidden_by_episode_acc": false,
+   "caveat": null
+  },
+  {
+   "model": "Llama-3.3-70B (10A)",
+   "cell": "G/transfer",
+   "episode_acc": 0.9433333333333334,
+   "strict_orbit": 0.9,
+   "orbit_consistency": 0.92,
+   "ep_minus_strict": 0.0433,
+   "hidden_by_episode_acc": false,
+   "caveat": null
+  }
+ ],
+ "summary": {
+  "n_cells": 16,
+  "max_ep_minus_strict": 0.1,
+  "mean_ep_minus_strict": 0.0257,
+  "n_cells_episode_pass_but_strict_fail": 0,
+  "cells_hidden": [],
+  "max_genuine_gap_cell": "Llama-3.3-70B (10A) G/fit",
+  "reading": "Excluding the Nemotron pre-D10 markdown artifact, episode accuracy overstates orbit competence by up to 0.100 on genuine cells. The sharpest genuine case is Qwen2.5-72B under joint permutation (G-cells): episode accuracy 0.984/0.988 reads as near-ceiling, while strict-orbit 0.933/0.940 exposes the role-consistency failure that carried the Phase 9 H_retrieval_everywhere finding. A gate on episode accuracy alone would have passed it. This is why the gate is conjunctive over all three metrics."
+ }
+}

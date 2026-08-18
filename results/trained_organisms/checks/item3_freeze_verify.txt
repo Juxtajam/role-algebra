@@ -1,0 +1,39 @@
+==============================================================================
+A) FIXED optimizer (explicit no-decay group for emb_names) — 2000 steps
+==============================================================================
+  step   200  loss 2.532  name-row norm ratio mean 1.000000000 (min 1.000000000 max 1.000000000)
+  step   400  loss 2.073  name-row norm ratio mean 1.000000000 (min 1.000000000 max 1.000000000)
+  step   600  loss 1.937  name-row norm ratio mean 1.000000000 (min 1.000000000 max 1.000000000)
+  step   800  loss 1.780  name-row norm ratio mean 1.000000000 (min 1.000000000 max 1.000000000)
+  step  1000  loss 1.766  name-row norm ratio mean 1.000000000 (min 1.000000000 max 1.000000000)
+  step  1200  loss 1.741  name-row norm ratio mean 1.000000000 (min 1.000000000 max 1.000000000)
+  step  1400  loss 1.670  name-row norm ratio mean 1.000000000 (min 1.000000000 max 1.000000000)
+  step  1600  loss 1.631  name-row norm ratio mean 1.000000000 (min 1.000000000 max 1.000000000)
+  step  1800  loss 1.560  name-row norm ratio mean 1.000000000 (min 1.000000000 max 1.000000000)
+  step  2000  loss 1.475  name-row norm ratio mean 1.000000000 (min 1.000000000 max 1.000000000)
+  bit-exact name rows after 2000 steps: True (max |diff| = 0.000e+00)
+
+==============================================================================
+B) LEGACY control (single-group AdamW wd=0.01, the old fault) — 2000 steps
+==============================================================================
+  step   200  loss 2.533  name-row norm ratio mean 0.999598086 (min 0.999597430 max 0.999598265)
+  step   400  loss 2.076  name-row norm ratio mean 0.998397291 (min 0.998396337 max 0.998397529)
+  step   600  loss 2.052  name-row norm ratio mean 0.996499658 (min 0.996498168 max 0.996501148)
+  step   800  loss 1.914  name-row norm ratio mean 0.994506001 (min 0.994503796 max 0.994508564)
+  step  1000  loss 1.789  name-row norm ratio mean 0.992516339 (min 0.992513597 max 0.992518961)
+  step  1200  loss 1.773  name-row norm ratio mean 0.990530610 (min 0.990528345 max 0.990532994)
+  step  1400  loss 1.747  name-row norm ratio mean 0.988548875 (min 0.988547027 max 0.988550663)
+  step  1600  loss 1.701  name-row norm ratio mean 0.986571014 (min 0.986569345 max 0.986572742)
+  step  1800  loss 1.661  name-row norm ratio mean 0.984597206 (min 0.984595239 max 0.984599411)
+  step  2000  loss 1.619  name-row norm ratio mean 0.982638836 (min 0.982635736 max 0.982642412)
+  expected analytic shrink prod(1-lr_t*wd) = 0.982657801 ; observed mean = 0.982638836
+
+==============================================================================
+C) COMPATIBILITY with existing checkpoints / init reconstruction
+==============================================================================
+  legacy ckpt (static_pool/T1_static/seed0, step 50000) loaded into new class: missing=[] unexpected=[]
+  round-trip on TRAINED ckpt: full-vocab argmax 0.079, restricted-to-name-rows argmax 1.000 (measured, informative only; init-model round-trip asserted 1.000 in runs A/B)
+  cos(new-class init name rows, ckpt name rows): min 0.999999821 mean 1.000000000
+  ckpt/init name-row norm ratio (legacy decay fingerprint): mean 0.769197 std 1.03e-05
+
+VERDICT: PASS — name-row norms bit-exact constant under the fixed optimizer; legacy control reproduces the decay fault; checkpoints compatible.

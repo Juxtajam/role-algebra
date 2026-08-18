@@ -1,0 +1,244 @@
+{
+  "condition5": {
+    "gpu": "A100-80GB:2 @ $5.00/h, single session, model loads once",
+    "nulls": {
+      "eval": "P/transfer CAL bases",
+      "fit": "P/fit CAL bases",
+      "identity": true,
+      "shuffled_seeds": [
+        61,
+        2061,
+        4061,
+        6061,
+        8061,
+        10061,
+        12061,
+        14061,
+        16061,
+        18061
+      ]
+    },
+    "procedure": "patch-and-continue at the frozen patch layer: replace resid_post[patch_layer] at the answer position (last prompt token) of episode y=a.g's forward pass with R_a x_L(g), cast bf16; continue; greedy decode (8A rendering/decoding conventions verbatim); transport_agree = mean(pred_patch == pred_nat) with pred_nat = stored 8A-final natural preds (declared reuse; deterministic greedy, identical model)",
+    "real": {
+      "eval": "P/transfer TEST bases",
+      "fit": "P/fit TEST bases",
+      "note": "frozen all_perms[:2]",
+      "perms_per_base": 2
+    },
+    "threshold_rule": "tau(transport_agree) = (1-0.05) quantile of the pooled cal-split null transports (frozen quantile logic, gt), computed by this pre-committed rule before real transports feed the verdict"
+  },
+  "content_hash": "84f2e54d85d6e8aa4c1474b608bef5ab69babe54353ef0ef2702d9f6ed38baef",
+  "decodability_all_cells": {
+    "G/fit": 62,
+    "G/transfer": 62,
+    "P/fit": 61,
+    "P/transfer": 62
+  },
+  "evaluation": "single evaluation on the test split; no layer/lambda/threshold selection after test results are seen",
+  "first_decodable_P_fit": 61,
+  "fpr_target": 0.05,
+  "frozen_at": "2026-08-08 00:53:41",
+  "lam_grid": [
+    1e-05,
+    0.0001,
+    0.001,
+    0.01,
+    0.1,
+    1.0
+  ],
+  "lambda": 1.0,
+  "lambda_rule": "argmin over grid of min-over-80-layers cal transfer err (frozen calibrate_system rule)",
+  "layer": 61,
+  "layer_rule": "min(argmin cal transfer err at lambda*, first_decodable(P/fit cal)) \u2014 frozen select_layer",
+  "matched_regime": {
+    "d_model": 8192,
+    "n_fit_bases": 150,
+    "n_fit_pairs_per_generator": 900,
+    "no_retrieval_null": "declared: no S-retrieval analog exists for a pretrained LM (Stage-2 precedent)",
+    "null_modes": {
+      "identity": {
+        "note": "deterministic on cached activations",
+        "reps": 1
+      },
+      "shuffled": {
+        "reps": 10,
+        "seed_rule": "2000*rep+layer (frozen)"
+      }
+    },
+    "statement": "Null fits use identical sample count (900 pairs/generator = 150 P/fit bases x 6 perms; cal and test splits have identical base counts by construction), identical frozen lambda (grid identical to the real-fit grid), and the identical frozen layer set as the real test-phase fits. Thresholds at any other sample-to-dimension ratio are void and none are used."
+  },
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "multiple_comparison_rule": "The verdict is a SINGLE evaluation at the frozen layer 61 at FPR 0.05 (no cross-layer selection -> no correction needed for the verdict). The descriptive per-layer reporting table over the frozen 12-layer set uses Bonferroni-corrected thresholds at FPR 0.05/12 (thresholds_bonferroni), stated in advance.",
+  "patch_layer": 61,
+  "phase": "8C",
+  "probes": {
+    "availability_by_layer": {
+      "0": {
+        "available": false,
+        "content_acc": 0.6688888888888889,
+        "role_acc": 0.34444444444444444
+      },
+      "8": {
+        "available": false,
+        "content_acc": 0.7133333333333334,
+        "role_acc": 0.33555555555555555
+      },
+      "16": {
+        "available": false,
+        "content_acc": 0.74,
+        "role_acc": 0.34
+      },
+      "24": {
+        "available": false,
+        "content_acc": 0.6622222222222223,
+        "role_acc": 0.3511111111111111
+      },
+      "32": {
+        "available": false,
+        "content_acc": 0.5688888888888889,
+        "role_acc": 0.34444444444444444
+      },
+      "40": {
+        "available": false,
+        "content_acc": 0.5555555555555556,
+        "role_acc": 0.3511111111111111
+      },
+      "48": {
+        "available": false,
+        "content_acc": 0.5666666666666667,
+        "role_acc": 0.35333333333333333
+      },
+      "56": {
+        "available": false,
+        "content_acc": 0.4177777777777778,
+        "role_acc": 0.6177777777777778
+      },
+      "61": {
+        "available": false,
+        "content_acc": 0.29777777777777775,
+        "role_acc": 0.8977777777777778
+      },
+      "64": {
+        "available": false,
+        "content_acc": 0.32,
+        "role_acc": 1.0
+      },
+      "72": {
+        "available": false,
+        "content_acc": 0.46,
+        "role_acc": 1.0
+      },
+      "79": {
+        "available": false,
+        "content_acc": 0.3422222222222222,
+        "role_acc": 1.0
+      }
+    },
+    "availability_rule": "both probes >= 0.9 held-out at the verdict layer, else C6 unavailable",
+    "content": "12-way mark probe, trained P/fit cal (all 150 bases), frozen _fit_probe",
+    "role": "episode-local 12-way name probe, trained on first half of P/transfer cal bases, availability on second half; DECLARED adaptation (vocabulary-dependent answer classes)"
+  },
+  "reporting_layer_set": [
+    0,
+    8,
+    16,
+    24,
+    32,
+    40,
+    48,
+    56,
+    61,
+    64,
+    72,
+    79
+  ],
+  "revision": "495f39366efef23836d0cfae4fbe635880d2be31",
+  "spectrum_diagnostic": {
+    "rank_cut": 0.1,
+    "rank_cut_basis": "frozen 8B value, applied to CENTERED u spectrum (declared: raw spectrum is dominated by the grand activation mean in a pretrained LM)",
+    "report": "raw-span and centered-span inv-dims both reported; caveat: the u-sum direction conflates content mean with a trivial summand in a pretrained LM",
+    "role": "conditional on H_role; never gates the verdict",
+    "tau_inv_rule": "0.05 quantile of stacked-min-sv over the shuffled-null fits at the verdict layer (recalibrated per 8B section 2.5)",
+    "u_vectors": "slot-conditional activation means, P/fit CAL bases, verdict layer"
+  },
+  "splits_file": "splits.json",
+  "thresholds": {
+    "content_transfer_err": {
+      "dir": "lt",
+      "null_n": 120,
+      "tau": 1.3695955205796717
+    },
+    "crosspath_err": {
+      "dir": "lt",
+      "null_n": 120,
+      "tau": 1.6592365431636085
+    },
+    "law_braid_defect": {
+      "dir": "lt",
+      "null_n": 120,
+      "tau": 0.000508120904867769
+    },
+    "law_inv_defect": {
+      "dir": "lt",
+      "null_n": 120,
+      "tau": 0.002131937550662754
+    },
+    "noncommute": {
+      "dir": "gt",
+      "null_n": 12,
+      "tau": 0.0
+    },
+    "nontriv": {
+      "dir": "gt",
+      "null_n": 12,
+      "tau": 0.11494681474007247
+    },
+    "support_mass_lex": {
+      "dir": "lt",
+      "null_n": 132,
+      "tau": 0.0002445311819029563
+    }
+  },
+  "thresholds_bonferroni": {
+    "content_transfer_err": {
+      "dir": "lt",
+      "null_n": 120,
+      "tau": 1.3633702666030623
+    },
+    "crosspath_err": {
+      "dir": "lt",
+      "null_n": 120,
+      "tau": 1.6397008451646904
+    },
+    "law_braid_defect": {
+      "dir": "lt",
+      "null_n": 120,
+      "tau": 0.0005781779081065058
+    },
+    "law_inv_defect": {
+      "dir": "lt",
+      "null_n": 120,
+      "tau": 0.0021288678785855177
+    },
+    "noncommute": {
+      "dir": "gt",
+      "null_n": 12,
+      "tau": 0.0
+    },
+    "nontriv": {
+      "dir": "gt",
+      "null_n": 12,
+      "tau": 0.1574230395645075
+    },
+    "support_mass_lex": {
+      "dir": "lt",
+      "null_n": 132,
+      "tau": 0.00024522330219565043
+    }
+  },
+  "verdict_space": {
+    "H_retrieval": "any condition fails (in particular C1 or C2 failing cleanly)",
+    "H_role": "all conditions pass and C1/C2/C5 available (frozen verdict_and_score)",
+    "inconclusive": "mandatory condition unavailable (probe unavailability, conditioning failure) \u2014 blocking condition named"
+  }
+}

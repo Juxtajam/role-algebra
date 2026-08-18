@@ -1,0 +1,141 @@
+{
+  "config_sha256": "d9e0def3cb03b204aa2545344b5d595282fe1657df335cd3e98881fce9a8d2cb",
+  "reproduction": {
+    "all_exact": true,
+    "checks": {
+      "content_transfer_err": [
+        1.1858577458621065,
+        1.1858577458621062
+      ],
+      "crosspath_err": [
+        3.4073253805277615,
+        3.4073253805277615
+      ],
+      "law_inv_defect": [
+        0.026485328321362505,
+        0.02648532832136252
+      ],
+      "law_braid_defect": [
+        7.191315214029369e-05,
+        7.191315214029369e-05
+      ],
+      "nontriv": [
+        0.023500926175487005,
+        0.02350092617548702
+      ],
+      "noncommute": [
+        0.00010175482565950439,
+        0.00010175482565950442
+      ],
+      "support_mass_lex": [
+        0.0002442527143675167,
+        0.0002442527143675167
+      ],
+      "refit_content_transfer_err": [
+        1.1858577458621062,
+        1.1858577458621062
+      ],
+      "refit_crosspath_err": [
+        3.4073253805277615,
+        3.4073253805277615
+      ],
+      "transport_agree": [
+        1.0,
+        1.0
+      ]
+    }
+  },
+  "transport": {
+    "agree_real": 1.0,
+    "ci": [
+      1.0,
+      1.0
+    ],
+    "null_agrees": [
+      0.9383333333333334,
+      0.9383333333333334,
+      0.945,
+      0.95,
+      0.9533333333333334,
+      0.955,
+      0.9583333333333334,
+      0.96,
+      0.9633333333333334,
+      0.97,
+      0.995
+    ],
+    "tau": 0.9824999999999999,
+    "n_items": 600,
+    "n_bases": 150,
+    "harness": {
+      "unpatched": 24,
+      "self_patch": 24
+    },
+    "wall_hours": 0.226,
+    "est_cost_usd": 1.13
+  },
+  "thresholds_applied": {
+    "content_transfer_err": {
+      "dir": "lt",
+      "null_n": 120,
+      "tau": 1.3695955205796717
+    },
+    "crosspath_err": {
+      "dir": "lt",
+      "null_n": 120,
+      "tau": 1.6592365431636085
+    },
+    "law_braid_defect": {
+      "dir": "lt",
+      "null_n": 120,
+      "tau": 0.000508120904867769
+    },
+    "law_inv_defect": {
+      "dir": "lt",
+      "null_n": 120,
+      "tau": 0.002131937550662754
+    },
+    "noncommute": {
+      "dir": "gt",
+      "null_n": 12,
+      "tau": 0.0
+    },
+    "nontriv": {
+      "dir": "gt",
+      "null_n": 12,
+      "tau": 0.11494681474007247
+    },
+    "support_mass_lex": {
+      "dir": "lt",
+      "null_n": 132,
+      "tau": 0.0002445311819029563
+    },
+    "transport_agree": {
+      "dir": "gt",
+      "tau": 0.9824999999999999,
+      "null_n": 11
+    }
+  },
+  "metrics": {
+    "content_transfer_err": 1.1858577458621062,
+    "crosspath_err": 3.4073253805277615,
+    "law_inv_defect": 0.02648532832136252,
+    "law_braid_defect": 7.191315214029369e-05,
+    "nontriv": 0.02350092617548702,
+    "noncommute": 0.00010175482565950442,
+    "support_mass_lex": 0.0002442527143675167,
+    "transport_agree": 1.0,
+    "probe_content_keep": null,
+    "probe_role_perm": null
+  },
+  "conditions": {
+    "C1_content_transfer": "pass",
+    "C2_crosspath": "fail",
+    "C3_group_laws": "fail",
+    "C4_nontriviality": "fail",
+    "C5_causal_transport": "pass",
+    "C6_content_preserve": "unavailable"
+  },
+  "verdict": "H_retrieval",
+  "score": 2.972541157006959
+}

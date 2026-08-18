@@ -1,0 +1,47 @@
+{
+  "model": "Qwen/Qwen3-32B",
+  "gate_thresholds": {
+    "episode_acc": 0.95,
+    "strict_orbit": 0.9,
+    "orbit_consistency": 0.95
+  },
+  "cells": {
+    "P/fit": {
+      "episode_acc": 0.9983333333333333,
+      "strict_orbit": 0.99,
+      "orbit_consistency": 0.99,
+      "passed": true,
+      "n_bases": 100,
+      "n_eps": 600,
+      "seconds": 25.9
+    },
+    "P/transfer": {
+      "episode_acc": 1.0,
+      "strict_orbit": 1.0,
+      "orbit_consistency": 1.0,
+      "passed": true,
+      "n_bases": 100,
+      "n_eps": 600,
+      "seconds": 23.9
+    },
+    "G/fit": {
+      "episode_acc": 0.9166666666666666,
+      "strict_orbit": 0.87,
+      "orbit_consistency": 0.91,
+      "passed": false,
+      "n_bases": 100,
+      "n_eps": 600,
+      "seconds": 27.9
+    },
+    "G/transfer": {
+      "episode_acc": 0.8916666666666667,
+      "strict_orbit": 0.8,
+      "orbit_consistency": 0.86,
+      "passed": false,
+      "n_bases": 100,
+      "n_eps": 600,
+      "seconds": 28.5
+    }
+  },
+  "gate_passed": false
+}

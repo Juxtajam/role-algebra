@@ -1,0 +1,94 @@
+{
+ "arm_comparison": {
+  "primary": "Fisher exact one-tailed on H_role_both rates (R > C)",
+  "secondary": "Mann-Whitney U one-tailed on answer content_transfer_err (R < C), exact by permutation"
+ },
+ "arms": [
+  "R",
+  "C"
+ ],
+ "bootstrap": {
+  "n": 10000,
+  "seed": 20260807
+ },
+ "c5_per_base": 2,
+ "combined_verdict": "H_role per seed requires H_role at answer AND carry",
+ "d_model": 128,
+ "design": "phase10/trackB/discriminator_design.md",
+ "deviations": [
+  "D18",
+  "D19"
+ ],
+ "eval_sets": {
+  "disc_G_fit": {
+   "n_bases": 600,
+   "qtok": "Q_G",
+   "seed": 7300,
+   "vocab": "fit"
+  },
+  "disc_P_fit": {
+   "n_bases": 600,
+   "qtok": "Q_P",
+   "seed": 7100,
+   "vocab": "fit"
+  },
+  "disc_P_transfer": {
+   "n_bases": 600,
+   "qtok": "Q_P",
+   "seed": 7200,
+   "vocab": "transfer"
+  }
+ },
+ "fit_split": "generators fitted on disc_P_fit TEST bases (8C precedent); cal split used only for lambda/layer/thresholds/probe training",
+ "fpr": 0.05,
+ "joint_sets": "same bases/seeds as disc_P_fit and disc_P_transfer, joint=True (C7 DESCRIPTIVE only per D19-iii)",
+ "k": 3,
+ "lambda_grid": [
+  1e-05,
+  0.0001,
+  0.001,
+  0.01,
+  0.1,
+  1.0
+ ],
+ "lambda_rule": "per (arm, position class): argmin over grid of mean-over-gated-seeds cal transfer error at the best layer",
+ "layer_rule": "per (arm, position class): min(argmin mean cal transfer err over layers, max first-decodable over gated seeds) \u2014 8C rule",
+ "n_layers": 8,
+ "n_shuffled_nulls": 10,
+ "null_seeds": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9
+ ],
+ "null_sources": {
+  "content_transfer_err": "shuffled",
+  "crosspath_err": "shuffled",
+  "law_braid_defect": "shuffled",
+  "law_inv_defect": "shuffled",
+  "noncommute": "identity",
+  "nontriv": "identity",
+  "probe_content_keep": "shuffled",
+  "probe_role_perm": "shuffled",
+  "support_mass_lex": "shuffled",
+  "transport_agree": "shuffled+identity 0.95q pre-committed"
+ },
+ "organism_gate": "FORMED_final per D18: pure Q_P held-out episode acc >= 0.5 at the final checkpoint; discriminator runs only on gated (seed, arm) pairs; stop rule 1.3(c): no discriminator at all unless some arm has >= 3 gated checkpoints",
+ "position_classes": [
+  "answer",
+  "entity_mention_carry"
+ ],
+ "spectrum": {
+  "rank_cut": 0.1,
+  "tau_inv_quantile": 0.05
+ },
+ "split_rule": "strict-orbit-correct filter per set, then even index -> cal, odd index -> test, on the filtered universe (design 5.2)",
+ "threshold_pooling": "null values pooled across gated seeds per (arm, position, verdict layer); frozen quantile logic from src/shared/calibrate.py",
+ "verdict_logic": "frozen src evaluate_conditions + verdict_and_score"
+}

@@ -1,0 +1,39 @@
+{
+  "phase": "Phase 10 section B — nonlinear transport (the plan B) + H6 positive control",
+  "written_utc": "2026-08-15",
+  "written_before_any_real_cache_test_read": true,
+  "question": "Does role transport exist at the answer position (and P-path binding sites) that a LINEAR operator misses? The Phase 8C/9 negative is explicitly scoped to linear maps; this tests the map-class boundary.",
+  "battery": "phase10/nonlinear/nl_transport_lib.py — PCA-r reduction (basis on pooled TRAIN x), map classes {linear, mlp, kernel}, relative transport error (identity scores 1) in the reduced space.",
+  "map_classes": {
+    "linear": "ridge anchor (incumbent); the existing linear result restricted to the PCA subspace",
+    "mlp": "1-hidden-layer tanh, Adam+wd, widths {16,64,256}",
+    "kernel": "RBF kernel ridge, bandwidth = median pairwise distance"
+  },
+  "capacity_tiers": {
+    "H6_d64": {"ranks": [16, 32], "mlp_widths": [16, 64]},
+    "B_8C_d8192": {"ranks": [32, 128, 512], "mlp_widths": [16, 64, 256]}
+  },
+  "conditions": {
+    "C1": "fit on fit-vocab TRAIN, eval on transfer-vocab TEST (disjoint vocabulary) — mandatory",
+    "C2": "fit on path-P TRAIN, eval on path-G TEST (cross-path) — mandatory at the answer position (8C cache has both paths); UNAVAILABLE at P-path binding sites"
+  },
+  "nulls": "shuffled-pair (Y rows permuted), 10 seeds, matched regime; FPR 0.05 -> tau = 0.05-quantile of null errors (lt).",
+  "decision_rule_frozen": {
+    "reveals_nonlinear_transport": "a class beats BOTH identity (1.0) AND the linear anchor AND the shuffled null tau, on C1 AND C2, at some capacity tier",
+    "B6_capacity_curve": "the claim attaches to the LOWEST passing tier; success only at the top tier -> reported as memorisation-consistent, not transport",
+    "B7_name_support": "any linear-or-nonlinear success is checked for concentration in the name-readout subspace; concentrated -> vocabulary-bound, not abstract role",
+    "B5_same_path_only": "a class passing C1 but not C2 (answer position) -> path-local nonlinear structure, explicitly NOT the original role algebra",
+    "precondition_H6": "the nonlinear battery MUST first recover a PLANTED nonlinear role code (H6) that the linear battery FAILS, at the Stage-1 SNRs. If H6 fails, B is uninterpretable and is not read."
+  },
+  "H6_construction": {
+    "organism": "S-role-nonlinear: Stage-1 S-role states h_lin(x) passed through a FIXED smooth invertible nonlinearity phi(z) = O^T psi(O z), O fixed random orthogonal (d x d), psi(u) = u + tanh(2u) elementwise (monotonic -> invertible; role info preserved).",
+    "alpha_fixed_a_priori": "psi = u + tanh(2u); NOT tuned against the outcome",
+    "controls": "S-role (linear; both linear and nonlinear batteries must recover) and S-retrieval (neither recovers) run alongside",
+    "pass_criterion": "on S-role-nonlinear: linear anchor FAILS C1 (err >= linear-recovers bar, i.e. not below identity by the FPR margin) while some MLP tier RECOVERS (err beats identity, linear, and null) at SNR in {10,3}; on S-role: linear recovers (Stage-1 E1 replicates); on S-retrieval: nothing recovers."
+  },
+  "real_targets": {
+    "answer_position": "results/phase8a_final/acts/ (8C cache, both paths, both vocabs; C1 and C2 available)",
+    "binding_sites_P": "acts_P_local/ (Phase 9 P cache; C1 available, C2 UNAVAILABLE — no G binding-site cache; capped: no H_role language possible there)"
+  },
+  "verification": "config frozen (sha recorded) before real-cache test reads; H6 gates B; single evaluation per (target, condition, tier)."
+}

@@ -1,0 +1,26 @@
+{
+  "phase": "9-stage1-prep",
+  "set": "joint-permutation",
+  "hash_definition": "sha256 over concatenation of 'relpath:sha256(file)\\n' lines, sorted by relpath (8A-final freeze definition, phase8a_final_freeze.py)",
+  "files": {
+    "tasks_joint/joint_P_fit.jsonl": "4f42a7f82e8a69edad0605f9d298b45e58451f33b3ec81c2e1a6d4ff001e6614",
+    "tasks_joint/joint_P_transfer.jsonl": "f08fefb1bafaa5e0e4a4f1f3330e5fa8fd81901c054b43c0a0dd9c342b48a183",
+    "tasks_joint/joint_G_fit.jsonl": "67655a0b88c39be84ecaa7dc99da3625b67b17d60617593aa0fe621202ef9fd0",
+    "tasks_joint/joint_G_transfer.jsonl": "585f19f0a6f36df17131bf31183018c8f851b6b3e333bb4617415be890ef9da8",
+    "tasks_joint/manifest.json": "a1dd35979349ad16c41b34d3fe79d73ce0601d2ec31f2762a0790abc4e9bae7a",
+    "tasks_joint/README.md": "ce7c7f4a7b78bc947856862c455d8fe30537fbf0ea360cca2ee249c462db496c",
+    "code/phase9_generate_joint.py": "81cc7330a04d59287f03e88f846388553c8ba72d4b0bb074b634bbfff0eb5852",
+    "phase8a_generate_tasks.py": "d7b52a1d6482d9286ef2e9f9ab4c86256cb3b664a84e10b89e85cff7b3389bca"
+  },
+  "content_hash": "422b8fb97a255092cb5e3934a69e0ad7746bf891052a1edd125c3f1057933db2",
+  "episode_counts": {
+    "tasks_joint/joint_P_fit.jsonl": 900,
+    "tasks_joint/joint_P_transfer.jsonl": 900,
+    "tasks_joint/joint_G_fit.jsonl": 900,
+    "tasks_joint/joint_G_transfer.jsonl": 900
+  },
+  "n_bases_per_cell": 150,
+  "k": 3,
+  "perms_per_base": 6,
+  "frozen_set_hash": "84f2e54d85d6e8aa4c1474b608bef5ab69babe54353ef0ef2702d9f6ed38baef"
+}

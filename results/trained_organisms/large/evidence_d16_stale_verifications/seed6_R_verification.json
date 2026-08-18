@@ -1,0 +1,6 @@
+{
+  "seed": 6,
+  "arm": "R",
+  "status": "CRASHED",
+  "error": "Traceback (most recent call last):\n  File \"/root/finetune_modal.py\", line 562, in finetune\n    raise RuntimeError(\"freeze violation\")\nRuntimeError: freeze violation\n"
+}

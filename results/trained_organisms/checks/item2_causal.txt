@@ -1,0 +1,38 @@
+========================================================================================
+PHASE 7 ITEM 2 — CAUSAL TEST OF L4h3 ON 8L SEED 2 FINAL (step 50000)
+declared cuts: collapse <= 0.5, hold >= 0.9, recover >= 0.95; bootstrap 10000 resamples over bases
+========================================================================================
+
+(a) ZERO-ABLATION of L4h3 (all positions) — composed + selectivity:
+  composed Q_P (held-out, fit):
+    intact                                       acc 0.985  [95% CI 0.973, 0.995]  (n_bases=192)
+    L4h3 zero-ablated                            acc 0.895  [95% CI 0.869, 0.919]  (n_bases=192)
+  A_PS property->symbol (hop 1):
+    intact                                       acc 0.953  [95% CI 0.891, 1.000]  (n_bases=64)
+    L4h3 zero-ablated                            acc 0.935  [95% CI 0.872, 0.984]  (n_bases=64)
+  A_SN symbol->person (hop 2, literal key):
+    intact                                       acc 1.000  [95% CI 1.000, 1.000]  (n_bases=64)
+    L4h3 zero-ablated                            acc 0.966  [95% CI 0.940, 0.987]  (n_bases=64)
+  A_NS person->symbol (backward read):
+    intact                                       acc 0.349  [95% CI 0.240, 0.464]  (n_bases=64)
+    L4h3 zero-ablated                            acc 0.362  [95% CI 0.253, 0.479]  (n_bases=64)
+
+(b) MEAN-ABLATION + RESTORATION on composed (matched natural output):
+    L4h3 mean-ablated (corrupted baseline)       acc 0.927  [95% CI 0.905, 0.947]  (n_bases=192)
+    natural output patched back (restoration)    acc 0.985  [95% CI 0.973, 0.995]  (n_bases=192)
+
+TRANSFER-GAP DECOMPOSITION (intact model, per-hop aux):
+  fit vocabulary:
+    A_PS (hop 1)                                 acc 0.953  [95% CI 0.891, 1.000]  (n_bases=64)
+    A_SN (hop 2)                                 acc 1.000  [95% CI 1.000, 1.000]  (n_bases=64)
+    (composed fit = intact row above)
+  transfer vocabulary (never-trained name embeddings):
+    A_PS (hop 1)                                 acc 0.995  [95% CI 0.984, 1.000]  (n_bases=64)
+    A_SN (hop 2 + frozen-name readout)           acc 0.742  [95% CI 0.688, 0.797]  (n_bases=64)
+    composed Q_P                                 acc 0.634  [95% CI 0.587, 0.682]  (n_bases=96)
+
+========================================================================================
+ADJUDICATION: EPIPHENOMENAL — composed survives ablation (0.895 > 0.5); hop-2 mechanism is elsewhere or distributed; hedged phrasing kept
+restoration control: restored 0.985 (RECOVERS)
+
+TRANSFER GAP: A_PS 0.995, A_SN 0.742, composed 0.634 (fit composed 0.985)

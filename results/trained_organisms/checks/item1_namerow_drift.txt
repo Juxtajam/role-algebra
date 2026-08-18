@@ -1,0 +1,3 @@
+seed0 step 27500: name-row cos(init,final) min=0.99999982 mean=1.00000000 | norm ratio min=0.80382 max=0.80386 mean=0.80384 std=6.18e-06
+seed1 step 25000: name-row cos(init,final) min=0.99999982 mean=1.00000000 | norm ratio min=0.81383 max=0.81387 mean=0.81385 std=6.19e-06
+seed2 step 29000: name-row cos(init,final) min=0.99999982 mean=1.00000000 | norm ratio min=0.79859 max=0.79863 mean=0.79861 std=6.23e-06

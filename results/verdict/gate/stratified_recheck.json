@@ -1,0 +1,514 @@
+{
+  "gate_thresholds": {
+    "episode_acc": 0.95,
+    "strict_orbit": 0.9,
+    "orbit_consistency": 0.95
+  },
+  "n_boot": 10000,
+  "boot_seed": 20260807,
+  "run2_reproduction": {
+    "fit": {
+      "episode_acc": 0.9166666666666666,
+      "strict_orbit": 0.87,
+      "orbit_consistency": 0.91,
+      "categories": {
+        "correct": 550,
+        "inner_clause": 36,
+        "other": 4,
+        "opposite_endpoint": 10
+      }
+    },
+    "transfer": {
+      "episode_acc": 0.8916666666666667,
+      "strict_orbit": 0.8,
+      "orbit_consistency": 0.86,
+      "categories": {
+        "correct": 535,
+        "opposite_endpoint": 30,
+        "inner_clause": 33,
+        "other": 2
+      }
+    }
+  },
+  "allwrong_bases": [
+    {
+      "vocab": "fit",
+      "base_id": 18,
+      "qpos": 1,
+      "cats": [
+        "inner_clause"
+      ]
+    },
+    {
+      "vocab": "fit",
+      "base_id": 46,
+      "qpos": 1,
+      "cats": [
+        "inner_clause"
+      ]
+    },
+    {
+      "vocab": "fit",
+      "base_id": 57,
+      "qpos": 2,
+      "cats": [
+        "opposite_endpoint"
+      ]
+    },
+    {
+      "vocab": "fit",
+      "base_id": 65,
+      "qpos": 1,
+      "cats": [
+        "inner_clause"
+      ]
+    },
+    {
+      "vocab": "transfer",
+      "base_id": 5,
+      "qpos": 2,
+      "cats": [
+        "opposite_endpoint"
+      ]
+    },
+    {
+      "vocab": "transfer",
+      "base_id": 18,
+      "qpos": 1,
+      "cats": [
+        "inner_clause"
+      ]
+    },
+    {
+      "vocab": "transfer",
+      "base_id": 37,
+      "qpos": 1,
+      "cats": [
+        "inner_clause"
+      ]
+    },
+    {
+      "vocab": "transfer",
+      "base_id": 58,
+      "qpos": 1,
+      "cats": [
+        "inner_clause"
+      ]
+    },
+    {
+      "vocab": "transfer",
+      "base_id": 74,
+      "qpos": 2,
+      "cats": [
+        "opposite_endpoint"
+      ]
+    },
+    {
+      "vocab": "transfer",
+      "base_id": 87,
+      "qpos": 1,
+      "cats": [
+        "inner_clause"
+      ]
+    }
+  ],
+  "anatomy_discrepancy": {
+    "run2_report_claim": "8 of 10 all-wrong bases all-six inner-clause; 7 of 8 qpos=1",
+    "recomputed": "7 of 10 all-wrong bases all-six inner-clause; 7 of 7 qpos=1; remaining 3 all-wrong bases are pure opposite-endpoint at qpos=2",
+    "note": "episode-level category tables and per-base histograms reproduce run 2 exactly; the prose count '8' is the only non-reproducing figure and is recorded as a run-2 reporting slip"
+  },
+  "strata": {
+    "fit": {
+      "n_bases_total": 100,
+      "primary_stratum_bases": [
+        1,
+        2,
+        8,
+        9,
+        12,
+        14,
+        15,
+        16,
+        18,
+        19,
+        20,
+        21,
+        24,
+        26,
+        31,
+        32,
+        36,
+        41,
+        43,
+        46,
+        47,
+        48,
+        49,
+        52,
+        53,
+        56,
+        58,
+        59,
+        60,
+        63,
+        65,
+        66,
+        69,
+        71,
+        73,
+        74,
+        75,
+        76,
+        77,
+        81,
+        85,
+        88,
+        89,
+        94,
+        98,
+        99
+      ],
+      "widened_stratum_bases": [
+        1,
+        2,
+        8,
+        9,
+        12,
+        14,
+        15,
+        16,
+        18,
+        19,
+        20,
+        21,
+        24,
+        26,
+        31,
+        32,
+        36,
+        41,
+        43,
+        46,
+        47,
+        48,
+        49,
+        52,
+        53,
+        56,
+        58,
+        59,
+        60,
+        63,
+        65,
+        66,
+        69,
+        71,
+        73,
+        74,
+        75,
+        76,
+        77,
+        81,
+        85,
+        88,
+        89,
+        94,
+        98,
+        99
+      ],
+      "primary_n": 46,
+      "widened_n": 46,
+      "qpos1_without_nesting": 0,
+      "qpos2_with_nesting": 0,
+      "strata_identical": true
+    },
+    "transfer": {
+      "n_bases_total": 100,
+      "primary_stratum_bases": [
+        0,
+        1,
+        7,
+        13,
+        18,
+        19,
+        20,
+        23,
+        24,
+        28,
+        33,
+        35,
+        37,
+        41,
+        43,
+        44,
+        45,
+        46,
+        50,
+        51,
+        52,
+        54,
+        58,
+        59,
+        63,
+        65,
+        68,
+        70,
+        71,
+        72,
+        73,
+        76,
+        80,
+        82,
+        83,
+        86,
+        87,
+        89,
+        91,
+        92,
+        93,
+        94,
+        96
+      ],
+      "widened_stratum_bases": [
+        0,
+        1,
+        7,
+        13,
+        18,
+        19,
+        20,
+        23,
+        24,
+        28,
+        33,
+        35,
+        37,
+        41,
+        43,
+        44,
+        45,
+        46,
+        50,
+        51,
+        52,
+        54,
+        58,
+        59,
+        63,
+        65,
+        68,
+        70,
+        71,
+        72,
+        73,
+        76,
+        80,
+        82,
+        83,
+        86,
+        87,
+        89,
+        91,
+        92,
+        93,
+        94,
+        96
+      ],
+      "primary_n": 43,
+      "widened_n": 43,
+      "qpos1_without_nesting": 0,
+      "qpos2_with_nesting": 0,
+      "strata_identical": true
+    }
+  },
+  "primary": {
+    "fit": {
+      "complement": {
+        "episode_acc": 0.9475308641975309,
+        "episode_acc_ci": [
+          0.8888888888888888,
+          0.9907407407407407
+        ],
+        "strict_orbit": 0.9259259259259259,
+        "strict_orbit_ci": [
+          0.8518518518518519,
+          0.9814814814814815
+        ],
+        "orbit_consistency": 0.9444444444444444,
+        "n_bases": 54,
+        "n_eps": 324
+      },
+      "complement_gate": {
+        "components": {
+          "episode_acc": false,
+          "strict_orbit": true,
+          "orbit_consistency": false
+        },
+        "cell_pass": false
+      },
+      "stratum": {
+        "episode_acc": 0.8804347826086957,
+        "episode_acc_ci": [
+          0.7971014492753623,
+          0.9528985507246377
+        ],
+        "strict_orbit": 0.8043478260869565,
+        "strict_orbit_ci": [
+          0.6951086956521744,
+          0.9130434782608695
+        ],
+        "orbit_consistency": 0.8695652173913043,
+        "n_bases": 46,
+        "n_eps": 276
+      },
+      "stratum_share_bases": 0.46,
+      "stratum_share_episodes": 0.46,
+      "errors_inside": 33,
+      "errors_outside": 17,
+      "error_mass_inside_frac": 0.66
+    },
+    "transfer": {
+      "complement": {
+        "episode_acc": 0.9005847953216374,
+        "episode_acc_ci": [
+          0.8304093567251463,
+          0.9590643274853802
+        ],
+        "strict_orbit": 0.8245614035087719,
+        "strict_orbit_ci": [
+          0.7192982456140351,
+          0.9122807017543859
+        ],
+        "orbit_consistency": 0.8596491228070176,
+        "n_bases": 57,
+        "n_eps": 342
+      },
+      "complement_gate": {
+        "components": {
+          "episode_acc": false,
+          "strict_orbit": false,
+          "orbit_consistency": false
+        },
+        "cell_pass": false
+      },
+      "stratum": {
+        "episode_acc": 0.8798449612403101,
+        "episode_acc_ci": [
+          0.7868217054263564,
+          0.9573643410852715
+        ],
+        "strict_orbit": 0.7674418604651163,
+        "strict_orbit_ci": [
+          0.627906976744186,
+          0.8837209302325582
+        ],
+        "orbit_consistency": 0.8604651162790697,
+        "n_bases": 43,
+        "n_eps": 258
+      },
+      "stratum_share_bases": 0.43,
+      "stratum_share_episodes": 0.43,
+      "errors_inside": 31,
+      "errors_outside": 34,
+      "error_mass_inside_frac": 0.47692307692307695
+    },
+    "gate_overall_complement": false
+  },
+  "widened": {
+    "fit": {
+      "complement": {
+        "episode_acc": 0.9475308641975309,
+        "episode_acc_ci": [
+          0.8888888888888888,
+          0.9907407407407407
+        ],
+        "strict_orbit": 0.9259259259259259,
+        "strict_orbit_ci": [
+          0.8518518518518519,
+          0.9814814814814815
+        ],
+        "orbit_consistency": 0.9444444444444444,
+        "n_bases": 54,
+        "n_eps": 324
+      },
+      "complement_gate": {
+        "components": {
+          "episode_acc": false,
+          "strict_orbit": true,
+          "orbit_consistency": false
+        },
+        "cell_pass": false
+      },
+      "stratum": {
+        "episode_acc": 0.8804347826086957,
+        "episode_acc_ci": [
+          0.7971014492753623,
+          0.9528985507246377
+        ],
+        "strict_orbit": 0.8043478260869565,
+        "strict_orbit_ci": [
+          0.6951086956521744,
+          0.9130434782608695
+        ],
+        "orbit_consistency": 0.8695652173913043,
+        "n_bases": 46,
+        "n_eps": 276
+      },
+      "stratum_share_bases": 0.46,
+      "stratum_share_episodes": 0.46,
+      "errors_inside": 33,
+      "errors_outside": 17,
+      "error_mass_inside_frac": 0.66
+    },
+    "transfer": {
+      "complement": {
+        "episode_acc": 0.9005847953216374,
+        "episode_acc_ci": [
+          0.8304093567251463,
+          0.9590643274853802
+        ],
+        "strict_orbit": 0.8245614035087719,
+        "strict_orbit_ci": [
+          0.7192982456140351,
+          0.9122807017543859
+        ],
+        "orbit_consistency": 0.8596491228070176,
+        "n_bases": 57,
+        "n_eps": 342
+      },
+      "complement_gate": {
+        "components": {
+          "episode_acc": false,
+          "strict_orbit": false,
+          "orbit_consistency": false
+        },
+        "cell_pass": false
+      },
+      "stratum": {
+        "episode_acc": 0.8798449612403101,
+        "episode_acc_ci": [
+          0.7868217054263564,
+          0.9573643410852715
+        ],
+        "strict_orbit": 0.7674418604651163,
+        "strict_orbit_ci": [
+          0.627906976744186,
+          0.8837209302325582
+        ],
+        "orbit_consistency": 0.8604651162790697,
+        "n_bases": 43,
+        "n_eps": 258
+      },
+      "stratum_share_bases": 0.43,
+      "stratum_share_episodes": 0.43,
+      "errors_inside": 31,
+      "errors_outside": 34,
+      "error_mass_inside_frac": 0.47692307692307695
+    },
+    "gate_overall_complement": false
+  },
+  "sensitivity_flag": {
+    "strata_identical_both_vocabs": true,
+    "gate_outcomes_differ": false
+  }
+}

@@ -1,0 +1,767 @@
+{
+  "72B": {
+    "P/fit": {
+      "position_match": {
+        "pred_first": 0.26,
+        "gold_first": 0.26,
+        "pred_last": 0.42,
+        "gold_last": 0.42
+      },
+      "name_selection": {
+        "Bav": {
+          "pred": 0.07333333333333333,
+          "gold": 0.07333333333333333
+        },
+        "Bek": {
+          "pred": 0.07333333333333333,
+          "gold": 0.07333333333333333
+        },
+        "Dek": {
+          "pred": 0.08333333333333333,
+          "gold": 0.08333333333333333
+        },
+        "Fot": {
+          "pred": 0.08666666666666667,
+          "gold": 0.08666666666666667
+        },
+        "Gat": {
+          "pred": 0.07,
+          "gold": 0.07
+        },
+        "Jub": {
+          "pred": 0.08,
+          "gold": 0.08
+        },
+        "Kag": {
+          "pred": 0.08,
+          "gold": 0.08
+        },
+        "Lup": {
+          "pred": 0.10666666666666667,
+          "gold": 0.10666666666666667
+        },
+        "Miz": {
+          "pred": 0.11333333333333333,
+          "gold": 0.11333333333333333
+        },
+        "Nir": {
+          "pred": 0.09333333333333334,
+          "gold": 0.09333333333333334
+        },
+        "Suk": {
+          "pred": 0.06666666666666667,
+          "gold": 0.06666666666666667
+        },
+        "Tus": {
+          "pred": 0.07333333333333333,
+          "gold": 0.07333333333333333
+        }
+      },
+      "max_abs_name_bias": 0.0,
+      "colocation": {
+        "pred_coloc": 1.0,
+        "gold_coloc": 1.0
+      },
+      "direction_split": {
+        "correct": 600
+      },
+      "q_stratification": {
+        "qi=0": {
+          "acc": 1.0,
+          "n": 210
+        },
+        "qi=1": {
+          "acc": 1.0,
+          "n": 150
+        },
+        "qi=2": {
+          "acc": 1.0,
+          "n": 240
+        }
+      },
+      "allwrong_bases": [],
+      "metrics": {
+        "episode_acc": 1.0,
+        "strict_orbit": 1.0,
+        "orbit_consistency": 1.0
+      }
+    },
+    "P/transfer": {
+      "position_match": {
+        "pred_first": 0.31,
+        "gold_first": 0.31,
+        "pred_last": 0.34,
+        "gold_last": 0.34
+      },
+      "name_selection": {
+        "Bij": {
+          "pred": 0.07,
+          "gold": 0.07
+        },
+        "Bik": {
+          "pred": 0.08333333333333333,
+          "gold": 0.08333333333333333
+        },
+        "Fon": {
+          "pred": 0.07333333333333333,
+          "gold": 0.07333333333333333
+        },
+        "Jad": {
+          "pred": 0.08666666666666667,
+          "gold": 0.08666666666666667
+        },
+        "Jal": {
+          "pred": 0.07666666666666666,
+          "gold": 0.07666666666666666
+        },
+        "Kad": {
+          "pred": 0.10666666666666667,
+          "gold": 0.10666666666666667
+        },
+        "Poz": {
+          "pred": 0.08666666666666667,
+          "gold": 0.08666666666666667
+        },
+        "Raz": {
+          "pred": 0.08666666666666667,
+          "gold": 0.08666666666666667
+        },
+        "Sik": {
+          "pred": 0.08666666666666667,
+          "gold": 0.08666666666666667
+        },
+        "Vij": {
+          "pred": 0.07333333333333333,
+          "gold": 0.07333333333333333
+        },
+        "Zam": {
+          "pred": 0.08666666666666667,
+          "gold": 0.08666666666666667
+        },
+        "Zum": {
+          "pred": 0.08333333333333333,
+          "gold": 0.08333333333333333
+        }
+      },
+      "max_abs_name_bias": 0.0,
+      "colocation": {
+        "pred_coloc": 1.0,
+        "gold_coloc": 1.0
+      },
+      "direction_split": {
+        "correct": 600
+      },
+      "q_stratification": {
+        "qi=0": {
+          "acc": 1.0,
+          "n": 210
+        },
+        "qi=1": {
+          "acc": 1.0,
+          "n": 150
+        },
+        "qi=2": {
+          "acc": 1.0,
+          "n": 240
+        }
+      },
+      "allwrong_bases": [],
+      "metrics": {
+        "episode_acc": 1.0,
+        "strict_orbit": 1.0,
+        "orbit_consistency": 1.0
+      }
+    },
+    "G/fit": {
+      "position_match": {
+        "pred_first": 0.30833333333333335,
+        "gold_first": 0.3,
+        "pred_last": 0.44166666666666665,
+        "gold_last": 0.44
+      },
+      "name_selection": {
+        "Bav": {
+          "pred": 0.08333333333333333,
+          "gold": 0.08333333333333333
+        },
+        "Bek": {
+          "pred": 0.10333333333333333,
+          "gold": 0.10333333333333333
+        },
+        "Dek": {
+          "pred": 0.10666666666666667,
+          "gold": 0.10666666666666667
+        },
+        "Fot": {
+          "pred": 0.11,
+          "gold": 0.11
+        },
+        "Gat": {
+          "pred": 0.07833333333333334,
+          "gold": 0.08
+        },
+        "Jub": {
+          "pred": 0.08666666666666667,
+          "gold": 0.08666666666666667
+        },
+        "Kag": {
+          "pred": 0.07666666666666666,
+          "gold": 0.07666666666666666
+        },
+        "Lup": {
+          "pred": 0.06333333333333334,
+          "gold": 0.06333333333333334
+        },
+        "Miz": {
+          "pred": 0.07666666666666666,
+          "gold": 0.07666666666666666
+        },
+        "Nir": {
+          "pred": 0.05333333333333334,
+          "gold": 0.05333333333333334
+        },
+        "Suk": {
+          "pred": 0.08,
+          "gold": 0.08
+        },
+        "Tus": {
+          "pred": 0.08166666666666667,
+          "gold": 0.08
+        }
+      },
+      "max_abs_name_bias": 0.0016666666666666668,
+      "colocation": {
+        "pred_coloc": 0.0,
+        "gold_coloc": 0.0
+      },
+      "direction_split": {
+        "correct": 593,
+        "opposite_endpoint": 7
+      },
+      "q_stratification": {
+        "qpos=1": {
+          "acc": 1.0,
+          "n": 276
+        },
+        "qpos=2": {
+          "acc": 0.9783950617283951,
+          "n": 324
+        }
+      },
+      "allwrong_bases": [
+        {
+          "base_id": 57,
+          "qpos": 2,
+          "cats": [
+            "opposite_endpoint"
+          ]
+        }
+      ],
+      "metrics": {
+        "episode_acc": 0.9883333333333333,
+        "strict_orbit": 0.98,
+        "orbit_consistency": 0.99
+      }
+    },
+    "G/transfer": {
+      "position_match": {
+        "pred_first": 0.32,
+        "gold_first": 0.32,
+        "pred_last": 0.2966666666666667,
+        "gold_last": 0.3
+      },
+      "name_selection": {
+        "Bij": {
+          "pred": 0.10166666666666667,
+          "gold": 0.09666666666666666
+        },
+        "Bik": {
+          "pred": 0.08,
+          "gold": 0.08
+        },
+        "Fon": {
+          "pred": 0.09833333333333333,
+          "gold": 0.1
+        },
+        "Jad": {
+          "pred": 0.09666666666666666,
+          "gold": 0.09666666666666666
+        },
+        "Jal": {
+          "pred": 0.04833333333333333,
+          "gold": 0.05
+        },
+        "Kad": {
+          "pred": 0.07833333333333334,
+          "gold": 0.08
+        },
+        "Poz": {
+          "pred": 0.08333333333333333,
+          "gold": 0.08333333333333333
+        },
+        "Raz": {
+          "pred": 0.06,
+          "gold": 0.06333333333333334
+        },
+        "Sik": {
+          "pred": 0.07,
+          "gold": 0.06666666666666667
+        },
+        "Vij": {
+          "pred": 0.11,
+          "gold": 0.11
+        },
+        "Zam": {
+          "pred": 0.09666666666666666,
+          "gold": 0.09666666666666666
+        },
+        "Zum": {
+          "pred": 0.07666666666666666,
+          "gold": 0.07666666666666666
+        }
+      },
+      "max_abs_name_bias": 0.005,
+      "colocation": {
+        "pred_coloc": 0.0,
+        "gold_coloc": 0.0
+      },
+      "direction_split": {
+        "correct": 590,
+        "opposite_endpoint": 10
+      },
+      "q_stratification": {
+        "qpos=1": {
+          "acc": 1.0,
+          "n": 258
+        },
+        "qpos=2": {
+          "acc": 0.9707602339181286,
+          "n": 342
+        }
+      },
+      "allwrong_bases": [],
+      "metrics": {
+        "episode_acc": 0.9833333333333333,
+        "strict_orbit": 0.97,
+        "orbit_consistency": 0.97
+      }
+    }
+  },
+  "32B_run2": {
+    "P/fit": {
+      "position_match": {
+        "pred_first": 0.26166666666666666,
+        "gold_first": 0.26,
+        "pred_last": 0.42,
+        "gold_last": 0.42
+      },
+      "name_selection": {
+        "Bav": {
+          "pred": 0.07333333333333333,
+          "gold": 0.07333333333333333
+        },
+        "Bek": {
+          "pred": 0.07166666666666667,
+          "gold": 0.07333333333333333
+        },
+        "Dek": {
+          "pred": 0.085,
+          "gold": 0.08333333333333333
+        },
+        "Fot": {
+          "pred": 0.08666666666666667,
+          "gold": 0.08666666666666667
+        },
+        "Gat": {
+          "pred": 0.07,
+          "gold": 0.07
+        },
+        "Jub": {
+          "pred": 0.08,
+          "gold": 0.08
+        },
+        "Kag": {
+          "pred": 0.08,
+          "gold": 0.08
+        },
+        "Lup": {
+          "pred": 0.10666666666666667,
+          "gold": 0.10666666666666667
+        },
+        "Miz": {
+          "pred": 0.11333333333333333,
+          "gold": 0.11333333333333333
+        },
+        "Nir": {
+          "pred": 0.09333333333333334,
+          "gold": 0.09333333333333334
+        },
+        "Suk": {
+          "pred": 0.06666666666666667,
+          "gold": 0.06666666666666667
+        },
+        "Tus": {
+          "pred": 0.07333333333333333,
+          "gold": 0.07333333333333333
+        }
+      },
+      "max_abs_name_bias": 0.0016666666666666668,
+      "colocation": {
+        "pred_coloc": 0.9983333333333333,
+        "gold_coloc": 1.0
+      },
+      "direction_split": {
+        "correct": 599,
+        "wrong": 1
+      },
+      "q_stratification": {
+        "qi=0": {
+          "acc": 1.0,
+          "n": 210
+        },
+        "qi=1": {
+          "acc": 1.0,
+          "n": 150
+        },
+        "qi=2": {
+          "acc": 0.9958333333333333,
+          "n": 240
+        }
+      },
+      "allwrong_bases": [],
+      "metrics": {
+        "episode_acc": 0.9983333333333333,
+        "strict_orbit": 0.99,
+        "orbit_consistency": 0.99
+      }
+    },
+    "P/transfer": {
+      "position_match": {
+        "pred_first": 0.31,
+        "gold_first": 0.31,
+        "pred_last": 0.34,
+        "gold_last": 0.34
+      },
+      "name_selection": {
+        "Bij": {
+          "pred": 0.07,
+          "gold": 0.07
+        },
+        "Bik": {
+          "pred": 0.08333333333333333,
+          "gold": 0.08333333333333333
+        },
+        "Fon": {
+          "pred": 0.07333333333333333,
+          "gold": 0.07333333333333333
+        },
+        "Jad": {
+          "pred": 0.08666666666666667,
+          "gold": 0.08666666666666667
+        },
+        "Jal": {
+          "pred": 0.07666666666666666,
+          "gold": 0.07666666666666666
+        },
+        "Kad": {
+          "pred": 0.10666666666666667,
+          "gold": 0.10666666666666667
+        },
+        "Poz": {
+          "pred": 0.08666666666666667,
+          "gold": 0.08666666666666667
+        },
+        "Raz": {
+          "pred": 0.08666666666666667,
+          "gold": 0.08666666666666667
+        },
+        "Sik": {
+          "pred": 0.08666666666666667,
+          "gold": 0.08666666666666667
+        },
+        "Vij": {
+          "pred": 0.07333333333333333,
+          "gold": 0.07333333333333333
+        },
+        "Zam": {
+          "pred": 0.08666666666666667,
+          "gold": 0.08666666666666667
+        },
+        "Zum": {
+          "pred": 0.08333333333333333,
+          "gold": 0.08333333333333333
+        }
+      },
+      "max_abs_name_bias": 0.0,
+      "colocation": {
+        "pred_coloc": 1.0,
+        "gold_coloc": 1.0
+      },
+      "direction_split": {
+        "correct": 600
+      },
+      "q_stratification": {
+        "qi=0": {
+          "acc": 1.0,
+          "n": 210
+        },
+        "qi=1": {
+          "acc": 1.0,
+          "n": 150
+        },
+        "qi=2": {
+          "acc": 1.0,
+          "n": 240
+        }
+      },
+      "allwrong_bases": [],
+      "metrics": {
+        "episode_acc": 1.0,
+        "strict_orbit": 1.0,
+        "orbit_consistency": 1.0
+      }
+    },
+    "G/fit": {
+      "position_match": {
+        "pred_first": 0.3,
+        "gold_first": 0.3,
+        "pred_last": 0.43666666666666665,
+        "gold_last": 0.44
+      },
+      "name_selection": {
+        "Bav": {
+          "pred": 0.08833333333333333,
+          "gold": 0.08333333333333333
+        },
+        "Bek": {
+          "pred": 0.10333333333333333,
+          "gold": 0.10333333333333333
+        },
+        "Dek": {
+          "pred": 0.10666666666666667,
+          "gold": 0.10666666666666667
+        },
+        "Fot": {
+          "pred": 0.10666666666666667,
+          "gold": 0.11
+        },
+        "Gat": {
+          "pred": 0.07833333333333334,
+          "gold": 0.08
+        },
+        "Jub": {
+          "pred": 0.085,
+          "gold": 0.08666666666666667
+        },
+        "Kag": {
+          "pred": 0.08,
+          "gold": 0.07666666666666666
+        },
+        "Lup": {
+          "pred": 0.06166666666666667,
+          "gold": 0.06333333333333334
+        },
+        "Miz": {
+          "pred": 0.075,
+          "gold": 0.07666666666666666
+        },
+        "Nir": {
+          "pred": 0.051666666666666666,
+          "gold": 0.05333333333333334
+        },
+        "Suk": {
+          "pred": 0.08,
+          "gold": 0.08
+        },
+        "Tus": {
+          "pred": 0.07666666666666666,
+          "gold": 0.08
+        }
+      },
+      "max_abs_name_bias": 0.005,
+      "colocation": {
+        "pred_coloc": 0.06,
+        "gold_coloc": 0.0
+      },
+      "direction_split": {
+        "correct": 550,
+        "inner_clause": 36,
+        "other": 4,
+        "opposite_endpoint": 10
+      },
+      "q_stratification": {
+        "qpos=1": {
+          "acc": 0.8804347826086957,
+          "n": 276
+        },
+        "qpos=2": {
+          "acc": 0.9475308641975309,
+          "n": 324
+        }
+      },
+      "allwrong_bases": [
+        {
+          "base_id": 18,
+          "qpos": 1,
+          "cats": [
+            "inner_clause"
+          ]
+        },
+        {
+          "base_id": 46,
+          "qpos": 1,
+          "cats": [
+            "inner_clause"
+          ]
+        },
+        {
+          "base_id": 57,
+          "qpos": 2,
+          "cats": [
+            "opposite_endpoint"
+          ]
+        },
+        {
+          "base_id": 65,
+          "qpos": 1,
+          "cats": [
+            "inner_clause"
+          ]
+        }
+      ],
+      "metrics": {
+        "episode_acc": 0.9166666666666666,
+        "strict_orbit": 0.87,
+        "orbit_consistency": 0.91
+      }
+    },
+    "G/transfer": {
+      "position_match": {
+        "pred_first": 0.335,
+        "gold_first": 0.32,
+        "pred_last": 0.27666666666666667,
+        "gold_last": 0.3
+      },
+      "name_selection": {
+        "Bij": {
+          "pred": 0.09333333333333334,
+          "gold": 0.09666666666666666
+        },
+        "Bik": {
+          "pred": 0.075,
+          "gold": 0.08
+        },
+        "Fon": {
+          "pred": 0.09833333333333333,
+          "gold": 0.1
+        },
+        "Jad": {
+          "pred": 0.08833333333333333,
+          "gold": 0.09666666666666666
+        },
+        "Jal": {
+          "pred": 0.051666666666666666,
+          "gold": 0.05
+        },
+        "Kad": {
+          "pred": 0.08333333333333333,
+          "gold": 0.08
+        },
+        "Poz": {
+          "pred": 0.085,
+          "gold": 0.08333333333333333
+        },
+        "Raz": {
+          "pred": 0.06333333333333334,
+          "gold": 0.06333333333333334
+        },
+        "Sik": {
+          "pred": 0.06333333333333334,
+          "gold": 0.06666666666666667
+        },
+        "Vij": {
+          "pred": 0.10833333333333334,
+          "gold": 0.11
+        },
+        "Zam": {
+          "pred": 0.105,
+          "gold": 0.09666666666666666
+        },
+        "Zum": {
+          "pred": 0.08166666666666667,
+          "gold": 0.07666666666666666
+        }
+      },
+      "max_abs_name_bias": 0.008333333333333333,
+      "colocation": {
+        "pred_coloc": 0.055,
+        "gold_coloc": 0.0
+      },
+      "direction_split": {
+        "correct": 535,
+        "opposite_endpoint": 30,
+        "inner_clause": 33,
+        "other": 2
+      },
+      "q_stratification": {
+        "qpos=1": {
+          "acc": 0.8798449612403101,
+          "n": 258
+        },
+        "qpos=2": {
+          "acc": 0.9005847953216374,
+          "n": 342
+        }
+      },
+      "allwrong_bases": [
+        {
+          "base_id": 5,
+          "qpos": 2,
+          "cats": [
+            "opposite_endpoint"
+          ]
+        },
+        {
+          "base_id": 18,
+          "qpos": 1,
+          "cats": [
+            "inner_clause"
+          ]
+        },
+        {
+          "base_id": 37,
+          "qpos": 1,
+          "cats": [
+            "inner_clause"
+          ]
+        },
+        {
+          "base_id": 58,
+          "qpos": 1,
+          "cats": [
+            "inner_clause"
+          ]
+        },
+        {
+          "base_id": 74,
+          "qpos": 2,
+          "cats": [
+            "opposite_endpoint"
+          ]
+        },
+        {
+          "base_id": 87,
+          "qpos": 1,
+          "cats": [
+            "inner_clause"
+          ]
+        }
+      ],
+      "metrics": {
+        "episode_acc": 0.8916666666666667,
+        "strict_orbit": 0.8,
+        "orbit_consistency": 0.86
+      }
+    }
+  }
+}

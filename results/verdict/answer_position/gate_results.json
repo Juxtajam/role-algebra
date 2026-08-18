@@ -1,0 +1,121 @@
+{
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "revision": "495f39366efef23836d0cfae4fbe635880d2be31",
+  "gpu": "A100-80GB:2",
+  "content_hash": "84f2e54d85d6e8aa4c1474b608bef5ab69babe54353ef0ef2702d9f6ed38baef",
+  "gate_thresholds": {
+    "episode_acc": 0.95,
+    "strict_orbit": 0.9,
+    "orbit_consistency": 0.95
+  },
+  "d_model": 8192,
+  "n_layers": 80,
+  "dtype": "bfloat16",
+  "n_boot": 10000,
+  "boot_seed": 20260807,
+  "cells": {
+    "P/fit": {
+      "episode_acc": 1.0,
+      "strict_orbit": 1.0,
+      "orbit_consistency": 1.0,
+      "cis": {
+        "episode_acc": [
+          1.0,
+          1.0
+        ],
+        "strict_orbit": [
+          1.0,
+          1.0
+        ],
+        "orbit_consistency": [
+          1.0,
+          1.0
+        ]
+      },
+      "passed": true,
+      "n_bases": 100,
+      "n_eps": 600,
+      "categories": null,
+      "seconds": 46.2
+    },
+    "P/transfer": {
+      "episode_acc": 1.0,
+      "strict_orbit": 1.0,
+      "orbit_consistency": 1.0,
+      "cis": {
+        "episode_acc": [
+          1.0,
+          1.0
+        ],
+        "strict_orbit": [
+          1.0,
+          1.0
+        ],
+        "orbit_consistency": [
+          1.0,
+          1.0
+        ]
+      },
+      "passed": true,
+      "n_bases": 100,
+      "n_eps": 600,
+      "categories": null,
+      "seconds": 43.2
+    },
+    "G/fit": {
+      "episode_acc": 0.9883333333333333,
+      "strict_orbit": 0.98,
+      "orbit_consistency": 0.99,
+      "cis": {
+        "episode_acc": [
+          0.9666666666666666,
+          1.0
+        ],
+        "strict_orbit": [
+          0.95,
+          1.0
+        ],
+        "orbit_consistency": [
+          0.97,
+          1.0
+        ]
+      },
+      "passed": true,
+      "n_bases": 100,
+      "n_eps": 600,
+      "categories": {
+        "correct": 593,
+        "opposite_endpoint": 7
+      },
+      "seconds": 49.1
+    },
+    "G/transfer": {
+      "episode_acc": 0.9833333333333333,
+      "strict_orbit": 0.97,
+      "orbit_consistency": 0.97,
+      "cis": {
+        "episode_acc": [
+          0.96,
+          1.0
+        ],
+        "strict_orbit": [
+          0.93,
+          1.0
+        ],
+        "orbit_consistency": [
+          0.93,
+          1.0
+        ]
+      },
+      "passed": true,
+      "n_bases": 100,
+      "n_eps": 600,
+      "categories": {
+        "correct": 590,
+        "opposite_endpoint": 10
+      },
+      "seconds": 48.5
+    }
+  },
+  "gate_passed": true
+}
